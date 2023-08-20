@@ -4,6 +4,8 @@ import videoDB from "./components/data/data";
 import AddVideo from "./components/AddVideo";
 import VideoList from "./components/VideoList";
 import ThemeContext from "./components/context/ThemeContext";
+import Hook from "./components/Hook";
+import Login_page from "./components/Login_page";
 
 function App() {
   console.log("render App");
@@ -38,6 +40,7 @@ function App() {
 
   return (
     // <ThemeContext></ThemeContext>
+    <>
     <div className={`App ${themeContext}`} onClick={() => console.log("App is clicked success")}>
       <AddVideo
         dispatch={dispatch}
@@ -49,13 +52,12 @@ function App() {
         editVideo={editVideo}
         videos={videos}
       ></VideoList>
+
     </div>
+      {/* <Hook/> */}
+      <Login_page />
+    </>
   );
 }
 
 export default App;
-
-// {/* <div style={{ clear: "both" }}>
-//         <PlayButton name='Pause' onDinkar={()=>alert('Pause clicked')}>Pause</PlayButton>
-//       </div>
-//       <Counter/> */}

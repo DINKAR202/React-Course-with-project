@@ -2,6 +2,7 @@ import Video from "./Video";
 import PlayButton from "./PlayButton";
 
 function VideoList({videos, dispatch, editVideo}){
+  
     return(
         <>
          {videos.map((video) => (
