@@ -6,6 +6,7 @@ import VideoList from "./components/VideoList";
 import ThemeContext from "./components/context/ThemeContext";
 import Hook from "./components/Hook";
 import Login_page from "./components/Login_page";
+import UseEffect1 from "./components/UseEffect1";
 
 function App() {
   console.log("render App");
@@ -56,6 +57,7 @@ function App() {
     </div>
       {/* <Hook/> */}
       <Login_page />
+      <UseEffect1 />
     </>
   );
 }
