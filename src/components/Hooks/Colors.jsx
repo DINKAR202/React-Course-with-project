@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Colors = () => {
-  const [color, setColor] = useState("Green");
+  const [color, setColor] = useState("Red");
 
   return (
     <>
@@ -9,9 +9,7 @@ const Colors = () => {
 
       <div className="container border w-100 d-flex justify-content-around">
         <button
-          className="btn btn-secondary"
-          onClick={() => setColor("Secondary")}
-        >
+          className="btn btn-secondary" onClick={() => setColor("Secondary")}>
           Click Me
         </button>
         <button className="btn btn-warning" onClick={() => setColor("Warning")}>
