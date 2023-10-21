@@ -9,6 +9,7 @@ import Login_page from "./components/Login_page";
 import UseEffect1 from "./components/UseEffect1";
 import Timer from "./components/Timer";
 import Click from "./components/Click";
+import Colors from "./components/Hooks/Colors";
 
 function App() {
   console.log("render App");
@@ -61,6 +62,10 @@ function App() {
       <UseEffect1 />
       <Timer/>
       <Click/>
+      <Colors/>
+
+
+      <h1 style={{height:200}}></h1>
     </>
   );
 }
