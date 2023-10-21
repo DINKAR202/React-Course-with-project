@@ -4,9 +4,11 @@ import videoDB from "./components/data/data";
 import AddVideo from "./components/AddVideo";
 import VideoList from "./components/VideoList";
 import ThemeContext from "./components/context/ThemeContext";
-import Hook from "./components/Hook";
+// import Hook from "./components/Hook";
 import Login_page from "./components/Login_page";
 import UseEffect1 from "./components/UseEffect1";
+import Timer from "./components/Timer";
+import Click from "./components/Click";
 
 function App() {
   console.log("render App");
@@ -36,7 +38,6 @@ function App() {
 
   function editVideo(id) {
     setEditableVideo(videos.find((video) => video.id === id));
-    // console.log(id)
   }
 
   return (
@@ -58,6 +59,8 @@ function App() {
       {/* <Hook/> */}
       <Login_page />
       <UseEffect1 />
+      <Timer/>
+      <Click/>
     </>
   );
 }
