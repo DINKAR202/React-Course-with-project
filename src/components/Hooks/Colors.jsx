@@ -22,7 +22,7 @@ const Colors = () => {
           Click Me
         </button>
         <button className="btn btn-danger" onClick={() => setColor("Danger")}>
-          Click Me
+          Click Me for the color change
         </button>
       </div>
     </>
