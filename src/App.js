@@ -14,6 +14,7 @@ import NoteState from "./components/context/notes/NoteState";
 import Navbar from "./components/Home/Navbar/Navbar";
 import Home from "./components/Home/Home/Home";
 import About from "./components/Home/About/About";
+import Prop1 from "./components/Home/PropDrilling/Prop1";
 
 function App() {
   console.log("render App");
@@ -73,6 +74,7 @@ function App() {
         <Home/>
         <About/>
       </NoteState>
+        <Prop1/>
 
 
 
