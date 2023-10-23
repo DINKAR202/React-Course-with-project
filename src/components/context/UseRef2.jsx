@@ -17,6 +17,7 @@ const UseRef2 = () => {
 
     function handleInput(){
         refElement.current.style.color="blue"
+        refElement.current.value="Aditi"
     }
 
 
