@@ -20,6 +20,8 @@ const UseRef2 = () => {
         refElement.current.value="Aditi"
     }
 
+    const [demo, setDemo] = useState(0)
+
 
   return (
     <>
@@ -27,6 +29,10 @@ const UseRef2 = () => {
         <input ref={refElement} type="text" value={name} onChange={Submit}></input>
         <button onClick={Reset}>Reset</button>
         <button onClick={handleInput}>handleinput</button>
+
+        <h1>{demo}</h1>
+        <button onClick={() => setDemo(demo + 1)}>Inc</button>
+        <button onClick={() => setDemo(demo - 1)}>Dec</button>
     </>
   )
 }
