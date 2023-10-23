@@ -10,6 +10,7 @@ import UseEffect1 from "./components/UseEffect1";
 import Timer from "./components/Timer";
 import Click from "./components/Click";
 import Colors from "./components/Hooks/Colors";
+import NoteState from "./components/context/notes/NoteState";
 
 function App() {
   console.log("render App");
@@ -63,6 +64,10 @@ function App() {
       <Timer/>
       <Click/>
       <Colors/> */}
+
+      <NoteState>
+        
+      </NoteState>
 
 
 
