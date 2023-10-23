@@ -15,12 +15,17 @@ const UseRef2 = () => {
         refElement.current.focus()
     }
 
+    function handleInput(){
+        refElement.current.style.color="blue"
+    }
+
 
   return (
     <>
         <h1><b>Learning useRef</b></h1>
         <input ref={refElement} type="text" value={name} onChange={Submit}></input>
         <button onClick={Reset}>Reset</button>
+        <button onClick={handleInput}>handleinput</button>
     </>
   )
 }
