@@ -15,6 +15,7 @@ import Navbar from "./components/Home/Navbar/Navbar";
 import Home from "./components/Home/Home/Home";
 import About from "./components/Home/About/About";
 import Prop1 from "./components/Home/PropDrilling/Prop1";
+import UseRef2 from "./components/context/UseRef2";
 
 function App() {
   console.log("render App");
@@ -64,17 +65,18 @@ function App() {
     </div>
       {/* <Hook/> */}
       <Login_page />
-      {/* <UseEffect1 />
+      <UseEffect1 />
       <Timer/>
       <Click/>
-      <Colors/> */}
+      <Colors/>
 
-      <NoteState>
+      {/* <NoteState>
         <Navbar/>
         <Home/>
         <About/>
-      </NoteState>
+      </NoteState> */}
         <Prop1/>
+        <UseRef2/>
 
 
 
