@@ -11,6 +11,9 @@ import Timer from "./components/Timer";
 import Click from "./components/Click";
 import Colors from "./components/Hooks/Colors";
 import NoteState from "./components/context/notes/NoteState";
+import Navbar from "./components/Home/Navbar/Navbar";
+import Home from "./components/Home/Home/Home";
+import About from "./components/Home/About/About";
 
 function App() {
   console.log("render App");
@@ -66,7 +69,9 @@ function App() {
       <Colors/> */}
 
       <NoteState>
-        
+        <Navbar/>
+        <Home/>
+        <About/>
       </NoteState>
 
 
