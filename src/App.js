@@ -59,10 +59,11 @@ function App() {
     </div>
       {/* <Hook/> */}
       <Login_page />
-      <UseEffect1 />
+      {/* <UseEffect1 />
       <Timer/>
       <Click/>
-      <Colors/>
+      <Colors/> */}
+
 
 
       <h1 style={{height:200}}></h1>
