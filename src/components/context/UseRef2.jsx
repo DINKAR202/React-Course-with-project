@@ -12,13 +12,14 @@ const UseRef2 = () => {
 
     function Reset(){
         setName("");
+        refElement.current.focus()
     }
 
 
   return (
     <>
         <h1><b>Learning useRef</b></h1>
-        <input type="text" value={name} onChange={Submit}></input>
+        <input ref={refElement} type="text" value={name} onChange={Submit}></input>
         <button onClick={Reset}>Reset</button>
     </>
   )
