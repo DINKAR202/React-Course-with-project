@@ -1,11 +1,13 @@
-import './App.css'
-import InputUser from './components/InputUser'
+import React from 'react';
+// import './App.css'
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
 
   return (
     <>
-     < InputUser/>
+    <NavBar/>
+     
     </>
   )
 }
