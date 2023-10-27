@@ -15,5 +15,18 @@ router.get('/about', (req, res) =>{
     });
 });
 
+router.get('/api/products', (req, res) => {
+    res.json([
+        {
+            id: '123',
+            name: 'Chrome'
+        },
+        {
+            id: '124',
+            name: 'Firefox'
+        }
+    ])
+})
+
 
 module.exports = router;    
