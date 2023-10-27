@@ -13,11 +13,15 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res) =>{
-    res.sendFile(path.resolve(__dirname) + '/index.html');
+    res.render('index', {
+        title:'This is Home page'
+    });
 });
 
 app.get('/about', (req, res) =>{
-    res.sendFile(path.resolve(__dirname) + '/about.html');
+    res.render('about', {
+        title:'This is about page'
+    });
 });
 
 
