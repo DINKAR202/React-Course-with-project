@@ -1,11 +1,12 @@
 const express = require("express")
 const app = express();
+const path = require("path");
 
 const PORT = process.env.PORT || 9000;
 
 
 app.get('/', (req, res) =>{
-    res.send('Hello express kaise ho...');
+    res.sendFile(path.resolve(__dirname) + '/index.html');
 });
 
 
