@@ -1,0 +1,12 @@
+.full-Banner{
+    background-color: #5f2a2a;
+}
+
+.text-center{
+    color: white;
+}
+
+.box-model{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
