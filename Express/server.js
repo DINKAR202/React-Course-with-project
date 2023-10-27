@@ -5,7 +5,11 @@ const path = require("path");
 const PORT = process.env.PORT || 9000;
 
 
+app.set('view engine', 'ejs');
+
 app.use(express.static('public'));
+
+
 app.get('/', (req, res) =>{
     res.sendFile(path.resolve(__dirname) + '/index.html');
 });
