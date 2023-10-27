@@ -6,8 +6,8 @@ const PORT = process.env.PORT || 9000;
 
 
 app.set('view engine', 'ejs');
+console.log(app.get('views'));
 
-console.log(app.get('view engine'));
 
 app.use(express.static('public'));
 
