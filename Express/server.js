@@ -2,6 +2,7 @@ const express = require("express")
 const app = express();
 const path = require("path");
 const mainRouter = require('./routes/index.js')
+const productRouter = require('./routes/products.js')
 // const apiKeyMiddleware = require('./middleware/apiKey');
 
 
@@ -13,7 +14,7 @@ console.log(app.get('views'));
 
 // app.use(apiKeyMiddleware);
 app.use(express.static('public'));
-
+app.use(productRouter);
 app.use(mainRouter);
 
 
