@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const apiKeyMiddleware = require('../middleware/apiKey');
+// const apiKeyMiddleware = require('../middleware/apiKey');
 
-router.use(apiKeyMiddleware);
+// router.use(apiKeyMiddleware);
 
 router.get('/', (req, res) =>{
     res.render('index', {
