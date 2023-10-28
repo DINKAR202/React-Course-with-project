@@ -1,5 +1,5 @@
 const router = require('express').Router();
-// const apiKeyMiddleware = require('../middleware/apiKey');
+const apiKeyMiddleware = require('../middleware/apiKey');
 
 // router.use(apiKeyMiddleware);
 
@@ -16,7 +16,7 @@ router.get('/about', (req, res) =>{
     });
 });
 
-router.get('/api/products', (req, res) => {
+router.get('/api/products',apiKeyMiddleware, (req, res) => {
     res.json([
         {
             id: '123',
