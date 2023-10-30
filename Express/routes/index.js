@@ -29,5 +29,11 @@ router.get('/api/products',apiKeyMiddleware, (req, res) => {
     ])
 })
 
+router.get('/cart', (req, res) =>{
+    res.render('cart', {
+        title:'This is Cart page'
+    });
+});
+
 
 module.exports = router;    
