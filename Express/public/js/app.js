@@ -9,14 +9,24 @@ const App = () => {
         fetch('/api/products')
         .then((res) => res.json())
         .then(data => {
-            console.log(data);
-            // setProducts
+            setProducts(data);
         })
     }
     
     return (
         <ul className="list-group">
-             <li className="list-group-item">And a fifth one</li>
+            {
+                products.map((product) => {
+                        return(
+                        <li key={product.id} className="list-group-item">
+                            <div>
+                                <strong>{product.name}: </strong>
+                                ${product.price}
+                            </div>
+                        </li>
+                )
+            })
+            }
         </ul>
     )
 } 
