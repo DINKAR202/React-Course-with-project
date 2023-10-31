@@ -28,12 +28,12 @@ const App = () => {
             <form>
               <input type="text" placeholder="Product Name...." className="form-control mt-3"/>
               <input type="text" placeholder="Product Price...." className="form-control mt-3"/>
-              <button className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary mt-3">Submit</button>
             </form>
         </div>
       </div>
 
-      <ul className="list-group">
+      <ul className="list-group mt-4">
         {products.map((product) => {
           return (
             <li
@@ -61,7 +61,7 @@ const App = () => {
         })}
       </ul>
     </>
-  );
+  )
 };
 
 ReactDOM.render(<App />, document.getElementById("app"));
