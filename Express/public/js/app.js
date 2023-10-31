@@ -20,7 +20,7 @@ const App = () => {
 
 
   function handleSubmit(e) {
-    
+    e.preventDefault();
   }
 
   return (
