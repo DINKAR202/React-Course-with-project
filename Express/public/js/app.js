@@ -1,6 +1,11 @@
 const App = () => {
   const [products, setProducts] = React.useState([]);
 
+  const [form, updateForm] = useState({
+    name: '',
+    price: ''
+  })
+
   React.useEffect(() => {
     fetchProducts();
   }, []);
