@@ -25,7 +25,7 @@ const App = () => {
           Add a product
         </div>
         <div className="card-body">
-            <form>
+            <form onClick={handleSubmit}>
               <input type="text" placeholder="Product Name...." className="form-control mt-3"/>
               <input type="text" placeholder="Product Price...." className="form-control mt-3"/>
               <button type="submit" className="btn btn-primary mt-3">Submit</button>
