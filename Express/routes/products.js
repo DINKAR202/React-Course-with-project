@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const products = require('../productData');
+let products = require('../productData');
 
 
 router.get('/products', (req, res) =>{
