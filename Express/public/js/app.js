@@ -22,9 +22,13 @@ const App = () => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // if(){
+    if(!form.name || !form.price){
+        return;
+    }
 
-    // }
+    fetch('/api/products', {
+      method: 'POST'
+    })
   }
 
   function updateForm(event, field){
