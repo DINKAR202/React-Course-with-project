@@ -1,7 +1,7 @@
 const App = () => {
   const [products, setProducts] = React.useState([]);
 
-  const [form, updateForm] = React.useState({
+  const [form, setForm] = React.useState({
     name: "",
     price: "",
   });
@@ -22,9 +22,13 @@ const App = () => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if(){
+    // if(){
 
-    }
+    // }
+  }
+
+  function updateForm(event, field){
+    
   }
 
   return (
@@ -35,8 +39,8 @@ const App = () => {
         </div>
         <div className="card-body">
             <form onClick={handleSubmit}>
-              <input type="text" value={form.name} placeholder="Product Name...." className="form-control mt-3"/>
-              <input type="text" value={form.price} placeholder="Product Price...." className="form-control mt-3"/>
+              <input type="text" value={form.name} onChange={ () => updateForm(event,'name')} placeholder="Product Name...." className="form-control mt-3"/>
+              <input type="text" value={form.price} onChange={ () => updateForm(event,'price')} placeholder="Product Price...." className="form-control mt-3"/>
               <button type="submit" className="btn btn-primary mt-3">Submit</button>
             </form>
         </div>
