@@ -31,8 +31,13 @@ const App = () => {
     if(field == 'name') {
       setForm({
         ...form,
-        
-      })
+        name: event.target.value
+      });
+    } else if(field == 'price'){
+      setForm({
+        ...form,
+        price: event.target.value
+      });
     }
   }
 
