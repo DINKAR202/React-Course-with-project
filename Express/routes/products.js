@@ -19,11 +19,14 @@ router.post('/api/products', (req, res) => {
         return res.status(422).json({error: 'All fields are required.'})
     }
 
-    products.push({
+    const product = {
         name,
         price,
         id: new Date().getTime().toString()
-    })
+    }
+
+    products.push(product);
+    res.json(product);
     
 })
 

@@ -35,8 +35,9 @@ const App = () => {
     })
     .then(res => res.json())
       .then(data => {
-        console.log(data);
-    })
+        fetchProducts();
+        setForm({name:'', price: ''});
+      })
   }
 
   function updateForm(event, field){
