@@ -21,6 +21,10 @@ const App = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    if(){
+
+    }
   }
 
   return (
@@ -31,8 +35,8 @@ const App = () => {
         </div>
         <div className="card-body">
             <form onClick={handleSubmit}>
-              <input type="text" placeholder="Product Name...." className="form-control mt-3"/>
-              <input type="text" placeholder="Product Price...." className="form-control mt-3"/>
+              <input type="text" value={form.name} placeholder="Product Name...." className="form-control mt-3"/>
+              <input type="text" value={form.price} placeholder="Product Price...." className="form-control mt-3"/>
               <button type="submit" className="btn btn-primary mt-3">Submit</button>
             </form>
         </div>
