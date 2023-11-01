@@ -54,6 +54,16 @@ const App = () => {
     }
   }
 
+  const deleteproduct = (productId) => {
+    fetch(`/api/products/${productId}`, {
+      method: 'DELETE'
+    }).then((res) => json())
+    .then((data) => {
+      fetchProducts();
+      console.log(data)
+    });
+  }
+
   return (
     <>
       <div className="card">
@@ -79,7 +89,7 @@ const App = () => {
               <div>
                 <strong>{product.name}: </strong>${product.price}
               </div>
-              <button className="btn" onClick={}>
+              <button className="btn" onClick={() => deleteproduct(product.id)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

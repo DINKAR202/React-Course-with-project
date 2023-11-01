@@ -31,4 +31,10 @@ router.post('/api/products', (req, res) => {
 })
 
 
+router.delete('/api/products/:productId', (req, res) => {
+    products = products.filter((product) => req.params.productId !== product.id);
+    res.json({status: 'OK'});
+});
+
+
 module.exports = router;
