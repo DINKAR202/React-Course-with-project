@@ -14,6 +14,7 @@ console.log(app.get('views'));
 
 // app.use(apiKeyMiddleware);
 app.use(express.static('public'));
+app.use(express.json());
 app.use(productRouter);
 app.use(mainRouter);
 
