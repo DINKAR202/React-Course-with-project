@@ -28,7 +28,12 @@ const App = () => {
   }
 
   function updateForm(event, field){
-    
+    if(field == 'name') {
+      setForm({
+        ...form,
+        
+      })
+    }
   }
 
   return (
