@@ -20,8 +20,9 @@ router.post('/api/products', (req, res) => {
     }
 
     products.push({
-        name: name,
-        price: price
+        name,
+        price,
+        id: new Date().getTime().toString()
     })
     
 })
