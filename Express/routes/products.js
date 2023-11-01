@@ -18,6 +18,11 @@ router.post('/api/products', (req, res) => {
     if(!name || !price) {
         return res.status(422).json({error: 'All fields are required.'})
     }
+
+    products.push({
+        name: name,
+        price: price
+    })
     
 })
 
