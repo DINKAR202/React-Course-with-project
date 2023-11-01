@@ -27,7 +27,10 @@ const App = () => {
     }
 
     fetch('/api/products', {
-      method: 'POST'
+      method: 'POST',
+      headers: {
+        'content-Type': 'application/json'
+      }
     })
   }
 
