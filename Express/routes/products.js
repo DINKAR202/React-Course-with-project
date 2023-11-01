@@ -12,5 +12,12 @@ router.get('/api/products', (req, res) => {
     res.json(products)
 })
 
+router.post('/api/products', (req, res) => {
+    const {name, price} = req.body;
+
+
+    res.json({})
+})
+
 
 module.exports = router;

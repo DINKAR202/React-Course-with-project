@@ -30,7 +30,12 @@ const App = () => {
       method: 'POST',
       headers: {
         'content-Type': 'application/json'
-      }
+      },
+      body: JSON.stringify(form)
+    })
+    .then(res => res.json())
+      .then(data => {
+        console.log(data);
     })
   }
 
