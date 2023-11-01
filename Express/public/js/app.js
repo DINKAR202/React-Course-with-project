@@ -54,15 +54,15 @@ const App = () => {
     }
   }
 
-  const deleteproduct = (productId) => {
+  const deleteProduct = (productId) => {
     fetch(`/api/products/${productId}`, {
-      method: 'DELETE'
-    }).then((res) => json())
-    .then((data) => {
-      fetchProducts();
-      console.log(data)
+        method: 'DELETE' // PUT , PATCH
+    }).then((res) => res.json())
+      .then((data) => {
+        fetchProducts();
+        console.log(data)
     });
-  }
+}
 
   return (
     <>
@@ -89,7 +89,7 @@ const App = () => {
               <div>
                 <strong>{product.name}: </strong>${product.price}
               </div>
-              <button className="btn" onClick={() => deleteproduct(product.id)}>
+              <button className="btn" onClick={() => deleteProduct(product.id)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
