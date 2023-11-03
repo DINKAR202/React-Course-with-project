@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styled from "styled-components";
 
-function App() {
-  const [count, setCount] = useState(0)
+const Button = styled.button``;
 
-  return (
+
+
+function App(){
+  return(
     <>
-      <div>
-        <h2>Hi there</h2>
-      </div>
+      <Button>Click here guys</Button>
     </>
   )
 }
 
-export default App
+export default App;
