@@ -1,11 +1,11 @@
 import styled from "styled-components"
+import Dice from '../../public/images/dice-.png'
 import '../App.css';
 
 const StartGame = () => {
   return (
     <Container>
-        <img src="../../public/images/dice.jpg" alt="Dice img" />
-
+        <img className="Dice-img" src={Dice} alt="Dice img" />
         <div>
             <h1>Dice Game</h1>
             <Button>Play Now</Button>
@@ -14,10 +14,10 @@ const StartGame = () => {
   )
 }
 
-export default StartGame;
+export default StartGame
 
-const Container = styled.img`
-    max-width: 180px;
+const Container = styled.div`
+    max-width: 1180px;
     display: flex;
     margin: 0 auto;
 `
