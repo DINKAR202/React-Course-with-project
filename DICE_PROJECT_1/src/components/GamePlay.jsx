@@ -8,6 +8,7 @@ const GamePlay = () => {
   const [score, setScore] = useState(0);
   const [selectedNumber, setSelecetedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
+  const [error, setError] = useState()
 
 
   const generateRandomNumber = (min, max) => {
@@ -16,20 +17,23 @@ const GamePlay = () => {
   };
 
   const roleDice = () => {
+    if(!selectedNumber){
+      setError("You have not selected any number!")
+      return
+    }
+    // setError("");
     const randomNumber = generateRandomNumber(1, 7);
     setCurrentDice((prev) => randomNumber);
   
-    if(!selectedNumber) return;
 
 
     if(selectedNumber === randomNumber){
       setScore((prev)=> prev + randomNumber);
     }else{
-      setScore((prev) prev - 2); 
+      setScore((prev) => prev - 2); 
     }
 
-    setSelecetedNumber(undefined)
-  
+    setSelecetedNumber(undefined);
   };
   
 
@@ -37,7 +41,7 @@ const GamePlay = () => {
     <MainContainer>
       <div className="top_section">
         <TotalScore score={score} />
-        <NumberSelector selectedNumber={selectedNumber}
+        <NumberSelector error={error} setError={setError} selectedNumber={selectedNumber}
         setSelecetedNumber={setSelecetedNumber}
         />
       </div>
