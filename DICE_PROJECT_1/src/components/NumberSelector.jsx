@@ -9,7 +9,8 @@ const NumberSelector = () => {
 
 
   return (
-    <div>
+    <NumberSelectorContainer>
+    <div className="flex">
         {
             arrNumber.map((value, i) => (
                 <Box
@@ -19,17 +20,28 @@ const NumberSelector = () => {
                 >{value}</Box>
             ))
         }
-        {/* <Box>1</Box>
-        <Box>2</Box>
-        <Box>3</Box>
-        <Box>4</Box>
-        <Box>5</Box>
-        <Box>6</Box> */}
-    </div>   
+    </div>
+    <p>Select Number</p>
+    </NumberSelectorContainer>   
   )
 }
 
 export default NumberSelector
+
+const NumberSelectorContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .flex{
+        display: flex;
+        gap: 24px;
+    }
+    p{
+        font-size: 24px;
+        font-weight: 700;
+    }
+`
 
 const Box = styled.div`
     height: 52px;
@@ -38,4 +50,6 @@ const Box = styled.div`
     display: grid;
     place-items: center;
     font-weight: 700;
+    background-color: ${(props) => (props.isSelecetd ? "black" : "white")};
+    color: ${(props) => (!props.isSelecetd ? "black" : "white")};
 `
