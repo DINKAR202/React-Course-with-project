@@ -5,6 +5,7 @@ import RoleDice from "./RoleDice"
 import { useState } from "react"
 import { Button, OutlineButton } from "./styled/Button"
 import Rules from "./Rules"
+import CopyRight from "./CopyRight"
 
 const GamePlay = () => {
   const [score, setScore] = useState(0);
@@ -45,7 +46,8 @@ const GamePlay = () => {
   
 
   return (
-    <MainContainer>
+    <>
+      <MainContainer>
       <div className="top_section">
         <TotalScore score={score} />
         <NumberSelector error={error} setError={setError} selectedNumber={selectedNumber}
@@ -62,8 +64,9 @@ const GamePlay = () => {
         >{showRules ? "Hide" : "Show"} Rules</Button>
       </div>
       {showRules && <Rules/>}
-
     </MainContainer>
+    <CopyRight />
+    </>
   )
 }
 

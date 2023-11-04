@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Dice from '../../public/images/dice-.png'
 import '../App.css';
 import { Button } from "./styled/Button";
+import CopyRight from "./CopyRight";
 
 const StartGame = ({ toggle }) => {
   return (
@@ -16,9 +17,8 @@ const StartGame = ({ toggle }) => {
             onClick={toggle}
             >Play Now</Button>
         </div>
-
     </Container>
-        <Copy><small>Copyright &copy;  2023 <b>AditiDev.</b></small></Copy>
+    <CopyRight />
     </>
   )
 }
@@ -27,7 +27,7 @@ export default StartGame
 
 const Container = styled.div`
     max-width: 1180px;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -36,11 +36,4 @@ const Container = styled.div`
         font-size: 96px;
         white-space: nowrap;
     }
-`
-
-const Copy = styled.div`
-        background-color: black;
-        color: white;
-        padding: 5px;
-        text-align: center;
 `
