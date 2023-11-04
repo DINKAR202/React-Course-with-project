@@ -41,11 +41,12 @@ const Button = styled.button`
     font-size: 16px;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: 0.5s ease-in;
+    transition: 0.4s background ease-in;
 
     &:hover{
         background-color: white;
         border: 1px solid black;
         color: black;
+        transition: 0.3s background ease-in;
     }
 `
