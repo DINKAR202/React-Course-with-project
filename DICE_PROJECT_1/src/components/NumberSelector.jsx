@@ -24,7 +24,7 @@ const NumberSelector = ({setError, error, selectedNumber, setSelecetedNumber}) =
             ))
         }
     </div>
-    <p>Select Number</p>
+    <p>Select Number...</p>
     </NumberSelectorContainer>   
   )
 }
@@ -43,6 +43,7 @@ const NumberSelectorContainer = styled.div`
     p{
         font-size: 24px;
         font-weight: 700;
+        margin-top: 10px;
     }
     .error{
         color: red;

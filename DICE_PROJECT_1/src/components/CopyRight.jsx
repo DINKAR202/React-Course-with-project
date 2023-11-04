@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const CopyRight = () => {
   return (
-        <Copy><small>Copyright &copy;  2023 <b>AditiDev.</b></small></Copy>
+        <Copy><small>Copyright &copy;  2023 <b className="name">AditiDev.</b></small></Copy>
   )
 }
 
@@ -14,4 +14,8 @@ const Copy = styled.div`
         padding: 5px;
         text-align: center;
         margin-top: 9px;
-`
+
+        .name{
+          color: red;
+        }
+`;
