@@ -13,7 +13,7 @@ const CopyRight = () => {
 export default CopyRight;
 
 const Copy = styled.div`
-  margin-top: -25px !important;
+  /* margin-top: -25px !important; */
   background-color: black;
   color: white;
   padding: 5px;
