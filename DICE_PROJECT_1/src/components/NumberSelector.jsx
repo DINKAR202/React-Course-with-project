@@ -1,7 +1,11 @@
+import { useState } from "react";
 import styled from "styled-components"
 
 const NumberSelector = () => {
-    const arrNumber = [1,2,3,4,5,6]
+    const arrNumber = [1,2,3,4,5,6];
+    const [selectedNumber, setSelecetedNumber] = useState()
+
+
 
 
   return (
@@ -9,7 +13,10 @@ const NumberSelector = () => {
         {
             arrNumber.map((value, i) => (
                 <Box
-                key={i}>{value}</Box>
+                isSelecetd = {value === selectedNumber}
+                key={i}
+                onClick={() => setSelecetedNumber(value)}
+                >{value}</Box>
             ))
         }
         {/* <Box>1</Box>
