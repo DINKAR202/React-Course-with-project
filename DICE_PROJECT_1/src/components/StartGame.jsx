@@ -29,7 +29,7 @@ export default StartGame
 
 const Container = styled.div`
     max-width: 1180px;
-    height: 86.5vh;
+    height: 100vh;
     display: flex;
     margin: 0 auto;
     align-items: center;
