@@ -40,4 +40,12 @@ const Button = styled.button`
     border: none;
     font-size: 16px;
     cursor: pointer;
+    border: 1px solid transparent;
+
+    &:hover{
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        transition: 0.5s ease-out;
+    }
 `
