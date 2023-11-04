@@ -3,10 +3,12 @@ import Dice from '../../public/images/dice-.png'
 import '../App.css';
 import { Button } from "./styled/Button";
 import CopyRight from "./CopyRight";
+import NavBar from "./NavBar";
 
 const StartGame = ({ toggle }) => {
   return (
     <>
+    <NavBar />
     <Container>
         <div>
             <img className="Dice-img" src={Dice} alt="Dice img" />
@@ -27,7 +29,7 @@ export default StartGame
 
 const Container = styled.div`
     max-width: 1180px;
-    height: 95vh;
+    height: 86.5vh;
     display: flex;
     margin: 0 auto;
     align-items: center;
