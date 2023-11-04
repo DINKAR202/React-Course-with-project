@@ -5,6 +5,7 @@ import { Button } from "./styled/Button";
 
 const StartGame = ({ toggle }) => {
   return (
+    <>
     <Container>
         <div>
             <img className="Dice-img" src={Dice} alt="Dice img" />
@@ -15,7 +16,10 @@ const StartGame = ({ toggle }) => {
             onClick={toggle}
             >Play Now</Button>
         </div>
+
     </Container>
+        <Copy><small>Copyright &copy;  2023 <b>AditiDev.</b></small></Copy>
+    </>
   )
 }
 
@@ -34,3 +38,9 @@ const Container = styled.div`
     }
 `
 
+const Copy = styled.div`
+        background-color: black;
+        color: white;
+        padding: 5px;
+        text-align: center;
+`

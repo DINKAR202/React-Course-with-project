@@ -32,6 +32,7 @@ const DiceContainer = styled.div`
     }
 
     p{
+      text-align: center;
       font-size: 24px;
     }
 `
