@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 
 const RoleDice = () => {
-  const [currentDice, setCurrentDice] = useState();
+  const [currentDice, setCurrentDice] = useState(1);
 
   const generateRandomNumber = (min, max) => {
     console.log(Math.floor(Math.random() * (max-min) + min))
@@ -20,7 +20,7 @@ const RoleDice = () => {
       <div className="dice"
         onClick={roleDice}
       >
-        <img src="/public/images/dice/dice_1.png" alt="dice 1" />
+        <img src={`/public/images/dice/dice_&{currentDice}.png`} alt="dice 1" />
         <p>Click on Dice to roll</p>
       </div>
     </DiceContainer>
