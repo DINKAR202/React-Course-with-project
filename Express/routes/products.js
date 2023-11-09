@@ -4,7 +4,7 @@ let products = require('../productData');
 
 router.get('/products', (req, res) =>{
     res.render('products', {
-        title:'This is products page'
+        title:'This is products page welcome here!'
     });
 });
 
