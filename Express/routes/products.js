@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const ErrorHandeler = require('../errors/ErrorHandeler');
 let products = require('../productData');
 
 
@@ -16,7 +17,8 @@ router.post('/api/products', (req, res) => {
     const {name, price} = req.body;
 
     if(!name || !price) {
-        throw new Error('All fields are required!');
+        ErrorHandeler.notFoundError();
+        // throw new Error('All fields are required!');
         // return res.status(422).json({error: 'All fields are required.'})
     }
 

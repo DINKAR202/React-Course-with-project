@@ -14,3 +14,5 @@ const ErrorHandeler {
     }
     
 }
+
+module.exports = ErrorHandeler;
