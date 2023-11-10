@@ -29,8 +29,22 @@ app.use((req, res, next) => {
 
 
 app.use((err, req, res, next)=>{
-    console.log('Error', err.message);
-    res.status(422).json({message: err.message});
+    if(err instanceof ErrorHandeler) {
+        res.json({
+            error: {
+                message: err.message,
+                status: err.status
+            }
+        });
+    }
+    else{
+        res.status(500).json({
+            error: {
+                message: err.message,
+                status: err.status
+            }
+        });
+    }
 });
 
 app.listen(PORT, () => {
