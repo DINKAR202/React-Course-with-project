@@ -3,6 +3,8 @@ const app = express();
 const path = require("path");
 const mainRouter = require('./routes/index.js')
 const productRouter = require('./routes/products.js')
+const ErrorHandeler = require('./errors/ErrorHandeler');
+
 // const apiKeyMiddleware = require('./middleware/apiKey');
 
 
