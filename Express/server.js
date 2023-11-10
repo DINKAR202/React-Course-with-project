@@ -18,6 +18,10 @@ app.use(express.json());
 app.use(productRouter);
 app.use(mainRouter);
 
+app.use(() => {
+    
+});
+
 
 app.listen(PORT, () => {
     console.log(`Listing app is ${PORT}`);
