@@ -16,7 +16,8 @@ router.post('/api/products', (req, res) => {
     const {name, price} = req.body;
 
     if(!name || !price) {
-        return res.status(422).json({error: 'All fields are required.'})
+        throw new Error('All fields are required!');
+        // return res.status(422).json({error: 'All fields are required.'})
     }
 
     const product = {

@@ -21,7 +21,8 @@ app.use(mainRouter);
 app.use((req, res, next) => {
 
 
-    return res.json
+    return res.json({message: 'page not found!'});
+    
 });
 
 
