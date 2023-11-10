@@ -18,8 +18,10 @@ app.use(express.json());
 app.use(productRouter);
 app.use(mainRouter);
 
-app.use(() => {
-    
+app.use((req, res, next) => {
+
+
+    return res.json
 });
 
 
