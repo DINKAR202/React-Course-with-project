@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -11,7 +11,7 @@ const Signup = () => {
     password: "",
   });
 
-  const [error, useError] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleChange = ({ currentTarget: input }) => {
@@ -26,13 +26,7 @@ const Signup = () => {
       navigate("/login");
       console.log(res.message);
     } catch (error) {
-      if (
-        error.response &&
-        error.response.status >= 400 &&
-        error.response.status <= 500
-      ) {
-        setError(error.response.data.message)
-      }
+      setError("An error occurred. Please try again."); // Broad error message for axios issues
     }
   };
 
@@ -71,7 +65,7 @@ const Signup = () => {
             <input
               type="email"
               placeholder="Email"
-              name="Email"
+              name="email"
               onChange={handleChange}
               value={data.email}
               required
@@ -80,13 +74,13 @@ const Signup = () => {
             <input
               type="password"
               placeholder="Password"
-              name="Password"
+              name="password"
               onChange={handleChange}
               value={data.password}
               required
               className={styles.input}
             />
-            
+            {error && <div className={styles.error_msg}>{error}</div>}
             <button type="submit" className={styles.green_btn}>
               Signup
             </button>
