@@ -5,3 +5,4 @@ const d = 100;
 console.log(a+b+c+d);
 
 const g = 150;
+const h = 200;
