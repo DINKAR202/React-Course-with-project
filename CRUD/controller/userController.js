@@ -10,7 +10,9 @@ export const fetch = async(req, res) => {
 
 export const create = async(req, res) => {
     try {
+        const userData = new User(req.body);
         
+
     } catch (error) {
         res.status(500).json({error: "Internal server error"});
     }
