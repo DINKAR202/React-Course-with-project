@@ -2,4 +2,7 @@ import { express } from 'express';
 
 const route = express.Router();
 
-route.get("/")
+route.get("/fetch", (req, res)=>{
+    res.json("Hello user")
+})
+
