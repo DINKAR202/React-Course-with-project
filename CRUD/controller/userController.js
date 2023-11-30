@@ -17,7 +17,7 @@ export const create = async(req, res) => {
             return res.status(400).json({message: "User already exist! "});
         }
         const saveUser = await userData.save();
-        res.status(200).json(saveUser);
+        res.status(200).json(savedUser);
 
     } catch (error) {
         res.status(500).json({error: "Internal server error"});
