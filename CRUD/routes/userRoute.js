@@ -6,3 +6,4 @@ route.get("/fetch", (req, res)=>{
     res.json("Hello user")
 })
 
+export default route
