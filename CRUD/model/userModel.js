@@ -1,8 +1,8 @@
-const a = 10;
-const b = 30;
-const c = 50;
-const d = 100;
-console.log(a+b+c+d);
+import { Mongoose } from "mongoose";
 
-const g = 150;
-const h = 200;
+const userSchema = new mongoose.Schema({
+    name:{
+        type: String,
+        required: true,
+    },
+})
