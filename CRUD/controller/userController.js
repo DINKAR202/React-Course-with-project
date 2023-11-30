@@ -12,6 +12,10 @@ export const create = async(req, res) => {
     try {
         const userData = new User(req.body);
         const {email} = userData;
+        const userExit = await User.findOne({email});
+        if(userExit){
+            
+        }
 
     } catch (error) {
         res.status(500).json({error: "Internal server error"});
