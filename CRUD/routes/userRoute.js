@@ -7,3 +7,5 @@ route.get("/fetch", fetch);
 route.post('/create', create);
 
 export default route;
+
+const ab = 100;
