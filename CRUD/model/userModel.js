@@ -23,3 +23,4 @@ export default mongoose.model("user", userSchema)
 // Hain sb thik hai
 // hn sb thik hain 
 // Okay bhai sb thik hain
+// hn thik
