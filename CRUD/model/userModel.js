@@ -1,4 +1,4 @@
-RTimport mongoose from "mongoose";
+36RTimport mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
     name:{
@@ -30,4 +30,5 @@ export default mongoose.model("user", userSchema)
 // Hi there kaise sb thik h
 // ok aur btatao
 // mera wla thik h
+// bas aaj tk
 // sb thik hai 
