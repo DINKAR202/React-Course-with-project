@@ -39,7 +39,7 @@ export default mongoose.model("user", userSchema)
 
 // okay 
 
-
+// thik hai 
 
 
 
