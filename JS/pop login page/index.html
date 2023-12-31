@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPUP log in page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="btn-login">Login</button>
+
+    <div class="overlay" onclick="closeModel()"></div>
+
+    <div class="loginform">
+        <span onclick="closeModel()"> &times;  </span>
+        <form action="">
+            <div>
+                <label for="">UserName</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password">
+            </div>
+            <button>Login</button>
+        </form>
+    </div>
+
+    </body>
+    <script>
+        function showModel(){
+            document.querySelector('.overlay').classList.add('showoverlay')
+            document.querySelector('.loginform').classList.add('showloginform')
+        }
+
+        function closeModel(){
+            document.querySelector('.overlay').classList.remove('showoverlay')
+            document.querySelector('.loginform').classList.remove('showloginform')
+        }
+            
+            var btnlogin = document.querySelector(".btn-login");
+            btnlogin.addEventListener("click",showModel)
+
+            // var c = document.querySelector(".closebutton");
+            // c.addEventListener("click,closeModel")
+    </script>
+</html>
