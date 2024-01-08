@@ -10,17 +10,8 @@ export default route;
 
 // const ab = 100;
 // const d = 200;
-
-
-
-
-
-
-
-
-
-
-
-
 // thik hian
 // okay
+// aaj  bho skip
+// Aaj bhi aise hi chalo thik
+// Aaj bhi chalo aise hi
