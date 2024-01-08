@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const {home, register} = require("../controllers/auth-controller");
+const authcontrollers = require("../controllers/auth-controller");
 
 // router.get("/", (req, res)=>{
 //     res.status(200).send("Welcome to Home page Using Router This is priti here");
@@ -10,15 +10,11 @@ const {home, register} = require("../controllers/auth-controller");
 //     res.status(200).send("Welcome to Register page Using Router");
 // });
 
-router.route("/").get(home);
+router.route("/").get(authcontrollers.home);
 
-router.route("/register").get(register)
+router.route("/register").get(authcontrollers.register)
 
 // This is second option of using Router
-router.route("/second").get((req, res) => {
-    res
-        .status(200)
-        .send("This is second option of using Router");
-});
+router.route("/login").get(authcontrollers.login);
 
 module.exports = router;
