@@ -1,4 +1,11 @@
 const express = require("express");
 const app = express();
 
-app.get("")
+app.get("/", (req, res)=>{
+    res.status(200).send("Welcome to Home page");
+});
+
+const PORT = 5000;
+app.listen(PORT, () =>{
+    console.log(`Server is running at port: ${PORT}`);
+});
