@@ -30,7 +30,7 @@ const register = async (req, res) => {
         const saltRound = 10;
         const hash_password = await bcrypt.hash(password, saltRound);
 
-        const userCreated = await User.create({ username, email, phone, password });
+        const userCreated = await User.create({ username, email, phone, password: hash_password });
 
         res.status(200).json({msg: userCreated });
     } catch (error) {
