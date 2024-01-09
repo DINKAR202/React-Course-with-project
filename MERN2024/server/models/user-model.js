@@ -23,5 +23,12 @@ const userSchema = new mongoose.Schema({
     },
 });
 
+
+// Secure the password with the bcrypt
+userSchema.pre('save', function(){
+    
+})
+
+// Define the model or the collection name
 const User = new mongoose.model("User", userSchema);
 module.exports = User;
