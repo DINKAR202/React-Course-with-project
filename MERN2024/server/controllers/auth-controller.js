@@ -1,4 +1,4 @@
-
+const User = require("../models/user-model");
 
 const home = async (req, res) => {
     try {
@@ -17,7 +17,14 @@ const home = async (req, res) => {
 const register = async (req, res) => {
     try {
         console.log(req.body);
-        const data = req.body;
+        const {username, email, phone, password} = req.body;
+        const userExit = User.findOne({email: email});
+        if(userExit) {
+            return res.status(400).json({msg: "email already exists"});
+        }
+
+        await User.create({ username, email, phone, password });
+
         res.status(200).json({data});
     } catch (error) {
         res.status(500).json("internal server error")        
