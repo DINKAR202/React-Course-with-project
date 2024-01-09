@@ -31,7 +31,13 @@ const register = async (req, res) => {
     const userCreated = await User.create({ username, email, phone, password });
 
     // Adding Token function JWT
-    res.status(201).json({ msg: userCreated, token: await userCreated.generateToken() });
+    res
+      .status(201)
+      .json({
+        msg: userCreated,
+        token: await userCreated.generateToken(),
+        userId: userCreated._id.toString(),
+      });
   } catch (error) {
     res.status(500).json("internal server error");
   }
