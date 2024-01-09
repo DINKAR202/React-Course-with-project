@@ -15,6 +15,6 @@ router.route("/").get(authcontrollers.home);
 router.route("/register").post(authcontrollers.register)
 
 // This is second option of using Router
-router.route("/login").get(authcontrollers.login);
+// router.route("/login").get(authcontrollers.login);
 
 module.exports = router;

@@ -43,8 +43,8 @@ const register = async (req, res) => {
   }
 };
 
-const login = async (req, res) => {
-  res.status(201).send("This is login page using Controllers");
-};
+// const login = async (req, res) => {
+//   res.status(201).send("This is login page using Controllers");
+// };
 
-module.exports = { home, register, login };
+module.exports = { home, register };

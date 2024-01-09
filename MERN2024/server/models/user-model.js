@@ -53,7 +53,7 @@ userSchema.methods.generateToken = async function () {
       },
       process.env.JWT_SECRECT_KEY,
       {
-        expiresIn: "30",
+        expiresIn: "30d",
       }
     );
   } catch (error) {
