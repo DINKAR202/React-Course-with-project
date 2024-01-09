@@ -25,8 +25,8 @@ const userSchema = new mongoose.Schema({
 
 
 // Secure the password with the bcrypt
-userSchema.pre('save', function(){
-    
+userSchema.pre('save', async function(){
+    console.log("pre method", this)
 })
 
 // Define the model or the collection name
