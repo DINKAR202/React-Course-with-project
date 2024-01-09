@@ -11,4 +11,6 @@ const connectDb = async () => {
         console.log("database connection failed");
         process.exit(0);
     }
-}
+};
+
+module.exports = connectDb;
