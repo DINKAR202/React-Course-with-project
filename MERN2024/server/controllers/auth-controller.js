@@ -18,7 +18,7 @@ const register = async (req, res) => {
     try {
         console.log(req.body);
         const {username, email, phone, password} = req.body;
-        const userExit = User.findOne({email: email});
+        const userExit = await User.findOne({email});
         if(userExit) {
             return res.status(400).json({msg: "email already exists"});
         }
