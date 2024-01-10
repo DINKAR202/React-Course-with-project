@@ -31,20 +31,18 @@ const register = async (req, res) => {
     const userCreated = await User.create({ username, email, phone, password });
 
     // Adding Token function JWT
-    res
-      .status(201)
-      .json({
-        msg: userCreated,
-        token: await userCreated.generateToken(),
-        userId: userCreated._id.toString(),
-      });
+    res.status(201).json({
+      msg: "Registration sucessful",
+      token: await userCreated.generateToken(),
+      userId: userCreated._id.toString(),
+    });
   } catch (error) {
     res.status(500).json("internal server error");
   }
 };
 
-// const login = async (req, res) => {
-//   res.status(201).send("This is login page using Controllers");
-// };
+const login = async (req, res) => {
+  res.status(201).send("This is login page using Controllers");
+};
 
-module.exports = { home, register };
+module.exports = { home, register, login };
