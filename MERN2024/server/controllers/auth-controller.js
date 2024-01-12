@@ -62,8 +62,8 @@ const login = async (req, res) => {
     if(user){
       res.status(200).json({
         msg: "Login Successful",
-        token: await userCreated.generateToken(),
-        userId: userCreated._id.toString(),
+        token: await userExit.generateToken(),
+        userId: userExit._id.toString(),
       });
     }else{
       res.status(401).json({ message : "Invalid email or password"});
