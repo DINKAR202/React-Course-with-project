@@ -48,7 +48,11 @@ const register = async (req, res) => {
 
 const login = async (req, res) => {
   try {
-    
+    const {email, password} = req.body;
+
+    const userExit = await User.findOne({ email });
+
+
   } catch (error) {
     res.status(500).json("internal server error");
   }
