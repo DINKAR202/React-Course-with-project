@@ -44,6 +44,8 @@ const register = async (req, res) => {
   }
 };
 
+
+
 // User login logic
 
 const login = async (req, res) => {
