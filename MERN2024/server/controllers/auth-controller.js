@@ -52,6 +52,10 @@ const login = async (req, res) => {
 
     const userExit = await User.findOne({ email });
 
+    if(!userExit){
+      return res.status(400).json({  message: "Invalid Credentials"});
+    }
+
 
   } catch (error) {
     res.status(500).json("internal server error");
