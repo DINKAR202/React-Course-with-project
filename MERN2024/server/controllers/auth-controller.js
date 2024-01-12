@@ -51,11 +51,13 @@ const login = async (req, res) => {
     const {email, password} = req.body;
 
     const userExit = await User.findOne({ email });
+    console.log(userExit)
 
     if(!userExit){
       return res.status(400).json({  message: "Invalid Credentials"});
     }
 
+    const user = await bcrypt.compare(password, userExit.password);
 
   } catch (error) {
     res.status(500).json("internal server error");
