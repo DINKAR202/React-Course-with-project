@@ -44,8 +44,15 @@ const register = async (req, res) => {
   }
 };
 
-// const login = async (req, res) => {
-//   res.status(201).send("This is login page using Controllers");
-// };
+// User login logic
+
+const login = async (req, res) => {
+  try {
+    
+  } catch (error) {
+    res.status(500).json("internal server error");
+  }
+  // res.status(201).send("This is login page using Controllers");
+};
 
 module.exports = { home, register, login };

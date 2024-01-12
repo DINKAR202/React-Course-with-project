@@ -3,11 +3,10 @@ const router = express.Router();
 const authcontrollers = require("../controllers/auth-controller");
 
 router.route("/").get(authcontrollers.home);
-
 router.route("/register").post(authcontrollers.register)
+router.route("/login").post(authcontrollers.login);
 
 // This is second option of using Router
-// router.route("/login").get(authcontrollers.login);
 
 module.exports = router;
 
