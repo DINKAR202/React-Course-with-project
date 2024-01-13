@@ -1,4 +1,4 @@
-const { Schema, model, default: mongoose } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const contactSchema = new Schema({
     username: { type: String, required: true},
@@ -8,4 +8,6 @@ const contactSchema = new Schema({
 
 
 // Create a model or a collection
+const Contact = new model("Contact", contactSchema);
 
+module.exports = Contact;
