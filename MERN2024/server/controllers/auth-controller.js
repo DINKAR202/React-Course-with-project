@@ -40,7 +40,8 @@ const register = async (req, res) => {
       userId: userCreated._id.toString(),
     });
   } catch (error) {
-    res.status(500).json("internal server error");
+    // res.status(500).json("internal server error");
+    next(error);
   }
 };
 
@@ -61,7 +62,7 @@ const login = async (req, res) => {
 
     // const user = await bcrypt.compare(password, userExit.password);
     const user = await userExit.comparePassword(password);
-    
+
 
     if(user){
       res.status(200).json({
