@@ -1,5 +1,6 @@
 const { z } = require("zod");
 
+// Using zod checking the valid object!
 // Creating an object schema
 const signupSchema = z.object({
   username: z
