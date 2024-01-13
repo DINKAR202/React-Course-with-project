@@ -1,6 +1,18 @@
 const Register = () => {
   return (
-    <div>Register</div>
+    <>
+      <section>
+        <main>
+          <div className="section-registration">
+            <div className="container grid grid-two-cols">
+              <div className="registration-image">
+                
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+    </>
   )
 }
 
