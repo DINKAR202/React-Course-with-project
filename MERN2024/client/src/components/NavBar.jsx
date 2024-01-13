@@ -1,58 +1,27 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
 const NavBar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-dark">
-        <div className="container">
-          <a className="navbar-brand text-white" href="#">
-            Navbar
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active text-white" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/service">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/contact">
-                  Contact
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/register">
-                  Register
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/login">
-                  Login
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar expand="lg" className="bg-dark">
+        <Container>
+          <Navbar.Brand className="text-white" href="/"><b>LOGO</b></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mx-auto">
+              <Nav.Link className="text-white" href="#home">Home</Nav.Link>
+              <Nav.Link href="/about" className="text-white">About</Nav.Link>
+              <Nav.Link href="/service" className="text-white">Service</Nav.Link>
+              <Nav.Link href="/contact" className="text-white">Contact</Nav.Link>
+              <Nav.Link href="/login" className="text-white">login</Nav.Link>
+              <Nav.Link href="/register" className="text-white">Register</Nav.Link>
+              
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   );
 };
