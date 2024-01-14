@@ -21,6 +21,11 @@ const Register = () => {
       });
     };
 
+    // Handling the form submission
+     const handleSubmit = () => {
+      
+     }
+
   return (
     <>
       <section>
