@@ -19,7 +19,10 @@ const Register = () => {
                 <br />
 
                 <form action="">
-                  
+                  <div>
+                    <label htmlFor="username">username</label>
+                    <input type="text" name="username" value={} placeholder="username"/>
+                  </div>
                 </form>
               </div>
             </div>
