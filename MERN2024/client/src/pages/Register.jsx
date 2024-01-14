@@ -13,6 +13,7 @@ const Register = () => {
     const handleInput = (e) =>{
       console.log(e);
       let name = e.target.name;
+      let value = e.target.value;
     }
 
   return (
@@ -29,7 +30,9 @@ const Register = () => {
                   height="500"
                 />
               </div>
+
               {/* let tackle registration form */}
+              
               <div className="registration-form col-lg-6">
                 <h1 className="main-heading mb-3">Registration Form</h1>
                 <br />
