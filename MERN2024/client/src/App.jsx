@@ -6,6 +6,7 @@ import Service from "./pages/Service";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import NavBar from "./components/NavBar";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
