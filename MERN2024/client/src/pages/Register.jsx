@@ -22,8 +22,8 @@ const Register = () => {
     };
 
     // Handling the form submission
-     const handleSubmit = () => {
-      
+     const handleSubmit = (e) => {
+        e.preventDefault();
      }
 
   return (
