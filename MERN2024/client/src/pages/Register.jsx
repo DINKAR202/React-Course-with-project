@@ -10,8 +10,8 @@ const Register = () => {
   });
 
   // Handling the input value
-    const handleInput () =>{
-      log
+    const handleInput = (e) =>{
+      console.log(e);
     }
 
   return (
