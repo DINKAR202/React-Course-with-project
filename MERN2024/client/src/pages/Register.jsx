@@ -42,7 +42,7 @@ const Register = () => {
                 <h1 className="main-heading mb-3">Registration Form</h1>
                 <br />
 
-                <form action="">
+                <form onSubmit={handleSubmit}>
                   <div>
                     <label htmlFor="username">username</label>
                     <input
