@@ -10,6 +10,9 @@ const Register = () => {
   });
 
   // Handling the input value
+    const handleInput () =>{
+      log
+    }
 
   return (
     <>
