@@ -3,7 +3,7 @@ import { useState } from "react";
 const Register = () => {
 
   const [user, setUser] = useState({
-      username: "",
+      username: "dinkar",
       email: "",
       phone: "",
       password: "",
@@ -12,6 +12,7 @@ const Register = () => {
   // Handling the input value
     const handleInput = (e) =>{
       console.log(e);
+      let name = e.target.name;
     }
 
   return (
@@ -57,6 +58,7 @@ const Register = () => {
                       id="email"
                       required
                       autoComplete="off"
+                      // value={user.email}
                     />
                   </div>
                   <div>
@@ -68,6 +70,7 @@ const Register = () => {
                       id="phone"
                       required
                       autoComplete="off"
+                      // value={user.phone}
                     />
                   </div>
                   <div>
@@ -79,6 +82,7 @@ const Register = () => {
                       id="password"
                       required
                       autoComplete="off"
+                      // value={user.password}
                     />
                   </div>
                   <button type="submit" className="btn btn-submit btn-primary" >Register bow</button>
