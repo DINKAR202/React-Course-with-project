@@ -76,6 +76,7 @@ const Register = () => {
                       onChange={handleInput}
                     />
                   </div>
+
                   <div>
                     <label htmlFor="phone">phone</label>
                     <input
@@ -89,6 +90,7 @@ const Register = () => {
                       onChange={handleInput}
                     />
                   </div>
+                  
                   <div>
                     <label htmlFor="password">password</label>
                     <input
@@ -102,7 +104,7 @@ const Register = () => {
                       onChange={handleInput}
                     />
                   </div>
-                  <button type="submit" className="btn btn-submit btn-primary" >Register bow</button>
+                  <button type="submit" className="btn btn-submit btn-primary" >Register now</button>
                 </form>
               </div>
             </div>

@@ -1,27 +1,39 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const NavBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-dark">
-        <Container>
-          <Navbar.Brand className="text-white" href="/"><b>LOGO</b></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto">
-              <Nav.Link className="text-white" href="/">Home</Nav.Link>
-              <Nav.Link href="/about" className="text-white">About</Nav.Link>
-              <Nav.Link href="/service" className="text-white">Services</Nav.Link>
-              <Nav.Link href="/contact" className="text-white">Contact</Nav.Link>
-              <Nav.Link href="/login" className="text-white">login</Nav.Link>
-              <Nav.Link href="/register" className="text-white">Register</Nav.Link>
-              
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <header>
+        <div className="container">
+          <div className="logo-brand">
+            <NavLink to="/">MERN2024</NavLink>
+          </div>
+
+          <nav>
+            <ul>
+              <li>
+                <NavLink to="/"> Home </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about"> About </NavLink>
+              </li>
+              <li>
+                <NavLink to="/service"> Services </NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact"> Contact </NavLink>
+              </li>
+              <li>
+                <NavLink to="/register"> Register </NavLink>
+              </li>
+              <li>
+                <NavLink to="/login"> Login </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </>
   );
 };
