@@ -1,4 +1,16 @@
+import { useState } from "react";
+
 const Register = () => {
+
+  const [user, setUser] = useState({
+      username: "",
+      email: "",
+      phone: "",
+      password: "",
+  });
+
+  // Handling the input value
+
   return (
     <>
       <section>
@@ -28,6 +40,8 @@ const Register = () => {
                       id="username"
                       required
                       autoComplete="off"
+                      value={user.username}
+                      onChange={handleInput}
                     />
                   </div>
 
@@ -42,7 +56,29 @@ const Register = () => {
                       autoComplete="off"
                     />
                   </div>
-
+                  <div>
+                    <label htmlFor="phone">phone</label>
+                    <input
+                      type="number"
+                      name="phone"
+                      placeholder="phone"
+                      id="phone"
+                      required
+                      autoComplete="off"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="password">password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="password"
+                      id="password"
+                      required
+                      autoComplete="off"
+                    />
+                  </div>
+                  <button type="submit" className="btn btn-submit btn-primary" >Register bow</button>
                 </form>
               </div>
             </div>
