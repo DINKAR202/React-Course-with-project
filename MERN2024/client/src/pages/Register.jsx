@@ -13,6 +13,7 @@ const Register = () => {
                   height="500"
                 />
               </div>
+              {/* let tackle registration form */}
             </div>
           </div>
         </main>
