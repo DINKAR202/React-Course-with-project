@@ -3,9 +3,9 @@ const Register = () => {
     <>
       <section>
         <main>
-          <div className="section-registration">
-            <div className="container grid grid-two-cols">
-              <div className="registration-image">
+          <div className="section-registration container">
+            <div className="row">
+              <div className="registration-image col-lg-6">
                 <img
                   src="../../public/images/register.png"
                   alt="Left side of image error! "
@@ -14,6 +14,14 @@ const Register = () => {
                 />
               </div>
               {/* let tackle registration form */}
+              <div className="registration-form col-lg-6">
+                <h1 className="main-heading mb-3">Registration Form</h1>
+                <br />
+
+                <form action="">
+                  
+                </form>
+              </div>
             </div>
           </div>
         </main>
