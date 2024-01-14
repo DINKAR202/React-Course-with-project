@@ -66,7 +66,8 @@ const Register = () => {
                       id="email"
                       required
                       autoComplete="off"
-                      // value={user.email}
+                      value={user.email}
+                      onChange={handleInput}
                     />
                   </div>
                   <div>
@@ -78,7 +79,8 @@ const Register = () => {
                       id="phone"
                       required
                       autoComplete="off"
-                      // value={user.phone}
+                      value={user.phone}
+                      onChange={handleInput}
                     />
                   </div>
                   <div>
@@ -90,7 +92,8 @@ const Register = () => {
                       id="password"
                       required
                       autoComplete="off"
-                      // value={user.password}
+                      value={user.password}
+                      onChange={handleInput}
                     />
                   </div>
                   <button type="submit" className="btn btn-submit btn-primary" >Register bow</button>
