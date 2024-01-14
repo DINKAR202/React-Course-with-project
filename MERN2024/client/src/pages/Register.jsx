@@ -17,6 +17,7 @@ const Register = () => {
     
       setUser({
         ...user,
+        [name]: value,
       });
     };
 
