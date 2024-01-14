@@ -21,8 +21,28 @@ const Register = () => {
                 <form action="">
                   <div>
                     <label htmlFor="username">username</label>
-                    <input type="text" name="username" value={} placeholder="username"/>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="username"
+                      id="username"
+                      required
+                      autoComplete="off"
+                    />
                   </div>
+
+                  <div>
+                    <label htmlFor="email">email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="email"
+                      id="email"
+                      required
+                      autoComplete="off"
+                    />
+                  </div>
+
                 </form>
               </div>
             </div>
