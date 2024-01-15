@@ -92,7 +92,7 @@ const Navbar = () => {
               </Menu>
               <Avatar
                 size="sm"
-                src="https://avatars.githubusercontent.com/u/110231091?s=400&u=dfefa66e38cbdd84674e1a9f55737a51827b8725&v=4"
+                // src="https://avatars.githubusercontent.com/u/110231091?s=400&u=dfefa66e38cbdd84674e1a9f55737a51827b8725&v=4"
                 ml={3}
               />
             </Flex>
