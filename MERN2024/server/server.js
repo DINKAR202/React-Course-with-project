@@ -7,8 +7,14 @@ const contactRoute = require("./router/contact-router");
 const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
+// let's tackle cors
+const corsOptions = {
+  origin: "http://localhost:5173",
+  methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
+  credentials: true,
+};
 
-
+app.use(cors(corsOptions));
 
 //Middleware auth
 app.use(express.json());
