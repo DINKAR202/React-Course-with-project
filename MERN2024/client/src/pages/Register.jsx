@@ -1,48 +1,51 @@
 import { useState } from "react";
-import "../components/CSS-Design/Design.css"
+import "../components/CSS-Design/Design.css";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-
   const [user, setUser] = useState({
-      username: "",
-      email: "",
-      phone: "",
-      password: "",
+    username: "",
+    email: "",
+    phone: "",
+    password: "",
   });
 
-  // Handling the input value
-    const handleInput = (e) =>{
-      console.log(e);
-      let name = e.target.name;
-      let value = e.target.value;
-    
-      setUser({
-        ...user,
-        [name]: value,
-      });
-    };
+  const navigate = useNavigate();
 
-    // Handling the form submission
-     const handleSubmit = async (e) => {
-        e.preventDefault();
-        console.log(user);
-        try {
-          
-        
-        
-        const response = await fetch(`http://localhost:5000/api/auth/register`, {
-          method: "POST",
-          headers: {
-            'Content-Type': "application/json",
-          },
-          body: JSON.stringify(user),
-        });
-        console.log(response)
-      } catch (error) {
-        console.log("register", error)
+  // Handling the input value
+  const handleInput = (e) => {
+    console.log(e);
+    let name = e.target.name;
+    let value = e.target.value;
+
+    setUser({
+      ...user,
+      [name]: value,
+    });
+  };
+
+  // Handling the form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(user);
+    try {
+      const response = await fetch(`http://localhost:5000/api/auth/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user),
+      });
+
+      if (response.ok) {
+        setUser({ username: "", email: "", phone: "", password: "" });
+        navigate("/login");
       }
-     };
-     
+      console.log(response);
+    } catch (error) {
+      console.log("register", error);
+    }
+  };
 
   return (
     <>
@@ -78,7 +81,9 @@ const Register = () => {
                       value={user.username}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="username">Username</label>
+                    <label className="label" htmlFor="username">
+                      Username
+                    </label>
                   </div>
 
                   <div className="container-box">
@@ -93,7 +98,9 @@ const Register = () => {
                       value={user.email}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="email">Email</label>
+                    <label className="label" htmlFor="email">
+                      Email
+                    </label>
                   </div>
 
                   <div className="container-box">
@@ -108,9 +115,11 @@ const Register = () => {
                       value={user.phone}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="phone">Phone</label>
+                    <label className="label" htmlFor="phone">
+                      Phone
+                    </label>
                   </div>
-                  
+
                   <div className="container-box">
                     <input
                       className="input"
@@ -123,9 +132,13 @@ const Register = () => {
                       value={user.password}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="password">Password</label>
+                    <label className="label" htmlFor="password">
+                      Password
+                    </label>
                   </div>
-                  <button type="submit" className="btn btn-submit btn-primary" >Register now</button>
+                  <button type="submit" className="btn btn-submit btn-primary">
+                    Register now
+                  </button>
                 </form>
               </div>
             </div>

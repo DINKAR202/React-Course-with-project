@@ -17,10 +17,10 @@ const home = async (req, res) => {
 
 const register = async (req, res) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const { username, email, phone, password } = req.body;
 
-    const userExit = await User.findOne({ email });
+    const userExit = await User.findOne({ email: email });
     
     if (userExit) {
       return res.status(400).json({ msg: "email already exists" });
@@ -31,14 +31,15 @@ const register = async (req, res) => {
     // const hash_password = await bcrypt.hash(password, saltRound);
     // Bss esko thik krna hai
 
-    const userCreated = await User.create({ username, email, phone, password });
+    // const userCreated = await User.create({ username, email, phone, password });
 
     // Adding Token function JWT
-    res.status(201).json({
-      msg: "Registration sucessful",
-      token: await userCreated.generateToken(),
-      userId: userCreated._id.toString(),
-    });
+    // res.status(201).json({
+    //   msg: "Registration Successful",
+    //   token: await userCreated.generateToken(),
+    //   userId: userCreated._id.toString(),
+    // });
+    res.status(201).json({ message: "User registered successfully" });
   } catch (error) {
     res.status(500).json("internal server error");
     // next(error);
