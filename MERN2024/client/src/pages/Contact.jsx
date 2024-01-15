@@ -2,9 +2,9 @@ import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 
 const Contact = () => {
-  const [user, setUser] = useState({
+  const [contact, setContact] = useState({
+    username: "",
     email: "",
-    password: "",
   });
 
   // Handling the input value
@@ -13,8 +13,8 @@ const Contact = () => {
     let name = e.target.name;
     let value = e.target.value;
 
-    setUser({
-      ...user,
+    setContact({
+      ...contact,
       [name]: value,
     });
   };
@@ -22,7 +22,8 @@ const Contact = () => {
   // Handling the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(user);
+
+    console.log(contact);
   };
 
   return (
@@ -43,8 +44,7 @@ const Contact = () => {
                 <h1 className="main-heading mb-3">Contact here</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
-
-                <div className="container-box">
+                  <div className="container-box">
                     <input
                       className="input"
                       type="text"
@@ -53,10 +53,12 @@ const Contact = () => {
                       id="username"
                       required
                       autoComplete="off"
-                      value={user.username}
+                      value={contact.username}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="username">Username</label>
+                    <label className="label" htmlFor="username">
+                      Username
+                    </label>
                   </div>
 
                   <div className="container-box">
@@ -68,24 +70,51 @@ const Contact = () => {
                       id="email"
                       required
                       autoComplete="off"
-                      value={user.email}
+                      value={contact.email}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="email">Email</label>
+                    <label className="label" htmlFor="email">
+                      Email
+                    </label>
                   </div>
 
-                  
+                  <div className="container-box">
+                    <textarea
+                      className="input"
+                      name="message"
+                      id="message"
+                      autoComplete="off"
+                      value={contact.message}
+                      onChange={handleInput}
+                      required
+                      cols="30"
+                      rows="6"
+                    ></textarea>
+                    <label className="label" htmlFor="message">message</label>
+                  </div>
+
                   <button type="submit" className="btn btn-submit btn-primary">
-                    Login
+                    Submit
                   </button>
                 </form>
               </div>
             </div>
           </div>
         </main>
+
+        <section className="mb-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2613173278896!2d73.91411937501422!3d18.562253982539413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1697604225432!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
