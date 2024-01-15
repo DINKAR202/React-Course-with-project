@@ -4,7 +4,7 @@ import "../components/CSS-Design/Design.css"
 const Register = () => {
 
   const [user, setUser] = useState({
-      username: "dinkar",
+      username: "",
       email: "",
       phone: "",
       password: "",
@@ -49,7 +49,7 @@ const Register = () => {
                 <h1 className="main-heading mb-3">Registration Form</h1>
                 <br />
 
-                <form onSubmit={handleSubmit}>
+                <form className="Form-box" onSubmit={handleSubmit}>
                   <div className="container-box">
                     <input
                       className="input"
