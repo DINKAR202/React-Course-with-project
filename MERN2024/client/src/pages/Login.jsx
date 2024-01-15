@@ -1,11 +1,15 @@
 import { useState } from "react";
 import "../components/CSS-Design/Design.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
+
+const navigate = useNavigate();
 
   // Handling the input value
   const handleInput = (e) => {
@@ -19,11 +23,34 @@ const Login = () => {
     });
   };
 
+    // Handling the form submission
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      console.log(user);
+      try {
+        const response = await fetch(`http://localhost:5000/api/auth/login`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        });
+  
+        if (response.ok) {
+          setUser({ email: "", password: "" });
+          navigate("/");
+        }
+        console.log(response);
+      } catch (error) {
+        console.log("Login", error);
+      }
+    };
+
   // Handling the form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(user);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(user);
+  // };
 
   return (
     <>
