@@ -30,8 +30,9 @@ const Register = () => {
         const response = fetch(`http://localhost:5000/api/auth/register`, {
           method: "POST",
           headers: {
-            'Content-Type'
-          }
+            'Content-Type': "application/json",
+          },
+          body: JSON.stringify(user),
         })
      }
 
