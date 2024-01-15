@@ -39,7 +39,7 @@ const Register = () => {
         });
         console.log(response)
       } catch (error) {
-        console.log(error)
+        console.log("register", error)
       }
      };
      
