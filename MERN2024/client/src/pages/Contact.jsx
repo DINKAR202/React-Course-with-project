@@ -1,6 +1,30 @@
-const Contact = () => {
+import { useState } from "react";
+import "../components/CSS-Design/Design.css";
 
-  
+const Contact = () => {
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  // Handling the input value
+  const handleInput = (e) => {
+    console.log(e);
+    let name = e.target.name;
+    let value = e.target.value;
+
+    setUser({
+      ...user,
+      [name]: value,
+    });
+  };
+
+  // Handling the form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(user);
+  };
+
   return (
     <>
       <section>
@@ -9,16 +33,32 @@ const Contact = () => {
             <div className="row">
               <div className="col-lg-6">
                 <img
-                  src="../../public/images/login.png"
+                  src="../../public/images/support.png"
                   width="400"
                   height="500"
                   alt="Login image here"
                 />
               </div>
               <div className="col-lg-6">
-                <h1 className="main-heading mb-3">Login here</h1>
+                <h1 className="main-heading mb-3">Contact here</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
+
+                <div className="container-box">
+                    <input
+                      className="input"
+                      type="text"
+                      name="username"
+                      // placeholder="username"
+                      id="username"
+                      required
+                      autoComplete="off"
+                      value={user.username}
+                      onChange={handleInput}
+                    />
+                    <label className="label" htmlFor="username">Username</label>
+                  </div>
+
                   <div className="container-box">
                     <input
                       className="input"
@@ -34,20 +74,7 @@ const Contact = () => {
                     <label className="label" htmlFor="email">Email</label>
                   </div>
 
-                  <div className="container-box">
-                    <input
-                    className="input"
-                      type="password"
-                      name="password"
-                      // placeholder="password"
-                      id="password"
-                      required
-                      autoComplete="off"
-                      value={user.password}
-                      onChange={handleInput}
-                    />
-                    <label className="label" htmlFor="password">password</label>
-                  </div>
+                  
                   <button type="submit" className="btn btn-submit btn-primary">
                     Login
                   </button>
