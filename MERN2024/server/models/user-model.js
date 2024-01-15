@@ -49,6 +49,7 @@ userSchema.methods.comparePassword = async function (password){
 
 // json web token JWT
 userSchema.methods.generateToken = async function () {
+  console.log("I am token");
   try {
     return jwt.sign(
       {
@@ -56,16 +57,17 @@ userSchema.methods.generateToken = async function () {
         email: this.email,
         isAdmin: this.isAdmin,
       },
-      process.env.JWT_SECRECT_KEY,
+      process.env.JWT_SECRET_KEY, // Fix the typo here
       {
         expiresIn: "30d",
       }
     );
   } catch (error) {
-    console.error("Token error", error);
+    console.error("Token Error: ", error);
   }
 };
 
+
 // Define the model or the collection name
-const User = new mongoose.model("User", userSchema);
+const User = new mongoose.model("USER", userSchema);
 module.exports = User;

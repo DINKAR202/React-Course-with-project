@@ -1,4 +1,4 @@
-const User = require("../models/user-model");
+const User = require('../models/user-model')
 const bcrypt = require("bcryptjs");
 
 //Home logic
@@ -17,35 +17,28 @@ const home = async (req, res) => {
 
 const register = async (req, res) => {
   try {
-    // console.log(req.body);
+    // const data = req.body;
+    console.log(req.body);
     const { username, email, phone, password } = req.body;
 
-    const userExit = await User.findOne({ email: email });
-    
-    if (userExit) {
+    const userExist = await User.findOne({ email: email });
+
+    if (userExist) {
       return res.status(400).json({ msg: "email already exists" });
     }
 
-    //Hash the password
-    // const saltRound = 10;
-    // const hash_password = await bcrypt.hash(password, saltRound);
-    // Bss esko thik krna hai
-
     const userCreated = await User.create({ username, email, phone, password });
 
-    // Adding Token function JWT
     res.status(201).json({
       msg: "Registration Successful",
       token: await userCreated.generateToken(),
       userId: userCreated._id.toString(),
     });
-    // res.status(201).json({ message: "User registered successfully" });
   } catch (error) {
-    res.status(500).json("internal server error");
-    // next(error);
+    console.error(error);
+    res.status(500).json({ message: "Internal server error" });
   }
 };
-
 
 
 // User login logic
