@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../components/CSS-Design/Design.css";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -42,32 +43,34 @@ const Login = () => {
                 <h1 className="main-heading mb-3">Login here</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
-                  <div>
-                    <label htmlFor="email">email</label>
+                  <div className="container-box">
                     <input
+                      className="input"
                       type="email"
                       name="email"
-                      placeholder="email"
+                      // placeholder="email"
                       id="email"
                       required
                       autoComplete="off"
                       value={user.email}
                       onChange={handleInput}
                     />
+                    <label className="label" htmlFor="email">Email</label>
                   </div>
 
-                  <div>
-                    <label htmlFor="password">password</label>
+                  <div className="container-box">
                     <input
+                    className="input"
                       type="password"
                       name="password"
-                      placeholder="password"
+                      // placeholder="password"
                       id="password"
                       required
                       autoComplete="off"
                       value={user.password}
                       onChange={handleInput}
                     />
+                    <label className="label" htmlFor="password">password</label>
                   </div>
                   <button type="submit" className="btn btn-submit btn-primary">
                     Login

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../components/CSS-Design/Design.css"
 
 const Register = () => {
 
@@ -49,18 +50,19 @@ const Register = () => {
                 <br />
 
                 <form onSubmit={handleSubmit}>
-                  <div>
-                    <label htmlFor="username">username</label>
+                  <div className="container-box">
                     <input
+                      className="input"
                       type="text"
                       name="username"
-                      placeholder="username"
+                      // placeholder="username"
                       id="username"
                       required
                       autoComplete="off"
                       value={user.username}
                       onChange={handleInput}
                     />
+                    <label className="label" htmlFor="username">username</label>
                   </div>
 
                   <div>
