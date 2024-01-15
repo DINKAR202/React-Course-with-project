@@ -1,5 +1,7 @@
 // import { Analytics } from "../components/Analytics";
 
+import About from "./About";
+
 const Home = () => {
   return (
     <>
@@ -95,6 +97,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <About />
     </>
   );
 };
