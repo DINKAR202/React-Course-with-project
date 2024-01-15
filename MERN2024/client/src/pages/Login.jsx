@@ -40,7 +40,10 @@ const navigate = useNavigate();
   
         if (response.ok) {
           setUser({ email: "", password: "" });
+          alert("Logged in successfully!");
           navigate("/register");
+        } else {
+          alert("Invalid credentials!")
         }
         console.log(response);
       } catch (error) {

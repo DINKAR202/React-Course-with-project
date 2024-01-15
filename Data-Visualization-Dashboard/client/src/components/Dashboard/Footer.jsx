@@ -17,7 +17,7 @@ const Footer = () => {
         px={4}
       >
         <Text fontSize="sm" color="gray.500">
-          &copy; 2023 Ritesh Kr. Shukla. All rights reserved.
+          &copy; 2024 Dinkar Kr. All rights reserved.
         </Text>
         <Flex alignItems="center">
           <Link mx={2} fontSize="sm" color="gray.500">
