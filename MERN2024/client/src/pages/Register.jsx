@@ -34,7 +34,7 @@ const Register = () => {
         <main>
           <div className="section-registration container">
             <div className="row">
-              <div className="registration-image col-lg-6">
+              <div className="registration-image">
                 <img
                   src="../../public/images/register.png"
                   alt="Left side of image error! "
@@ -45,7 +45,7 @@ const Register = () => {
 
               {/* let tackle registration form */}
 
-              <div className="registration-form col-lg-6">
+              <div className="registration-form">
                 <h1 className="main-heading mb-3">Registration Form</h1>
                 <br />
 
@@ -62,49 +62,52 @@ const Register = () => {
                       value={user.username}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="username">username</label>
+                    <label className="label" htmlFor="username">Username</label>
                   </div>
 
-                  <div>
-                    <label htmlFor="email">email</label>
+                  <div className="container-box">
                     <input
+                      className="input"
                       type="email"
                       name="email"
-                      placeholder="email"
+                      // placeholder="email"
                       id="email"
                       required
                       autoComplete="off"
                       value={user.email}
                       onChange={handleInput}
                     />
+                    <label className="label" htmlFor="email">Email</label>
                   </div>
 
-                  <div>
-                    <label htmlFor="phone">phone</label>
+                  <div className="container-box">
                     <input
+                      className="input"
                       type="number"
                       name="phone"
-                      placeholder="phone"
+                      // placeholder="phone"
                       id="phone"
                       required
                       autoComplete="off"
                       value={user.phone}
                       onChange={handleInput}
                     />
+                    <label className="label" htmlFor="phone">Phone</label>
                   </div>
                   
-                  <div>
-                    <label htmlFor="password">password</label>
+                  <div className="container-box">
                     <input
+                      className="input"
                       type="password"
                       name="password"
-                      placeholder="password"
+                      // placeholder="password"
                       id="password"
                       required
                       autoComplete="off"
                       value={user.password}
                       onChange={handleInput}
                     />
+                    <label className="label" htmlFor="password">Password</label>
                   </div>
                   <button type="submit" className="btn btn-submit btn-primary" >Register now</button>
                 </form>

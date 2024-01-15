@@ -66,6 +66,14 @@ li {
   margin: 0 auto;
 }
 
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
 .grid {
   display: grid;
   gap: 6.4rem;
@@ -81,6 +89,7 @@ li {
 
 /*? Module Rules / Reusable */
 button {
+  margin-top: 15px;
   text-transform: capitalize;
   padding: 1rem 2.2rem;
   font-size: 1.7rem;
@@ -132,6 +141,7 @@ button {
     }
   }
 }
+
 
 /***** End Hero  *****/
 
