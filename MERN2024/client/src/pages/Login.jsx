@@ -2,6 +2,8 @@ import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
 
+const URL = `http://localhost:5000/api/auth/login`;
+
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -28,7 +30,7 @@ const navigate = useNavigate();
       e.preventDefault();
       console.log(user);
       try {
-        const response = await fetch(`http://localhost:5000/api/auth/login`, {
+        const response = await fetch(URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -38,7 +40,7 @@ const navigate = useNavigate();
   
         if (response.ok) {
           setUser({ email: "", password: "" });
-          navigate("/");
+          navigate("/register");
         }
         console.log(response);
       } catch (error) {
