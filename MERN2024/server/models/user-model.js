@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
-const { jwt } = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -56,13 +56,13 @@ userSchema.methods.generateToken = async function () {
         email: this.email,
         isAdmin: this.isAdmin,
       },
-      process.env.JWT_SECRET_KEY,
+      process.env.JWT_SECRECT_KEY,
       {
         expiresIn: "30d",
       }
     );
   } catch (error) {
-    console.error(error);
+    console.error("Token error", error);
   }
 };
 

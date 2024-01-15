@@ -31,15 +31,15 @@ const register = async (req, res) => {
     // const hash_password = await bcrypt.hash(password, saltRound);
     // Bss esko thik krna hai
 
-    // const userCreated = await User.create({ username, email, phone, password });
+    const userCreated = await User.create({ username, email, phone, password });
 
     // Adding Token function JWT
-    // res.status(201).json({
-    //   msg: "Registration Successful",
-    //   token: await userCreated.generateToken(),
-    //   userId: userCreated._id.toString(),
-    // });
-    res.status(201).json({ message: "User registered successfully" });
+    res.status(201).json({
+      msg: "Registration Successful",
+      token: await userCreated.generateToken(),
+      userId: userCreated._id.toString(),
+    });
+    // res.status(201).json({ message: "User registered successfully" });
   } catch (error) {
     res.status(500).json("internal server error");
     // next(error);
