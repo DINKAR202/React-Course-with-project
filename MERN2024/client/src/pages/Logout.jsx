@@ -1,7 +1,9 @@
+import { useEffect } from "react"
+
 const Logout = () => {
-  return (
-    <div>Logout</div>
-  )
+  useEffect(() => {
+    
+  })
 }
 
 export default Logout
