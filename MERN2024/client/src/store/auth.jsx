@@ -19,5 +19,5 @@ export const useAuth = () => {
     if(!authContextValue) {
         throw new Error("useAuth used outside of the Provider");
     }
-    return;
+    return authContextValue;
 }
