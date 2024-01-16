@@ -5,11 +5,11 @@ export const AuthContext = createContext();
 
 export const AuthProvider = ({children}) => {
 
-    const storetokenInLS = (serverToken) =>{
+    const storeTokenInLS = (serverToken) =>{
         return localStorage.setItem('token', serverToken)
     }
 
-    return <AuthContext.Provider value={storetokenInLS}>
+    return <AuthContext.Provider value={storeTokenInLS}>
         {children}
     </AuthContext.Provider>
 }
