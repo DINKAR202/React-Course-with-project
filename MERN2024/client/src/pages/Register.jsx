@@ -41,6 +41,8 @@ const Register = () => {
       if (response.ok) {
         const res_data = await response.json();
         console.log("res from server", res_data);
+        // Store the token in localhost
+        storetokenInLS(res_data.token);
         setUser({ username: "", email: "", phone: "", password: "" });
         navigate("/login");
       }
