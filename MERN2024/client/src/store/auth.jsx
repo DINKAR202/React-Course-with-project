@@ -13,6 +13,7 @@ export const AuthProvider = ({ children }) => {
   // Include other authentication-related values/functions here
   const authValues = {
     storeTokenInLS,
+    LogoutUser,
     // other values or functions if needed
   };
 
