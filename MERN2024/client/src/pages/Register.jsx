@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
-const URL = `http://localhost:5000/api/auth/register`;
+// import useAuth from "../store/auth";
 import { useAuth } from "../store/auth";
+
+
+const URL = `http://localhost:5000/api/auth/register`;
 
 const Register = () => {
   const [user, setUser] = useState({
@@ -62,7 +65,7 @@ const Register = () => {
             <div className="row">
               <div className="registration-image">
                 <img
-                  src="../../public/images/register.png"
+                  src="/images/register.png"
                   alt="Left side of image error! "
                   width="400"
                   height="500"

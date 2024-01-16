@@ -68,7 +68,7 @@ const Login = () => {
             <div className="row">
               <div className="col-lg-6">
                 <img
-                  src="../../public/images/login.png"
+                  src="/images/login.png"
                   width="400"
                   height="500"
                   alt="Login image here"

@@ -3,21 +3,28 @@ import { createContext, useContext } from "react";
 
 export const AuthContext = createContext();
 
-export const AuthProvider = ({children}) => {
+export const AuthProvider = ({ children }) => {
+  const storeTokenInLS = (serverToken) => {
+    return localStorage.setItem("token", serverToken);
+  };
 
-    const storeTokenInLS = (serverToken) =>{
-        return localStorage.setItem('token', serverToken)
-    }
+  // Include other authentication-related values/functions here
+  const authValues = {
+    storeTokenInLS,
+    // other values or functions if needed
+  };
 
-    return <AuthContext.Provider value={storeTokenInLS}>
-        {children}
+  return (
+    <AuthContext.Provider value={authValues}>
+      {children}
     </AuthContext.Provider>
-}
+  );
+};
 
 export const useAuth = () => {
-    const authContextValue = useContext(AuthContext);
-    if(!authContextValue) {
-        throw new Error("useAuth used outside of the Provider");
-    }
-    return authContextValue;
-}
+  const authContextValue = useContext(AuthContext);
+  if (!authContextValue) {
+    throw new Error("useAuth used outside of the Provider");
+  }
+  return authContextValue;
+};
