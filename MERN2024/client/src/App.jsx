@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import Service from "./pages/Service";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Error from './pages/Error'
+import Error from "./pages/Error";
 import Footer from "./pages/Footer";
 import Logout from "./pages/Logout";
 
