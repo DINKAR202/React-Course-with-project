@@ -39,6 +39,8 @@ const Register = () => {
       });
 
       if (response.ok) {
+        const res_data = await response.json();
+        console.log("res from server", res_data);
         setUser({ username: "", email: "", phone: "", password: "" });
         navigate("/login");
       }
