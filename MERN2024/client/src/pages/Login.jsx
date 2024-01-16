@@ -39,6 +39,9 @@ const navigate = useNavigate();
         });
   
         if (response.ok) {
+          const res_data = await response.json();          
+          // storetokenInLS(res_data.token);
+          localStorage.setItem("token", res_data);
           setUser({ email: "", password: "" });
           alert("Logged in successfully!");
           navigate("/register");
