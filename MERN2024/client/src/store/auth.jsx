@@ -14,8 +14,12 @@ export const AuthProvider = ({ children }) => {
   const authValues = {
     storeTokenInLS,
     LogoutUser,
+    isLoggedIn,
   };
 
+  let isLoggedIn = !!token;
+
+// tackling the logout functionality
   const LogoutUser = () => {
     setToken("");
     return localStorage.removeItem("token");
