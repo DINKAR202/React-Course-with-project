@@ -1,14 +1,23 @@
-import { Children, createContext } from "react";
+/* eslint-disable react/prop-types */
+import { createContext, useContext } from "react";
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({children}) => {
 
     const storetokenInLS = (serverToken) =>{
-
+        return localStorage.setItem('token', serverToken)
     }
 
-    return <AuthContext.Provider value={}>
+    return <AuthContext.Provider value={storetokenInLS}>
         {children}
     </AuthContext.Provider>
+}
+
+export const useAuth = () => {
+    const authContextValue = useContext(AuthContext);
+    if(!authContextValue) {
+        throw new Error("useAuth used outside of the Provider");
+    }
+    return;
 }
