@@ -14,7 +14,6 @@ export const AuthProvider = ({ children }) => {
   const authValues = {
     storeTokenInLS,
     LogoutUser,
-    // other values or functions if needed
   };
 
   const LogoutUser = () => {
@@ -23,7 +22,9 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={authValues}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={authValues}>
+      {children}
+    </AuthContext.Provider>
   );
 };
 
