@@ -26,8 +26,18 @@ export const AuthProvider = ({ children }) => {
     return localStorage.removeItem("token");
   };
 
+  // JWT AUTHENTICATION - to get the currently loggedIn user data
+
+  const userAuthentication = async () => {
+    try {
+      
+    } catch (error) {
+      console.error("Error fetching user data!");
+    }
+  }
+
   useEffect(() => {
-    
+    userAuthentication();
   })
 
   return (
