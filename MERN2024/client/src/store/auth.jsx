@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
 
@@ -25,6 +25,10 @@ export const AuthProvider = ({ children }) => {
     setToken("");
     return localStorage.removeItem("token");
   };
+
+  useEffect(() => {
+    
+  })
 
   return (
     <AuthContext.Provider value={{storeTokenInLS, LogoutUser, isLoggedIn}}>
