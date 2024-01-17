@@ -52,6 +52,7 @@ const Contact = () => {
           setContact(defaultContactFormData);
           const data = await response.json();
           console.log(data);
+          alert("Message sent successfully");
         }
     } catch (error) {
       console.log(error)
