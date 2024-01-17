@@ -80,7 +80,7 @@ const user = async (req, res) => {
   try {
     
   } catch (error) {
-    console.log(error);  
+    console.log(`Error from the user route ${error}`);  
   }
 }
 
