@@ -74,4 +74,7 @@ const login = async (req, res) => {
   // res.status(201).send("This is login page using Controllers");
 };
 
+// to send user data - User logic
+
+
 module.exports = { home, register, login };

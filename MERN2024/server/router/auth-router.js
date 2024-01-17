@@ -8,6 +8,8 @@ router.route("/").get(authcontrollers.home);
 router.route("/register").post(validate(signupSchema), authcontrollers.register);
 router.route("/login").post(validate(loginSchema), authcontrollers.login);
 
+router.route('/user').get(authcontrollers.user);
+
 // This is second option of using Router
 
 module.exports = router;

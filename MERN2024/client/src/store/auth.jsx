@@ -11,11 +11,11 @@ export const AuthProvider = ({ children }) => {
   };
 
   // Include other authentication-related values/functions here
-  const authValues = {
-    storeTokenInLS,
-    LogoutUser,
-    isLoggedIn,
-  };
+  // const authValues = {
+  //   storeTokenInLS,
+  //   LogoutUser,
+  //   isLoggedIn,
+  // };
 
   let isLoggedIn = !!token;
   console.log("isLoggedIn", isLoggedIn)
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={authValues}>
+    <AuthContext.Provider value={{storeTokenInLS, LogoutUser, isLoggedIn}}>
       {children}
     </AuthContext.Provider>
   );
