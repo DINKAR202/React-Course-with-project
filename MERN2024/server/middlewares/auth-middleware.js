@@ -8,6 +8,16 @@ const authMiddleware = async (req, res, next) => {
       .status(401)
       .json({ message: "Unauthorization HTTP, Token not provided" });
   }
+  const jwtToken = token.replace("Bearer", "").trim();
+  console.log("Token from auth middleware", jwtToken);
+
+  try {
+    next();
+  } catch (error) {
+    return res
+      .status(401)
+      .json({ message: "Unauthorization HTTP, Token not provided" });
+  }
 };
 
 module.exports = authMiddleware;
