@@ -1,11 +1,26 @@
 import { useState } from "react";
 import "../components/CSS-Design/Design.css";
+import { useAuth } from "../store/auth";
 
 const Contact = () => {
   const [contact, setContact] = useState({
     username: "",
     email: "",
+    message: "",
   });
+
+  const [userData, setUserData] = useState(true);
+  const { user } = useAuth();
+
+  if (userData && user) {
+    setContact({
+      username: user.username,
+      email: user.email,
+      message: "",
+    });
+
+    setUserData(false);
+  }
 
   // Handling the input value
   const handleInput = (e) => {
@@ -90,7 +105,9 @@ const Contact = () => {
                       cols="30"
                       rows="6"
                     ></textarea>
-                    <label className="label" htmlFor="message">message</label>
+                    <label className="label" htmlFor="message">
+                      message
+                    </label>
                   </div>
 
                   <button type="submit" className="btn btn-submit btn-primary">
