@@ -71,18 +71,16 @@ const login = async (req, res) => {
   // res.status(201).send("This is login page using Controllers");
 };
 
-// *-------------------
-// User Logic
-// *-------------------
+// to send user data - User logic
 
 const user = async (req, res) => {
   try {
-    // const userData = await User.find({});
     const userData = req.user;
     console.log(userData);
-    return res.status(200).json({ msg: userData });
+    return res.status(200).json({ userData });
+    // res.status(200).json({msg: "Hi user"});
   } catch (error) {
-    console.log(` error from user route ${error}`);
+    console.log(`Error from the user route ${error}`);
   }
 };
 
