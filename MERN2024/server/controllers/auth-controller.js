@@ -71,7 +71,9 @@ const login = async (req, res) => {
   // res.status(201).send("This is login page using Controllers");
 };
 
-// to send user data - User logic
+// *-------------------
+// User Logic
+// *-------------------
 
 const user = async (req, res) => {
   try {
