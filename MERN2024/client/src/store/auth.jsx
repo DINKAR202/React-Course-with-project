@@ -36,6 +36,10 @@ export const AuthProvider = ({ children }) => {
           Authorization: `Bearer ${token}`,
         },
       });
+      if(response.ok){
+        const data = await response.json();
+        
+      }
     } catch (error) {
       console.error("Error fetching user data!");
     }
