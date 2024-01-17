@@ -12,6 +12,9 @@ const authMiddleware = async (req, res, next) => {
   console.log("Token from auth middleware", jwtToken);
 
   try {
+    const isVerified = jwt.verify(jwtToken, process.env.JWT_SECRET_KEY);
+    console.log(isVerified);
+
     next();
   } catch (error) {
     return res
