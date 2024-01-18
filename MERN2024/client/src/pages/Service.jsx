@@ -1,10 +1,24 @@
+import { useAuth } from "../store/auth";
+
 const Service = () => {
+  const { services } = useAuth();
+
   return (
     <section className="section-services">
       <div className="container">
         <h1 className="main-heading">Services</h1>
       </div>
       <div className="container grid grid-three-cols">
+
+{
+  services.map(() => {
+    
+  })
+}
+
+
+
+
         <div className="card">
           <div className="card-img">
             <img src="/images/design.png" alt="design" width="200" />
