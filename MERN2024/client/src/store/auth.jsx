@@ -18,10 +18,10 @@ export const AuthProvider = ({ children }) => {
   //   isLoggedIn,
   // };
 
-  let isLoggedIn = !! token;
-  console.log("isLoggedIn", isLoggedIn)
+  let isLoggedIn = !!token;
+  console.log("isLoggedIn", isLoggedIn);
 
-// tackling the logout functionality
+  // tackling the logout functionality
   const LogoutUser = () => {
     setToken("");
     return localStorage.removeItem("token");
@@ -37,24 +37,34 @@ export const AuthProvider = ({ children }) => {
           Authorization: `Bearer ${token}`,
         },
       });
-      if(response.ok){
+      if (response.ok) {
         const data = await response.json();
         console.log("user data", data.userData);
         setUser(data.userData);
-
       }
     } catch (error) {
       console.error("Error fetching user data!");
+    }
+  };
+
+  // To fetch the services data from the database
+  const getServices = async () => {
+    try {
+      const 
+    } catch (error) {
+      console.log(`Services frontend error: ${error}`);
     }
   }
 
   useEffect(() => {
     getServices();
     userAuthentication();
-  })
+  });
 
   return (
-    <AuthContext.Provider value={{storeTokenInLS, LogoutUser, isLoggedIn, user}}>
+    <AuthContext.Provider
+      value={{ storeTokenInLS, LogoutUser, isLoggedIn, user }}
+    >
       {children}
     </AuthContext.Provider>
   );
