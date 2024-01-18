@@ -1,7 +1,7 @@
-// import { useAuth } from "../store/auth";
+import { useAuth } from "../store/auth";
 
 const About = () => {
-  // const { user } = useAuth();
+  const { user } = useAuth();
 
   return (
     <>
@@ -9,7 +9,7 @@ const About = () => {
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             <div className="hero-content">
-              {/* <p>Hi {user.username} Developer</p> */}
+              <p>Hi {user.username} Developer</p>
               <h1>Why Choose Us?</h1>
               <p>
                 Expertice: Our team consists of experienced IT professionals who
