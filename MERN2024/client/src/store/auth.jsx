@@ -49,6 +49,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   useEffect(() => {
+    getServices();
     userAuthentication();
   })
 

@@ -7,7 +7,7 @@ const Service = () => {
       <div className="container grid grid-three-cols">
         <div className="card">
           <div className="card-img">
-            <img src="/images/design.png" alt="design" width="500" />
+            <img src="/images/design.png" alt="design" width="200" />
           </div>
 
           <div className="card-details">
