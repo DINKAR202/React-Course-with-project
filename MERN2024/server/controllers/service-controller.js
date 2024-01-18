@@ -10,7 +10,7 @@ const services = async (req, res) => {
       return;
     }
 
-    return res.status(200).json({ msg: response });
+    return res.status(200).json({ msg: "service found", data: response });
   } catch (error) {
     console.log(`services ${error}`);
   }
