@@ -44,7 +44,8 @@ const Login = () => {
       if (response.ok) {
         storeTokenInLS(res_data.token);
         setUser({ email: "", password: "" });
-        alert("Logged in successfully!");
+        toast.success("Logged in successfully!");
+        // alert("Logged in successfully!");
         navigate("/register");
       } else {
         toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);

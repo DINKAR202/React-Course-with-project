@@ -52,6 +52,7 @@ const Register = () => {
         // Store the token in localhost
         storeTokenInLS(res_data.token);
         setUser({ username: "", email: "", phone: "", password: "" });
+        toast.success("Registration Successful");
         navigate("/login");
       }else{
         toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
