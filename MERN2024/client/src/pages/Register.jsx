@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
-// import useAuth from "../store/auth";
 import { useAuth } from "../store/auth";
 
 
@@ -45,7 +44,7 @@ const Register = () => {
 
       // console.log(response);
       const res_data = await response.json();
-      console.log("res from server", res_data);
+      console.log("res from server", res_data.message);
       if (response.ok) {
 
         // Store the token in localhost
@@ -53,7 +52,7 @@ const Register = () => {
         setUser({ username: "", email: "", phone: "", password: "" });
         navigate("/login");
       }else{
-        alert("Not a valid registration.")
+        alert(res_data.extraDetails)
       }
     } catch (error) {
       console.log("register", error);
