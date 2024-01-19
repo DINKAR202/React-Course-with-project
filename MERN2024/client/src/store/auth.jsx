@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [user, setUser] = useState("");
-  const [servicesData, setServicesData] = useState([]);
+  const [services, setServices] = useState([]);
 
   const storeTokenInLS = (serverToken) => {
     return localStorage.setItem("token", serverToken);
@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
   //   isLoggedIn,
   // };
 
-  let isLoggedIn = !!token;
+  let isLoggedIn = !! token;
   console.log("isLoggedIn", isLoggedIn);
 
   // tackling the logout functionality
@@ -59,7 +59,8 @@ export const AuthProvider = ({ children }) => {
       if (response.ok) {
         const data = await response.json();
         console.log("Backend data recived:", data.msg);
-        setServicesData(data.msg)
+        console.log(data);
+        setServices(data.msg)
       }
     } catch (error) {
       console.log(`Services frontend error: ${error}`);
@@ -73,7 +74,7 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ storeTokenInLS, LogoutUser, isLoggedIn, user, servicesData }}
+      value={{ storeTokenInLS, LogoutUser, isLoggedIn, user, services }}
     >
       {children}
     </AuthContext.Provider>
