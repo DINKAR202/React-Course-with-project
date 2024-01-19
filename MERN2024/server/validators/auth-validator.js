@@ -21,8 +21,8 @@ const signupSchema = z.object({
   password: z
     .string({ required_error: "Password is required" })
     .trim()
-    .min(3, { message: "Password must be at least of 6 chars. " })
-    .max(255, { message: "Password can't be greater than 1024 characters. " }),
+    .min(7, { message: "Password must be at least of 6 chars. " })
+    .max(1024, { message: "Password can't be greater than 1024 characters. " }),
 });
 
 const loginSchema = z.object({
@@ -34,8 +34,8 @@ const loginSchema = z.object({
     password: z
     .string({ required_error: "Password is required" })
     .trim()
-    .min(3, { message: "Password must be at least of 6 chars. " })
-    .max(255, { message: "Password can't be greater than 1024 characters. " }),
+    .min(7, { message: "Password must be at least of 6 chars. " })
+    .max(1024, { message: "Password can't be greater than 1024 characters. " }),
 });
 
 

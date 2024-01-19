@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import { toast } from 'react-toastify';
 
 const URL = `http://localhost:5000/api/auth/login`;
 
@@ -39,14 +40,15 @@ const Login = () => {
         body: JSON.stringify(user),
       });
 
+      const res_data = await response.json();
       if (response.ok) {
-        const res_data = await response.json();
         storeTokenInLS(res_data.token);
         setUser({ email: "", password: "" });
         alert("Logged in successfully!");
         navigate("/register");
       } else {
-        alert("Invalid credentials!");
+        toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
+
       }
       console.log(response);
     } catch (error) {
