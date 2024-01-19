@@ -43,15 +43,18 @@ const Register = () => {
         body: JSON.stringify(user),
       });
 
+      // console.log(response);
+      const res_data = await response.json();
+      console.log("res from server", res_data);
       if (response.ok) {
-        const res_data = await response.json();
-        console.log("res from server", res_data);
+
         // Store the token in localhost
         storeTokenInLS(res_data.token);
         setUser({ username: "", email: "", phone: "", password: "" });
         navigate("/login");
+      }else{
+        alert("Not a valid registration.")
       }
-      console.log(response);
     } catch (error) {
       console.log("register", error);
     }
