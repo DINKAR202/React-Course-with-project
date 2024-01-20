@@ -3,4 +3,4 @@ const router = express.Router();
 
 
 
-router.route('/users').get()
+router.route('/users').get(getAllUsers);
