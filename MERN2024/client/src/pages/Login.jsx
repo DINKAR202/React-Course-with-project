@@ -46,7 +46,7 @@ const Login = () => {
         setUser({ email: "", password: "" });
         toast.success("Logged in successfully!");
         // alert("Logged in successfully!");
-        navigate("/register");
+        navigate("/");
       } else {
         toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
 
