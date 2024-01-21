@@ -1,32 +1,29 @@
-import { useEffect } from "react"
-import { useAuth } from "../store/auth"
+import { useEffect } from "react";
+import { useAuth } from "../store/auth";
 
 const AdminUsers = () => {
+  const { authorizationToken } = useAuth();
 
-    const {authorizationToken} = useAuth();
-    
-    const getAllUsersData = async () => {
-        try {
-            const response = await fetch("http://localhost:5000/api/admin/users", {
-                method: "GET",
-                headers:{
-                    Authorization: authorizationToken,
-                },
-            })
-            const data = await response.json();
-            
-        } catch (error) {
-            console.log(error)
-        }
+  const getAllUsersData = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/api/admin/users", {
+        method: "GET",
+        headers: {
+          Authorization: authorizationToken,
+        },
+      });
+      const data = await response.json();
+      console.log(`users ${data}`);
+    } catch (error) {
+      console.log(error);
     }
+  };
 
-    useEffect(() => {
-        getAllUsersData();
-    }, []);
+  useEffect(() => {
+    getAllUsersData();
+  }, []);
 
-    return (
-    <div>AdminUsers</div>
-  )
-}
+  return <div>AdminUsers</div>;
+};
 
-export default AdminUsers
+export default AdminUsers;
