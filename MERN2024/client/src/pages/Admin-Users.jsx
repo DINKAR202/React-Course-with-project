@@ -15,6 +15,7 @@ const AdminUsers = () => {
       });
       const data = await response.json();
       console.log(`users ${data}`);
+      setUsers(data);
     } catch (error) {
       console.log(error);
     }
@@ -24,7 +25,13 @@ const AdminUsers = () => {
     getAllUsersData();
   }, []);
 
-  return <div>AdminUsers</div>;
+  return (
+    <>
+      {users.map((curUser, index) => {
+        return <h2 key={index}>{curUser.username}</h2>;
+      })}
+    </>
+  );
 };
 
 export default AdminUsers;
