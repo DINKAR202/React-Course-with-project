@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../store/auth";
 
 const AdminUsers = () => {
   const { authorizationToken } = useAuth();
+  const [users, setUsers] = useState([]);
 
   const getAllUsersData = async () => {
     try {
