@@ -56,7 +56,7 @@ const AdminUsers = () => {
                       </button>
                     </td>
                     <td>
-                      <button className="button-77" role="button">
+                      <button className="button-62" role="button">
                         Delete
                       </button>
                     </td>
