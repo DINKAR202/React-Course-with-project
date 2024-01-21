@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Error from "./pages/Error";
 import Footer from "./pages/Footer";
 import Logout from "./pages/Logout";
+import AdminLayout from "./components/layouts/Admin-Layout";
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="*" element={<Error />} />
+          <Route path="/admin" element={<AdminLayout/>}> 
+          
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>
