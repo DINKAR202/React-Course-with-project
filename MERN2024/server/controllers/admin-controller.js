@@ -19,7 +19,11 @@ const getAllUsers = async (req, res) => {
 // User Data delete logic
 
 const deleteUserById = async(req, res) => {
-  
+  try {
+    const id = req.params.id;
+  } catch (error) {
+    next(error)
+  }
 };
 
 // Get Contacts logic
@@ -39,4 +43,4 @@ const getAllContacts = async (req, res) => {
 
 
 
-module.exports = {getAllUsers, getAllContacts};
+module.exports = {getAllUsers, getAllContacts, deleteUserById};
