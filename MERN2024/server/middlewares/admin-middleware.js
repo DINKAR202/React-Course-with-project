@@ -1,7 +1,7 @@
 const adminMiddleware = async (req, res, next) => {
   try {
     console.log(req.data);
-    res.status(200).json({ msg: req.user });
+    res.status(200).json({ msg: req.user.isAdmin });
   } catch (error) {
     next(error);
   }
