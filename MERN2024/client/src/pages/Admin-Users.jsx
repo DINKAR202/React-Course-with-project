@@ -45,7 +45,7 @@ const AdminUsers = () => {
             </thead>
             <tbody>
             {users.map((curUser, index) => {
-            return <tr>
+            return <tr key={index}>
                 <td>{curUser.username}</td>
                 <td>{curUser.email}</td>
                 <td>{curUser.phone}</td>

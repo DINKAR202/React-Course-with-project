@@ -422,6 +422,50 @@ a.active {
   }
 }
 
+/* Table */
+
+.admin-users{
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  color: white;
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  border-radius: 45px;
+  background-color: #333;
+  color: #fff;
+}
+
+th, td {
+  font-size: 2.0rem;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+tbody tr:hover {
+  background-color: #444;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  th, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  th, td:nth-child(even) {
+    background-color: #333;
+  }
+}
+
 /** -----------------------
 ** media query section css
 ** -------------------------  */
