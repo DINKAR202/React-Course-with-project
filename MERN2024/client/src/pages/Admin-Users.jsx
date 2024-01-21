@@ -36,13 +36,26 @@ const AdminUsers = () => {
           <table>
             <thead>
               <tr>
-                <th></th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Update</th>
+                <th>Delete</th>
               </tr>
             </thead>
-          </table>
-          {users.map((curUser, index) => {
-            return <h2 key={index}>{curUser.username}</h2>;
+            <tbody>
+            {users.map((curUser, index) => {
+            return <tr>
+                <td>{curUser.username}</td>
+                <td>{curUser.email}</td>
+                <td>{curUser.phone}</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
           })}
+            </tbody>
+          </table>
+          
         </div>
       </section>
     </>
