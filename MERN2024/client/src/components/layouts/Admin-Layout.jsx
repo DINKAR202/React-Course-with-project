@@ -1,4 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { FaUser, FaHome, FaRegListAlt } from "react-icons/fa";
+import { FaMessage } from "react-icons/fa6";
+
 const AdminLayout = () => {
   return (
     <>
@@ -7,17 +10,16 @@ const AdminLayout = () => {
           <nav>
             <ul>
               <li>
-                <NavLink to="/admin/users">users </NavLink>
+                <NavLink to="/admin/users"><FaUser /> Users </NavLink>
               </li>
               <li>
-                <NavLink to="/admin/contacts">contacts </NavLink>
+                <NavLink to="/admin/contacts"> <FaMessage/> Contacts </NavLink>
               </li>
               <li>
-                services
-                <NavLink to="/admin/services">services </NavLink>
+                <NavLink to="/admin/services"> <FaRegListAlt/> Services </NavLink>
               </li>
               <li>
-                <NavLink to="/admin">Home </NavLink>
+                <NavLink to="/admin"><FaHome/> Home </NavLink>
               </li>
             </ul>
           </nav>
