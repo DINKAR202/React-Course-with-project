@@ -19,7 +19,7 @@ const AdminLayout = () => {
                 <NavLink to="/admin/services"> <FaRegListAlt/> Services </NavLink>
               </li>
               <li>
-                <NavLink to="/admin"><FaHome/> Home </NavLink>
+                <NavLink to="/"><FaHome/> Home </NavLink>
               </li>
             </ul>
           </nav>

@@ -1,5 +1,20 @@
+import { useEffect } from "react"
+
 const AdminUsers = () => {
-  return (
+    
+    const getAllUsersData = async () => {
+        try {
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        getAllUsersData();
+    }, []);
+
+    return (
     <div>AdminUsers</div>
   )
 }
