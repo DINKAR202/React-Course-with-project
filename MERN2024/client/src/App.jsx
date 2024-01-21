@@ -26,7 +26,8 @@ const App = () => {
           <Route path="/logout" element={<Logout />} />
           <Route path="*" element={<Error />} />
           <Route path="/admin" element={<AdminLayout/>}> 
-          
+            <Route path="users" element={<AdminUsers />} />
+            <Route path="contact" element={<AdminContacts />} />
           </Route>
         </Routes>
         <Footer />
