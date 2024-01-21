@@ -44,18 +44,27 @@ const AdminUsers = () => {
               </tr>
             </thead>
             <tbody>
-            {users.map((curUser, index) => {
-            return <tr key={index}>
-                <td>{curUser.username}</td>
-                <td>{curUser.email}</td>
-                <td>{curUser.phone}</td>
-                <td>Edit</td>
-                <td>Delete</td>
-            </tr>
-          })}
+              {users.map((curUser, index) => {
+                return (
+                  <tr key={index}>
+                    <td>{curUser.username}</td>
+                    <td>{curUser.email}</td>
+                    <td>{curUser.phone}</td>
+                    <td>
+                      <button className="button-73" role="button">
+                        Edit
+                      </button>
+                    </td>
+                    <td>
+                      <button className="button-77" role="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
-          
         </div>
       </section>
     </>
