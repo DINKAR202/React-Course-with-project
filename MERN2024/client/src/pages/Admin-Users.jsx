@@ -21,6 +21,11 @@ const AdminUsers = () => {
     }
   };
 
+//   Delete function
+    const deleteUser = (id) => {
+        console.log(id)
+    }
+
   useEffect(() => {
     getAllUsersData();
   }, []);
@@ -56,7 +61,11 @@ const AdminUsers = () => {
                       </button>
                     </td>
                     <td>
-                      <button className="button-62" role="button">
+                      <button
+                        onClick={() => deleteUser(curUser._id)}
+                        className="button-62"
+                        role="button"
+                      >
                         Delete
                       </button>
                     </td>

@@ -1,6 +1,8 @@
 const User = require("../models/user-model");
 const Contact = require('../models/contact-model');
 
+// Get Users logics
+
 const getAllUsers = async (req, res) => {
   try {
     const users = await User.find({}, { password: 0 });
@@ -13,6 +15,14 @@ const getAllUsers = async (req, res) => {
     next(error);
   }
 };
+
+// User Data delete logic
+
+const deleteUserById = async(req, res) => {
+  
+};
+
+// Get Contacts logic
 
 const getAllContacts = async (req, res) => {
     try {
