@@ -33,6 +33,7 @@ const getUsersById = async (req, res) => {
 const updateUserById = async(req, res) => {
   try {
     const id = req.params.id;
+    const data = req.body;
   } catch (error) {
     next(error);
   }
