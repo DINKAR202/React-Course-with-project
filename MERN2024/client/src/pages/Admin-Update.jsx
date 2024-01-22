@@ -101,7 +101,7 @@ const AdminUpdate = () => {
                       id="phone"
                       required
                       autoComplete="off"
-                      value={data.email}
+                      value={data.phone}
                       onChange={handleInput}
                     />
                     <label className="label" htmlFor="phone">
