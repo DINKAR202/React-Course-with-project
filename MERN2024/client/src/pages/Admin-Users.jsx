@@ -74,7 +74,7 @@ const AdminUsers = () => {
                     <td>{curUser.phone}</td>
                     <td>
                       <button className="button-73" role="button">
-                        Edit
+                        <Link to="/admin/users/${curUser._id}/edit">Edit</Link>
                       </button>
                     </td>
                     <td>
