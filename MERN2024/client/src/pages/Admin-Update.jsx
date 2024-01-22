@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const AdminUpdate = () => {
   const [data, setData] = useState({
@@ -7,11 +8,13 @@ const AdminUpdate = () => {
     phone: "",
   });
 
+  const params = useParams();
+
   //   Get single user data
   const getSingleUserData = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/delete/${id}`,
+        `http://localhost:5000/api/admin/users/${id}`,
         {
           method: "DELETE",
           headers: {
