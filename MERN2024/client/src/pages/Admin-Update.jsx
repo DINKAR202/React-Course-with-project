@@ -6,6 +6,8 @@ const AdminUpdate = () => {
         email:"",
         phone:"",
     });
+
+    const handleInput = () => {};
   return (
     <>
         <section>
@@ -14,7 +16,7 @@ const AdminUpdate = () => {
             <div className="row">
               <div className="col-lg-6">
                 <img
-                  src="../../public/images/support.png"
+                  src="/images/support.png"
                   width="400"
                   height="500"
                   alt="Login image here"
@@ -23,7 +25,7 @@ const AdminUpdate = () => {
               <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Contact here</h1>
                 <br />
-                <form onSubmit={handleSubmit}>
+                <form>
                   <div className="container-box">
                     <input
                       className="input"
@@ -70,6 +72,9 @@ const AdminUpdate = () => {
                       value={data.email}
                       onChange={handleInput}
                     />
+                     <label className="label" htmlFor="phone">
+                      Mobile
+                    </label>
                   </div>
 
                   <button type="submit" className="btn btn-submit btn-primary">
