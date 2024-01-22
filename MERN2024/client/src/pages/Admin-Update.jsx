@@ -2,7 +2,9 @@ import { useState } from "react";
 
 const AdminUpdate = () => {
     const [data, setData] = useState({
-        
+        username:"",
+        email:"",
+        phone:"",
     });
   return (
     <>
