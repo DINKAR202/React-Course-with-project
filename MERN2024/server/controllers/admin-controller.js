@@ -28,6 +28,16 @@ const getUsersById = async (req, res) => {
   }
 };
 
+// User update logic
+
+const updateUserById = async(req, res) => {
+  try {
+    
+  } catch (error) {
+    
+  }
+}
+
 // User Data delete logic
 
 const deleteUserById = async (req, res) => {
