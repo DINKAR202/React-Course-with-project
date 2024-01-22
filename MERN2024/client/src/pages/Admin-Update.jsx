@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useAuth } from "../store/auth";
 
 const AdminUpdate = () => {
   const [data, setData] = useState({
@@ -9,14 +10,15 @@ const AdminUpdate = () => {
   });
 
   const params = useParams();
+  const authorizationToken = useAuth();
 
   //   Get single user data
   const getSingleUserData = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/${id}`,
+        `http://localhost:5000/api/admin/users/${params.id}`,
         {
-          method: "DELETE",
+          method: "GET",
           headers: {
             Authorization: authorizationToken,
           },
