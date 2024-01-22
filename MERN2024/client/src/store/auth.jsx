@@ -14,13 +14,6 @@ export const AuthProvider = ({ children }) => {
     return localStorage.setItem("token", serverToken);
   };
 
-  // Include other authentication-related values/functions here
-  // const authValues = {
-  //   storeTokenInLS,
-  //   LogoutUser,
-  //   isLoggedIn,
-  // };
-
   let isLoggedIn = !!token;
   console.log("isLoggedIn", isLoggedIn);
 

@@ -10,7 +10,9 @@ const AdminUpdate = () => {
   });
 
   const params = useParams();
+//   console.log("single user data", params);
   const authorizationToken = useAuth();
+//   console.log("Authorization Token:", authorizationToken);
 
   //   Get single user data
   const getSingleUserData = async () => {
@@ -27,6 +29,7 @@ const AdminUpdate = () => {
       const data = await response.json();
       console.log(`users single data: ${data}`);
       setData(data);
+
       //   if (response.ok) {
       //     getAllUsersData();
       //   }
