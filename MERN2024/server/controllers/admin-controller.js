@@ -21,7 +21,7 @@ const getAllUsers = async (req, res) => {
 const getUsersById = async (req, res) => {
   try {
     const id = req.params.id;
-    await User.findOne({ _id: id });
+    await User.findOne({ _id: id }, { password: 0 });
     return res.status(200).json({ message: "User Deleted Successfully!" });
   } catch (error) {
     next(error);
