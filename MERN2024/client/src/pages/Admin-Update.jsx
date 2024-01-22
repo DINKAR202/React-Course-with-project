@@ -13,7 +13,7 @@ const AdminUpdate = () => {
   const authorizationToken = useAuth();
 
   //   Get single user data
-  const getSingleUserData = async (id) => {
+  const getSingleUserData = async () => {
     try {
       const response = await fetch(
         `http://localhost:5000/api/admin/users/${params.id}`,
@@ -25,7 +25,8 @@ const AdminUpdate = () => {
         }
       );
       const data = await response.json();
-      console.log(`users after delete: ${data}`);
+      console.log(`users single data: ${data}`);
+      setData(data);
       //   if (response.ok) {
       //     getAllUsersData();
       //   }
