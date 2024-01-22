@@ -9,7 +9,7 @@ router
   .get(authMiddleware, adminMiddleware, adminController.getAllUsers);
 
   router
-  .route("/users:id")
+  .route("/users/:id")
   .get(authMiddleware, adminMiddleware, adminController.getUsersById);
 
 router
