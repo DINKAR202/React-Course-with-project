@@ -34,6 +34,10 @@ const updateUserById = async(req, res) => {
   try {
     const id = req.params.id;
     const data = req.body;
+
+    const updateUser = await User.updateOne({_id: id}, {
+      $set: updateUser,
+    });
   } catch (error) {
     next(error);
   }
