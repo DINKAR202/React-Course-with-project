@@ -1,16 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const AdminUpdate = () => {
-    const [data, setData] = useState({
-        username:"",
-        email:"",
-        phone:"",
-    });
+  const [data, setData] = useState({
+    username: "",
+    email: "",
+    phone: "",
+  });
 
-    const handleInput = () => {};
+  //   Get single user data
+  const getSingleUserData = async (id) => {
+    try {
+      const response = await fetch(
+        `http://localhost:5000/api/admin/users/delete/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: authorizationToken,
+          },
+        }
+      );
+      const data = await response.json();
+      console.log(`users after delete: ${data}`);
+      //   if (response.ok) {
+      //     getAllUsersData();
+      //   }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getSingleUserData();
+  }, []);
+
+  const handleInput = () => {};
   return (
     <>
-        <section>
+      <section>
         <main className="container-fluid">
           <div className="container">
             <div className="row">
@@ -23,7 +49,7 @@ const AdminUpdate = () => {
                 />
               </div>
               <div className="col-lg-6">
-                <h1 className="main-heading mb-3">Contact here</h1>
+                <h1 className="main-heading mb-3">Update User Data</h1>
                 <br />
                 <form>
                   <div className="container-box">
@@ -61,7 +87,7 @@ const AdminUpdate = () => {
                   </div>
 
                   <div className="container-box">
-                  <input
+                    <input
                       className="input"
                       type="phone"
                       name="phone"
@@ -72,13 +98,13 @@ const AdminUpdate = () => {
                       value={data.email}
                       onChange={handleInput}
                     />
-                     <label className="label" htmlFor="phone">
+                    <label className="label" htmlFor="phone">
                       Mobile
                     </label>
                   </div>
 
                   <button type="submit" className="btn btn-submit btn-primary">
-                    Submit
+                    Update
                   </button>
                 </form>
               </div>
@@ -87,7 +113,7 @@ const AdminUpdate = () => {
         </main>
       </section>
     </>
-  )
-}
+  );
+};
 
 export default AdminUpdate;
