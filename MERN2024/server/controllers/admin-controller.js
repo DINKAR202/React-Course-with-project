@@ -16,7 +16,7 @@ const getAllUsers = async (req, res) => {
   }
 };
 
-// single User logic
+// Single User logic
 
 const getUsersById = async (req, res) => {
   try {
