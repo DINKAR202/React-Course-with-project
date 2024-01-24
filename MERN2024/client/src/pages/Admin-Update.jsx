@@ -10,9 +10,9 @@ const AdminUpdate = () => {
   });
 
   const params = useParams();
-//   console.log("single user data", params);
+  //   console.log("single user data", params);
   const authorizationToken = useAuth();
-//   console.log("Authorization Token:", authorizationToken);
+  //   console.log("Authorization Token:", authorizationToken);
 
   //   Get single user data
   const getSingleUserData = async () => {
@@ -26,6 +26,7 @@ const AdminUpdate = () => {
           },
         }
       );
+      console.log("Response data", response);
       const data = await response.json();
       console.log(`users single data: ${data}`);
       setData(data);
@@ -49,14 +50,14 @@ const AdminUpdate = () => {
         <main className="container-fluid">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <img
                   src="/images/support.png"
                   width="400"
                   height="500"
                   alt="Login image here"
                 />
-              </div>
+              </div> */}
               <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Update User Data</h1>
                 <br />
