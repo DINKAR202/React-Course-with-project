@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import { toast } from "react-toastify";
 
 const AdminUpdate = () => {
   const [data, setData] = useState({
@@ -49,28 +50,30 @@ const AdminUpdate = () => {
 
     setData({
       ...data,
-      [name]:value,
-    })
+      [name]: value,
+    });
   };
 
-// to update the data dynamically
-const handleSubmit = async (e) =>{
-  e.preventDefault();
+  // to update the data dynamically
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    const response = await fetch(`http://localhost:5000/api/admin/users/update/${params.id}`,
-    {
-      method: "DELETE",
-      headers: {
-        Authorization: authorizationToken,
-      },
-      body: JSON.stringify(data),
+    try {
+      const response = await fetch(
+        `http://localhost:5000/api/admin/users/update/${params.id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: authorizationToken,
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      toast.success("Updated Successfully");
+    } catch (error) {
+      console.log(error);
     }
-    );
-  } catch (error) {
-    console.log(error)
-  }
-}
+  };
 
   return (
     <>
@@ -89,7 +92,7 @@ const handleSubmit = async (e) =>{
               <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Update User Data</h1>
                 <br />
-                
+
                 <form onSubmit={handleSubmit}>
                   <div className="container-box">
                     <input
