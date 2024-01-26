@@ -49,9 +49,28 @@ const AdminUpdate = () => {
 
     setData({
       ...data,
-      [name]:value
+      [name]:value,
     })
   };
+
+// to update the data dynamically
+const handleSubmit = async (e) =>{
+  e.preventDefault();
+
+  try {
+    const response = await fetch(`http://localhost:5000/api/admin/users/update/${params.id}`,
+    {
+      method: "DELETE",
+      headers: {
+        Authorization: authorizationToken,
+      },
+    }
+    );
+  } catch (error) {
+    console.log(error)
+  }
+}
+
   return (
     <>
       <section>
@@ -70,7 +89,7 @@ const AdminUpdate = () => {
                 <h1 className="main-heading mb-3">Update User Data</h1>
                 <br />
                 
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="container-box">
                     <input
                       className="input"
