@@ -30,22 +30,22 @@ const getUserById = async (req, res) => {
 
 // User update logic
 
-// const updateUserById = async (req, res) => {
-//   try {
-//     const id = req.params.id;
-//     const updatedUserData = req.body;
+const updateUserById = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const updatedUserData = req.body;
 
-//     const updatedUser = await User.updateOne(
-//       { _id: id },
-//       {
-//         $set: updatedUserData,
-//       }
-//     );
-//     return res.status(200).json(updatedUser);
-//   } catch (error) {
-//     next(error);
-//   }
-// };
+    const updatedData = await User.updateOne(
+      { _id: id },
+      {
+        $set: updatedUserData,
+      }
+    );
+    return res.status(200).json(updatedData);
+  } catch (error) {
+    next(error);
+  }
+};
 
 // User Data delete logic
 
@@ -79,5 +79,5 @@ module.exports = {
   getAllContacts,
   deleteUserById,
   getUserById,
-  // updateUserById,
+  updateUserById,
 };
