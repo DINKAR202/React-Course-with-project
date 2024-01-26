@@ -64,6 +64,7 @@ const handleSubmit = async (e) =>{
       headers: {
         Authorization: authorizationToken,
       },
+      body: JSON.stringify(data),
     }
     );
   } catch (error) {
