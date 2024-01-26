@@ -18,7 +18,7 @@ const getAllUsers = async (req, res) => {
 
 // Single User logic
 
-const getUsersById = async (req, res) => {
+const getUserById = async (req, res) => {
   try {
     const id = req.params.id;
     const data = await User.findOne({ _id: id }, { password: 0 });
@@ -30,22 +30,22 @@ const getUsersById = async (req, res) => {
 
 // User update logic
 
-const updateUserById = async (req, res) => {
-  try {
-    const id = req.params.id;
-    const updatedUserData = req.body;
+// const updateUserById = async (req, res) => {
+//   try {
+//     const id = req.params.id;
+//     const updatedUserData = req.body;
 
-    const updatedUser = await User.updateOne(
-      { _id: id },
-      {
-        $set: updatedUserData,
-      }
-    );
-    return res.status(200).json(updatedUser);
-  } catch (error) {
-    next(error);
-  }
-};
+//     const updatedUser = await User.updateOne(
+//       { _id: id },
+//       {
+//         $set: updatedUserData,
+//       }
+//     );
+//     return res.status(200).json(updatedUser);
+//   } catch (error) {
+//     next(error);
+//   }
+// };
 
 // User Data delete logic
 
@@ -78,6 +78,6 @@ module.exports = {
   getAllUsers,
   getAllContacts,
   deleteUserById,
-  getUsersById,
-  updateUserById,
+  getUserById,
+  // updateUserById,
 };
