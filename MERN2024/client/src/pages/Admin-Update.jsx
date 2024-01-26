@@ -64,6 +64,7 @@ const AdminUpdate = () => {
         {
           method: "PATCH",
           headers: {
+            "Content-Type": "application/json",
             Authorization: authorizationToken,
           },
           body: JSON.stringify(data),
