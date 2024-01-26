@@ -43,7 +43,15 @@ const AdminUpdate = () => {
     getSingleUserData();
   }, []);
 
-  const handleInput = () => {};
+  const handleInput = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+
+    setData({
+      ...data,
+      [name]:value
+    })
+  };
   return (
     <>
       <section>
