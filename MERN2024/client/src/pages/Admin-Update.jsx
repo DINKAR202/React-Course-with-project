@@ -69,7 +69,11 @@ const AdminUpdate = () => {
           body: JSON.stringify(data),
         }
       );
-      toast.success("Updated Successfully");
+      if(response.ok) {
+        toast.success("Updated Successfully");
+      } else{
+        toast.error("Not Updated");
+      }
     } catch (error) {
       console.log(error);
     }
