@@ -61,6 +61,7 @@ const AdminUpdate = () => {
               <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Update User Data</h1>
                 <br />
+                
                 <form>
                   <div className="container-box">
                     <input
