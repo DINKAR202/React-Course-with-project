@@ -12,7 +12,7 @@ const AdminUpdate = () => {
 
   const params = useParams();
   //   console.log("single user data", params);
-  const authorizationToken = useAuth();
+  const { authorizationToken } = useAuth();
   //   console.log("Authorization Token:", authorizationToken);
 
   //   Get single user data
@@ -70,9 +70,9 @@ const AdminUpdate = () => {
           body: JSON.stringify(data),
         }
       );
-      if(response.ok) {
+      if (response.ok) {
         toast.success("Updated Successfully");
-      } else{
+      } else {
         toast.error("Not Updated");
       }
     } catch (error) {
