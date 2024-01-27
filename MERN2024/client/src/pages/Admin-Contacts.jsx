@@ -19,9 +19,9 @@ const AdminContacts = () => {
       // console.log("contact data", data);
       if (response.ok) {
         setContactData(data);
-        toast.success("Contact Deleted");
+        toast.success("Deleted Successfully");
       }else{
-        toast.error("Contact not Deleted");
+        toast.error("Not Deleted");
       }
     } catch (error) {
       console.log(error);
