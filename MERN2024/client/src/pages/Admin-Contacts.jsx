@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../store/auth";
+import { toast } from 'react-toastify';
 
 const AdminContacts = () => {
   const [contactData, setContactData] = useState([]);
@@ -15,9 +16,12 @@ const AdminContacts = () => {
         },
       });
       const data = await response.json();
-      console.log("contact data", data);
+      // console.log("contact data", data);
       if (response.ok) {
         setContactData(data);
+        toast.success("Contact Deleted");
+      }else{
+        toast.error("Contact not Deleted");
       }
     } catch (error) {
       console.log(error);
