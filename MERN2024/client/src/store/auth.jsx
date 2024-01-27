@@ -29,9 +29,10 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await fetch("http://localhost:5000/api/auth/user", {
         method: "GET",
-        // headers: {
-        //   Authorization: authorizationToken,
-        // },
+        // I have added this one as by own
+        headers: {
+          Authorization: authorizationToken,
+        },
       });
       if (response.ok) {
         const data = await response.json();
