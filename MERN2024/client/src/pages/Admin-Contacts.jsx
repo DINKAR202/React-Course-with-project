@@ -25,10 +25,10 @@ const AdminContacts = () => {
   };
 
    //   Delete user DAta function
-   const deleteUser = async (id) => {
+   const deleteContactById = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/delete/${id}`,
+        `http://localhost:5000/api/admin/contacts/delete/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -69,7 +69,7 @@ const AdminContacts = () => {
             </thead>
             <tbody>
               {contactData.map((curContactData, index) => {
-            const { username, email, message } = curContactData;
+            const { username, email, message, _id } = curContactData;
 
                 return (
                   <tr key={index}>
@@ -78,7 +78,7 @@ const AdminContacts = () => {
                     <td>{message}</td>
                     <td>
                       <button
-                        onClick={() => deleteUser(curContactData._id)}
+                        onClick={() => deleteContactById(_id)}
                         className="button-62"
                         role="button"
                       >
