@@ -41,6 +41,8 @@ export const AuthProvider = ({ children }) => {
         console.log("user data", data.userData);
         setUser(data.userData);
         setIsLoading(false);
+      } else {
+        setIsLoading(false);
       }
     } catch (error) {
       console.error("Error fetching user data!");
@@ -55,7 +57,7 @@ export const AuthProvider = ({ children }) => {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
-        }
+        },
       });
 
       if (response.ok) {
