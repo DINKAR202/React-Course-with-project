@@ -19,9 +19,6 @@ const AdminContacts = () => {
       // console.log("contact data", data);
       if (response.ok) {
         setContactData(data);
-        toast.success("Deleted Successfully");
-      }else{
-        toast.error("Not Deleted");
       }
     } catch (error) {
       console.log(error);
@@ -43,7 +40,10 @@ const AdminContacts = () => {
       const data = await response.json();
       console.log(`users after delete: ${data}`);
       if (response.ok) {
+        toast.success("Deleted Successfully");
         getContactsData();
+      }else{
+        toast.error("Not Deleted");
       }
     } catch (error) {
       console.log(error);
