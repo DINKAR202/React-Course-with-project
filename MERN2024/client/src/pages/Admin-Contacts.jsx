@@ -24,6 +24,28 @@ const AdminContacts = () => {
     }
   };
 
+   //   Delete user DAta function
+   const deleteUser = async (id) => {
+    try {
+      const response = await fetch(
+        `http://localhost:5000/api/admin/users/delete/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: authorizationToken,
+          },
+        }
+      );
+      const data = await response.json();
+      console.log(`users after delete: ${data}`);
+      if (response.ok) {
+        getContactsData();
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getContactsData();
   }, []);
@@ -56,7 +78,7 @@ const AdminContacts = () => {
                     <td>{message}</td>
                     <td>
                       <button
-                        // onClick={() => deleteUser(curUser._id)}
+                        onClick={() => deleteUser(curContactData._id)}
                         className="button-62"
                         role="button"
                       >
