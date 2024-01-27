@@ -28,6 +28,7 @@ export const AuthProvider = ({ children }) => {
 
   const userAuthentication = async () => {
     try {
+      setIsLoading(true);
       const response = await fetch("http://localhost:5000/api/auth/user", {
         method: "GET",
         // I have added this one as by own
@@ -37,8 +38,9 @@ export const AuthProvider = ({ children }) => {
       });
       if (response.ok) {
         const data = await response.json();
-        // console.log("user data", data.userData);
+        console.log("user data", data.userData);
         setUser(data.userData);
+        setIsLoading(false);
       }
     } catch (error) {
       console.error("Error fetching user data!");
