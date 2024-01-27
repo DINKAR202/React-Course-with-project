@@ -22,7 +22,7 @@ const AdminUsers = () => {
     }
   };
 
-  //   Delete user DAta function
+  //   Delete user Data function
   const deleteUser = async (id) => {
     try {
       const response = await fetch(
