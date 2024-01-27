@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../store/auth";
 
 const AdminContacts = () => {
+  const [contactData, setContactData] = useState([])
+
   const { authorizationToken } = useAuth();
 
   const getContactsData = async () => {
