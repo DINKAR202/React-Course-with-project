@@ -31,6 +31,9 @@ const AdminContacts = () => {
   return (
     <>
       <h2>Hey there Contacts</h2>
+      {contactData.map((curContactData, index)=> {
+          return <p key={index}>{curContactData.username}</p>
+      })}
     </>
   );
 };
