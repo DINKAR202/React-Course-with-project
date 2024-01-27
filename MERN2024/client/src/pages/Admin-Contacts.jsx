@@ -2,11 +2,9 @@ import { useEffect } from "react";
 import { useAuth } from "../store/auth";
 
 const AdminContacts = () => {
-  const authorizationToken = useAuth();
-  console.log("authorizationToken", authorizationToken)
+  const { authorizationToken } = useAuth();
 
   const getContactsData = async () => {
-
     try {
       const response = await fetch("http://localhost:5000/api/admin/contacts", {
         method: "GET",
@@ -15,7 +13,10 @@ const AdminContacts = () => {
         },
       });
       const data = await response.json();
-      console.log("Response data", data);
+      console.log("contact data", data);
+      if(response.ok){
+        console.log(response);
+      }
     } catch (error) {
       console.log(error);
     }
