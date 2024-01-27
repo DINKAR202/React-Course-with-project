@@ -1,8 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FaUser, FaHome, FaRegListAlt } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
+import { useAuth } from "./../../store/auth";
 
 const AdminLayout = () => {
+  const { user } = useAuth();
+  console.log("admin layout", user);
   return (
     <>
       <header>
@@ -10,16 +13,26 @@ const AdminLayout = () => {
           <nav>
             <ul>
               <li>
-                <NavLink to="/admin/users"><FaUser /> Users </NavLink>
+                <NavLink to="/admin/users">
+                  <FaUser /> Users{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/admin/contacts"> <FaMessage/> Contacts </NavLink>
+                <NavLink to="/admin/contacts">
+                  {" "}
+                  <FaMessage /> Contacts{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/admin/services"> <FaRegListAlt/> Services </NavLink>
+                <NavLink to="/admin/services">
+                  {" "}
+                  <FaRegListAlt /> Services{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/"><FaHome/> Home </NavLink>
+                <NavLink to="/">
+                  <FaHome /> Home{" "}
+                </NavLink>
               </li>
             </ul>
           </nav>
