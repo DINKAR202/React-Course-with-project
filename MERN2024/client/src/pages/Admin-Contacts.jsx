@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import { useAuth } from "../store/auth";
 
 const AdminContacts = () => {
+  const authorizationToken = useAuth();
+  console.log("authorizationToken", authorizationToken)
+
   const getContactsData = async () => {
-    const authorizationToken = useAuth();
 
     try {
       const response = await fetch("http://localhost:5000/api/admin/contacts", {
@@ -12,6 +14,8 @@ const AdminContacts = () => {
           Authorization: authorizationToken,
         },
       });
+      const data = await response.json();
+      console.log("Response data", data);
     } catch (error) {
       console.log(error);
     }
@@ -21,7 +25,11 @@ const AdminContacts = () => {
     getContactsData();
   }, []);
 
-  return <div>Admin-Contacts</div>;
+  return (
+    <>
+      <h2>Hey there Contacts</h2>
+    </>
+  );
 };
 
 export default AdminContacts;

@@ -15,7 +15,7 @@ const AdminUsers = () => {
         },
       });
       const data = await response.json();
-      console.log(`users ${data}`);
+      // console.log(`users ${data}`);
       setUsers(data);
     } catch (error) {
       console.log(error);

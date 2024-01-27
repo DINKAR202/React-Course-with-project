@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   let isLoggedIn = !!token;
-  console.log("isLoggedIn", isLoggedIn);
+  // console.log("isLoggedIn", isLoggedIn);
 
   // tackling the logout functionality
   const LogoutUser = () => {
@@ -29,9 +29,9 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await fetch("http://localhost:5000/api/auth/user", {
         method: "GET",
-        headers: {
-          Authorization: authorizationToken,
-        },
+        // headers: {
+        //   Authorization: authorizationToken,
+        // },
       });
       if (response.ok) {
         const data = await response.json();
@@ -49,6 +49,9 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await fetch("http://localhost:5000/api/data/service", {
         method: "GET",
+        headers: {
+          Authorization: authorizationToken,
+        }
       });
 
       if (response.ok) {
