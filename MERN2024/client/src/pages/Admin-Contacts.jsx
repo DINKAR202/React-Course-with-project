@@ -17,7 +17,7 @@ const AdminContacts = () => {
       const data = await response.json();
       console.log("contact data", data);
       if(response.ok){
-        console.log(response);
+        setContactData(data);
       }
     } catch (error) {
       console.log(error);
