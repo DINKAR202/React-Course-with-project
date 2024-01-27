@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../store/auth";
 
 const AdminContacts = () => {
-  const [contactData, setContactData] = useState([])
+  const [contactData, setContactData] = useState([]);
 
   const { authorizationToken } = useAuth();
 
@@ -16,7 +16,7 @@ const AdminContacts = () => {
       });
       const data = await response.json();
       console.log("contact data", data);
-      if(response.ok){
+      if (response.ok) {
         setContactData(data);
       }
     } catch (error) {
@@ -30,10 +30,14 @@ const AdminContacts = () => {
 
   return (
     <>
-      <h2>Hey there Contacts</h2>
-      {contactData.map((curContactData, index)=> {
-          return <p key={index}>{curContactData.email}</p>
+      <h1>Admin Contacts Data</h1>
+        <section className="admin-contacts-section">
+        {contactData.map((curContactData, index) => {
+          const { username, email, message} = curContactData;
+        return <p key={index}>{curContactData.email}</p>;
       })}
+        </section>
+      
     </>
   );
 };
