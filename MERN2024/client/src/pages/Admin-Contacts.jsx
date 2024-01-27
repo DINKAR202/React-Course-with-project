@@ -30,7 +30,48 @@ const AdminContacts = () => {
 
   return (
     <>
-      <section className="admin-contacts-section">
+      <section className="admin-users-section">
+        <div className="container">
+          <h1>Admin Users Data</h1>
+        </div>
+
+        <div className="container admin-users">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              {contactData.map((curContactData, index) => {
+            const { username, email, message } = curContactData;
+
+                return (
+                  <tr key={index}>
+                    <td>{username}</td>
+                    <td>{email}</td>
+                    <td>{message}</td>
+                    <td>
+                      <button
+                        // onClick={() => deleteUser(curUser._id)}
+                        className="button-62"
+                        role="button"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* <section className="admin-users-section">
         <h1>Admin Contacts Data</h1>
         <div className="container admin-users">
           {contactData.map((curContactData, index) => {
@@ -45,7 +86,7 @@ const AdminContacts = () => {
             );
           })}
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
