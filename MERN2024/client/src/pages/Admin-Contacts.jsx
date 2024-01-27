@@ -30,14 +30,22 @@ const AdminContacts = () => {
 
   return (
     <>
-      <h1>Admin Contacts Data</h1>
-        <section className="admin-contacts-section">
-        {contactData.map((curContactData, index) => {
-          const { username, email, message} = curContactData;
-        return <p key={index}>{curContactData.email}</p>;
-      })}
-        </section>
-      
+      <section className="admin-contacts-section">
+        <h1>Admin Contacts Data</h1>
+        <div className="container admin-users">
+          {contactData.map((curContactData, index) => {
+            const { username, email, message } = curContactData;
+            return (
+              <div key={index}>
+                <p>{username}</p>
+                <p>{email}</p>
+                <p>{message}</p>
+                <button className="btn">delete</button>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </>
   );
 };
