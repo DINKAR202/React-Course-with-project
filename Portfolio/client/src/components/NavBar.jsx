@@ -28,6 +28,12 @@ const NavBar = () => {
                 <NavLink to="/service"> Services </NavLink>
               </li>
               <li>
+                <NavLink to="/service"> Skills </NavLink>
+              </li>
+              <li>
+                <NavLink to="/service"> Projects </NavLink>
+              </li>
+              <li>
                 <NavLink to="/contact"> Contact </NavLink>
               </li>
               {isLoggedIn ? (
