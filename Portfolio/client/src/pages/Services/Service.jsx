@@ -97,13 +97,14 @@ const Service = () => {
                   </radialGradient>
                 </defs>
               </svg>
-              <p className="card-title">Zero-cost Possibilities</p>
+              <p className="card-title">React.js</p>
               <p className="card-description">
                 Hubble lets users borrow USDH for a one-time 0.5% fee. No
                 variable rates. No interest charged, ever.
               </p>
             </div>
           </div>
+
           <div className="card">
             <div className="container-card bg-white-box">
               <svg
@@ -195,6 +196,7 @@ const Service = () => {
               </p>
             </div>
           </div>
+
           <div className="card">
             <div className="container-card bg-yellow-box">
               <svg
@@ -256,6 +258,7 @@ const Service = () => {
               </p>
             </div>
           </div>
+
           <div className="card">
             <div className="container-card bg-blue-box">
               <svg
