@@ -12,14 +12,14 @@ const Home = () => {
               <p>
                 <b>WELCOME TO MY PORTFOLIO</b>
               </p>
-              <h1>Hi, I'm Dinkar Kumar A MERN Stack develop</h1>
+              <h1>Hi, I'm Dinkar Kumar A MERN Stack developer</h1>
               <p></p>
               <div className="btn btn-group">
                 <a href="/contact">
                   <button className="btn">connect now</button>
                 </a>
-                <a href="/services">
-                  <button className="btn secondary-btn">learn more</button>
+                <a href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing">
+                  <button className="btn secondary-btn">Resume</button>
                 </a>
               </div>
             </div>
