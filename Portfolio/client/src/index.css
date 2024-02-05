@@ -414,6 +414,7 @@ a.active {
 ** -------------------------  */
 
 .section-services {
+  margin-top: 30px;
   & .container:first-child {
     padding: 0;
   }
