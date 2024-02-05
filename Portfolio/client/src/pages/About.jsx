@@ -44,6 +44,7 @@ const About = () => {
                 </div>
 
                 <div className="btn-group">
+                  <h3>Connect with</h3>
                   <span>
                     <a href="https://www.linkedin.com/in/dinkar-kumar-pri/">
                       <BsLinkedin />
