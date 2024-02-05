@@ -10,7 +10,7 @@ const NavBar = () => {
       <header>
         <div className="container">
           <div className="logo-brand">
-            <NavLink to="/">MERN2024</NavLink>
+            <NavLink to="/">DINKAR</NavLink>
           </div>
 
           <nav>
@@ -20,6 +20,9 @@ const NavBar = () => {
               </li>
               <li>
                 <NavLink to="/about"> About </NavLink>
+              </li>
+              <li>
+                <NavLink to="/service"> Resume </NavLink>
               </li>
               <li>
                 <NavLink to="/service"> Services </NavLink>
