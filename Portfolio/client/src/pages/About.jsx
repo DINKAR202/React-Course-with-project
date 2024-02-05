@@ -22,6 +22,7 @@ const About = () => {
             </div>
 
             <div className="hero-content">
+              <h1 className="main-heading-about mb-3">About</h1>
               {/* <p>Hi {user.username} Developer</p> */}
               <h1>Hi, I'm Dinkar Kumar</h1>
               <h2>A MERN Stack Developer.</h2>
@@ -33,35 +34,39 @@ const About = () => {
                 front-end and back-end technologies to deliver seamless user
                 experiences.
               </p>
-              <div className="btn btn-group">
-                <span>
-                  <a href="https://www.linkedin.com/in/dinkar-kumar-pri/">
-                    <BsLinkedin />
+              <div className="btn btn-group grid grid-two-cols">
+
+                <div className="btn btn-group">
+                  <a href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing">
+                    <button className="btn">Resume</button>
                   </a>
-                </span>
-                <span>
-                  <a href="https://github.com/DINKAR202">
-                    <VscGithub />
+                  <a href="mailto:dinkar202@outlook.com">
+                    <button className="btn secondary-btn">Hire me</button>
                   </a>
-                </span>
-                <span>
-                  <a href="https://www.hackerrank.com/profile/rathordinkar5">
-                    <SiHackerearth />
-                  </a>
-                </span>
-                <span>
-                  <a href="https://www.codechef.com/users/dinkar7079">
-                    <SiCodechef />
-                  </a>
-                </span>
-              </div>
-              <div className="btn btn-group">
-                <a href="/contact">
-                  <button className="btn">connect now</button>
-                </a>
-                <a href="/services">
-                  <button className="btn secondary-btn">learn more</button>
-                </a>
+                </div>
+
+                <div className="btn-group">
+                  <span>
+                    <a href="https://www.linkedin.com/in/dinkar-kumar-pri/">
+                      <BsLinkedin />
+                    </a>
+                  </span>
+                  <span>
+                    <a href="https://github.com/DINKAR202">
+                      <VscGithub />
+                    </a>
+                  </span>
+                  <span>
+                    <a href="https://www.hackerrank.com/profile/rathordinkar5">
+                      <SiHackerearth />
+                    </a>
+                  </span>
+                  <span>
+                    <a href="https://www.codechef.com/users/dinkar7079">
+                      <SiCodechef />
+                    </a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ body {
 /*?  Help me reach 1 Million subs 👉 https://youtube.com/thapatechnical */
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.1;
   font-weight: bold;
 }
@@ -40,6 +40,10 @@ h2 {
   font-size: 3rem;
   line-height: 1.1;
   font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p,
@@ -234,6 +238,22 @@ a.active {
     left: 0;
     bottom: 0;
     width: 50%;
+    height: 0.5rem;
+    background-color: var(--btn-color);
+  }
+}
+
+.main-heading-about {
+  font-size: 4rem !important;
+  position: relative;
+  text-transform: capitalize;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 22%;
     height: 0.5rem;
     background-color: var(--btn-color);
   }
