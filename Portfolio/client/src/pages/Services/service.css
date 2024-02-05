@@ -116,8 +116,14 @@
 
 .card-description {
   font-weight: 600;
-  line-height: 32px;
+  line-height: 26px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   max-width: 470px;
+}
+
+/* service-logo */
+.service-logo {
+  width: 250px;
+  height: 250px;
 }
