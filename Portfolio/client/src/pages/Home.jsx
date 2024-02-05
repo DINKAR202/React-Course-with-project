@@ -1,6 +1,7 @@
 // import { Analytics } from "../components/Analytics";
 
 import About from "./About";
+import Service from "./Service";
 
 const Home = () => {
   return (
@@ -15,9 +16,9 @@ const Home = () => {
               <h1>Dinkar Kumar</h1>
               <h2>And I'm MERN Stack developer</h2>
               <p>
-                <b>I'm</b> a web developer with extensive experience for over 1 years,
-                expertice is to create innovative logic and website using MERN
-                Stack technology and many more...
+                <b>I'm</b> a web developer with extensive experience for over 1
+                years, expertice is to create innovative logic and website using
+                MERN Stack technology and many more...
               </p>
               <div className="btn btn-group">
                 <a href="/contact">
@@ -98,8 +99,10 @@ const Home = () => {
           </div>
         </div>
       </section> */}
-
+      {/* About section */}
       <About />
+      {/* Service section */}
+      <Service />
     </>
   );
 };
