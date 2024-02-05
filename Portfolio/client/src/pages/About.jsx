@@ -36,7 +36,7 @@ const About = () => {
               <div className="btn btn-group grid grid-two-cols">
                 <div className="btn btn-group">
                   <a href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing">
-                    <button className="btn">Resume</button>
+                    <button className="btn button-73">Resume</button>
                   </a>
                   <a href="mailto:dinkar202@outlook.com">
                     <button className="btn secondary-btn">Hire me</button>

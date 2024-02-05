@@ -21,7 +21,7 @@ const Home = () => {
               </p>
               <div className="btn btn-group">
                 <a href="/contact">
-                  <button className="btn">connect now</button>
+                  <button className="button-40">connect now</button>
                 </a>
                 <a href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing">
                   <button className="btn secondary-btn">Resume</button>

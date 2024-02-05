@@ -10,7 +10,7 @@ const Service = () => {
         <h1 className="main-heading">Services</h1>
       </div>
       <div className="container grid grid-three-cols">
-        {Array.isArray(services) &&
+        {/* {Array.isArray(services) &&
           services.map((curElem, index) => {
             // const { price, description, provider, service } = curElem;
             return (
@@ -29,7 +29,7 @@ const Service = () => {
                 </div>
               </div>
             );
-          })}
+          })} */}
       </div>
     </section>
   );
