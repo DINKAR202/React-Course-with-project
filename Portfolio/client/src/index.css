@@ -173,6 +173,11 @@ button {
   align-items: center;
 }
 
+/* About section */
+.about-main {
+  margin-top: 100px !important;
+}
+
 /***** End Hero  *****/
 
 /***** analytics Section *****/
@@ -237,9 +242,10 @@ a.active {
   &::after {
     content: "";
     position: absolute;
+    margin-bottom: -2px !important;
     left: 0;
     bottom: 0;
-    width: 50%;
+    width: 75%;
     height: 0.5rem;
     background-color: var(--btn-color);
   }
@@ -253,6 +259,7 @@ a.active {
   &::after {
     content: "";
     position: absolute;
+    margin-bottom: -2px !important;
     left: 0;
     bottom: 0;
     width: 22%;
@@ -414,7 +421,7 @@ a.active {
 ** -------------------------  */
 
 .section-services {
-  margin-top: 30px;
+  margin-top: 90px !important;
   & .container:first-child {
     padding: 0;
   }

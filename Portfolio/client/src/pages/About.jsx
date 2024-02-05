@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <main>
+      <main className="about-main">
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             {/* hero images  */}
