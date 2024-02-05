@@ -1,5 +1,7 @@
 // import { useAuth } from "../store/auth";
-import { CiLinkedin } from "react-icons/ci";
+import { BsLinkedin } from "react-icons/bs";
+import { VscGithub } from "react-icons/vsc";
+import { SiHackerearth, SiCodechef } from "react-icons/si";
 
 const About = () => {
   // const { user } = useAuth();
@@ -32,12 +34,26 @@ const About = () => {
                 experiences.
               </p>
               <div className="btn btn-group">
-                <a href="/contact">
-                  <CiLinkedin />
-                </a>
-                <a href="/services">
-                  <button className="btn secondary-btn">learn more</button>
-                </a>
+                <span>
+                  <a href="https://www.linkedin.com/in/dinkar-kumar-pri/">
+                    <BsLinkedin />
+                  </a>
+                </span>
+                <span>
+                  <a href="https://github.com/DINKAR202">
+                    <VscGithub />
+                  </a>
+                </span>
+                <span>
+                  <a href="https://www.hackerrank.com/profile/rathordinkar5">
+                    <SiHackerearth />
+                  </a>
+                </span>
+                <span>
+                  <a href="https://www.codechef.com/users/dinkar7079">
+                    <SiCodechef />
+                  </a>
+                </span>
               </div>
               <div className="btn btn-group">
                 <a href="/contact">

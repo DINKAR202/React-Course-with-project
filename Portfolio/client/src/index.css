@@ -72,6 +72,11 @@ li {
   font-size: 1.7rem;
 }
 
+.btn-group span a {
+  margin-right: 10px;
+  font-size: 30px !important;
+}
+
 /*? layout Rule  */
 
 .container {
