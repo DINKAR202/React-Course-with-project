@@ -1,7 +1,13 @@
 const Skills = () => {
   return (
-    <div>Skills</div>
-  )
-}
+    <>
+      <main>
+        <section className="container">
+          <h1>hey there</h1>
+        </section>
+      </main>
+    </>
+  );
+};
 
-export default Skills
+export default Skills;
