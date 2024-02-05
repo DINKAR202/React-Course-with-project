@@ -1,6 +1,7 @@
 // import { Analytics } from "../components/Analytics";
 import About from "./About";
 import Service from './Services/Service';
+import Skills from "./Skills";
 
 const Home = () => {
   return (
@@ -10,12 +11,12 @@ const Home = () => {
           <div className="container grid grid-two-cols">
             <div className="hero-content">
               <p>
-                <b>Hello, It's Me</b>
+                <b>Hello, Its Me</b>
               </p>
               <h1>Dinkar Kumar</h1>
-              <h2>And I'm MERN Stack developer</h2>
+              <h2>And I am MERN Stack developer</h2>
               <p>
-                <b>I'm</b> a web developer with extensive experience for over 1
+                <b>I am</b> a web developer with extensive experience for over 1
                 years, expertice is to create innovative logic and website using
                 MERN Stack technology and many more...
               </p>
@@ -102,6 +103,9 @@ const Home = () => {
       <About />
       {/* Service section */}
       <Service />
+
+      {/* Skills section */}
+      <Skills />
     </>
   );
 };

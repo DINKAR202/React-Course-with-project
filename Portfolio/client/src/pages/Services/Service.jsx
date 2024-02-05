@@ -1,6 +1,5 @@
 // import { useAuth } from "../store/auth";
 import "./service.css";
-import { FaReact } from "react-icons/fa";
 
 const Service = () => {
   // const services = useAuth();
@@ -195,10 +194,13 @@ const Service = () => {
                   </radialGradient>
                 </defs>
               </svg>
-              <p className="card-title">Multi-Asset Collateral</p>
+              <p className="card-title">MERN Stack Developer</p>
               <p className="card-description">
-                Deposit a variety of assets on Hubble, raise your collateral
-                ratio, and unlock the liquidity in your wallet.
+                I offer services as a full-stack developer specializing in the
+                MERN Stack. I excel in integrating the latest technologies,
+                including Node.js, Express.js, Firebase, and Email.js.
+                Additionally, I have hands-on experience with Node components to
+                deliver comprehensive and efficient solutions.
               </p>
             </div>
           </div>
@@ -206,8 +208,8 @@ const Service = () => {
           <div className="card">
             <div className="container-card bg-yellow-box">
               <svg
-                width={80}
-                height={80}
+                width={60}
+                height={60}
                 viewBox="0 0 120 120"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -257,15 +259,19 @@ const Service = () => {
                   </radialGradient>
                 </defs>
               </svg>
-              <p className="card-title">Get Yield on Deposits</p>
+              <p className="card-title">Django Developer</p>
               <p className="card-description">
-                While your collateral is deposited, delegate it to earn the
-                highest yield available in the Solana ecosystem.
+                In the services section of my portfolio, I proudly showcase my
+                expertise as a full-stack developer with a focus on Django. I
+                possess the skills to seamlessly integrate the latest libraries,
+                ensuring a robust and modern development environment. I am
+                committed to delivering high-quality, innovative solutions that
+                meet the dynamic web development.
               </p>
             </div>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <div className="container-card bg-blue-box">
               <svg
                 width={80}
@@ -329,7 +335,7 @@ const Service = () => {
                 leverage up to 11x on their deposits.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
