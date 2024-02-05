@@ -30,7 +30,15 @@ body {
 /*?  Help me reach 1 Million subs 👉 https://youtube.com/thapatechnical */
 
 h1 {
-  font-size: 4.4rem;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+h2 {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 3rem;
   line-height: 1.1;
   font-weight: bold;
 }

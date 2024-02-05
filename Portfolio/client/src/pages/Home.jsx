@@ -40,7 +40,7 @@ const Home = () => {
       {/* 2nd section  */}
       {/* <Analytics /> */}
 
-      <section className="section-analytics">
+      {/* <section className="section-analytics">
         <div className="container grid grid-four-cols">
           <div className="div1">
             <h2>50+</h2>
@@ -59,12 +59,11 @@ const Home = () => {
             <p>service</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 3rd section  */}
-      <section className="section-hero">
+      {/* <section className="section-hero">
         <div className="container grid grid-two-cols">
-          {/* hero images  */}
           <div className="hero-image">
             <img
               src="/images/design.png"
@@ -93,7 +92,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
       <About />
     </>
   );
