@@ -1,7 +1,8 @@
-import { useAuth } from "../store/auth";
+// import { useAuth } from "../store/auth";
+import { CiLinkedin } from "react-icons/ci";
 
 const About = () => {
-  const { user } = useAuth();
+  // const { user } = useAuth();
 
   return (
     <>
@@ -23,8 +24,21 @@ const About = () => {
               <h1>Hi, I'm Dinkar Kumar</h1>
               <h2>A MERN Stack Developer.</h2>
               <p>
-              As a passionate MERN Stack Developer, I thrive on crafting visually stunning, innovative, and functional websites that address real-world challenges. With expertise in MongoDB, Express.js, React.js, and Node.js, I seamlessly integrate front-end and back-end technologies to deliver seamless user experiences.
+                As a passionate MERN Stack Developer, I thrive on crafting
+                visually stunning, innovative, and functional websites that
+                address real-world challenges. With expertise in MongoDB,
+                Express.js, React.js, and Node.js, I seamlessly integrate
+                front-end and back-end technologies to deliver seamless user
+                experiences.
               </p>
+              <div className="btn btn-group">
+                <a href="/contact">
+                  <CiLinkedin />
+                </a>
+                <a href="/services">
+                  <button className="btn secondary-btn">learn more</button>
+                </a>
+              </div>
               <div className="btn btn-group">
                 <a href="/contact">
                   <button className="btn">connect now</button>
