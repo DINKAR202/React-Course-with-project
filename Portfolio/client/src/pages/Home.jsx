@@ -9,14 +9,11 @@ const Home = () => {
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             <div className="hero-content">
-              <p>We are the World Best IT Company</p>
-              <h1>Welcome to MERN2024</h1>
               <p>
-                Are you ready to take your business to the next level with
-                cutting-edge IT solutions? Look no further! At Thapa Technical,
-                we specialize in providing innovative IT services and solutions
-                tailored to meet your unique needs.
+                <b>WELCOME TO MY PORTFOLIO</b>
               </p>
+              <h1>Hi, I'm Dinkar Kumar A MERN Stack develop</h1>
+              <p></p>
               <div className="btn btn-group">
                 <a href="/contact">
                   <button className="btn">connect now</button>

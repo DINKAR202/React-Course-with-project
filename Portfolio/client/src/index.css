@@ -27,10 +27,10 @@ body {
   min-height: 100vh;
 }
 
- /*?  Help me reach 1 Million subs 👉 https://youtube.com/thapatechnical */
+/*?  Help me reach 1 Million subs 👉 https://youtube.com/thapatechnical */
 
 h1 {
-  font-size: 5.4rem;
+  font-size: 4.4rem;
   line-height: 1.1;
   font-weight: bold;
 }
@@ -73,8 +73,7 @@ li {
   margin: 0 auto;
 }
 
-
-.row{
+.row {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -149,13 +148,12 @@ button {
   }
 }
 
-.Form-box{
+.Form-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 
 /***** End Hero  *****/
 
@@ -190,7 +188,6 @@ button {
 }
 
 /***** End analytics Section *****/
-
 
 .footer {
   background-color: #333;
@@ -424,7 +421,7 @@ a.active {
 
 /* Table */
 
-.admin-users{
+.admin-users {
   display: flex;
   justify-content: center;
 }
@@ -443,8 +440,9 @@ thead {
   color: #fff;
 }
 
-th, td {
-  font-size: 2.0rem;
+th,
+td {
+  font-size: 2rem;
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #555;
@@ -456,13 +454,15 @@ tbody tr:hover {
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
-  th, td {
+  th,
+  td {
     display: block;
     width: 100%;
     box-sizing: border-box;
   }
 
-  th, td:nth-child(even) {
+  th,
+  td:nth-child(even) {
     background-color: #333;
   }
 }
@@ -471,33 +471,33 @@ tbody tr:hover {
 /* CSS */
 .button-73 {
   appearance: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 40em;
   border-style: none;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-shadow: #adcfff 0 -12px 6px inset;
   box-sizing: border-box;
   color: #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,sans-serif;
+  font-family: -apple-system, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  letter-spacing: -.24px;
+  letter-spacing: -0.24px;
   margin: 0;
   outline: none;
   padding: 1rem 1.3rem;
   quotes: auto;
   text-align: center;
   text-decoration: none;
-  transition: all .15s;
+  transition: all 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
 .button-73:hover {
-  background-color: #FFC229;
-  box-shadow: #FF6314 0 -6px 8px inset;
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
@@ -508,7 +508,7 @@ tbody tr:hover {
 @media (min-width: 768px) {
   .button-73 {
     font-size: 1.5rem;
-    padding: .75rem 2rem;
+    padding: 0.75rem 2rem;
   }
 }
 
@@ -520,13 +520,14 @@ tbody tr:hover {
 /* CSS */
 .button-62 {
   margin-top: -0px;
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
   border: 0;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -534,7 +535,7 @@ tbody tr:hover {
   padding: 0 1rem;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -542,11 +543,15 @@ tbody tr:hover {
 }
 
 .button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 .button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 /** -----------------------
@@ -595,4 +600,3 @@ tbody tr:hover {
     }
   }
 }
-
