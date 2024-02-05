@@ -22,10 +22,9 @@ const About = () => {
             </div>
 
             <div className="hero-content">
-              <h1 className="main-heading-about mb-3">About</h1>
+              <h1 className="main-heading-about mb-3">About Me</h1>
               {/* <p>Hi {user.username} Developer</p> */}
-              <h1>Hi, I'm Dinkar Kumar</h1>
-              <h2>A MERN Stack Developer.</h2>
+              <h2>A MERN Stack Developer!</h2>
               <p>
                 As a passionate MERN Stack Developer, I thrive on crafting
                 visually stunning, innovative, and functional websites that
@@ -35,7 +34,6 @@ const About = () => {
                 experiences.
               </p>
               <div className="btn btn-group grid grid-two-cols">
-
                 <div className="btn btn-group">
                   <a href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing">
                     <button className="btn">Resume</button>

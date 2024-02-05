@@ -10,10 +10,15 @@ const Home = () => {
           <div className="container grid grid-two-cols">
             <div className="hero-content">
               <p>
-                <b>WELCOME TO MY PORTFOLIO</b>
+                <b>Hello, It's Me</b>
               </p>
-              <h1>Hi, I'm Dinkar Kumar A MERN Stack developer</h1>
-              <p></p>
+              <h1>Dinkar Kumar</h1>
+              <h2>And I'm MERN Stack developer</h2>
+              <p>
+                I'm a web developer with extensive experience for over 1 years,
+                expertice is to create innovative logic and website using MERN
+                Stack technology and many more...
+              </p>
               <div className="btn btn-group">
                 <a href="/contact">
                   <button className="btn">connect now</button>

@@ -10,7 +10,7 @@ const NavBar = () => {
       <header>
         <div className="container">
           <div className="logo-brand">
-            <NavLink to="/">DINKAR</NavLink>
+            <NavLink to="/">Portfolio.</NavLink>
           </div>
 
           <nav>
@@ -20,9 +20,6 @@ const NavBar = () => {
               </li>
               <li>
                 <NavLink to="/about"> About </NavLink>
-              </li>
-              <li>
-                <NavLink to="/service"> Resume </NavLink>
               </li>
               <li>
                 <NavLink to="/service"> Services </NavLink>
