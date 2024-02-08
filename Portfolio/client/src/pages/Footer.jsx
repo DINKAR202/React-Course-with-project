@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <p>&copy; 2024 DINKAR@TEST. All rights reserved.</p>
+        <p>&copy; 2024 DINKAR@DEVELOPER. All rights reserved.</p>
       </div>
     </>
   );
