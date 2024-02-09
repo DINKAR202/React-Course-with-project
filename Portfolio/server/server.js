@@ -24,6 +24,7 @@ app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
 app.use("/api/data", serviceRoute);
+//Got it
 
 // Let's define admin route
 app.use("/api/admin", adminRoute);
