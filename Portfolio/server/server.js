@@ -25,6 +25,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
 app.use("/api/data", serviceRoute);
 //Got it
+//success
 
 // Let's define admin route
 app.use("/api/admin", adminRoute);
