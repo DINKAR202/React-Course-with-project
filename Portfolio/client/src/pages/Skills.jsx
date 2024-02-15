@@ -3,7 +3,7 @@ const Skills = () => {
     <>
       <main>
         <section className="container">
-          <h1>hey there</h1>
+          <h1>Skills</h1>
         </section>
       </main>
     </>
