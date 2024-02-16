@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 // import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 // import { useAuth } from "../store/auth";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 // const defaultContactFormData = {
 //   username: "",
@@ -31,12 +31,14 @@ const Contact = () => {
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
-        console.log("Email sent", response);
+        toast.success("Message sent successfully", response);
+        // console.log("Email sent", response);
         setName("");
         setEmail("");
         setMessage("");
       })
       .catch((error) => {
+        toast.error("Not sent message", error);
         console.log("Error", error);
       });
   };
