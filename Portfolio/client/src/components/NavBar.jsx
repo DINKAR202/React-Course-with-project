@@ -16,7 +16,7 @@ const NavBar = () => {
       <header>
         <div className="container">
           <div className="logo-brand">
-            <a href="/">Portfolio.</a>
+            <a href="/">PORTFOLIO.</a>
           </div>
 
           <nav>
