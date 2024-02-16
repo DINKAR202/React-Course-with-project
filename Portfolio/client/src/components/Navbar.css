@@ -1,64 +1,59 @@
 .container {
-    max-width: 140rem;
-    padding: 4.2rem 2.4rem;
-    display: flex;
-    justify-content: space-between;
+  max-width: 140rem;
+  padding: 4.2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.active-element {
+  transform: rotateY(180deg);
+}
+
+/* Default styles for navigation */
+nav {
+  display: flex; /* Always display navigation by default */
+}
+
+/* Hide menu button by default for larger screens */
+.menu-toggle {
+  display: none;
+}
+
+/* Media query for smaller screens (less than 768px) */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  
+
+  /* Hide navigation by default for smaller screens */
   nav {
-    position: relative;
-    z-index: 1;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 3.2rem;
-  }
-  
-  nav.before .active-element {
-    transform: rotateY(180deg);
-  }
-  
-  /* Default styles for navigation */
-  nav {
-    display: flex; /* Always display navigation by default */
-  }
-  
-  /* Hide menu button by default for larger screens */
-  .menu-toggle {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
-  
-  /* Media query for smaller screens (less than 768px) */
-  @media only screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    /* Hide navigation by default for smaller screens */
-    nav {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-    }
-  
-    /* Show menu button for smaller screens */
-    .menu-toggle {
-      display: block; /* Display menu button */
-      margin-top: 1rem; /* Adjust spacing */
-    }
-  
-    /* Adjust positioning of menu button */
-    .menu-toggle {
-      position: absolute;
-      top: 1.5rem;
-      right: 2.4rem;
-      z-index: 2;
-      cursor: pointer;
-    }
+
+  /* Show menu button for smaller screens */
+  .menu-toggle {
+    display: block; /* Display menu button */
+    margin-top: 1rem; /* Adjust spacing */
+    position: absolute;
+    top: 1.5rem;
+    right: 2.4rem;
+    z-index: 2;
+    cursor: pointer;
   }
-  
+}
