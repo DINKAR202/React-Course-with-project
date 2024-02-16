@@ -716,6 +716,7 @@ tbody tr:hover {
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px;
+  margin-top: 25px;
 }
 
 .upper-loading {
@@ -1218,6 +1219,4 @@ tbody tr:hover {
   justify-content: space-between;
 }
 
-
 /* Footer css */
-

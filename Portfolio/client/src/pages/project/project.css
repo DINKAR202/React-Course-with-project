@@ -1,0 +1,10 @@
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  margin-bottom: 25px;
+}
+.main-heading {
+  max-width: 190px;
+}

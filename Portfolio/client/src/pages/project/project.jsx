@@ -1,10 +1,19 @@
+import "./project.css";
+
 const project = () => {
   return (
     <>
-      <div className="container">
-        
-        <h1>Under Development.... we will update soon.</h1>
-      </div>
+      <section>
+        <main className="container project">
+          <div className="main">
+            <h1 className="main-heading">Projects</h1>
+          </div>
+
+          <div>
+            <h3>Under Development.... we will update soon.</h3>
+          </div>
+        </main>
+      </section>
     </>
   );
 };
