@@ -770,13 +770,8 @@ tbody tr:hover {
 
   75% {
     width: 75%;
-    background: #d0bdf4;
+    background: #d27809;
   }
-
-  /*   100% {
-    width: 100%;
-    background: #494d5f;
-  } */
 }
 
 .progress-label {
@@ -787,4 +782,9 @@ tbody tr:hover {
 .label-control {
   display: flex;
   justify-content: space-between;
+}
+
+.skill-2 {
+  /* Styles for the second skill */
+  background-color: #e0e0e0;
 }

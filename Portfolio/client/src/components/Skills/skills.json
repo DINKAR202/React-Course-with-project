@@ -15,72 +15,57 @@
       "percentage": "75%"
     },
     {
-      "id": "3",
-      "label": "React js",
-      "percentage": "85%"
-    },
-    {
-      "id": "3",
-      "label": "Node js",
-      "percentage": "70%"
-    },
-    {
-      "id": "3",
+      "id": "4",
       "label": "MongoDB",
       "percentage": "80%"
     },
     {
-      "id": "3",
+      "id": "5",
       "label": "Express js",
       "percentage": "70%"
     },
     {
-      "id": "3",
-      "label": "jQuery",
-      "percentage": "80%"
-    },
-    {
-      "id": "3",
-      "label": "Tailwind",
+      "id": "6",
+      "label": "React.js",
       "percentage": "85%"
     },
     {
-      "id": "3",
-      "label": "Material UI",
-      "percentage": "80%"
+      "id": "7",
+      "label": "Node js",
+      "percentage": "70%"
     },
     {
-      "id": "3",
+      "id": "8",
       "label": "React Hooks",
       "percentage": "85%"
     },
     {
-      "id": "3",
+      "id": "9",
       "label": "REST API",
       "percentage": "70%"
     },
     {
-      "id": "3",
-      "label": "Vue Js",
-      "percentage": "70%"
+      "id": "10",
+      "label": "Tailwind",
+      "percentage": "85%"
     },
     {
-      "id": "3",
+      "id": "11",
+      "label": "Material UI",
+      "percentage": "80%"
+    },
+    {
+      "id": "12",
       "label": "GitHub",
       "percentage": "90%"
     },
     {
-      "id": "3",
-      "label": "Git Bash",
-      "percentage": "90%"
-    },
-    {
-      "id": "3",
+      "id": "13",
       "label": "Firebase",
       "percentage": "80%"
     },
     {
-      "id": "3",
+      "id": "14",
       "label": "Django",
       "percentage": "80%"
     }

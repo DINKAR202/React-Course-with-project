@@ -10,10 +10,12 @@ const Skills = () => {
 
             <div className="boxes">
               {data.map((curSkill, index) => (
-                <div className="upper-loading" key={index}>
+                <div className={`upper-loading skill-${index + 1}`} key={curSkill.id}>
                   <div className="label-control">
                     <label className="progress-label">{curSkill.label}</label>
-                    <label className="progress-label">{curSkill.percentage}</label>
+                    <label className="progress-label">
+                      {curSkill.percentage}
+                    </label>
                   </div>
                   <div className="Loading"></div>
                 </div>
