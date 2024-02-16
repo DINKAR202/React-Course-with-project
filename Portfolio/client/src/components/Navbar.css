@@ -17,3 +17,7 @@ nav ul {
   display: flex;
   gap: 3.2rem;
 }
+
+nav.before .active-element {
+  transform: rotateY(180deg);
+}
