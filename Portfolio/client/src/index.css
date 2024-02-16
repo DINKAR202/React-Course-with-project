@@ -27,7 +27,18 @@ body {
   min-height: 100vh;
 }
 
-/*?  Help me reach 1 Million subs 👉 https://youtube.com/thapatechnical */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(250, 245, 245);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(243, 79, 79);
+  border-radius: 10px;
+}
 
 h1 {
   font-size: 3.5rem;
