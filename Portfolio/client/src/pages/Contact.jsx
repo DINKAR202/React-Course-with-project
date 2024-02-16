@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const serviceId = "service_9rova6q";
-    const templateId = "template_i0u83pj";
+    const templateId = "template_p65wt2g";
     const publicKey = "Yr137l4n1kXxbS234";
 
     const templateParams = {
@@ -35,6 +35,9 @@ const Contact = () => {
         setName("");
         setEmail("");
         setMessage("");
+      })
+      .catch((error) => {
+        console.log("Error", error);
       });
   };
 
