@@ -1,5 +1,4 @@
-// import Skills from "./../components/Skills/Skills";
-// import Skills from "../components/Skills/Skills";
+// import skills from "../components/Skills/Skills";
 
 import "./Navbar.css";
 
@@ -34,7 +33,7 @@ const NavBar = () => {
                 <a href="/service">Services</a>
               </li>
               <li>
-                <a href="/Skills">Skills</a>
+                <a href="/skills">Skills</a>
               </li>
               <li>
                 <a href="/service">Projects</a>

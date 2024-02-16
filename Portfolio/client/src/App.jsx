@@ -13,6 +13,7 @@ import AdminUsers from "./pages/Admin-Users";
 import AdminContacts from "./pages/Admin-Contacts";
 import AdminUpdate from "./pages/Admin-Update";
 import Service from './pages/Services/Service';
+import Skills from './components/Skills/Skills';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service/>} />
+          <Route path="/skills" element={<Skills/>} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
