@@ -1,65 +1,65 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../components/CSS-Design/Design.css";
-import { useAuth } from "../store/auth";
-import { toast } from "react-toastify";
+// import { useAuth } from "../store/auth";
+// import { toast } from "react-toastify";
 
-const defaultContactFormData = {
-  username: "",
-  email: "",
-  message: "",
-};
+// const defaultContactFormData = {
+//   username: "",
+//   email: "",
+//   message: "",
+// };
 
 const Contact = () => {
-  const [contact, setContact] = useState(defaultContactFormData);
+  //   const [contact, setContact] = useState(defaultContactFormData);
 
-  const [userData, setUserData] = useState(true);
-  const { user } = useAuth();
+  //   const [userData, setUserData] = useState(true);
+  //   const { user } = useAuth();
 
-  if (userData && user) {
-    setContact({
-      username: user.username,
-      email: user.email,
-      message: "",
-    });
+  //   if (userData && user) {
+  //     setContact({
+  //       username: user.username,
+  //       email: user.email,
+  //       message: "",
+  //     });
 
-    setUserData(false);
-  }
+  //     setUserData(false);
+  //   }
 
   // Handling the input value
-  const handleInput = (e) => {
-    console.log(e);
-    let name = e.target.name;
-    let value = e.target.value;
+  // const handleInput = (e) => {
+  //   console.log(e);
+  //   let name = e.target.name;
+  //   let value = e.target.value;
 
-    setContact({
-      ...contact,
-      [name]: value,
-    });
-  };
+  //   setContact({
+  //     ...contact,
+  //     [name]: value,
+  //   });
+  // };
 
   // Handling the form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:5000/api/form/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(contact),
-      });
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await fetch("http://localhost:5000/api/form/contact", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(contact),
+  //     });
 
-      if (response.ok) {
-        setContact(defaultContactFormData);
-        const data = await response.json();
-        console.log(data);
-        toast.success("Message sent successfully");
-        // alert("Message sent successfully");
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  //     if (response.ok) {
+  //       setContact(defaultContactFormData);
+  //       const data = await response.json();
+  //       console.log(data);
+  //       toast.success("Message sent successfully");
+  //       // alert("Message sent successfully");
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <>
@@ -77,19 +77,18 @@ const Contact = () => {
               </div>
               <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Contact here</h1>
-                <br />
                 <form onSubmit={handleSubmit}>
                   <div className="container-box">
                     <input
                       className="input"
                       type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       name="username"
                       // placeholder="username"
                       id="username"
                       required
                       autoComplete="off"
-                      value={contact.username}
-                      onChange={handleInput}
                     />
                     <label className="label" htmlFor="username">
                       Full Name
@@ -101,12 +100,11 @@ const Contact = () => {
                       className="input"
                       type="email"
                       name="email"
-                      // placeholder="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       id="email"
                       required
                       autoComplete="off"
-                      value={contact.email}
-                      onChange={handleInput}
                     />
                     <label className="label" htmlFor="email">
                       Email
@@ -119,8 +117,8 @@ const Contact = () => {
                       name="message"
                       id="message"
                       autoComplete="off"
-                      value={contact.message}
-                      onChange={handleInput}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       required
                       cols="30"
                       rows="6"
