@@ -19,5 +19,5 @@ nav ul {
 }
 
 nav.before .active-element {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg );
 }

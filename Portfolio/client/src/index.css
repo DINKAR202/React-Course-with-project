@@ -19,6 +19,14 @@ html {
 
 /*? base style */
 
+body:before {
+  content: "";
+  position: absolute;
+  inset: 40% -60% 0 -60%;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 body {
   margin: 0;
   /* display: flex;
