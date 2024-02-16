@@ -1084,6 +1084,130 @@ tbody tr:hover {
   }
 }
 
+.skill-11-loading {
+  background: #f1f1f1;
+}
+
+.skill-11-loading:after {
+  background: #f1f1f1;
+  animation: load11 5s infinite;
+}
+
+@keyframes load11 {
+  0% {
+    width: 0;
+    background: #9c6876;
+  }
+
+  25% {
+    width: 40%;
+    background: #fa4d67;
+  }
+
+  50% {
+    width: 60%;
+    background: rgb(234, 234, 48);
+  }
+
+  80% {
+    width: 80%;
+    background: rgb(14, 171, 24);
+  }
+}
+
+.skill-12-loading {
+  background: #f1f1f1;
+}
+
+.skill-12-loading:after {
+  background: #f1f1f1;
+  animation: load12 5s infinite;
+}
+
+@keyframes load12 {
+  0% {
+    width: 0;
+    background: #9c6876;
+  }
+
+  25% {
+    width: 40%;
+    background: #fa4d67;
+  }
+
+  50% {
+    width: 60%;
+    background: rgb(234, 234, 48);
+  }
+
+  90% {
+    width: 90%;
+    background: rgb(14, 171, 24);
+  }
+}
+
+.skill-13-loading {
+  background: #f1f1f1;
+}
+
+.skill-13-loading:after {
+  background: #f1f1f1;
+  animation: load13 5s infinite;
+}
+
+@keyframes load13 {
+  0% {
+    width: 0;
+    background: #9c6876;
+  }
+
+  25% {
+    width: 40%;
+    background: #fa4d67;
+  }
+
+  50% {
+    width: 60%;
+    background: rgb(234, 234, 48);
+  }
+
+  80% {
+    width: 80%;
+    background: rgb(14, 171, 24);
+  }
+}
+
+.skill-14-loading {
+  background: #f1f1f1;
+}
+
+.skill-14-loading:after {
+  background: #f1f1f1;
+  animation: load14 5s infinite;
+}
+
+@keyframes load14 {
+  0% {
+    width: 0;
+    background: #9c6876;
+  }
+
+  25% {
+    width: 40%;
+    background: #fa4d67;
+  }
+
+  50% {
+    width: 60%;
+    background: rgb(234, 234, 48);
+  }
+
+  90% {
+    width: 90%;
+    background: rgb(14, 171, 24);
+  }
+}
+
 .progress-label {
   color: white;
   padding: 0 2rem;
