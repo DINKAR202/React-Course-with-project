@@ -1,15 +1,18 @@
+// import Skills from "./../components/Skills/Skills";
+// import Skills from "../components/Skills/Skills";
+
 import "./Navbar.css";
 
 const NavBar = () => {
-  const menu = () => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
+  // const menu = () => {
+  //   const menuToggle = document.querySelector(".menu-toggle");
+  //   const nav = document.querySelector("nav");
 
-    // Toggle navigation display when the button is clicked
-    menuToggle.addEventListener("click", function () {
-      nav.classList.toggle("active");
-    });
-  };
+  //   // Toggle navigation display when the button is clicked
+  //   menuToggle.addEventListener("click", function () {
+  //     nav.classList.toggle("active");
+  //   });
+  // };
 
   return (
     <>
@@ -31,7 +34,7 @@ const NavBar = () => {
                 <a href="/service">Services</a>
               </li>
               <li>
-                <a href="/service">Skills</a>
+                <a href="/Skills">Skills</a>
               </li>
               <li>
                 <a href="/service">Projects</a>
@@ -43,7 +46,7 @@ const NavBar = () => {
           </nav>
 
           {/* <!-- Button to toggle navigation display --> */}
-          <button onClick={menu} className="menu-toggle">
+          <button className="menu-toggle">
             Menu
           </button>
         </div>
