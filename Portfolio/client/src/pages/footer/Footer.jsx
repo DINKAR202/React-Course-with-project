@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="footer-col">
-              <h4>company</h4>
+              <h4>PORTFOLIO</h4>
               <ul>
                 <li>
                   <a href="#">about us</a>
@@ -72,8 +72,11 @@ const Footer = () => {
                 <a href="#">
                   <i className="fab fa-instagram" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/dinkar-kumar-pri/">
                   <i className="fab fa-linkedin-in" />
+                </a>
+                <a href="https://github.com/DINKAR202">
+                <i className="fa-brands fa-github"></i>
                 </a>
               </div>
             </div>
