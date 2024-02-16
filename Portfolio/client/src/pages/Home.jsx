@@ -1,7 +1,7 @@
 // import { Analytics } from "../components/Analytics";
 import About from "./About";
-import Service from './Services/Service';
-import Skills from "./Skills";
+import Service from "./Services/Service";
+import Skills from "./../components/Skills/Skills";
 
 const Home = () => {
   return (

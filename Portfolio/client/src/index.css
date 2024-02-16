@@ -19,14 +19,6 @@ html {
 
 /*? base style */
 
-/* body:before {
-  content: "";
-  position: absolute;
-  inset: 40% -60% 0 -60%;
-  opacity: 0.3;
-  pointer-events: none;
-} */
-
 body {
   margin: 0;
   /* display: flex;
@@ -573,11 +565,6 @@ tbody tr:hover {
   }
 }
 
-/* Delete Button */
-
-/* <!-- HTML !--> */
-/* <button class="button-62" role="button">Button 62</button> */
-
 /* CSS */
 .button-62 {
   margin-top: -0px;
@@ -614,10 +601,6 @@ tbody tr:hover {
     -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
     0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
-
-/* <button class="button-40" role="button">
-  <span class="text">Button 40</span>
-</button> */
 
 /* CSS */
 .button-40 {
@@ -717,29 +700,33 @@ tbody tr:hover {
 }
 
 /* progress bar */
+@media only screen and (max-width: 768px) {
+  .upper-loading {
+    width: 100% !important;
+  }
+}
 
 .progress-under {
   padding: 8px;
   width: 100%;
-  border: 1px solid green;
 }
 
 .boxes {
-  /* width: 100%; */
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 10px;
 }
 
 .upper-loading {
+  /* border: 1px solid red; */
   position: relative;
   width: 45%;
   /* margin: 280px auto; */
   padding: 20px 40px;
   border-radius: 4px;
   box-sizing: border-box;
-  background: #fff;
+  /* background: #fff; */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -793,7 +780,7 @@ tbody tr:hover {
 }
 
 .progress-label {
-  color: black;
+  color: white;
   padding: 0 2rem;
 }
 
