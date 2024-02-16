@@ -2,6 +2,7 @@
 import About from "./About";
 import Service from "./Services/Service";
 import Skills from "./../components/Skills/Skills";
+import Project from "./project/project";
 
 const Home = () => {
   return (
@@ -106,6 +107,9 @@ const Home = () => {
 
       {/* Skills section */}
       <Skills />
+
+      {/* project section */}
+      <Project />
     </>
   );
 };
