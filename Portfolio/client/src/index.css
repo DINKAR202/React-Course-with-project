@@ -717,6 +717,7 @@ tbody tr:hover {
 }
 
 /* progress bar */
+
 .progress-under {
   padding: 8px;
   width: 100%;
@@ -724,14 +725,17 @@ tbody tr:hover {
 }
 
 .boxes {
-  width: 100%;
+  /* width: 100%; */
   border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .upper-loading {
   position: relative;
-  width: 50%;
-  margin: 280px auto;
+  width: 45%;
+  /* margin: 280px auto; */
   padding: 20px 40px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -786,4 +790,14 @@ tbody tr:hover {
     width: 100%;
     background: #494d5f;
   } */
+}
+
+.progress-label {
+  color: black;
+  padding: 0 2rem;
+}
+
+.label-control {
+  display: flex;
+  justify-content: space-between;
 }
