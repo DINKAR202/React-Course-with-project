@@ -2,6 +2,7 @@
 import "../components/CSS-Design/Design.css";
 // import { useAuth } from "../store/auth";
 // import { toast } from "react-toastify";
+import { useState } from "react";
 
 // const defaultContactFormData = {
 //   username: "",
@@ -10,6 +11,9 @@ import "../components/CSS-Design/Design.css";
 // };
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   //   const [contact, setContact] = useState(defaultContactFormData);
 
   //   const [userData, setUserData] = useState(true);
