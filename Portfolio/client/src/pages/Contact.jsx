@@ -1,8 +1,9 @@
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 // import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 // import { useAuth } from "../store/auth";
 // import { toast } from "react-toastify";
-import { useState } from "react";
 
 // const defaultContactFormData = {
 //   username: "",
@@ -14,6 +15,29 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const serviceId = "service_9rova6q";
+    const templateId = "template_i0u83pj";
+    const publicKey = "Yr137l4n1kXxbS234";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_message: "Web Wizard",
+      message: message,
+    };
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+      });
+  };
+
   //   const [contact, setContact] = useState(defaultContactFormData);
 
   //   const [userData, setUserData] = useState(true);
