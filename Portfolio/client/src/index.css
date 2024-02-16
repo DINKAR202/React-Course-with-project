@@ -774,6 +774,130 @@ tbody tr:hover {
   }
 }
 
+.skill-1-loading {
+  background: #f1f1f1;
+}
+
+.skill-1-loading:after {
+  background: #f1f1f1;
+  animation: load1 5s infinite;
+}
+
+@keyframes load1 {
+  0% {
+    width: 0;
+    background: #a28089;
+  }
+
+  25% {
+    width: 40%;
+    background: #a0d2eb;
+  }
+
+  50% {
+    width: 60%;
+    background: #ffa8b6;
+  }
+
+  90% {
+    width: 90%;
+    background: rgb(234, 138, 82);
+  }
+}
+
+.skill-2-loading {
+  background: #f1f1f1;
+}
+
+.skill-2-loading:after {
+  background: #f1f1f1;
+  animation: load2 5s infinite;
+}
+
+@keyframes load2 {
+  0% {
+    width: 0;
+    background: #a28089;
+  }
+
+  25% {
+    width: 40%;
+    background: #a0d2eb;
+  }
+
+  50% {
+    width: 60%;
+    background: #ffa8b6;
+  }
+
+  90% {
+    width: 90%;
+    background: rgb(48, 115, 239);
+  }
+}
+
+.skill-3-loading {
+  background: #f1f1f1;
+}
+
+.skill-3-loading:after {
+  background: #f1f1f1;
+  animation: load3 5s infinite;
+}
+
+@keyframes load3 {
+  0% {
+    width: 0;
+    background: #a28089;
+  }
+
+  25% {
+    width: 40%;
+    background: #a0d2eb;
+  }
+
+  50% {
+    width: 60%;
+    background: #ffa8b6;
+  }
+
+  75% {
+    width: 75%;
+    background: rgb(41, 177, 41);
+  }
+}
+
+.skill-4-loading {
+  background: #f1f1f1;
+}
+
+.skill-4-loading:after {
+  background: #f1f1f1;
+  animation: load4 5s infinite;
+}
+
+@keyframes load4 {
+  0% {
+    width: 0;
+    background: #a28089;
+  }
+
+  25% {
+    width: 40%;
+    background: #a0d2eb;
+  }
+
+  50% {
+    width: 60%;
+    background: #ffa8b6;
+  }
+
+  80% {
+    width: 80%;
+    background: rgb(41, 177, 41);
+  }
+}
+
 .progress-label {
   color: white;
   padding: 0 2rem;
@@ -782,9 +906,4 @@ tbody tr:hover {
 .label-control {
   display: flex;
   justify-content: space-between;
-}
-
-.skill-2 {
-  /* Styles for the second skill */
-  background-color: #e0e0e0;
 }
