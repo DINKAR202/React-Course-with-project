@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 import { useAuth } from "../store/auth";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 const defaultContactFormData = {
   username: "",
@@ -41,23 +41,23 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const response = await fetch("http://localhost:5000/api/form/contact", {
-          method: "POST",
-          headers: {
-            'Content-Type': "application/json"
-          },
-          body:JSON.stringify(contact),
-        });
+      const response = await fetch("http://localhost:5000/api/form/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contact),
+      });
 
-        if(response.ok){
-          setContact(defaultContactFormData);
-          const data = await response.json();
-          console.log(data);
-          toast.success("Message sent successfully");
-          // alert("Message sent successfully");
-        }
+      if (response.ok) {
+        setContact(defaultContactFormData);
+        const data = await response.json();
+        console.log(data);
+        toast.success("Message sent successfully");
+        // alert("Message sent successfully");
+      }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
@@ -92,7 +92,7 @@ const Contact = () => {
                       onChange={handleInput}
                     />
                     <label className="label" htmlFor="username">
-                      Username
+                      Full Name
                     </label>
                   </div>
 
@@ -126,7 +126,7 @@ const Contact = () => {
                       rows="6"
                     ></textarea>
                     <label className="label" htmlFor="message">
-                      message
+                      Message
                     </label>
                   </div>
 
