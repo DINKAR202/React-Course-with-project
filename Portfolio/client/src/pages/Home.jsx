@@ -39,7 +39,7 @@ const Home = () => {
             {/* hero images  */}
             <div className="hero-image">
               <img
-                src="/images/home.png"
+                src="/images/passport_size_pic.jpg"
                 alt="coding together"
                 width="400"
                 height="500"
