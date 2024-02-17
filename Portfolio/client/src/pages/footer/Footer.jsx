@@ -7,10 +7,12 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="footer-col">
-              <h4>Let's Talk</h4>
-              <ul>
-                <p>lorem20</p>
-              </ul>
+              <h4>Lets Talk</h4>
+              <p>
+                The best web design requires having the best footer design on
+                our web page. Although it may seem to be a detail, it has the
+                paramount importance for website effectiveness and success.
+              </p>
             </div>
             <div className="footer-col">
               <h4>PORTFOLIO</h4>
@@ -29,20 +31,20 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="footer-col">
-              <h4>online shop</h4>
+            <div className="footer-col footer-col-demo">
+              <h4>demo</h4>
               <ul>
                 <li>
-                  <a href="#">watch</a>
+                  <a href="#">soon</a>
                 </li>
                 <li>
-                  <a href="#">bag</a>
+                  <a href="#">soon</a>
                 </li>
                 <li>
-                  <a href="#">shoes</a>
+                  <a href="#">soon</a>
                 </li>
                 <li>
-                  <a href="#">dress</a>
+                  <a href="#">soon</a>
                 </li>
               </ul>
             </div>
