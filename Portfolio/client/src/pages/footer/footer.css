@@ -15,8 +15,12 @@
   width: 25%;
   padding: 0 15px;
 }
+.footer-col-talk {
+  width: 35%;
+  padding: 0 15px;
+}
 .footer-col-demo {
-  width: 10% !important;
+  width: 10%;
   padding: 0 15px;
 }
 .footer-col h4 {
@@ -47,8 +51,7 @@
   color: #ffffff;
   text-decoration: none;
   text-align: start;
-
-  font-weight: 300;
+  font-weight: 700;
   color: #bbbbbb;
   display: block;
   transition: all 0.3s ease;

@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="container">
           <div className="row">
-            <div className="footer-col">
+            <div className="footer-col footer-col-talk">
               <h4>Lets Talk</h4>
               <p>
                 The best web design requires having the best footer design on
@@ -18,16 +18,19 @@ const Footer = () => {
               <h4>PORTFOLIO</h4>
               <ul>
                 <li>
-                  <a href="#">about us</a>
+                  <a href="/about">about us</a>
                 </li>
                 <li>
-                  <a href="#">our services</a>
+                  <a href="/service">our services</a>
+                </li>
+                <li>
+                  <a href="/skills">Skills</a>
+                </li>
+                <li>
+                  <a href="/project">Projects</a>
                 </li>
                 <li>
                   <a href="#">privacy policy</a>
-                </li>
-                <li>
-                  <a href="#">affiliate program</a>
                 </li>
               </ul>
             </div>

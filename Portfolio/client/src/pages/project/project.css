@@ -4,6 +4,11 @@
 }
 .main {
   margin-bottom: 25px;
+  height: 350px;
+}
+.text-center {
+  color: red;
+  text-align: center;
 }
 .main-heading {
   max-width: 190px;
