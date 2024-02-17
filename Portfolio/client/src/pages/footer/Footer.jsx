@@ -7,6 +7,12 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="footer-col">
+              <h4>Let's Talk</h4>
+              <ul>
+                <p>lorem20</p>
+              </ul>
+            </div>
+            <div className="footer-col">
               <h4>PORTFOLIO</h4>
               <ul>
                 <li>
@@ -20,26 +26,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#">affiliate program</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4>get help</h4>
-              <ul>
-                <li>
-                  <a href="#">FAQ</a>
-                </li>
-                <li>
-                  <a href="#">shipping</a>
-                </li>
-                <li>
-                  <a href="#">returns</a>
-                </li>
-                <li>
-                  <a href="#">order status</a>
-                </li>
-                <li>
-                  <a href="#">payment options</a>
                 </li>
               </ul>
             </div>
@@ -76,7 +62,7 @@ const Footer = () => {
                   <i className="fab fa-linkedin-in" />
                 </a>
                 <a href="https://github.com/DINKAR202">
-                <i className="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
               </div>
             </div>
