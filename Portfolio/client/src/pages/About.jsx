@@ -35,9 +35,14 @@ const About = () => {
               </p>
               <div className="btn btn-group grid grid-two-cols">
                 <div className="btn btn-group">
-                  <a href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing">
+                  <a
+                    href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className="btn button-73">Resume</button>
                   </a>
+
                   <a href="mailto:dinkar202@outlook.com">
                     <button className="btn secondary-btn">Hire me</button>
                   </a>
@@ -46,22 +51,26 @@ const About = () => {
                 <div className="btn-group">
                   <h3>Connect with</h3>
                   <span>
-                    <a href="https://www.linkedin.com/in/dinkar-kumar-pri/">
+                    <a href="https://www.linkedin.com/in/dinkar-kumar-pri/"  target="_blank"
+                    rel="noopener noreferrer">
                       <BsLinkedin />
                     </a>
                   </span>
                   <span>
-                    <a href="https://github.com/DINKAR202">
+                    <a href="https://github.com/DINKAR202"  target="_blank"
+                    rel="noopener noreferrer">
                       <VscGithub />
                     </a>
                   </span>
                   <span>
-                    <a href="https://www.hackerrank.com/profile/rathordinkar5">
+                    <a href="https://www.hackerrank.com/profile/rathordinkar5"  target="_blank"
+                    rel="noopener noreferrer">
                       <SiHackerearth />
                     </a>
                   </span>
                   <span>
-                    <a href="https://www.codechef.com/users/dinkar7079">
+                    <a href="https://www.codechef.com/users/dinkar7079"  target="_blank"
+                    rel="noopener noreferrer">
                       <SiCodechef />
                     </a>
                   </span>

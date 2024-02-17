@@ -3,6 +3,7 @@ import About from "./About";
 import Service from "./Services/Service";
 import Skills from "./../components/Skills/Skills";
 import Project from "./project/project";
+// import TextAnimation from "./styling/styling";
 
 const Home = () => {
   return (
@@ -25,7 +26,11 @@ const Home = () => {
                 <a href="/contact">
                   <button className="button-40">connect now</button>
                 </a>
-                <a href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing">
+                <a
+                  href="https://drive.google.com/file/d/1laD_EZ_Bd6tF1R0DKmOnrBL8w7y7Yrhn/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="btn secondary-btn">Resume</button>
                 </a>
               </div>
@@ -110,6 +115,9 @@ const Home = () => {
 
       {/* project section */}
       <Project />
+
+      {/* style css */}
+      {/* <TextAnimation /> */}
     </>
   );
 };

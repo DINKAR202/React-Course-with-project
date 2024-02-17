@@ -15,6 +15,7 @@ import AdminUpdate from "./pages/Admin-Update";
 import Service from "./pages/Services/Service";
 import Skills from "./components/Skills/Skills";
 import Project from "./pages/project/project";
+import TextAnimation from "./pages/styling/styling";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/textAnimation" element={<TextAnimation />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />

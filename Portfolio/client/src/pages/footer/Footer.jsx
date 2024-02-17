@@ -63,10 +63,18 @@ const Footer = () => {
                 <a href="#">
                   <i className="fab fa-instagram" />
                 </a>
-                <a href="https://www.linkedin.com/in/dinkar-kumar-pri/">
+                <a
+                  href="https://www.linkedin.com/in/dinkar-kumar-pri/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="https://github.com/DINKAR202">
+                <a
+                  href="https://github.com/DINKAR202"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fa-brands fa-github"></i>
                 </a>
               </div>
