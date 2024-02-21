@@ -9,7 +9,7 @@ const project = () => {
             <h1 className="main-heading">Projects</h1>
 
             <div className="text-center">
-              <h3>We will update soon.....</h3>
+              <h3>We will update soon......</h3>
             </div>
           </div>
         </main>
