@@ -10,10 +10,11 @@ import { toast } from "react-toastify";
 //   email: "",
 //   message: "",
 // };
+// done
 
 const Contact = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [emaúil, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
