@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
         setUser(data.userData);
         setIsLoading(false);
       } else {
-        console.log("Error fetching user data:")
+        console.log("Error fetching user data:");
         setIsLoading(false);
       }
     } catch (error) {
@@ -52,7 +52,7 @@ export const AuthProvider = ({ children }) => {
 
   // To fetch the services data from the database
 
-  const getServices = async () => {
+  const getServiceData = async () => {
     try {
       const response = await fetch("http://localhost:5000/api/data/service", {
         method: "GET",
@@ -60,20 +60,21 @@ export const AuthProvider = ({ children }) => {
           Authorization: authorizationToken,
         },
       });
-
+  
       if (response.ok) {
-        const data = await response.json();
-        console.log("Backend data recived:", data.msg);
-        console.log(data.msg);
-        setServices(data.msg);
+        const responseData = await response.json();
+        const servicesData = responseData.data;
+        setServices(servicesData);
       }
     } catch (error) {
       console.log(`Services frontend error: ${error}`);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   useEffect(() => {
-    getServices();
+    getServiceData();
     userAuthentication();
   }, []);
 
