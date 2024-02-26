@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const right = () => {
+  return <div>right</div>;
+};
 
-export default page
+export default right;
