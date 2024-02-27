@@ -1,13 +1,24 @@
 .header {
   background-color: #f0f0f0;
   background-image: url("../../../public/images/asset\ 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10px;
   text-align: center;
 }
 
 /* <button class="" role="button">Button 87</button> */
+.heading-title h1 {
+  font-weight: 700;
+}
+
+.heading-title h1 h2 {
+  font-weight: 800;
+  color: #753b05;
+}
+
 .para-heading {
-  color: #ff6125 !important;
+  color: black !important;
 }
 
 /* CSS */

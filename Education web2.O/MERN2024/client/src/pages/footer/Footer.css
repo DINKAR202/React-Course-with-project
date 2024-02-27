@@ -1,0 +1,16 @@
+/* .footer-container {
+  background-color: #ffeac7 !important;
+} */
+
+a {
+  text-decoration: none;
+}
+
+.social-logo svg {
+  transition: all 0.9s;
+}
+
+.social-logo svg:hover {
+  transform: scale(2) rotate(5deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}

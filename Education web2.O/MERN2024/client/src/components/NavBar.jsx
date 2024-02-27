@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Image from "react-bootstrap/Image";
 import Navbar from "react-bootstrap/Navbar";
+import Dropdown from "react-bootstrap/Dropdown";
 import logo from "../../public/images/logo.png";
 
 const NavBar = () => {
@@ -34,25 +35,39 @@ const NavBar = () => {
       >
         <Container>
           <Navbar.Brand href="/">
-            <Image style={{ width: "75px" }} src={logo} />
+            <Image style={{ width: "85px" }} src={logo} />
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setCollapsed(!isCollapsed ? "show" : null)}
             aria-controls="basic-navbar-nav"
-            style={{ background: "#10bad4" }}
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto me-5">
-              <Nav.Link href="/" className="me-3 font-weight-bold">
+              <Dropdown>
+                <Dropdown.Toggle
+                  id="dropdown-basic"
+                  className="nav-button"
+                  variant="red"
+                >
+                  Solution
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Education</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Business</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">General store</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+              <Nav.Link href="/" className="me-3 nav-button">
                 Home
               </Nav.Link>
-              <Nav.Link className="me-3" href="/about">
+              <Nav.Link className="me-3 nav-button" href="/about">
                 About
               </Nav.Link>
-              <Nav.Link className="me-3" href="/service">
+              <Nav.Link className="me-3 nav-button" href="/service">
                 Services
               </Nav.Link>
-              <Nav.Link className="me-3" href="/contact">
+              <Nav.Link className="me-3 nav-button" href="/contact">
                 Contact
               </Nav.Link>
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -70,20 +85,20 @@ const NavBar = () => {
               </NavDropdown> */}
               {isLoggedIn ? (
                 <li>
-                  <Nav.Link className="me-3" href="/logout">
+                  <Nav.Link className="me-3 nav-button" href="/logout">
                     Logout
                   </Nav.Link>
                 </li>
               ) : (
                 <>
                   <li>
-                    <Nav.Link className="me-3" href="/register">
+                    <Nav.Link className="me-3 nav-button" href="/register">
                       {" "}
                       Register{" "}
                     </Nav.Link>
                   </li>
                   <li>
-                    <Nav.Link className="me-3" href="/login">
+                    <Nav.Link className="me-3 nav-button" href="/login">
                       {" "}
                       Login{" "}
                     </Nav.Link>

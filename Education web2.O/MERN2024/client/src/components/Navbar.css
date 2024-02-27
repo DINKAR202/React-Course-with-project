@@ -1,11 +1,10 @@
-/* .container{
-    max-width: 140rem;
-    padding: 4.2rem 2.4rem;
-    display: flex;
-    justify-content: space-between;
+.nav-button {
+  font-weight: 800;
+  transition: transform 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
 }
 
-ul{
-    display: flex;
-    gap: 3.2rem;
-} */
+.nav-button:hover {
+  transform: scale(1.1);
+  color: #ff6125;
+  /* border-bottom: 5px solid #ff6125; */
+}
