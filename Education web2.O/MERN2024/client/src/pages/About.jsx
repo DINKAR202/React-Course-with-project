@@ -1,4 +1,5 @@
 import { useAuth } from "../store/auth";
+import "animate.css";
 
 const About = () => {
   const { user } = useAuth();
@@ -8,7 +9,7 @@ const About = () => {
       <main>
         <section className="section-hero">
           <div className="container grid grid-two-cols">
-            <div className="hero-content">
+            <div className="hero-content animate__animated animate__bounce">
               <p>Hi {user.username} Developer</p>
               <h1>Why Choose Us?</h1>
               <p>
@@ -30,23 +31,23 @@ const About = () => {
                 on the quality of our services.
               </p>
               <div className="btn btn-group">
-                <a href="/contact">
-                  <button className="btn">connect now</button>
+                <a href="/contact" className="me-2">
+                  <button className="btn btn-danger">connect now</button>
                 </a>
                 <a href="/services">
-                  <button className="btn secondary-btn">learn more</button>
+                  <button className="btn btn-secondary">learn more</button>
                 </a>
               </div>
             </div>
 
             {/* hero images  */}
-            <div className="hero-image">
-              <img
+            <div className="animate__animated animate__bounce">
+              {/* <img
                 src="/images/about.png"
                 alt="coding together"
                 width="400"
                 height="500"
-              />
+              /> */}
             </div>
           </div>
         </section>

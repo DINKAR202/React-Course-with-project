@@ -1,6 +1,7 @@
 .header {
   background-color: #f0f0f0;
-  background-image: url("../../../public/images/asset\ 1.jpeg");
+  /* background-image: url("../../../public/images/asset\ 1.jpeg"); */
+  background-image: url("../../../public/images/bg\ banner.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
@@ -10,6 +11,7 @@
 /* <button class="" role="button">Button 87</button> */
 .heading-title h1 {
   font-weight: 700;
+  color: #ff6125 !important;
 }
 
 .heading-title h1 h2 {
@@ -18,6 +20,7 @@
 }
 
 .para-heading {
+  font-size: 18px;
   color: black !important;
 }
 
@@ -49,11 +52,26 @@
 
 .button-87:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
 
 .button-87:active {
   transform: scale(0.95);
+}
+
+.banner-dynamic-img {
+  width: 100%;
+}
+
+.banner-dynamic-img img {
+  opacity: 0.5;
+  width: 100% !important;
+  height: 100%;
+}
+
+.banner-button {
+  display: flex;
+  align-items: end;
+  justify-content: end;
 }

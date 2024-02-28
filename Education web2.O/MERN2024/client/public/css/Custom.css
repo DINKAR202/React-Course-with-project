@@ -1,0 +1,17 @@
+/* Work counter */
+
+.section-work-data {
+    background: var(--gradientSupport);
+    text-align: center;
+    transition: all 0.7s linear;
+    color: var(--white);
+  }
+  
+  .counter-numbers {
+    font-size: 4.8rem;
+  }
+  
+  .section-work-data p {
+    color: var(--white);
+    text-transform: capitalize;
+  }

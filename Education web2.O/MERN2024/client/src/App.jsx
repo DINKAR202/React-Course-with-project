@@ -13,6 +13,7 @@ import AdminUsers from "./pages/Admin-Users";
 import AdminContacts from "./pages/Admin-Contacts";
 import AdminUpdate from "./pages/Admin-Update";
 import Footer from './pages/footer/Footer';
+import 'animate.css';
 
 const App = () => {
   return (

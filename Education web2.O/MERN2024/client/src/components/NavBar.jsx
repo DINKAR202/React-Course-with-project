@@ -7,6 +7,7 @@ import Image from "react-bootstrap/Image";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 import logo from "../../public/images/logo.png";
+import logotext from "../../public/images/logo text.png";
 
 const NavBar = () => {
   const { isLoggedIn } = useAuth();
@@ -35,7 +36,8 @@ const NavBar = () => {
       >
         <Container>
           <Navbar.Brand href="/">
-            <Image style={{ width: "85px" }} src={logo} />
+            <Image className="logo-nav" style={{ width: "85px" }} src={logo} />
+            <Image className="logo-text" style={{ width: "85px" }} src={logotext} />
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setCollapsed(!isCollapsed ? "show" : null)}
