@@ -13,12 +13,15 @@ const ChartComponent = () => {
     const myChartRef = chartRef.current.getContext("2d");
 
     const labels = [
-      "K12 Education",
-      "Higher Education",
-      "Learning Solutions",
-      "Accessibility",
-      "Editorial and Pre-Press",
-      "Localization",
+      "Curriculum Development",
+      "Assessment Development",
+      "PPT Development",
+      "2D & 3D Videos",
+      "Flashcard Creation",
+      "Teacher Lesson Plan",
+      "eBook Creation",
+      "K 6 Education",
+      "Workbook Development",
     ];
 
     const urls = [
@@ -28,6 +31,10 @@ const ChartComponent = () => {
       "/login",
       "/register",
       "/localization",
+      "/localization",
+      "/localization",
+      "/localization",
+      "/localization",
     ];
 
     chartInstance.current = new Chart(myChartRef, {
@@ -36,7 +43,7 @@ const ChartComponent = () => {
         labels: labels,
         datasets: [
           {
-            data: [418, 263, 434, 586, 332, 100, 150],
+            data: [418, 263, 434, 486, 332, 300, 250, 250, 300],
             backgroundColor: [
               "rgb(255, 99, 132)",
               "rgb(54, 162, 235)",
@@ -45,6 +52,8 @@ const ChartComponent = () => {
               "rgb(255, 205, 86)",
               "rgb(252, 36, 86)",
               "rgb(103, 255, 86)",
+              "rgb(83, 117, 79)",
+              "rgb(218, 110, 21)",
             ],
           },
         ],
@@ -69,9 +78,9 @@ const ChartComponent = () => {
 
   return (
     <div className="container-chart">
-      {/* <h1>Pie Chart for Web Development</h1> */}
+      <h6>K12 Education</h6>
       <div>
-        <canvas ref={chartRef} id="pie-chart" />
+        <canvas className="chart-size" ref={chartRef} id="pie-chart" />
       </div>
     </div>
   );

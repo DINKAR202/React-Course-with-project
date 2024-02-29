@@ -1,6 +1,6 @@
 // import { motion } from "framer-motion";
 import { Col, Row, Image } from "react-bootstrap";
-import banner from "../../../public/images/Animation.gif";
+import banner from "/images/Animation.gif";
 import "./Banner.css";
 import "animate.css";
 import Counter from "../Counter/Counter";
@@ -14,11 +14,8 @@ const Banner = () => {
       // transition={{ delay: 0.9, type: "spring", stiffness: 2500 }}
       // id="home"
       >
-        <div
-          style={{ marginTop: "120px" }}
-          className="container-fluid header p-4"
-        >
-          <Row className="align-items-center justify-content-center banner">
+        <div style={{ marginTop: "111px" }} className="container-fluid header">
+          <Row className="align-items-center heading-title2 justify-content-center banner">
             <Col
               md={5}
               className="heading-title animate__animated animate__backInLeft animate__delay-1s"
@@ -41,11 +38,7 @@ const Banner = () => {
             </Col>
             <Col className="offset-md-1" md={5}>
               <div className="banner-dynamic-img">
-              <Image
-                className="img-fluid"
-                src={banner}
-                alt="banner img"
-              />
+                <Image className="img-fluid" src={banner} alt="banner img" />
               </div>
             </Col>
           </Row>

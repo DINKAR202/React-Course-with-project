@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import './counter.css'
+import "./counter.css";
 
 const Counter = () => {
   useEffect(() => {
@@ -38,7 +38,7 @@ const Counter = () => {
   };
 
   return (
-    <section className="section section-work-data">
+    <section className="section mt-4 section-work-data">
       <div className="container d-flex justify-content-between flex-wrap p-4">
         <div>
           <h2 className="counter-numbers" data-number={100}>

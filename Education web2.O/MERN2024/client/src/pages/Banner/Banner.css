@@ -4,14 +4,22 @@
   background-image: url("../../../public/images/bg\ banner.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
   text-align: center;
 }
 
-/* <button class="" role="button">Button 87</button> */
+.heading-title2 {
+  background-color: rgba(53, 43, 43, 0.5) !important;
+}
+
+.heading-title {
+  height: 100% !important;
+  border-radius: 8px;
+}
+
 .heading-title h1 {
   font-weight: 700;
-  color: #ff6125 !important;
+  color: white !important;
+  /* color: #ff6125 !important; */
 }
 
 .heading-title h1 h2 {

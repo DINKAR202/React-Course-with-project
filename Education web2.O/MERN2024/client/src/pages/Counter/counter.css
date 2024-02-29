@@ -3,6 +3,10 @@
   font-size: 4rem; /* Adjust as needed */
 }
 
+.section-work-data {
+  background: linear-gradient(to top, #ff6125, transparent);
+}
+
 .section-work-data p {
   font-size: 1rem; /* Adjust as needed */
 }
@@ -27,4 +31,8 @@
   .section-work-data p {
     font-size: 0.7rem; /* Adjust as needed */
   }
+}
+
+.counter-bg {
+  background: linear-gradient(to bottom, #fcce44, transparent);
 }

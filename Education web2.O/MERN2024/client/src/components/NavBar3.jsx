@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
+import { useAuth } from "../store/auth";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Image from "react-bootstrap/Image";
@@ -7,14 +8,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 import logo from "/images/logo.png";
 import logotext from "/images/logo text.png";
-import ChartComponent from "./Chart/Chart";
-import { useAuth } from "../store/auth";
 
 const NavBar = () => {
   const { isLoggedIn } = useAuth();
-  const [showChart, setShowChart] = useState(false); // State variable to control chart visibility
-  const [isSticky, setSticky] = useState(false);
-  const [isCollapsed, setCollapsed] = useState(null);
+  const [isSticky, setSticky] = useState(false); // Define a state variable for tracking whether the navigation bar is sticky
+  const [isCollapsed, setCollapsed] = useState(null); // Define a state variable for tracking the collapse state of the navbar
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -25,10 +23,6 @@ const NavBar = () => {
       }
     });
   }, []);
-
-  const toggleChart = () => {
-    setShowChart(!showChart);
-  };
 
   return (
     <>
@@ -65,9 +59,8 @@ const NavBar = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item onClick={toggleChart}>
-                    {" "}
-                    {/* Add onClick to toggle the chart */}
+                  
+                  <Dropdown.Item href="#/action-1">
                     <div className="drop-icons">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +76,7 @@ const NavBar = () => {
                       K12 Education
                     </div>
                   </Dropdown.Item>
+
                   <Dropdown.Item href="#/action-2">
                     <div className="drop-icons">
                       <svg
@@ -247,7 +241,6 @@ const NavBar = () => {
                       Our Experts
                     </div>
                   </Dropdown.Item>
-                  {/* Other Dropdown Items */}
                 </Dropdown.Menu>
               </Dropdown>
               <Nav.Link href="/" className="me-3 nav-button">
@@ -262,6 +255,19 @@ const NavBar = () => {
               <Nav.Link className="me-3 nav-button" href="/contact">
                 Contact
               </Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Something
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown> */}
               {isLoggedIn ? (
                 <li>
                   <Nav.Link className="me-3 nav-button" href="/logout">
@@ -284,13 +290,10 @@ const NavBar = () => {
                   </li>
                 </>
               )}
-              {/* Other Nav Links */}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {showChart && <ChartComponent />}{" "}
-      {/* Render the chart component if showChart is true */}
     </>
   );
 };

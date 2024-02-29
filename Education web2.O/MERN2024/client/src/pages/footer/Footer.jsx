@@ -1,6 +1,7 @@
 import "./Footer.css";
-import logo from "../../../public/images/logo.png";
+import logo from "/images/logo.png";
 import Image from "react-bootstrap/Image";
+import logotext from "/images/logo text.png";
 
 const Footer = () => {
   return (
@@ -109,6 +110,11 @@ const Footer = () => {
                     {/* Content */}
                     <h6 className="text-uppercase text-dark fw-bold">
                       <Image style={{ width: "85px" }} src={logo} />
+                      <Image
+                        className="logo-text"
+                        style={{ width: "85px" }}
+                        src={logotext}
+                      />
                     </h6>
                     <hr
                       className="mb-1 mt-0 d-inline-block mx-auto"

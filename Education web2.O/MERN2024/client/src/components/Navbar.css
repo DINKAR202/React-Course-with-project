@@ -9,11 +9,34 @@
   /* border-bottom: 5px solid #ff6125; */
 }
 
-.logo-nav {
-  /* border: 1px solid black; */
-}
 .logo-text {
   width: 110px !important;
   margin-left: -20px;
-  /* border: 1px solid black; */
+}
+
+.drop-icons {
+  width: 35px;
+  transition: all 0.5s;
+}
+
+.drop-icons svg {
+  margin-left: 2px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 7px;
+  color: #ff6125;
+}
+
+.drop-icons:hover {
+  background-color: #ff6125;
+  border-radius: 7px !important;
+}
+
+.drop-icons:hover svg {
+  color: white !important;
+}
+
+.dropdown-menu {
+  min-width: 250px !important;
 }
