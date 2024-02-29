@@ -2,9 +2,7 @@ import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
-import { toast } from 'react-toastify';
-
-
+import { toast } from "react-toastify";
 
 const URL = `http://localhost:5000/api/auth/register`;
 
@@ -48,14 +46,15 @@ const Register = () => {
       const res_data = await response.json();
       console.log("res from server", res_data.message);
       if (response.ok) {
-
         // Store the token in localhost
         storeTokenInLS(res_data.token);
         setUser({ username: "", email: "", phone: "", password: "" });
         toast.success("Registration Successful");
         navigate("/");
-      }else{
-        toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
+      } else {
+        toast.error(
+          res_data.extraDetails ? res_data.extraDetails : res_data.message
+        );
       }
     } catch (error) {
       console.log("register", error);
@@ -65,10 +64,10 @@ const Register = () => {
   return (
     <>
       <section>
-        <main>
-          <div className="section-registration container">
+        <main className="contact1 contact-details">
+          <div className="container-contact1 container">
             <div className="row">
-              <div className="registration-image">
+              <div className="col-lg-6">
                 <img
                   src="/images/register.png"
                   alt="Left side of image error! "
@@ -79,79 +78,74 @@ const Register = () => {
 
               {/* let tackle registration form */}
 
-              <div className="registration-form">
+              <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Registration Form</h1>
                 <br />
 
                 <form className="Form-box" onSubmit={handleSubmit}>
-                  <div className="container-box">
+                  <div className="wrap-input1 validate-input">
                     <input
-                      className="input"
+                      className="input1"
                       type="text"
                       name="username"
-                      // placeholder="username"
+                      placeholder="Username"
                       id="username"
                       required
                       autoComplete="off"
                       value={user.username}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="username">
-                      Username
-                    </label>
+                    <span className="shadow-input1"></span>
                   </div>
 
-                  <div className="container-box">
+                  <div className="wrap-input1 validate-input">
                     <input
-                      className="input"
+                      className="input1"
                       type="email"
                       name="email"
-                      // placeholder="email"
+                      placeholder="Email"
                       id="email"
                       required
                       autoComplete="off"
                       value={user.email}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="email">
-                      Email
-                    </label>
+                    <span className="shadow-input1"></span>
                   </div>
 
-                  <div className="container-box">
+                  <div className="wrap-input1 validate-input">
                     <input
-                      className="input"
+                      className="input1"
                       type="number"
                       name="phone"
-                      // placeholder="phone"
+                      placeholder="Phone"
                       id="phone"
                       required
                       autoComplete="off"
                       value={user.phone}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="phone">
-                      Phone
-                    </label>
+                    <span className="shadow-input1"></span>
                   </div>
 
-                  <div className="container-box">
+                  <div className="wrap-input1 validate-input">
                     <input
-                      className="input"
+                      className="input1"
                       type="password"
                       name="password"
-                      // placeholder="password"
+                      placeholder="Password"
                       id="password"
                       required
                       autoComplete="off"
                       value={user.password}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="password">
-                      Password
-                    </label>
+                    <span className="shadow-input1"></span>
                   </div>
-                  <button type="submit" className="btn btn-submit btn-primary">
+                  <button
+                    type="submit"
+                    className="container-contact1-form-btn contact1-form-btn"
+                  >
                     Register now
                   </button>
                 </form>

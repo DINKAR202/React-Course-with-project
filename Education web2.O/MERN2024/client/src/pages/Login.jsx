@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 const URL = `http://localhost:5000/api/auth/login`;
 
@@ -48,8 +48,9 @@ const Login = () => {
         // alert("Logged in successfully!");
         navigate("/");
       } else {
-        toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
-
+        toast.error(
+          res_data.extraDetails ? res_data.extraDetails : res_data.message
+        );
       }
       console.log(response);
     } catch (error) {
@@ -66,8 +67,8 @@ const Login = () => {
   return (
     <>
       <section>
-        <main className="container-fluid">
-          <div className="container">
+        <main className="contact1 contact-details">
+          <div className="container-contact1 container">
             <div className="row">
               <div className="col-lg-6">
                 <img
@@ -81,40 +82,39 @@ const Login = () => {
                 <h1 className="main-heading mb-3">Login here</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
-                  <div className="container-box">
+                  <div className="wrap-input1 validate-input">
                     <input
-                      className="input"
+                      className="input1"
                       type="email"
                       name="email"
-                      // placeholder="email"
+                      placeholder="Email"
                       id="email"
                       required
                       autoComplete="off"
                       value={user.email}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="email">
-                      Email
-                    </label>
+                    <span className="shadow-input1"></span>
                   </div>
 
-                  <div className="container-box">
+                  <div className="wrap-input1 validate-input">
                     <input
-                      className="input"
+                      className="input1"
                       type="password"
                       name="password"
-                      // placeholder="password"
+                      placeholder="Password"
                       id="password"
                       required
                       autoComplete="off"
                       value={user.password}
                       onChange={handleInput}
                     />
-                    <label className="label" htmlFor="password">
-                      password
-                    </label>
+                    <span className="shadow-input1"></span>
                   </div>
-                  <button type="submit" className="btn btn-submit btn-primary">
+                  <button
+                    type="submit"
+                    className="container-contact1-form-btn contact1-form-btn"
+                  >
                     Login
                   </button>
                 </form>

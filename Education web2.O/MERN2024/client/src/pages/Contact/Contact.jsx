@@ -130,7 +130,7 @@ const Contact = () => {
                     type="submit"
                     className="container-contact1-form-btn contact1-form-btn"
                   >
-                    Submit
+                    Send Message
                   </button>
                 </form>
               </div>
