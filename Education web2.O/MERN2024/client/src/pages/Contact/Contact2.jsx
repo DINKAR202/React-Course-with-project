@@ -65,55 +65,58 @@ const Contact = () => {
   return (
     <>
       <section>
-        <main className="contact1 contact-details">
-          <div className="container-contact1">
-            <div className="row justify-content-between">
-              <div className="col-lg-6 contact-mail">
+        <main className="container-fluid contact-details">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
                 <img
-                  src="../../public/images/img-01.png"
+                  src="../../public/images/support.png"
                   width="400"
                   height="500"
                   alt="Login image here"
                 />
               </div>
-              <div className="col-lg-6 contact-mail2">
+              <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Contact here</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
-                  <div className="wrap-input1 validate-input">
+                  <div className="container-box">
                     <input
-                      className="input1"
+                      className="input"
                       type="text"
                       name="username"
-                      placeholder="Full Name"
+                      // placeholder="username"
                       id="username"
                       required
                       autoComplete="off"
                       value={contact.username}
                       onChange={handleInput}
-                      data-validate="Name is required"
                     />
-                    <span className="shadow-input1"></span>
+                    <label className="label" htmlFor="username">
+                      Username
+                    </label>
                   </div>
 
-                  <div className="wrap-input1 validate-input">
+                  <div className="container-box">
                     <input
-                      className="input1"
+                      className="input"
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      // placeholder="email"
                       id="email"
                       required
                       autoComplete="off"
                       value={contact.email}
                       onChange={handleInput}
                     />
-                    <span className="shadow-input1"></span>
+                    <label className="label" htmlFor="email">
+                      Email
+                    </label>
                   </div>
 
-                  <div className="wrap-input1 validate-input">
+                  <div className="container-box">
                     <textarea
-                      className="input1"
+                      className="input"
                       name="message"
                       id="message"
                       autoComplete="off"
@@ -123,13 +126,12 @@ const Contact = () => {
                       cols="30"
                       rows="6"
                     ></textarea>
-                    <span className="shadow-input1"></span>
+                    <label className="label" htmlFor="message">
+                      message
+                    </label>
                   </div>
 
-                  <button
-                    type="submit"
-                    className="container-contact1-form-btn contact1-form-btn"
-                  >
+                  <button type="submit" className="btn btn-submit btn-primary">
                     Submit
                   </button>
                 </form>
