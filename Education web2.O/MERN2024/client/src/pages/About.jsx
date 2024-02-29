@@ -85,7 +85,7 @@ const About = () => {
             className="animate__animated animate__bounce about-content d-flex justify-content-center align-items-center p-4"
           >
             <img
-              src="/images/about.png"
+              src="/images/step by step.png"
               alt="coding together"
               width="400"
               height="500"
