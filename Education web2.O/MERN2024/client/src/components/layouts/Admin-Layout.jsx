@@ -7,17 +7,17 @@ const AdminLayout = () => {
   const { user, isLoading } = useAuth();
   console.log("admin layout", user);
 
-  if(isLoading) {
-    return <h1>Loading...</h1>
+  if (isLoading) {
+    return <h1>Loading...</h1>;
   }
 
-  if(!user.isAdmin){
-    return <Navigate to="/"/>
+  if (!user.isAdmin) {
+    return <Navigate to="/" />;
   }
   return (
     <>
       <header>
-        <div className="container">
+        <div className="container" style={{marginTop:"114px"}}>
           <nav>
             <ul>
               <li>

@@ -4,7 +4,7 @@ const Error = () => {
   return (
     <>
       <section id="error-page">
-        <div className=" content">
+        <div className="content">
           <h2 className="header">404</h2>
           <h4>Sorry! Page not found</h4>
           <p>
