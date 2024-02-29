@@ -1,7 +1,8 @@
 import { useState } from "react";
-import "../components/CSS-Design/Design.css";
-import { useAuth } from "../store/auth";
-import { toast } from 'react-toastify';
+import "../../components/CSS-Design/Design.css";
+import { toast } from "react-toastify";
+import { useAuth } from "../../store/auth";
+import "./Contact.css";
 
 const defaultContactFormData = {
   username: "",
@@ -41,30 +42,30 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const response = await fetch("http://localhost:5000/api/form/contact", {
-          method: "POST",
-          headers: {
-            'Content-Type': "application/json"
-          },
-          body:JSON.stringify(contact),
-        });
+      const response = await fetch("http://localhost:5000/api/form/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contact),
+      });
 
-        if(response.ok){
-          setContact(defaultContactFormData);
-          const data = await response.json();
-          console.log(data);
-          toast.success("Message sent successfully");
-          // alert("Message sent successfully");
-        }
+      if (response.ok) {
+        setContact(defaultContactFormData);
+        const data = await response.json();
+        console.log(data);
+        toast.success("Message sent successfully");
+        // alert("Message sent successfully");
+      }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
   return (
     <>
       <section>
-        <main className="container-fluid">
+        <main className="container-fluid contact-details">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
@@ -141,10 +142,10 @@ const Contact = () => {
 
         <section className="mb-3">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2613173278896!2d73.91411937501422!3d18.562253982539413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1697604225432!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.8201461590643!2d85.8855114751887!3d23.789418078643806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f46b9d0b87800d%3A0xe9cf2ca04cf21b5c!2sBTPS%20HOSPITAL%2CBOKARO%20THERMAL!5e0!3m2!1sen!2sin!4v1709221133656!5m2!1sen!2sin"
             width="100%"
             height="450"
-            allowFullScreen
+            allowfullscreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

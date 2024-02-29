@@ -119,7 +119,9 @@ const About = () => {
             </p>
             <div className="btn btn-group">
               <a href="/contact" className="me-2">
-                <button className="btn btn-danger">connect now</button>
+                <button className="btn btn-warning text-light">
+                  connect now
+                </button>
               </a>
               <a href="/services">
                 <button className="btn btn-secondary">learn more</button>

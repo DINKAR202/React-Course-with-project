@@ -12,11 +12,6 @@
 body {
   background-color: #f9fafb;
   font-family: "Open Sans", sans-serif;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* min-height: 100vh; */
-  /* margin: 0; */
 }
 
 .container-chart {
@@ -27,9 +22,7 @@ body {
   max-width: 440px;
   z-index: 1;
   position: absolute;
-  /* top: 100%; Position it below the Navbar */
   left: 25%;
-  /* transform: translateX(-50%); Adjust horizontal positioning */
 }
 h1 {
   text-align: center;
