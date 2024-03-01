@@ -17,28 +17,28 @@ const AdminLayout = () => {
   return (
     <>
       <header>
-        <div className="container" style={{marginTop:"114px"}}>
+        <div className="container" style={{ marginTop: "114px" }}>
           <nav>
             <ul>
               <li>
-                <NavLink to="/admin/users">
+                <NavLink to="/admin/users" className="text-dark">
                   <FaUser /> Users{" "}
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/admin/contacts">
+                <NavLink to="/admin/contacts" className="text-dark">
                   {" "}
                   <FaMessage /> Contacts{" "}
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/admin/services">
+                <NavLink to="/admin/services" className="text-dark">
                   {" "}
                   <FaRegListAlt /> Services{" "}
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
+                <NavLink to="/" className="text-dark">
                   <FaHome /> Home{" "}
                 </NavLink>
               </li>

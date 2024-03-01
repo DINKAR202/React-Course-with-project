@@ -262,6 +262,7 @@ const NavBar = () => {
               <Nav.Link className="me-3 nav-button" href="/contact">
                 Contact
               </Nav.Link>
+
               {isLoggedIn ? (
                 <li>
                   <Nav.Link className="me-3 nav-button" href="/logout">
@@ -270,27 +271,21 @@ const NavBar = () => {
                 </li>
               ) : (
                 <>
-                  <li>
                     <Nav.Link className="me-3 nav-button" href="/register">
                       {" "}
                       Register{" "}
                     </Nav.Link>
-                  </li>
-                  <li>
                     <Nav.Link className="me-3 nav-button" href="/login">
                       {" "}
                       Login{" "}
                     </Nav.Link>
-                  </li>
                 </>
               )}
-              {/* Other Nav Links */}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       {showChart && <ChartComponent />}{" "}
-      {/* Render the chart component if showChart is true */}
     </>
   );
 };

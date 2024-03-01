@@ -1,18 +1,18 @@
-// import { motion } from "framer-motion";
-import { Col, Row, Image } from "react-bootstrap";
-import banner from "/images/Animation.gif";
+import { motion } from "framer-motion";
+import { Col, Row } from "react-bootstrap";
 import "./Banner.css";
-import "animate.css";
 import Counter from "../Counter/Counter";
+import Atom from "../../atom.json";
+import Lottie from "lottie-react";
 
 const Banner = () => {
   return (
     <>
-      <section
-      // initial={{ y: -250 }}
-      // animate={{ y: -10 }}
-      // transition={{ delay: 0.9, type: "spring", stiffness: 2500 }}
-      // id="home"
+      <motion.section
+        initial={{ y: -250 }}
+        animate={{ y: -10 }}
+        transition={{ delay: 0.9, type: "spring", stiffness: 2500 }}
+        id="home"
       >
         <div style={{ marginTop: "111px" }} className="container-fluid header">
           <Row className="align-items-center heading-title2 justify-content-center banner">
@@ -24,12 +24,6 @@ const Banner = () => {
                 Trailblazing new horizons in educational guidance for future
                 leaders
               </h1>
-              {/* <p className="text-muted">
-                <small className="para-heading">
-                  We shape your learners academic needs through our innovative
-                  and next-generation educational support.
-                </small>
-              </p> */}
               <div className="banner-button">
                 <a href="/about">
                   <button className="button-87">Get Started</button>
@@ -38,12 +32,12 @@ const Banner = () => {
             </Col>
             <Col className="offset-md-1" md={5}>
               <div className="banner-dynamic-img">
-                <Image className="img-fluid" src={banner} alt="banner img" />
+                <Lottie animationData={Atom} />
               </div>
             </Col>
           </Row>
         </div>
-      </section>
+      </motion.section>
       <Counter />
     </>
   );

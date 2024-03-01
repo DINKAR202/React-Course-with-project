@@ -69,8 +69,15 @@
 }
 
 .banner-dynamic-img {
+  /* background: linear-gradient(to top, #ff6125, transparent); */
+  /* background-color: white; */
+  border-radius: 8px;
   width: 100%;
 }
+
+/* .img-fluid {
+  background-color: #ff512f;
+} */
 
 .banner-dynamic-img img {
   opacity: 0.5;
