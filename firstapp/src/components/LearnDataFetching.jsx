@@ -10,8 +10,8 @@ const LearnDataFetching = async () => {
     <>
       {data.map((post, i) => (
         <div key={i}>
-            <h1>{data.title}</h1>
-            <h1>{data.body}</h1>
+          <h1>Title: {post.title}</h1>
+          <h1>Body: {post.body}</h1>
         </div>
       ))}
     </>
