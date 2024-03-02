@@ -13,13 +13,13 @@ const ChartComponent = () => {
     const myChartRef = chartRef.current.getContext("2d");
 
     const labels = [
-      "Curriculum Development",
+      "STEM Curriculum",
       "Assessment Development",
       "PPT Development",
-      "2D & 3D Videos",
+      "Gamified Learning",
       "Flashcard Creation",
       "Teacher Lesson Plan",
-      "eBook Creation",
+      "Educational Content Development",
       "K 6 Education",
       "Workbook Development",
     ];
@@ -34,7 +34,6 @@ const ChartComponent = () => {
       "/localization",
       "/localization",
       "/localization",
-      "/localization",
     ];
 
     chartInstance.current = new Chart(myChartRef, {
@@ -43,7 +42,7 @@ const ChartComponent = () => {
         labels: labels,
         datasets: [
           {
-            data: [418, 263, 434, 486, 332, 300, 250, 250, 300],
+            data: [1, 1, 1, 1, 1, 1, 1, 1, 1],
             backgroundColor: [
               "rgb(255, 99, 132)",
               "rgb(54, 162, 235)",
@@ -70,12 +69,6 @@ const ChartComponent = () => {
         plugins: {
           legend: {
             align: "start", // Align the legend to the start
-          },
-          tooltip: {
-            enabled: false, // Disable tooltips
-          },
-          datalabels: {
-            color: "black", // Set label color to black
           },
         },
       },
