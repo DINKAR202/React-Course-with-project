@@ -1,8 +1,11 @@
 async function getData() {
-  const res = await fetch("");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  return res.json();
 }
 
-const LearnDataFetching = () => {
+const LearnDataFetching = async () => {
+  const data = await getData();
+  console.log("Data: ", data);
   return <div>LearnDataFetching</div>;
 };
 
