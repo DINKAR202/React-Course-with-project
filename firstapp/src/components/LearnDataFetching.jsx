@@ -6,7 +6,16 @@ async function getData() {
 const LearnDataFetching = async () => {
   const data = await getData();
   console.log("Data: ", data);
-  return <div>LearnDataFetching</div>;
+  return (
+    <>
+      {data.map((post, i) => (
+        <div key={i}>
+            <h1>{data.title}</h1>
+            <h1>{data.body}</h1>
+        </div>
+      ))}
+    </>
+  );
 };
 
 export default LearnDataFetching;
