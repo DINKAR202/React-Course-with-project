@@ -271,14 +271,14 @@ const NavBar = () => {
                 </li>
               ) : (
                 <>
-                    <Nav.Link className="me-3 nav-button" href="/register">
-                      {" "}
-                      Register{" "}
-                    </Nav.Link>
-                    <Nav.Link className="me-3 nav-button" href="/login">
-                      {" "}
-                      Login{" "}
-                    </Nav.Link>
+                  <Nav.Link className="me-3 nav-button" href="/register">
+                    {" "}
+                    Register{" "}
+                  </Nav.Link>
+                  <Nav.Link className="me-3 nav-button" href="/login">
+                    {" "}
+                    Login{" "}
+                  </Nav.Link>
                 </>
               )}
             </Nav>

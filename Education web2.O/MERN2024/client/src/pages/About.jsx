@@ -22,9 +22,6 @@ const About = () => {
             <h2 className="text-start">
               <b>Why Choose Us?</b>
             </h2>
-            <h6 className="text-warning">
-              <b>MUSKAN SINGH</b>
-            </h6>
             <p>
               <b>Muskan Vision:</b> Muskan Singh envisioned Guidofie to bridge
               gaps in traditional education through technology.

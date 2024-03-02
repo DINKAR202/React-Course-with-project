@@ -67,6 +67,17 @@ const ChartComponent = () => {
             }
           }
         },
+        plugins: {
+          legend: {
+            align: "start", // Align the legend to the start
+          },
+          tooltip: {
+            enabled: false, // Disable tooltips
+          },
+          datalabels: {
+            color: "black", // Set label color to black
+          },
+        },
       },
     });
     return () => {

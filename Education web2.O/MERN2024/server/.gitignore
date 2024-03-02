@@ -8,8 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-package-lock.json
-package.json
+models
+middlewares
+router
+controllers
 dist
 dist-ssr
 *.local

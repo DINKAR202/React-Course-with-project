@@ -5,38 +5,16 @@
   --error-color: #e74c3c;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f9fafb;
-  font-family: "Open Sans", sans-serif;
-}
-
 .container-chart {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  max-width: 440px;
+  width: 25rem;
+  height: 400px;
   z-index: 1;
   position: absolute;
   left: 25%;
-}
-h1 {
-  text-align: center;
-  margin: 20px 0;
-  color: #565656;
-}
-
-a {
-  text-decoration: none;
-  color: #2f20d1;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 img {
@@ -164,5 +142,15 @@ img {
 }
 
 .chart-size {
-  max-width: 440px !important;
+  width: 100% !important;
+  height: 350px !important;
+}
+
+/* For mobile view */
+@media only screen and (max-width: 767px) {
+  .container-chart {
+    left: 1%;
+    width: 22rem;
+    margin: 0 auto;
+  }
 }
