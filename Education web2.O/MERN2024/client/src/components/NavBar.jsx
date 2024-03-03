@@ -200,6 +200,7 @@ const NavBar = () => {
               <Nav.Link className="me-3 nav-button" href="/service">
                 Services
               </Nav.Link>
+              {/* done */}
               <Nav.Link className="me-3 nav-button" href="/contact">
                 Contact
               </Nav.Link>
