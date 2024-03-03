@@ -1,0 +1,38 @@
+/* Define default font sizes */
+.counter-numbers {
+  font-size: 4rem; /* Adjust as needed */
+}
+
+.section-work-data {
+  background: linear-gradient(to top, #ff6125, transparent);
+}
+
+.section-work-data p {
+  font-size: 1rem; /* Adjust as needed */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .counter-numbers {
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+
+  .section-work-data p {
+    font-size: 0.8rem; /* Adjust as needed */
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 576px) {
+  .counter-numbers {
+    font-size: 1.2rem; /* Adjust as needed */
+  }
+
+  .section-work-data p {
+    font-size: 0.7rem; /* Adjust as needed */
+  }
+}
+
+.counter-bg {
+  background: linear-gradient(to bottom, #fcce44, transparent);
+}

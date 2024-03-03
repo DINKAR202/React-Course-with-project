@@ -1,0 +1,42 @@
+.nav-button {
+  font-weight: 800;
+  transition: transform 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  color: #ff6125;
+  /* border-bottom: 5px solid #ff6125; */
+}
+
+.logo-text {
+  width: 110px !important;
+  margin-left: -20px;
+}
+
+.drop-icons {
+  width: 35px;
+  transition: all 0.5s;
+}
+
+.drop-icons svg {
+  margin-left: 2px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 7px;
+  color: #ff6125;
+}
+
+.drop-icons:hover {
+  background-color: #ff6125;
+  border-radius: 7px !important;
+}
+
+.drop-icons:hover svg {
+  color: white !important;
+}
+
+.dropdown-menu {
+  min-width: 250px !important;
+}

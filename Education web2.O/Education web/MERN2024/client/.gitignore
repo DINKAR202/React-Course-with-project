@@ -1,0 +1,16 @@
+# Ignore build output
+/dist
+/.vite
+
+# Ignore node_modules directory
+node_modules
+package-lock.json
+package.json
+
+# Ignore IDE files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
