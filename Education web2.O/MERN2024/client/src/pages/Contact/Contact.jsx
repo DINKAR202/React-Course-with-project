@@ -3,10 +3,13 @@ import "../../components/CSS-Design/Design.css";
 import { toast } from "react-toastify";
 import { useAuth } from "../../store/auth";
 import "./Contact.css";
+import Atom from "../../Contact.json";
+import Lottie from "lottie-react";
 
 const defaultContactFormData = {
   username: "",
   email: "",
+  phone: "",
   message: "",
 };
 
@@ -20,6 +23,7 @@ const Contact = () => {
     setContact({
       username: user.username,
       email: user.email,
+      phone: user.phone,
       message: "",
     });
 
@@ -69,12 +73,7 @@ const Contact = () => {
           <div className="container-contact1">
             <div className="row justify-content-between">
               <div className="col-lg-6 contact-mail">
-                <img
-                  src="../../public/images/img-01.png"
-                  width="400"
-                  height="500"
-                  alt="Login image here"
-                />
+                <Lottie animationData={Atom} />
               </div>
               <div className="col-lg-6 contact-mail2">
                 <h1 className="main-heading mb-3">Contact here</h1>
@@ -106,6 +105,21 @@ const Contact = () => {
                       required
                       autoComplete="off"
                       value={contact.email}
+                      onChange={handleInput}
+                    />
+                    <span className="shadow-input1"></span>
+                  </div>
+
+                  <div className="wrap-input1 validate-input">
+                    <input
+                      className="input1"
+                      type="tel"
+                      name="phone"
+                      placeholder="Phone"
+                      id="phone"
+                      required
+                      autoComplete="off"
+                      value={contact.phone}
                       onChange={handleInput}
                     />
                     <span className="shadow-input1"></span>

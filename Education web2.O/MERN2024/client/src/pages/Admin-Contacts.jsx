@@ -67,18 +67,20 @@ const AdminContacts = () => {
               <tr>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Phone</th>
                 <th>Message</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
               {contactData.map((curContactData, index) => {
-                const { username, email, message, _id } = curContactData;
+                const { username, email, phone, message, _id } = curContactData;
 
                 return (
                   <tr key={index}>
                     <td>{username}</td>
                     <td>{email}</td>
+                    <td>{phone}</td>
                     <td>{message}</td>
                     <td>
                       <button
@@ -96,23 +98,6 @@ const AdminContacts = () => {
           </table>
         </div>
       </section>
-
-      {/* <section className="admin-users-section">
-        <h1>Admin Contacts Data</h1>
-        <div className="container admin-users">
-          {contactData.map((curContactData, index) => {
-            const { username, email, message } = curContactData;
-            return (
-              <div key={index}>
-                <p>{username}</p>
-                <p>{email}</p>
-                <p>{message}</p>
-                <button className="btn">delete</button>
-              </div>
-            );
-          })}
-        </div>
-      </section> */}
     </>
   );
 };

@@ -3,6 +3,8 @@ import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
+import Atom from "../Registration.json";
+import Lottie from "lottie-react";
 
 const URL = `http://localhost:5000/api/auth/register`;
 
@@ -68,12 +70,7 @@ const Register = () => {
           <div className="container-contact1 container">
             <div className="row">
               <div className="col-lg-6">
-                <img
-                  src="/images/register.png"
-                  alt="Left side of image error! "
-                  width="400"
-                  height="500"
-                />
+                <Lottie animationData={Atom} />
               </div>
 
               {/* let tackle registration form */}
