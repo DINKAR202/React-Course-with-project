@@ -3,7 +3,7 @@ import "../../components/CSS-Design/Design.css";
 import { toast } from "react-toastify";
 import { useAuth } from "../../store/auth";
 import "./Contact.css";
-import Atom from "../../Contact.json";
+import Atom from "../../json/Contact.json";
 import Lottie from "lottie-react";
 
 const defaultContactFormData = {

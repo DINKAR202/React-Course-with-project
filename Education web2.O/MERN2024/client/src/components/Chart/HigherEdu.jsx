@@ -24,14 +24,14 @@ const HigherEdu = () => {
     ];
 
     const urls = [
-      "/",
-      "/about",
-      "/contact",
-      "/login",
-      "/register",
-      "/localization",
-      "/localization",
-      "/localization",
+      "/HigherCurriculum",
+      "/HigherDevelopment",
+      "/HigerLectureManual",
+      "/HigherManagement",
+      "/HigherPPTDevelopment",
+      "/HigherVideoLecture",
+      "/Higher2D3DVideos",
+      "/HigherAnimatedVideos",
     ];
 
     chartInstance.current = new Chart(myChartRef, {

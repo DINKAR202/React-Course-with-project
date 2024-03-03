@@ -3,6 +3,8 @@ import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
+import Atom from "../json/Login.json";
+import Lottie from "lottie-react";
 
 const URL = `http://localhost:5000/api/auth/login`;
 
@@ -71,12 +73,7 @@ const Login = () => {
           <div className="container-contact1 container">
             <div className="row">
               <div className="col-lg-6">
-                <img
-                  src="/images/login.png"
-                  width="400"
-                  height="500"
-                  alt="Login image here"
-                />
+                <Lottie animationData={Atom} />
               </div>
               <div className="col-lg-6">
                 <h1 className="main-heading mb-3">Login here</h1>

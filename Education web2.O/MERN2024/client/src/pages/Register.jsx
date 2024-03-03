@@ -3,7 +3,7 @@ import "../components/CSS-Design/Design.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
-import Atom from "../Registration.json";
+import Atom from "../json/Registration.json";
 import Lottie from "lottie-react";
 
 const URL = `http://localhost:5000/api/auth/register`;

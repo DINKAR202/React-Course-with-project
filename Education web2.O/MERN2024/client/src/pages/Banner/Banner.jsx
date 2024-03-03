@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
 import "./Banner.css";
 import Counter from "../Counter/Counter";
-import Atom from "../../atom.json";
+import Atom from "../../json/atom.json";
 import Lottie from "lottie-react";
 
 const Banner = () => {

@@ -20,20 +20,20 @@ const ChartComponent = () => {
       "Flashcard Creation",
       "Teacher Lesson Plan",
       "Educational Content Development",
-      "K 6 Education",
+      "K6 Education",
       "Workbook Development",
     ];
 
     const urls = [
-      "/",
-      "/about",
-      "/contact",
-      "/login",
-      "/register",
-      "/localization",
-      "/localization",
-      "/localization",
-      "/localization",
+      "/STEM",
+      "/AssessmentDevelopment",
+      "/PPTDevelopment",
+      "/GamifiedLearning",
+      "/FlashcardCreation",
+      "/TeacherLessonPlan",
+      "/EducationalContentDevelopment",
+      "/K6Education",
+      "/WorkbookDevelopment",
     ];
 
     chartInstance.current = new Chart(myChartRef, {
