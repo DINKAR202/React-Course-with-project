@@ -1,3 +1,4 @@
+import { MotionAnimate } from "react-motion-animate";
 import { useEffect } from "react";
 import "./counter.css";
 
@@ -38,34 +39,36 @@ const Counter = () => {
   };
 
   return (
-    <section className="section mt-4 section-work-data">
-      <div className="container d-flex justify-content-between flex-wrap p-4">
-        <div>
-          <h2 className="counter-numbers" data-number={100}>
-            0+
-          </h2>
-          <p>Course completed</p>
+    <MotionAnimate animation="scrollOpacity">
+      <section className="section mt-4 section-work-data">
+        <div className="container d-flex justify-content-between flex-wrap p-4">
+          <div>
+            <h2 className="counter-numbers" data-number={100}>
+              0+
+            </h2>
+            <p>Course completed</p>
+          </div>
+          <div>
+            <h2 className="counter-numbers" data-number={1500}>
+              0+
+            </h2>
+            <p>Happy Clients</p>
+          </div>
+          <div>
+            <h2 className="counter-numbers" data-number={1200}>
+              0+
+            </h2>
+            <p>Instructor</p>
+          </div>
+          <div>
+            <h2 className="counter-numbers" data-number={1300}>
+              0+
+            </h2>
+            <p>real professionals</p>
+          </div>
         </div>
-        <div>
-          <h2 className="counter-numbers" data-number={1500}>
-            0+
-          </h2>
-          <p>Happy Clients</p>
-        </div>
-        <div>
-          <h2 className="counter-numbers" data-number={1200}>
-            0+
-          </h2>
-          <p>Instructor</p>
-        </div>
-        <div>
-          <h2 className="counter-numbers" data-number={1300}>
-            0+
-          </h2>
-          <p>real professionals</p>
-        </div>
-      </div>
-    </section>
+      </section>
+      </MotionAnimate>
   );
 };
 
