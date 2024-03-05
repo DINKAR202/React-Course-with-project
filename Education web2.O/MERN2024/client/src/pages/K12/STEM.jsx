@@ -137,61 +137,62 @@ const STEM = () => {
         </div>
       </MotionAnimate>
 
-      <MotionAnimate animation='scrollFadeIn' scrollPositions={[0.1, 0.9]}>
-      <div className="container-fluid K12-content">
-        <Container className="py-5">
-          <h3 className="text-center">Empowering K12 STEM Education</h3>
-          <Row>
-            <Col md={8} className="p-5">
-              <p>
-                We are committed to providing a comprehensive STEM curriculum to
-                inspire and equip educators and students to thrive in the
-                dynamic fields of Science, Technology, Engineering, and
-                Mathematics. We aim to offer all students a meticulously crafted
-                curriculum to cultivate critical thinking, problem-solving
-                skills, and a passion for innovation. Our strong foundation in
-                STEM is essential for students to be successful. Therefore, we
-                collaborate with schools and other educational institutions to
-                provide high-quality curriculum development, allowing students
-                to be successful in the rapidly evolving sector of STEM.
-              </p>
-              <p>
-                Our STEM curriculum is a transformative educational journey that
-                empowers students to become problem-solvers, innovators, and
-                leaders. Connect with us to equip the next generation with
-                creativity, critical thinking, and an innovative future.
-              </p>
-              <a href="/contact">
-                <button className="button-87">
-                  Get in Touch{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={16}
-                    height={16}
-                    fill="currentColor"
-                    className="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                    />
-                  </svg>
-                </button>
-              </a>
-            </Col>
-            <Col md={4}>
-              <div className="banner-dynamic-img23 shadow ">
-                {/* <Lottie animationData={Atom} /> */}
-                <img
-                  src="../../../public/images/boxes/teachertech.jpg"
-                  alt="mypic"
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <div className="container-fluid K12-content">
+          <Container className="py-5">
+            <h3 className="text-center">Empowering K12 STEM Education</h3>
+            <Row>
+              <Col md={8} className="p-5">
+                <p>
+                  We are committed to providing a comprehensive STEM curriculum
+                  to inspire and equip educators and students to thrive in the
+                  dynamic fields of Science, Technology, Engineering, and
+                  Mathematics. We aim to offer all students a meticulously
+                  crafted curriculum to cultivate critical thinking,
+                  problem-solving skills, and a passion for innovation. Our
+                  strong foundation in STEM is essential for students to be
+                  successful. Therefore, we collaborate with schools and other
+                  educational institutions to provide high-quality curriculum
+                  development, allowing students to be successful in the rapidly
+                  evolving sector of STEM.
+                </p>
+                <p>
+                  Our STEM curriculum is a transformative educational journey
+                  that empowers students to become problem-solvers, innovators,
+                  and leaders. Connect with us to equip the next generation with
+                  creativity, critical thinking, and an innovative future.
+                </p>
+                <a href="/contact">
+                  <button className="button-87">
+                    Get in Touch{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="bi bi-arrow-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </button>
+                </a>
+              </Col>
+              <Col md={4}>
+                <div className="banner-dynamic-img23 shadow ">
+                  {/* <Lottie animationData={Atom} /> */}
+                  <img
+                    src="../../../public/images/boxes/teachertech.jpg"
+                    alt="mypic"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </MotionAnimate>
       <div className="container-fluid">
         <Container className="py-5">
@@ -205,16 +206,22 @@ const STEM = () => {
               md={8}
               className="p-5 d-flex flex-column align-content-center justify-content-center"
             >
-              <h4>Inquiry-Based Learning</h4>
-              <p>
-                In this approach, we frame the lessons so the students can
-                explore scientific concepts and theories through hands-on
-                experimentation and investigation. Our content and resources
-                help educational institutions develop curricula that will engage
-                students and foster their critical thinking, problem-solving
-                skills, and creativity by adding real-world scenarios and
-                providing an interactive and collaborative environment.
-              </p>
+              <motion.div
+                animate={{ x: 40 }}
+                transition={{ ease: "easeOut", duration: 2 }}
+              >
+                <h4>Inquiry-Based Learning</h4>
+                <p>
+                  In this approach, we frame the lessons so the students can
+                  explore scientific concepts and theories through hands-on
+                  experimentation and investigation. Our content and resources
+                  help educational institutions develop curricula that will
+                  engage students and foster their critical thinking,
+                  problem-solving skills, and creativity by adding real-world
+                  scenarios and providing an interactive and collaborative
+                  environment.
+                </p>
+              </motion.div>
             </Col>
             <Col md={4}>
               <div className="banner-dynamic-img23 shadow">
@@ -463,19 +470,20 @@ const STEM = () => {
               {data.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="col-lg-5 p-3 rounded-4 shadow d-flex" initial={{
+                  className="col-lg-5 p-3 rounded-4 shadow d-flex"
+                  initial={{
                     opacity: 0,
                     // if odd index card,slide from right instead of left
-                    x: index % 2 === 0 ? 50 : -50
+                    x: index % 2 === 0 ? 50 : -50,
                   }}
                   whileInView={{
                     opacity: 1,
                     x: 0, // Slide in to its original position
                     transition: {
-                      duration: 1 // Animation duration
-                    }
+                      duration: 1, // Animation duration
+                    },
                   }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                 >
                   <div className="8">
                     <h4>{item.title}</h4>
