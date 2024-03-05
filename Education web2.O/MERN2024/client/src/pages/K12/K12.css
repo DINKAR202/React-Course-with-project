@@ -1,0 +1,118 @@
+.headerK12 {
+  background-color: #f0f0f0;
+  background-image: url("../../../public/images/banner/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.heading-title2 {
+  background-color: rgba(53, 43, 43, 0.5) !important;
+}
+
+.heading-titleK12 {
+  height: 100% !important;
+  border-radius: 8px;
+}
+
+.heading-titleK12 h1 {
+  text-align: start;
+  font-weight: 600;
+  color: white !important;
+}
+
+.heading-title h1 h2 {
+  font-weight: 900;
+  color: #753b05;
+}
+
+.para-heading {
+  font-size: 18px;
+  color: black !important;
+}
+
+/* CSS */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+.banner-dynamic-img2 {
+  border-radius: 8px;
+  width: 70%;
+  padding: 10px 0;
+}
+
+.banner-dynamic-img23 {
+  width: 100% !important;
+  height: 100%;
+}
+
+.banner-buttonK12 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.title-para {
+  display: flex !important;
+  flex-direction: column;
+  text-align: start !important;
+  align-items: start;
+  color: white;
+}
+
+.title-para li {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .heading-titleK12 h1 {
+    font-size: 24px; /* Adjust as needed */
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .heading-titleK12 h1 {
+    font-size: 36px; /* Adjust as needed */
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .heading-titleK12 h1 {
+    font-size: 42px; /* Adjust as needed */
+  }
+}
