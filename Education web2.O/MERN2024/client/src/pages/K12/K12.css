@@ -106,6 +106,10 @@
   justify-content: center;
 }
 
+.array-data {
+  gap: 35px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 768px) {

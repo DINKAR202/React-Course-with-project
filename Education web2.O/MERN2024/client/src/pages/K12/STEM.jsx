@@ -15,61 +15,70 @@ const STEM = () => {
       altText: "placeholder",
     },
     {
-      title: "Enhances critical thinking",
+      title: "Improves cognitive skills",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "Responsive education solution STEM provides fundamental learning to coding and engineering in primary school. With the help of K12 education solutions, you are not only developing the kid’s mind but also allowing them to build cognitive skills at a young age.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Encourages creativity and curiosity",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "Solutions to STEM education also encourage creativity and curiosity among learners. It allows them to exercise their creativity and imagination and devise various new solutions and ideologies. As a result, their motivation is boosted.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Enhances communication skills",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "The group activities involved in K12 STEM education allow children to enhance their social skills. They learn to communicate complex issues with others while learning it all together from their classmates.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Enhances Socio-emotional learning",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "STEM education extends beyond knowledge and employment opportunities. It helps students enhance the socio-emotional qualities responsible for success and happiness. STEM education pushes students to master these abilities before entering the workforce.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Maximizes team collaboration",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "With the help of the activities involved in STEM education modules, students can collaborate with their classmates to solve issues and complete projects. This allows them to know about cooperation with others in a team-oriented setting.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Encourages the use of technology",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "Students learn the importance of innovation and technology when learning and studying through the K12 STEM education format. Learning new technologies can increase their eagerness to learn and understand them rather than being afraid or hesitant to try something new.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Improves Language Proficiency",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "Learning with STEM education criteria can also aid children’s language development through the education process. It improves their vocabulary, leading to language skills and general knowledge development.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Motivates experimentation",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "When learning through different activities, students apply methods and experiments that benefit them and those around them. By K12 STEM learning, the answer to the question that it would not work is now “let’s try and see” is the attitude they develop.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    },{
-      title: "Enhances critical thinking",
+    },
+    {
+      title: "Inspires the application of knowledge",
       description:
-        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+        "K12 STEM education offers knowledge of the skills that may apply in the real world. It encourages students to learn because now, they are aware of the abilities they gain by using the information in the real world, such as in workplaces.",
       imageSrc: "https://placehold.co/350",
       altText: "placeholder",
-    }, 
+    },
   ];
+
   return (
     <>
       <MotionAnimate
@@ -444,9 +453,15 @@ const STEM = () => {
             include the following:
           </p>
           <Row>
-            <Col md={12} className="d-flex flex-wrap">
+            <Col
+              md={12}
+              className="d-flex array-data flex-wrap justify-content-center align-content-center"
+            >
               {data.map((item, index) => (
-                <div key={index} className="col-lg-6 p-3 rounded shadow d-flex">
+                <div
+                  key={index}
+                  className="col-lg-5 p-3 rounded-4 shadow d-flex"
+                >
                   <div className="8">
                     <h4>{item.title}</h4>
                     <p className="small">{item.description}</p>
@@ -458,6 +473,33 @@ const STEM = () => {
               ))}
             </Col>
           </Row>
+          <div className="banner-buttonK12 center-button">
+            <MotionAnimate
+              delay={1.2} // Change delay to 1.2 seconds
+              speed={0.9} // Change speed to half
+              ease={[0.25, 0.1, 0.25, 1]} // Change easing function
+              reset={false} // Do not reset animation
+            >
+              <a href="/contact">
+                <button className="button-87">
+                  Get in Touch{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={16}
+                    height={16}
+                    fill="currentColor"
+                    className="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </MotionAnimate>
+          </div>
         </Container>
       </div>
     </>
