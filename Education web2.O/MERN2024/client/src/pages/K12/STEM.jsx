@@ -6,6 +6,70 @@ import Lottie from "lottie-react";
 // import { Container } from 'react-bootstrap/Container';
 
 const STEM = () => {
+  const data = [
+    {
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },
+    {
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    },{
+      title: "Enhances critical thinking",
+      description:
+        "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
+      imageSrc: "https://placehold.co/350",
+      altText: "placeholder",
+    }, 
+  ];
   return (
     <>
       <MotionAnimate
@@ -235,8 +299,163 @@ const STEM = () => {
                 motivate them, and maintain interest in the subject matter.
               </p>
               <p>
-              We break down complex topics into smaller chunks, making them easier to understand. We help students to learn through trial and error methods, which increases their understanding of the concepts and matter. Additionally, our game-based learning approach offers entertaining and interactive learning experiences for students, keeping them motivated and engaged throughout the learning process.
+                We break down complex topics into smaller chunks, making them
+                easier to understand. We help students to learn through trial
+                and error methods, which increases their understanding of the
+                concepts and matter. Additionally, our game-based learning
+                approach offers entertaining and interactive learning
+                experiences for students, keeping them motivated and engaged
+                throughout the learning process.
               </p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="container-fluid">
+        <Container className="py-5">
+          <Row>
+            <Col
+              md={8}
+              className="p-5 d-flex flex-column align-content-center justify-content-center"
+            >
+              <h4>Maker Education</h4>
+              <p>
+                In maker education, we create content for a list of projects
+                educational institutes can incorporate into the syllabus.
+                Students get hands-on experience creating something from scratch
+                using the concepts, tools, and materials they have learned in
+                their K12 STEM education.
+              </p>
+              <p>
+                Our maker education aims to provide institutions with the
+                content material and resources to help students develop creative
+                solutions to problems and acquire new skills. Additionally, with
+                this approach to learning, students get practical experience in
+                coming up with innovative solutions.
+              </p>
+            </Col>
+            <Col md={4}>
+              <div className="banner-dynamic-img23 shadow">
+                {/* <Lottie animationData={Atom} /> */}
+                <img src="https://placehold.co/400" alt="mypic" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="container-fluid">
+        <Container className="py-5">
+          <Row>
+            <Col md={4}>
+              <div className="banner-dynamic-img23 shadow">
+                {/* <Lottie animationData={Atom} /> */}
+                <img src="https://placehold.co/400" alt="mypic" />
+              </div>
+            </Col>
+            <Col
+              md={8}
+              className="p-5 d-flex flex-column align-content-center justify-content-center"
+            >
+              <h4>Coding Education</h4>
+              <p>
+                Our coding approach in K12 education involves creating content
+                and modules for the students learning programming languages and
+                coding skills. We help educational institutions to help their
+                students in developing their computational thinking skills,
+                problem-solving, and creative thinking.
+              </p>
+              <p>
+                With the help of coding education, students can apply their
+                knowledge to solve real-world problems and use their coding
+                skills to develop innovative solutions. Additionally, we create
+                content by remembering that the modules help students use
+                technology and manipulate data to drive decision-making.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+      <div className="container-fluid">
+        <Container className="py-5">
+          <Row>
+            <Col
+              md={8}
+              className="p-5 d-flex flex-column align-content-center justify-content-center"
+            >
+              <h4>Blended Learning</h4>
+              <p>
+                Our blended learning solutions come with a combination of
+                traditional classroom instructions and online learning. We
+                flexibly develop content and resources and offer personalized
+                learning experiences.
+              </p>
+              <p>
+                Following this learning technique in the classroom offers
+                students the opportunity to learn at their own pace by obeying
+                the instructions we have detailed in the modules. We also
+                construct a different instructional manual for teachers, with
+                the help of which teachers can concentrate on offering more
+                individualized attention and support to each student.
+              </p>
+            </Col>
+            <Col md={4}>
+              <div className="banner-dynamic-img23 shadow">
+                {/* <Lottie animationData={Atom} /> */}
+                <img src="https://placehold.co/400" alt="mypic" />
+              </div>
+            </Col>
+          </Row>
+          <div className="banner-buttonK12 center-button">
+            <MotionAnimate
+              delay={1.2} // Change delay to 1.2 seconds
+              speed={0.9} // Change speed to half
+              ease={[0.25, 0.1, 0.25, 1]} // Change easing function
+              reset={false} // Do not reset animation
+            >
+              <a href="/contact">
+                <button className="button-87">
+                  Get in Touch{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={16}
+                    height={16}
+                    fill="currentColor"
+                    className="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </MotionAnimate>
+          </div>
+        </Container>
+      </div>
+
+      <div className="container-fluid">
+        <Container className="py-5">
+          <h4 className="text-center">Benefits of K12 STEM Education</h4>
+          <p className="text-center">
+            Some of the major benefits of incorporating K12 STEM Education
+            include the following:
+          </p>
+          <Row>
+            <Col md={12} className="d-flex flex-wrap">
+              {data.map((item, index) => (
+                <div key={index} className="col-lg-6 p-3 rounded shadow d-flex">
+                  <div className="8">
+                    <h4>{item.title}</h4>
+                    <p className="small">{item.description}</p>
+                  </div>
+                  <div className="4 d-flex justify-content-center">
+                    <img src={item.imageSrc} alt={item.altText} />
+                  </div>
+                </div>
+              ))}
             </Col>
           </Row>
         </Container>

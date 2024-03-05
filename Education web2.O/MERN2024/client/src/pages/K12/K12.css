@@ -101,6 +101,11 @@
   background: linear-gradient(to top, #cecece, transparent);
 }
 
+.center-button {
+  display: flex;
+  justify-content: center;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 768px) {
