@@ -97,6 +97,10 @@
   font-size: 18px;
 }
 
+.K12-content {
+  background: linear-gradient(to top, #cecece, transparent);
+}
+
 /* Responsive */
 
 @media screen and (max-width: 768px) {

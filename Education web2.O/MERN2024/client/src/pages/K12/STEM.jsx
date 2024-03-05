@@ -63,7 +63,7 @@ const STEM = () => {
         </div>
       </MotionAnimate>
 
-      <div className="container-fluid">
+      <div className="container-fluid K12-content">
         <Container className="py-5">
           <h3 className="text-center">Empowering K12 STEM Education</h3>
           <Row>
