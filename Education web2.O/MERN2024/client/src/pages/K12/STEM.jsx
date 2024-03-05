@@ -91,7 +91,7 @@ const STEM = () => {
           style={{ marginTop: "111px" }}
           className="container-fluid headerK12"
         >
-          <Row className="align-items-center heading-title2 justify-content-center banner">
+          <Row className="align-items-center heading-title22 justify-content-center banner">
             <Col className="offset-md-1" md={5}>
               <div className="banner-dynamic-img2">
                 <Lottie animationData={Atom} />
@@ -179,10 +179,10 @@ const STEM = () => {
               </a>
             </Col>
             <Col md={4}>
-              <div className="banner-dynamic-img23">
+              <div className="banner-dynamic-img23 shadow ">
                 {/* <Lottie animationData={Atom} /> */}
                 <img
-                  src="../../../public/images/banner/mypic.png"
+                  src="../../../public/images/boxes/teachertech.jpg"
                   alt="mypic"
                 />
               </div>
