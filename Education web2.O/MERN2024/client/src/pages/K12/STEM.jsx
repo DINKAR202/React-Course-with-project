@@ -108,8 +108,135 @@ const STEM = () => {
             <Col md={4}>
               <div className="banner-dynamic-img23">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="../../../public/images/banner/mypic.png" alt="mypic" />
+                <img
+                  src="../../../public/images/banner/mypic.png"
+                  alt="mypic"
+                />
               </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="container-fluid">
+        <Container className="py-5">
+          <h3 className="text-center">Key Components of STEM Curriculum</h3>
+          <p className="text-center">
+            Four disciplines are covered in K12 STEM education (Science,
+            Technology, Engineering, and Mathematics).
+          </p>
+          <Row>
+            <Col
+              md={8}
+              className="p-5 d-flex flex-column align-content-center justify-content-center"
+            >
+              <h4>Inquiry-Based Learning</h4>
+              <p>
+                In this approach, we frame the lessons so the students can
+                explore scientific concepts and theories through hands-on
+                experimentation and investigation. Our content and resources
+                help educational institutions develop curricula that will engage
+                students and foster their critical thinking, problem-solving
+                skills, and creativity by adding real-world scenarios and
+                providing an interactive and collaborative environment.
+              </p>
+            </Col>
+            <Col md={4}>
+              <div className="banner-dynamic-img23 shadow">
+                {/* <Lottie animationData={Atom} /> */}
+                <img src="https://placehold.co/400" alt="mypic" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="container-fluid">
+        <Container className="py-5">
+          <Row>
+            <Col md={4}>
+              <div className="banner-dynamic-img23 shadow">
+                {/* <Lottie animationData={Atom} /> */}
+                <img src="https://placehold.co/400" alt="mypic" />
+              </div>
+            </Col>
+            <Col
+              md={8}
+              className="p-5 d-flex flex-column align-content-center justify-content-center"
+            >
+              <h4>Project-Based Learning</h4>
+              <p>
+                With our Project-Based Learning, we help educational
+                institutions by developing content modules and resources where
+                students can apply STEM concepts in solving real-world problems.
+                Using this approach, educational institutions can help students
+                learn to collaborate, communicate, and work together.
+              </p>
+              <p>
+                Project-based learning helps students develop the critical
+                thinking and problem-solving skills necessary to solve real-life
+                problems. Students can think out of the box and develop
+                innovative ideas and solutions.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="container-fluid">
+        <Container className="py-5">
+          <Row>
+            <Col
+              md={8}
+              className="p-5 d-flex flex-column align-content-center justify-content-center"
+            >
+              <h4>Flipped Classroom</h4>
+              <p>
+                Our flipped classroom content and resource development focus on
+                creating modules with pre-recorded video lectures or completing
+                online activities before they come to the physical classroom. We
+                build learning content, including hands-on activities,
+                discussions, and group work in the classroom, giving learners a
+                personalized and extended experience.
+              </p>
+              <p>
+                Flipped classroom methods allow students to be engaged and
+                actively participate in the learning process, which increases
+                their knowledge and retention power. Additionally, by this
+                service, we help create more time for teachers to provide
+                individualized instructions to their students and help them
+                identify and address issues that may arise in the classroom.
+              </p>
+            </Col>
+            <Col md={4}>
+              <div className="banner-dynamic-img23 shadow">
+                {/* <Lottie animationData={Atom} /> */}
+                <img src="https://placehold.co/400" alt="mypic" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="container-fluid">
+        <Container className="py-5">
+          <Row>
+            <Col md={4}>
+              <div className="banner-dynamic-img23 shadow">
+                {/* <Lottie animationData={Atom} /> */}
+                <img src="https://placehold.co/400" alt="mypic" />
+              </div>
+            </Col>
+            <Col
+              md={8}
+              className="p-5 d-flex flex-column align-content-center justify-content-center"
+            >
+              <h4>Game-Based Learning</h4>
+              <p>
+                We implement game-based learning in K12 STEM education by adding
+                educational games to teach students the concepts and skills used
+                in STEM. We help to make students engage with their peers,
+                motivate them, and maintain interest in the subject matter.
+              </p>
+              <p>
+              We break down complex topics into smaller chunks, making them easier to understand. We help students to learn through trial and error methods, which increases their understanding of the concepts and matter. Additionally, our game-based learning approach offers entertaining and interactive learning experiences for students, keeping them motivated and engaged throughout the learning process.
+              </p>
             </Col>
           </Row>
         </Container>
