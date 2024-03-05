@@ -1,7 +1,8 @@
 import { MotionAnimate } from "react-motion-animate";
+import { motion } from "framer-motion";
 import { Col, Row, Container } from "react-bootstrap";
 import "./K12.css";
-import Atom from "../../json/atom.json";
+import Atom from "../../json/K12.json";
 import Lottie from "lottie-react";
 // import { Container } from 'react-bootstrap/Container';
 
@@ -136,6 +137,7 @@ const STEM = () => {
         </div>
       </MotionAnimate>
 
+      <MotionAnimate animation='scrollFadeIn' scrollPositions={[0.1, 0.9]}>
       <div className="container-fluid K12-content">
         <Container className="py-5">
           <h3 className="text-center">Empowering K12 STEM Education</h3>
@@ -190,6 +192,7 @@ const STEM = () => {
           </Row>
         </Container>
       </div>
+      </MotionAnimate>
       <div className="container-fluid">
         <Container className="py-5">
           <h3 className="text-center">Key Components of STEM Curriculum</h3>
@@ -453,14 +456,26 @@ const STEM = () => {
             include the following:
           </p>
           <Row>
-            <Col
+            <Row
               md={12}
               className="d-flex array-data flex-wrap justify-content-center align-content-center"
             >
               {data.map((item, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="col-lg-5 p-3 rounded-4 shadow d-flex"
+                  className="col-lg-5 p-3 rounded-4 shadow d-flex" initial={{
+                    opacity: 0,
+                    // if odd index card,slide from right instead of left
+                    x: index % 2 === 0 ? 50 : -50
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0, // Slide in to its original position
+                    transition: {
+                      duration: 1 // Animation duration
+                    }
+                  }}
+                  viewport={{ once: true }}
                 >
                   <div className="8">
                     <h4>{item.title}</h4>
@@ -469,9 +484,9 @@ const STEM = () => {
                   <div className="4 d-flex justify-content-center">
                     <img src={item.imageSrc} alt={item.altText} />
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </Col>
+            </Row>
           </Row>
           <div className="banner-buttonK12 center-button">
             <MotionAnimate
@@ -502,6 +517,41 @@ const STEM = () => {
           </div>
         </Container>
       </div>
+
+      <Container>
+        <div className="box">
+          <p className="heading256">FAQs</p>
+          <div className="faqs">
+            <details>
+              <summary>
+                <b>What are the major benefits of K12 STEM education?</b>
+              </summary>
+              <p className="text">
+                <h6 className="ms-3">Some of the major benefits include:</h6>
+                <ul className="faq23">
+                  <li>&#x2022; Incorporates hands-on learning experiences</li>
+                  <li>&#x2022; Shows real-world applications</li>
+                  <li>&#x2022; Promotes equality</li>
+                  <li>&#x2022; Develop critical thinking</li>
+                  <li>&#x2022; Fosters creativity</li>
+                </ul>
+              </p>
+            </details>
+            <details>
+              <summary>What is Lorem ipsum?</summary>
+              <p className="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </details>
+            <details>
+              <summary>What is Lorem ipsum?</summary>
+              <p className="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </details>
+          </div>
+        </div>
+      </Container>
     </>
   );
 };

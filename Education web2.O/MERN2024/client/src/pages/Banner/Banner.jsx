@@ -1,4 +1,5 @@
 import { MotionAnimate } from "react-motion-animate";
+import { motion } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
 import "./Banner.css";
 import Counter from "../Counter/Counter";
@@ -6,6 +7,11 @@ import Atom from "../../json/atom.json";
 import Lottie from "lottie-react";
 
 const Banner = () => {
+  const text =
+    "Trailblazing new horizons in educational guidance for future leaders".split(
+      " "
+    );
+
   return (
     <>
       <MotionAnimate
@@ -17,12 +23,23 @@ const Banner = () => {
         <div style={{ marginTop: "111px" }} className="container-fluid header">
           <Row className="align-items-center heading-title2 justify-content-center banner">
             <Col md={5} className="heading-title">
-              <MotionAnimate reset={true}>
+              {/* <MotionAnimate reset={true}> */}
                 <h1>
-                  Trailblazing new horizons in educational guidance for future
-                  leaders
+                  {text.map((el, i) => (
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{
+                        duration: 0.25,
+                        delay: i / 10,
+                      }}
+                      key={i}
+                    >
+                      {el}{" "}
+                    </motion.span>
+                  ))}
                 </h1>
-              </MotionAnimate>
+              {/* </MotionAnimate> */}
               <div className="banner-button">
                 <MotionAnimate
                   delay={1.2} // Change delay to 1.2 seconds
@@ -31,7 +48,12 @@ const Banner = () => {
                   reset={false} // Do not reset animation
                 >
                   <a href="/about">
-                    <button className="button-87">Get Started</button>
+                    <motion.button
+                      whileTap={{ scale: 0.85 }}
+                      className="button-87"
+                    >
+                      Get Started
+                    </motion.button>
                   </a>
                 </MotionAnimate>
               </div>
