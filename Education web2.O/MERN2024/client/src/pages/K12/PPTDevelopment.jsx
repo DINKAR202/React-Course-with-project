@@ -8,30 +8,58 @@ import "./K12.css";
 const PPTDevelopment = () => {
   const data = [
     {
-      title: "Engaging Content",
+      title: "Textual PPT Animations",
       description:
-        "When kids learn with interactive assessments, they use their senses simultaneously. Only reading and listening are not happening, but it also includes watching, participating, experiencing, and engaging. This helps them build multiple parts of their brains and makes it more comfortable for them to retain information.",
+        "In these PPT animations, we animate letters, words, and sentences. They are focused on text and numbers and are largely based on simple information. Clients use these videos to brief their in-house teams who already know the ongoing projects and terminologies. Textual PPT animations are also used to promote new services and products by using testimonials and statistics.",
       imageSrc: "/images/small-card/thinking.png",
       altText: "placeholder",
     },
     {
-      title: "Provides Flexible Learning",
+      title: "Conceptual PPT Animations",
       description:
-        "Interactive assessment learning services also help extend the relationship between parents and teachers. They can track a student’s improvement report to ensure they get precisely what they require at the right time in their learning journey. As these assessments are compatible with many devices, they can be accessed from anywhere anytime.",
+        "These PPT animations are image-heavy. We use 2D cartoon images, shapes, arrows, and flow charts to explain ideas and concepts. They are beneficial in meetings that involve the general public and diverse audiences. It helps them stay hooked to the information without being overburdened with information. They are great for opening speech presentations, business pitches, and story-telling.",
       imageSrc: "/images/small-card/awards.png",
       altText: "placeholder",
     },
     {
-      title: "Saving Time and Cost",
+      title: "Informative PPT Animations",
       description:
-        "With digital learning, students are not required to visit the tuition centers at different locations. Instead, they can learn from anywhere. Interactive assessment development services also save a lot of time and cost. We also aim to provide cost-effective solutions and help as many kids as possible to unravel their full potential.",
+        "We create informative PPT animations for educational and training purposes. These usually have both texts and images. Sometimes we also include 3G images, videos, and illustrations. Graphs, motion graphics, and GIFs elevate the interest of learners and help them understand quickly. We ensure to remove any monotony and heaviness from the content for better recall and engagement.",
       imageSrc: "/images/small-card/bricks.png",
       altText: "placeholder",
     },
     {
-      title: "Track Progress",
+      title: "Instructive PPT Animations",
       description:
-        "The interactive assessment also helps teachers to track a student’s progress at all times. This helps them to know exactly where the students are required with more help to succeed. With immersed engagement in the stream of education, they are more likely to continue learning at their own pace.",
+        "PPTs are a great way of instructing learners. Many workshops, training sessions, and induction programs use these animation PPTs to explain the process of a craft, service, or skill. We use simple and to the point language so that clients can guide their audience easily. Also, we include step-wise information with guiding graphics and images so that learners can easily follow the instructions.",
+      imageSrc: "/images/small-card/education.png",
+      altText: "placeholder",
+    },
+    {
+      title: "Persuasive PPT Animations",
+      description:
+        "Persuading investors, clients or customers is not easy. One must be able to captivate the audience and convince them to take action. So, we create PPT animations that can perfectly aid the client’s speech or idea. We use stunning effects, images, quotes, information, quizzes, games, and activities to enable the audience to participate and connect with the content instead of being a spectator.",
+      imageSrc: "/images/small-card/education.png",
+      altText: "placeholder",
+    },
+    {
+      title: "Motivational PPT Animations",
+      description:
+        "Companies and leaders often require to motivate their buyers and workforce. Many meetings and conferences are held regularly for this purpose. We create inspiring PPT animations for clients that complement the activities and speech of the event. Our experts carefully choose colors, fonts, and music that help the viewers connect to the content emotionally. Also, it keeps them hooked for a longer time.",
+      imageSrc: "/images/small-card/education.png",
+      altText: "placeholder",
+    },
+    {
+      title: "Decision-making PPT Animations",
+      description:
+        "These are part of important meetings that involve decision-making. It may be a decision that decides the future of a company. So, we never take them lightly and ensure to include accurate information and descriptions at all times. We include analogies, examples of similar situations, and probable solutions. The client may provide us with the content, or our experts will brainstorm plausible solutions.",
+      imageSrc: "/images/small-card/education.png",
+      altText: "placeholder",
+    },
+    {
+      title: "Progress PPT Animations",
+      description:
+        "Another example of PPT animations used is in-house meetings. They are project-specific and include general information about an ongoing project. Details may include budget analysis, obstacles faced, data collected, and more. We create PPts that help viewers quickly understand the facts and determine the fate of the project. In these cases, it is usually the client who provides us with all the data.",
       imageSrc: "/images/small-card/education.png",
       altText: "placeholder",
     },
@@ -203,9 +231,9 @@ const PPTDevelopment = () => {
       </Container>
       <div className="container-fluid">
         <Container className="py-5">
-          <h3 className="text-center">
+          <h2 className="text-center">
             <b>Types of PPT Presentation Based Services</b>
-          </h3>
+          </h2>
           <p className="text-center">
             We create PPT animations for all business types and purposes. So, we
             provide numerous options to clients to choose the most suitable PPT
@@ -213,207 +241,6 @@ const PPTDevelopment = () => {
             concepts and techniques trends so; clients receive updated and
             popular content only.
           </p>
-          <Row className="mt-3">
-            <Col
-              md={8}
-              className="p-lg-5 d-flex flex-column align-content-center justify-content-center"
-            >
-              <motion.div
-                animate={{ x: 10 }}
-                transition={{ ease: "easeOut", duration: 2 }}
-              >
-                <h4>Quiz and Survey</h4>
-                <p>
-                  We develop assessments for the online test, including quizzes,
-                  surveys, and questionnaires designed to collect information
-                  and provide feedback to learners. These assessments can be
-                  used for market research, employee feedback, customer surveys,
-                  and to get reliable data. With the help of this data, one can
-                  make informed decisions to optimize and improve user
-                  experience with the quality of offerings.
-                </p>
-              </motion.div>
-            </Col>
-            <Col md={4}>
-              <div className="banner-dynamic-img23 shadow">
-                {/* <Lottie animationData={Atom} /> */}
-                <img
-                  className="rounded-3 shadow"
-                  src="../../../public/images/boxes/inquery.jpg"
-                  alt="mypic"
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="container-fluid">
-        <Container className="py-5">
-          <Row>
-            <Col md={4}>
-              <div className="banner-dynamic-img23 rounded-3 shadow">
-                {/* <Lottie animationData={Atom} /> */}
-                <img
-                  className="rounded-3 shadow"
-                  src="../../../public/images/boxes/project.jpg"
-                  alt="mypic"
-                />
-              </div>
-            </Col>
-            <Col
-              md={8}
-              className="p-5 d-flex flex-column align-content-center justify-content-center"
-            >
-              <h4>Educational Assessment</h4>
-              <p>
-                Educational assessment development services are designed to
-                create assessments for educational institutions, including
-                schools and universities. These assessments include MCQ, which
-                involves explaining incorrect answers on the spot. These
-                assessments can assess student learning, provide teacher
-                feedback, and measure overall academic performance. They also
-                allow deeper analysis of the student’s understanding of the
-                material and can provide a more accurate assessment of the
-                student’s knowledge.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="container-fluid">
-        <Container className="py-5">
-          <Row>
-            <Col
-              md={8}
-              className="p-5 d-flex flex-column align-content-center justify-content-center"
-            >
-              <h4>Game-Based Assessment</h4>
-              <p>
-                Our professionals develop engaging and interactive assessments
-                that use game mechanisms to increase motivation and engagement.
-                These assessments can be used for training, skill development,
-                and other purposes. Leveraging game-based learning such as
-                rewards, leaderboards, points, and others can create an
-                atmosphere of competition and encourage users to take ownership
-                of their learning and development. This type of assessment can
-                help keep users engaged while completing the assessments.
-              </p>
-            </Col>
-            <Col md={4}>
-              <div className="banner-dynamic-img23 shadow">
-                {/* <Lottie animationData={Atom} /> */}
-                <img
-                  className=" rounded-3 shadow "
-                  src="/images/boxes/classroom.jpg"
-                  alt="mypic"
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="container-fluid">
-        <Container className="py-5">
-          <Row>
-            <Col md={4}>
-              <div className="banner-dynamic-img23 shadow d-flex ">
-                {/* <Lottie animationData={Atom} /> */}
-                <img
-                  className="img-fluid img-done rounded-2"
-                  src="../../../public/images/boxes/play.jpg"
-                  alt="mypic"
-                />
-              </div>
-            </Col>
-            <Col md={8} className="p-5">
-              <h4>Performance-Based Assessment</h4>
-              <p>
-                The skills in evaluating these assessments include
-                problem-solving, critical thinking, and decision-making. Most of
-                the time, these assessments are used to evaluate student
-                learning outcomes. These assessments are designed to identify
-                the individual strengths and weaknesses in the areas that are
-                being assessed. These assessments also allow educators to
-                provide feedback to students about their performance, allowing
-                them to make the improvements needed and become more successful.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="container-fluid">
-        <Container className="py-5">
-          <Row>
-            <Col
-              md={8}
-              className="p-5 d-flex flex-column align-content-center justify-content-center"
-            >
-              <h4>Constructed Response Questions (CRQ)</h4>
-              <p>
-                We furnish questions with a standard set of rubrics representing
-                all levels of Bloom’s taxonomy associated with higher-order
-                thinking skills. With the help of these assessments, students
-                can apply, analyze, create, and evaluate questions. It helps
-                enhance students’ problem-solving and critical-thinking skills.
-                Applying such skills as comparing, drawing conclusions,
-                categorizing, and synthesizing new information. By giving
-                students questions that require higher-order thinking, we help
-                students develop cognitive skills and become better problem
-                solvers.
-              </p>
-            </Col>
-            <Col md={4}>
-              <div className="banner-dynamic-img23 shadow">
-                {/* <Lottie animationData={Atom} /> */}
-                <img
-                  className="rounded-3 shadow"
-                  src="/images/boxes/Maker.jpg"
-                  alt="mypic"
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="container-fluid">
-        <Container className="py-5">
-          <Row>
-            <Col md={4}>
-              <div className="banner-dynamic-img23 shadow">
-                {/* <Lottie animationData={Atom} /> */}
-                <img
-                  className="rounded-3 shadow"
-                  src="/images/boxes/coding.jpg"
-                  alt="mypic"
-                />
-              </div>
-            </Col>
-            <Col
-              md={8}
-              className="p-5 d-flex flex-column align-content-center justify-content-center"
-            >
-              <h4>Subject Integrated</h4>
-              <p>
-                We also develop questions for a particular discipline integrated
-                with another subject, as required by a certain K-12 curriculum.
-                With the help of such questions, students can apply their
-                knowledge to a broader range of scenarios. By combining two
-                subjects, students learn to think critically and apply their
-                knowledge across disciplines. It helps them understand complex
-                topics better, as they can connect the two subjects.
-                Furthermore, subject-integrated assessments can help them
-                identify patterns and develop creative solutions to problems.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-
-      <div className="container-fluid">
-        <Container className="py-5">
-          <h4 className="text-center">
-            <b>Benefits of Interactive Assessments</b>
-          </h4>
           <Row>
             <Row
               md={12}
@@ -477,46 +304,8 @@ const PPTDevelopment = () => {
           </div>
         </Container>
       </div>
-
-      {/* faq */}
-      <Container>
-        <div className="box">
-          <p className="heading256">FAQs</p>
-          <div className="faqs">
-            <details>
-              <summary>
-                <b>What are the major benefits of K12 STEM education?</b>
-              </summary>
-              <p className="text">
-                <h6 className="ms-3">Some of the major benefits include:</h6>
-                <ul className="faq23">
-                  <li>&#x2022; Incorporates hands-on learning experiences</li>
-                  <li>&#x2022; Shows real-world applications</li>
-                  <li>&#x2022; Promotes equality</li>
-                  <li>&#x2022; Develop critical thinking</li>
-                  <li>&#x2022; Fosters creativity</li>
-                </ul>
-              </p>
-            </details>
-            <details>
-              <summary>What is Lorem ipsum?</summary>
-              <p className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </details>
-            <details>
-              <summary>What is Lorem ipsum?</summary>
-              <p className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </details>
-          </div>
-        </div>
-      </Container>
     </>
   );
 };
 
 export default PPTDevelopment;
-
-// export default AssessmentDevelopment;

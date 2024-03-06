@@ -172,6 +172,17 @@ details summary {
   padding: 220px 0;
 }
 
+.card-text {
+  width: clamp(200px, 75%, 400px);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.card-text:hover {
+  background-color: #f0931a;
+  color: white;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 768px) {
