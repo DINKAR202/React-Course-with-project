@@ -94,44 +94,55 @@ const PPTDevelopment = () => {
       <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
         <div className="container-fluid K12-content">
           <Container className="py-5">
-            <h3 className="text-center">
-              Delivering Subject Specific Assessment Services
-            </h3>
+            <h2 className="text-center">
+              <b>
+                Creating Interactive Powerpoint Animations To Attract Viewer’s
+                Attention And Promote Action
+              </b>
+            </h2>
+            <p className="text-center">
+              We are a media services company providing PPT animation solutions
+              to valued clients worldwide.
+            </p>
             <Row>
+              <Col md={4}>
+                <div className="banner-dynamic-img23 shadow ">
+                  {/* <Lottie animationData={Atom} /> */}
+                  <img
+                    className="rounded-3 shadow"
+                    src="/images/boxes/teachertech.jpg"
+                    alt="mypic"
+                  />
+                </div>
+              </Col>
               <Col md={8} className="p-lg-5">
+                <h3>
+                  <b>Key Issues</b>
+                </h3>
                 <p>
-                  The K-12 curriculum demands writing questions and answers for
-                  various higher-order thinking skills across all grades and
-                  subjects. Our interactive assessment development services help
-                  to create game-based, situation-based assignments and surveys
-                  that enhance their courseware and achieve their learning
-                  objectives. We have a team of subject matter experts who
-                  develop interactive assessment solutions so our clients can
-                  efficiently manage and monitor their student learning
-                  progress, assess their achievements, and help them understand
-                  the learning concepts and topics.
+                  PowerPoint presentations are not what it was years ago. It is
+                  not just a textual representation of information with few
+                  letters and sentences fading in and out. Today, the PPT
+                  presentations have animations that enable clients to create
+                  videos and movies. So, businesses worldwide are adopting
+                  techniques that make their presentations unique and
+                  attractive. They approach professional media service providers
+                  for assistance.
                 </p>
                 <p>
-                  We have an optimum blend of skilled personnel, advanced
-                  technology, and domain expertise, which let us build
-                  interactive assessment solutions to assess students skills and
-                  knowledge. With the help of interactive assessments, the
-                  development services that we offer are as follows:
+                  However, all agencies are not equally equipped to deliver
+                  impeccable PPT animations for all industry sectors. Some
+                  handle very specific projects, while others work with only a
+                  few restricted genres of information. Also, every agency does
+                  not have professionals equipped with the expertise of handling
+                  the latest software programs and technology. Hence, clients
+                  must carefully analyze their service partners before
+                  finalizing anything. They must ensure that the agency has
+                  experts for different content genres and can handle large
+                  volumes of data. Also, they must guarantee the complete
+                  security of the client’s data and deliver projects on time. In
+                  addition, they must also be available 24/7.
                 </p>
-                <ul className="title-para">
-                  <li className="text-dark">
-                    &#x2022; Developing interactive assessments for all major
-                    devices, such as desktops, smartphones, and tablets.
-                  </li>
-                  <li className="text-dark">
-                    &#x2022; Creating assessment tests that are based on your
-                    specific learning needs.
-                  </li>
-                  <li className="text-dark">
-                    &#x2022; Building robust reports that provide critical
-                    information at your fingertips.
-                  </li>
-                </ul>
                 <a href="/contact">
                   <button className="button-87">
                     Get in Touch{" "}
@@ -151,29 +162,56 @@ const PPTDevelopment = () => {
                   </button>
                 </a>
               </Col>
-              <Col md={4}>
-                <div className="banner-dynamic-img23 shadow ">
-                  {/* <Lottie animationData={Atom} /> */}
-                  <img
-                    className="rounded-3 shadow"
-                    src="/images/boxes/teachertech.jpg"
-                    alt="mypic"
-                  />
-                </div>
-              </Col>
             </Row>
           </Container>
         </div>
       </MotionAnimate>
+
+      <Container className="p-5">
+        <h1 className="text-center">
+          <b>How Can Acadecraft Help?</b>
+        </h1>
+        <p className="text-center">
+          Guidofie is one of the premier media service providers in the US. We
+          boast experienced content creators and PowerPoint experts who cater to
+          diverse industry needs. Proficient in various languages and content
+          genres, we specialize in crafting PPT animations for marketing,
+          educational, training, and employment endeavors. Our team comprises
+          adept content writers, multimedia creators, software specialists, and
+          research analysts, ensuring the integration of cutting-edge and
+          precise information into our PPT animation videos. This approach not
+          only amplifies audience engagement but also fosters comprehension of
+          intricate concepts. Additionally, our linguists collaborate in
+          generating content for a broad spectrum of international and regional
+          clientele worldwide.
+        </p>
+        <p className="text-center">
+          Moreover, we create PPT animations using the latest software
+          technologies and multimedia elements like videos, audio, motion
+          graphics, illustrations, and more. We transform boring, informative
+          videos into attractive and memorable animations. So, clients use these
+          videos to train their recruits, educate their learners, impress
+          investors and explain ideas. Also, we ensure to include interactive
+          layout designs, colors, and typography to enhance brand popularity and
+          reliability. We follow a collaborative workflow that enables us to
+          deliver high-quality PPT animations for every project. We deliver on
+          time and accommodate multiple reworks and adjustments. Our customer
+          service team is always available to handle queries, requests, and
+          alterations, whenever necessary. Most importantly, we have packages
+          for every budget and project size.
+        </p>
+      </Container>
       <div className="container-fluid">
         <Container className="py-5">
           <h3 className="text-center">
-            <b>Types of Interactive Assessments</b>
+            <b>Types of PPT Presentation Based Services</b>
           </h3>
           <p className="text-center">
-            Several online assessment development services exist that can be
-            used to create fascinating and effective assessments for various
-            purposes. Some of them are cited below:
+            We create PPT animations for all business types and purposes. So, we
+            provide numerous options to clients to choose the most suitable PPT
+            animation type for their project. Also, we always follow the latest
+            concepts and techniques trends so; clients receive updated and
+            popular content only.
           </p>
           <Row className="mt-3">
             <Col
