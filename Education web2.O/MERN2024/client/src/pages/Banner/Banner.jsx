@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { MotionAnimate } from "react-motion-animate";
 import { motion } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
@@ -5,12 +6,35 @@ import "./Banner.css";
 import Counter from "../Counter/Counter";
 import Atom from "../../json/atom.json";
 import Lottie from "lottie-react";
+import anime from "animejs"; // Import animejs
 
 const Banner = () => {
-  const text =
-    "Trailblazing new horizons in educational guidance for future leaders".split(
-      " "
+  useEffect(() => {
+    var textWrapper = document.querySelector(".ml2");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>"
     );
+
+    anime
+      .timeline({ loop: true })
+      .add({
+        targets: ".ml2 .letter",
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i,
+      })
+      .add({
+        targets: ".ml2",
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000,
+      });
+  }, []); // Run only once on component mount
 
   return (
     <>
@@ -23,23 +47,10 @@ const Banner = () => {
         <div style={{ marginTop: "111px" }} className="container-fluid header">
           <Row className="align-items-center heading-title2 justify-content-center banner">
             <Col md={5} className="heading-title">
-              {/* <MotionAnimate reset={true}> */}
-                <h1>
-                  {text.map((el, i) => (
-                    <motion.span
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{
-                        duration: 0.25,
-                        delay: i / 10,
-                      }}
-                      key={i}
-                    >
-                      {el}{" "}
-                    </motion.span>
-                  ))}
-                </h1>
-              {/* </MotionAnimate> */}
+              <h1 className="ml2">
+                Trailblazing new horizons in educational guidance for future
+                leaders
+              </h1>
               <div className="banner-button">
                 <MotionAnimate
                   delay={1.2} // Change delay to 1.2 seconds

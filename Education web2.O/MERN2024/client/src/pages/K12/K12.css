@@ -80,12 +80,6 @@
   border-radius: 15px !important;
 }
 
-.banner-dynamic-img23 img {
-  border-radius: 15px !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
 .banner-buttonK12 {
   display: flex;
   align-items: start;
@@ -101,7 +95,7 @@
 }
 
 .title-para li {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -162,6 +156,16 @@ details {
 
 details summary {
   outline: none;
+}
+
+.card-image-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image-icons img {
+  height: 110px;
 }
 
 /* Responsive */

@@ -4,7 +4,6 @@ import { Col, Row, Container } from "react-bootstrap";
 import "./K12.css";
 import Atom from "../../json/K12.json";
 import Lottie from "lottie-react";
-// import { Container } from 'react-bootstrap/Container';
 
 const STEM = () => {
   const data = [
@@ -12,70 +11,70 @@ const STEM = () => {
       title: "Enhances critical thinking",
       description:
         "With the help of k12 STEM education, students can think strategically to solve problems by applying what they have learned about technology and engineering to find solutions. The projects included in STEM education allow them to see the subject through diverse perspectives.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/thinking.png",
       altText: "placeholder",
     },
     {
       title: "Improves cognitive skills",
       description:
         "Responsive education solution STEM provides fundamental learning to coding and engineering in primary school. With the help of K12 education solutions, you are not only developing the kid’s mind but also allowing them to build cognitive skills at a young age.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/awards.png",
       altText: "placeholder",
     },
     {
       title: "Encourages creativity and curiosity",
       description:
         "Solutions to STEM education also encourage creativity and curiosity among learners. It allows them to exercise their creativity and imagination and devise various new solutions and ideologies. As a result, their motivation is boosted.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/bricks.png",
       altText: "placeholder",
     },
     {
       title: "Enhances communication skills",
       description:
         "The group activities involved in K12 STEM education allow children to enhance their social skills. They learn to communicate complex issues with others while learning it all together from their classmates.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/education.png",
       altText: "placeholder",
     },
     {
       title: "Enhances Socio-emotional learning",
       description:
         "STEM education extends beyond knowledge and employment opportunities. It helps students enhance the socio-emotional qualities responsible for success and happiness. STEM education pushes students to master these abilities before entering the workforce.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/elearning.png",
       altText: "placeholder",
     },
     {
       title: "Maximizes team collaboration",
       description:
         "With the help of the activities involved in STEM education modules, students can collaborate with their classmates to solve issues and complete projects. This allows them to know about cooperation with others in a team-oriented setting.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/graphic-tool.png",
       altText: "placeholder",
     },
     {
       title: "Encourages the use of technology",
       description:
         "Students learn the importance of innovation and technology when learning and studying through the K12 STEM education format. Learning new technologies can increase their eagerness to learn and understand them rather than being afraid or hesitant to try something new.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/presentation.png",
       altText: "placeholder",
     },
     {
       title: "Improves Language Proficiency",
       description:
         "Learning with STEM education criteria can also aid children’s language development through the education process. It improves their vocabulary, leading to language skills and general knowledge development.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/purpose.png",
       altText: "placeholder",
     },
     {
       title: "Motivates experimentation",
       description:
         "When learning through different activities, students apply methods and experiments that benefit them and those around them. By K12 STEM learning, the answer to the question that it would not work is now “let’s try and see” is the attitude they develop.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/scholarship.png",
       altText: "placeholder",
     },
     {
       title: "Inspires the application of knowledge",
       description:
         "K12 STEM education offers knowledge of the skills that may apply in the real world. It encourages students to learn because now, they are aware of the abilities they gain by using the information in the real world, such as in workplaces.",
-      imageSrc: "https://placehold.co/350",
+      imageSrc: "/images/small-card/science.png",
       altText: "placeholder",
     },
   ];
@@ -142,7 +141,7 @@ const STEM = () => {
           <Container className="py-5">
             <h3 className="text-center">Empowering K12 STEM Education</h3>
             <Row>
-              <Col md={8} className="p-5">
+              <Col md={8} className="p-lg-5">
                 <p>
                   We are committed to providing a comprehensive STEM curriculum
                   to inspire and equip educators and students to thrive in the
@@ -185,7 +184,8 @@ const STEM = () => {
                 <div className="banner-dynamic-img23 shadow ">
                   {/* <Lottie animationData={Atom} /> */}
                   <img
-                    src="../../../public/images/boxes/teachertech.jpg"
+                    className="rounded-3 shadow"
+                    src="/images/boxes/teachertech.jpg"
                     alt="mypic"
                   />
                 </div>
@@ -196,18 +196,20 @@ const STEM = () => {
       </MotionAnimate>
       <div className="container-fluid">
         <Container className="py-5">
-          <h3 className="text-center">Key Components of STEM Curriculum</h3>
+          <h3 className="text-center">
+            <b>Key Components of STEM Curriculum</b>
+          </h3>
           <p className="text-center">
             Four disciplines are covered in K12 STEM education (Science,
             Technology, Engineering, and Mathematics).
           </p>
-          <Row>
+          <Row className="mt-3">
             <Col
               md={8}
-              className="p-5 d-flex flex-column align-content-center justify-content-center"
+              className="p-lg-5 d-flex flex-column align-content-center justify-content-center"
             >
               <motion.div
-                animate={{ x: 40 }}
+                animate={{ x: 10 }}
                 transition={{ ease: "easeOut", duration: 2 }}
               >
                 <h4>Inquiry-Based Learning</h4>
@@ -226,7 +228,11 @@ const STEM = () => {
             <Col md={4}>
               <div className="banner-dynamic-img23 shadow">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="https://placehold.co/400" alt="mypic" />
+                <img
+                  className="rounded-3 shadow"
+                  src="../../../public/images/boxes/inquery.jpg"
+                  alt="mypic"
+                />
               </div>
             </Col>
           </Row>
@@ -236,9 +242,13 @@ const STEM = () => {
         <Container className="py-5">
           <Row>
             <Col md={4}>
-              <div className="banner-dynamic-img23 shadow">
+              <div className="banner-dynamic-img23 rounded-3 shadow">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="https://placehold.co/400" alt="mypic" />
+                <img
+                  className="rounded-3 shadow"
+                  src="../../../public/images/boxes/project.jpg"
+                  alt="mypic"
+                />
               </div>
             </Col>
             <Col
@@ -291,7 +301,11 @@ const STEM = () => {
             <Col md={4}>
               <div className="banner-dynamic-img23 shadow">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="https://placehold.co/400" alt="mypic" />
+                <img
+                  className=" rounded-3 shadow "
+                  src="../../../public/images/boxes/classroom.jpg"
+                  alt="mypic"
+                />
               </div>
             </Col>
           </Row>
@@ -301,15 +315,16 @@ const STEM = () => {
         <Container className="py-5">
           <Row>
             <Col md={4}>
-              <div className="banner-dynamic-img23 shadow">
+              <div className="banner-dynamic-img23 shadow d-flex ">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="https://placehold.co/400" alt="mypic" />
+                <img
+                  className="img-fluid img-done rounded-2"
+                  src="../../../public/images/boxes/play.jpg"
+                  alt="mypic"
+                />
               </div>
             </Col>
-            <Col
-              md={8}
-              className="p-5 d-flex flex-column align-content-center justify-content-center"
-            >
+            <Col md={8} className="p-5">
               <h4>Game-Based Learning</h4>
               <p>
                 We implement game-based learning in K12 STEM education by adding
@@ -356,7 +371,11 @@ const STEM = () => {
             <Col md={4}>
               <div className="banner-dynamic-img23 shadow">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="https://placehold.co/400" alt="mypic" />
+                <img
+                  className="rounded-3 shadow"
+                  src="/images/boxes/Maker.jpg"
+                  alt="mypic"
+                />
               </div>
             </Col>
           </Row>
@@ -368,7 +387,11 @@ const STEM = () => {
             <Col md={4}>
               <div className="banner-dynamic-img23 shadow">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="https://placehold.co/400" alt="mypic" />
+                <img
+                  className="rounded-3 shadow"
+                  src="/images/boxes/coding.jpg"
+                  alt="mypic"
+                />
               </div>
             </Col>
             <Col
@@ -421,7 +444,11 @@ const STEM = () => {
             <Col md={4}>
               <div className="banner-dynamic-img23 shadow">
                 {/* <Lottie animationData={Atom} /> */}
-                <img src="https://placehold.co/400" alt="mypic" />
+                <img
+                  className="rounded-3 shadow"
+                  src="/images/boxes/Blended.jpg"
+                  alt="mypic"
+                />
               </div>
             </Col>
           </Row>
@@ -457,7 +484,9 @@ const STEM = () => {
 
       <div className="container-fluid">
         <Container className="py-5">
-          <h4 className="text-center">Benefits of K12 STEM Education</h4>
+          <h4 className="text-center">
+            <b>Benefits of K12 STEM Education</b>
+          </h4>
           <p className="text-center">
             Some of the major benefits of incorporating K12 STEM Education
             include the following:
@@ -489,7 +518,7 @@ const STEM = () => {
                     <h4>{item.title}</h4>
                     <p className="small">{item.description}</p>
                   </div>
-                  <div className="4 d-flex justify-content-center">
+                  <div className="col-3 card-image-icons img-fluid d-flex justify-content-center">
                     <img src={item.imageSrc} alt={item.altText} />
                   </div>
                 </motion.div>
@@ -526,6 +555,7 @@ const STEM = () => {
         </Container>
       </div>
 
+      {/* faq */}
       <Container>
         <div className="box">
           <p className="heading256">FAQs</p>
@@ -546,15 +576,23 @@ const STEM = () => {
               </p>
             </details>
             <details>
-              <summary>What is Lorem ipsum?</summary>
+              <summary>
+                What significance does selecting STEM education in schools hold?
+              </summary>
               <p className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                By choosing STEM education in schools, students have the
+                opportunity to acquire skills and principles through hands-on
+                learning, diverging from conventional memorization-centered
+                approaches.
               </p>
             </details>
             <details>
-              <summary>What is Lorem ipsum?</summary>
+              <summary>
+                What objectives does your K to 12 curriculum development
+                services aim to achieve?{" "}
+              </summary>
               <p className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Our goal is to establish a fundamental operational framework that nurtures capable and responsible individuals equipped with vital competencies and knowledge for gainful employment.
               </p>
             </details>
           </div>

@@ -19,7 +19,7 @@
 .heading-title h1 {
   font-weight: 700;
   color: white !important;
-  /* color: #ff6125 !important; */
+  font-size: clamp(24px, 4vw, 40px);
 }
 
 .heading-title h1 h2 {
@@ -90,4 +90,9 @@
   display: flex;
   align-items: end;
   justify-content: end;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
