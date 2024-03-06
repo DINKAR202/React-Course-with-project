@@ -168,6 +168,10 @@ details summary {
   height: 110px;
 }
 
+.PPT-header {
+  padding: 200px 0;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 768px) {
