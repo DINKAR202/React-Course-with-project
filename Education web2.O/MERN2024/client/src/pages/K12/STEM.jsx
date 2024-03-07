@@ -135,7 +135,6 @@ const STEM = () => {
           </Row>
         </div>
       </MotionAnimate>
-
       <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
         <div className="container-fluid K12-content">
           <Container className="py-5">

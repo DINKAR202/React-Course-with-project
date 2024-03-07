@@ -7,23 +7,23 @@ const HigherManagement = () => {
     {
       id: 1,
       imgSrc: "/images/boxes/Blended.jpg",
-      title: "E-learning",
+      title: "Corporate",
       description:
-        "We believe in staying updated with the latest trends in higher education and so we have a tight grasp over e-learning solutions. We are familiar with the latest tools and digital platforms for the development of an innovative curriculum to meet the learning objectives of the courses in higher education. We aim to create an optimum e-learning experience across diverse audiences.",
+        "Corporate clients in the US and worldwide are known to work on multiple projects at a time. So, they use our full-service project management services to ensure quality execution of all product-related, legal, marketing, and financial initiatives.",
     },
     {
       id: 2,
       imgSrc: "/images/boxes/Blended.jpg",
-      title: "Colleges/Universities",
+      title: "Education",
       description:
-        "We are one of the most reputed higher education curriculum development companies, which delivers curriculum development solutions to higher education institutions in the USA, UK, Australia, UAE and Singapore. Our curriculum is designed with strict adherence to the guidelines by the university and keeping the learning objectives of the course in mind.",
+        "Academic clients like eLearning platforms, schools, colleges, and universities initiate a wide range of projects. So, they use our services to implement new learning programs, branch development, promotion, admissions, and legal compliances.",
     },
     {
       id: 3,
       imgSrc: "/images/boxes/Blended.jpg",
-      title: "Publishers",
+      title: "Banking & Finance",
       description:
-        "While designing a curriculum we pay special attention to the sequence in which education would be imparted. Acadcraft, one of the most reputed curriculum development companies, develops a curriculum from scratch and plan semesters for courses as per university guidelines. Our lesson planners keep in mind the flow of learning while developing the curriculum.",
+        "We have financial experts who are familiar with all banking concepts, financial compliances, and operations. They execute different projects like annual report submission, implementation of new policies and marketing schemes, market analysis, and more.",
     },
     // Add more data objects as needed
   ];
@@ -161,27 +161,6 @@ const HigherManagement = () => {
         </p>
       </Container>
 
-      <Container className="p-5">
-        <h2 className="text-center">
-          <b>Our K12 Clients</b>
-        </h2>
-
-        <div className="col-lg-12 d-flex flex-wrap mt-5">
-          <div className="row d-flex justify-content-around">
-            {gamedata.map((item) => (
-              <div key={item.id} className="text-start card-text mt-2">
-                <img
-                  className="img-fluid mb-3"
-                  src={item.imgSrc}
-                  alt="small-img"
-                />
-                <h4 className="text-center">{item.title}</h4>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Container>
       <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
         <div className="container-fluid K12-content">
           <Container className="py-5">
@@ -203,7 +182,7 @@ const HigherManagement = () => {
                   {/* <Lottie animationData={Atom} /> */}
                   <img
                     className="rounded-3 shadow"
-                    src="/images/boxes/teachertech.jpg"
+                    src="https://www.acadecraft.com/images/Resources-Online-Tutors/img-2.png"
                     alt="mypic"
                   />
                 </div>
@@ -240,6 +219,29 @@ const HigherManagement = () => {
           </Container>
         </div>
       </MotionAnimate>
+      <Container className="p-5">
+        <h2 className="text-center">
+          <b>Our Clients</b>
+        </h2>
+
+        <div className="col-lg-12 d-flex flex-wrap mt-5">
+          <div className="row d-flex justify-content-around">
+            {gamedata.map((item) => (
+              <div key={item.id} className="text-start card-text mt-2">
+                <img
+                  className="img-fluid mb-3"
+                  src={item.imgSrc}
+                  alt="small-img"
+                />
+                <h4 className="text-center text-danger">
+                  <b>{item.title}</b>
+                </h4>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
       <div className="container-fluid">
         <Container className="py-5">
           <Row>
@@ -257,7 +259,7 @@ const HigherManagement = () => {
               md={8}
               className="p-5 d-flex flex-column align-content-center justify-content-center"
             >
-              <h4>How It Works</h4>
+              <h4>How It Works?</h4>
               <p>
                 At Guidofie, our process flow ensures that the learners in
                 higher education find better concepts, in-depth knowledge, and
