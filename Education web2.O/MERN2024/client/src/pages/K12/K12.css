@@ -96,7 +96,7 @@
 
 .title-para li {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .K12-content {
@@ -188,6 +188,9 @@ details summary {
 @media screen and (max-width: 768px) {
   .heading-titleK12 h1 {
     font-size: 24px; /* Adjust as needed */
+  }
+  .card-text {
+    width: 100% !important;
   }
 }
 

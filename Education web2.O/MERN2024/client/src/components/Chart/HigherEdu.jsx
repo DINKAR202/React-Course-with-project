@@ -25,7 +25,7 @@ const HigherEdu = () => {
 
     const urls = [
       "/HigherCurriculum",
-      "/HigherDevelopment",
+      "/AssessmentDevelopment",
       "/HigerLectureManual",
       "/HigherManagement",
       "/HigherPPTDevelopment",

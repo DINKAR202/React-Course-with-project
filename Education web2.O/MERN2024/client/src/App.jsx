@@ -24,7 +24,6 @@ import EducationalContentDevelopment from "./pages/K12/EducationalContentDevelop
 import K6Education from "./pages/K12/K6Education";
 import WorkbookDevelopment from "./pages/K12/WorkbookDevelopment";
 import HigherCurriculum from "./pages/HigherEducation/CurriculumDevelopment";
-import HigherDevelopment from "./pages/HigherEducation/HigherDevelopment";
 import HigerLectureManual from "./pages/HigherEducation/HigerLectureManual";
 import HigherManagement from "./pages/HigherEducation/HigherManagement";
 import HigherPPTDevelopment from "./pages/HigherEducation/HigherPPTDevelopment";
@@ -64,13 +63,18 @@ const App = () => {
           />
           {/* Higher Routes */}
           <Route path="/HigherCurriculum" element={<HigherCurriculum />} />
-          <Route path="/HigherDevelopment" element={<HigherDevelopment />} />
           <Route path="/HigerLectureManual" element={<HigerLectureManual />} />
           <Route path="/HigherManagement" element={<HigherManagement />} />
-          <Route path="/HigherPPTDevelopment" element={<HigherPPTDevelopment />} />
+          <Route
+            path="/HigherPPTDevelopment"
+            element={<HigherPPTDevelopment />}
+          />
           <Route path="/HigherVideoLecture" element={<HigherVideoLecture />} />
           <Route path="/Higher2D3DVideos" element={<Higher2D3DVideos />} />
-          <Route path="/HigherAnimatedVideos" element={<HigherAnimatedVideos />} />
+          <Route
+            path="/HigherAnimatedVideos"
+            element={<HigherAnimatedVideos />}
+          />
 
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
