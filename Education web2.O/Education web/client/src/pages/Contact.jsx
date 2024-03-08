@@ -129,7 +129,7 @@ const Contact = () => {
                       message
                     </label>
                   </div>
-
+{/* Hi there */}
                   <button type="submit" className="btn btn-submit btn-primary">
                     Submit
                   </button>
