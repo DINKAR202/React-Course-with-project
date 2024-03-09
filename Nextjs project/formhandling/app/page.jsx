@@ -1,15 +1,16 @@
 import Image from "next/image";
-import fs from "fs/promises"
+import fs from "fs/promises";
 
 export default function Home() {
-
   const submitAction = async (e) => {
-    "use server"
-    console.log(e.get("name"), e.get("address"))
-    let a = await fs.writeFile("harry.txt", "Hey I am good")
-    console.log(a)
-    
-  }
+    "use server";
+    console.log(e.get("name"), e.get("address"));
+    let a = await fs.writeFile(
+      "harry.txt",
+      `Name is ${e.get("name")} and address is ${e.get("address")}`
+    );
+    console.log(a);
+  };
 
   return (
     <div className="w-2/3 mx-auto my-12">
