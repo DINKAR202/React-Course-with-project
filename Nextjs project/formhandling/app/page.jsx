@@ -5,14 +5,14 @@ export default function Home() {
       <form action="">
         <div>
           <label htmlFor="name">Name</label>
-          <input name="name" id="id" className="text-white" type="text" />
+          <input name="name" id="id" className="text-black" type="text" />
         </div>
         <div>
           <label htmlFor="address">Address</label>
           <input
             name="address"
             id="address"
-            className="text-white"
+            className="text-black"
             type="text"
           />
         </div>
