@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from 'react-bootstrap';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
               placeholder=""
             />
             <small id="helpId" class="form-text text-muted">Help text</small>
+            <Button>hi</Button>
           </div>
           
         </div>
