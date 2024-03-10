@@ -17,6 +17,7 @@ const Skills = () => {
                       {curSkill.percentage}
                     </label>
                   </div>
+                  {/* over */}
                   <div className={`Loading skill-${index + 1}-loading`}></div>
                 </div>
               ))}
