@@ -47,7 +47,7 @@ const About = () => {
                     <button className="btn secondary-btn">Hire me</button>
                   </a>
                 </div>
-
+    {/* connect section */}
                 <div className="btn-group">
                   <h3>Connect with</h3>
                   <span>
