@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <>
       <main>
+        {/* yes its done */}
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             <div className="hero-content">
