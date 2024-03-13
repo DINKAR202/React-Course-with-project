@@ -10,6 +10,7 @@ const project = () => {
 
             <div className="text-center">
               <h3>We will update soon......</h3>
+              {/* soon */}
             </div>
           </div>
         </main>
