@@ -1,9 +1,10 @@
-import styled from 'styled-components';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { Bio } from '../../data/constants';
+import styled from "styled-components";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { Bio } from "../../data/constants";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -12,7 +13,6 @@ const FooterContainer = styled.div`
   justify-content: center;
   //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
 `;
-
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -49,7 +49,7 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
@@ -97,15 +97,23 @@ function Footer() {
           <NavLink href="#education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.facebook} target="display">
+            <FacebookIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.twitter} target="display">
+            <TwitterIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display">
+            <LinkedInIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.insta} target="display">
+            <InstagramIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display">
+            <GitHubIcon />
+          </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>
-          &copy; 2023 Dinkar Kumar. All rights reserved.
-        </Copyright>
-
+        <Copyright>&copy; 2023 Dinkar Kumar. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
