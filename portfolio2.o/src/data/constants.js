@@ -266,7 +266,7 @@ export const education = [
     school: "Anna University",
     date: "Nov 2020 - April 2024",
     grade: "7.71 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
+    desc: "I have completed my Bachelor of Engineering in Computer Science and Engineering from Anna University with a CGPA of 7.71. Throughout my academic journey, I have undertaken courses covering various fundamental subjects such as Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, and Web Development, among others.",
     degree: "Bachelor of Engineering - B.E., Computer Science and Engineering",
   },
   {
@@ -275,7 +275,7 @@ export const education = [
     school: "Millat College Darbhanga Bihar",
     date: "May 2018 - Apr 2020",
     // grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
+    desc: "I completed my class 12 high school education at Millat College, Darbhanga Bihar, where I studied Science with Mathematics.",
     degree: "ISC(XII)",
   },
   {
@@ -284,7 +284,7 @@ export const education = [
     school: "L.N High school Anandpur Darbhanga Bihar",
     date: "Feb 2017 - Apr 2018",
     // grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
+    desc: "I completed my class 10 education at L.N High School, Anandpur Darbhanga Bihar.",
     degree: "Matriculation (X)",
   },
 ];
@@ -292,8 +292,8 @@ export const education = [
 export const projects = [
   {
     id: 9,
-    title: "Trackify",
-    date: "Jun 2023 - Jul 2023",
+    title: "Bike Service Application",
+    date: "Jul 2023 - Nov 2023",
     description:
       "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
     image:
