@@ -334,7 +334,7 @@ export const projects = [
     description:
       "Guidofie Project aims to revolutionize educational guidance by offering a holistic approach to supporting future leaders. Leveraging modern technologies and innovative design, we provide a seamless user experience for students, educators, and mentors alike.",
     image:
-      "https://github.com/DINKAR202/Guidofie-project/assets/109248473/a572e0f9-c7f8-4a74-8fa2-89cfd8488a8d",
+      "https://github.com/DINKAR202/Guidofie-project/assets/109248473/feddd0bb-e5ed-428b-bd90-f50c72d4de9f",
     tags: [
       "React Js",
       "React Toastify",
@@ -406,19 +406,19 @@ export const projects = [
     github: "https://github.com/rishavchanda/Job-finder-App",
     webapp: "https://github.com/rishavchanda/Job-finder-App",
   },
-  {
-    id: 4,
-    title: "Whatsapp Clone",
-    date: "Jul 2021",
-    description:
-      "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-    tags: ["React Js", "Firebase", "Firestore", "Node JS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    webapp: "https://whatsapp-clone-rishav.web.app",
-  },
+  // {
+  //   id: 4,
+  //   title: "Whatsapp Clone",
+  //   date: "Jul 2021",
+  //   description:
+  //     "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
+  //   tags: ["React Js", "Firebase", "Firestore", "Node JS"],
+  //   category: "web app",
+  //   github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
+  //   webapp: "https://whatsapp-clone-rishav.web.app",
+  // },
   {
     id: 5,
     title: "Todo Web App",
@@ -432,19 +432,19 @@ export const projects = [
     github: "https://github.com/rishavchanda/Todo-Web-App",
     webapp: "https://rishav-react-todo.netlify.app/",
   },
-  {
-    id: 6,
-    title: "Breaking Bad",
-    date: "Jun 2021",
-    description:
-      "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
-    image:
-      "https://camo.githubusercontent.com/cd07010cbeb90cb1b43a5d6162784326aef02210ef7d41a0f9ae043b3e392378/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f7425323028313534292e706e673f616c743d6d6564696126746f6b656e3d65613439383630632d303435362d343333342d616435372d336239346663303333363263",
-    tags: ["React Js", "API", "Axios", "Node JS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Breaking-Bad",
-    webapp: "https://breaking-bad-webapp.netlify.app",
-  },
+  // {
+  //   id: 6,
+  //   title: "Breaking Bad",
+  //   date: "Jun 2021",
+  //   description:
+  //     "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
+  //   image:
+  //     "https://camo.githubusercontent.com/cd07010cbeb90cb1b43a5d6162784326aef02210ef7d41a0f9ae043b3e392378/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f7425323028313534292e706e673f616c743d6d6564696126746f6b656e3d65613439383630632d303435362d343333342d616435372d336239346663303333363263",
+  //   tags: ["React Js", "API", "Axios", "Node JS"],
+  //   category: "web app",
+  //   github: "https://github.com/rishavchanda/Breaking-Bad",
+  //   webapp: "https://breaking-bad-webapp.netlify.app",
+  // },
   {
     id: 7,
     title: "Quiz App",
