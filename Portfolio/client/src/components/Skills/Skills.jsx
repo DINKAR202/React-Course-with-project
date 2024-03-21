@@ -18,6 +18,7 @@ const Skills = () => {
                     </label>
                   </div>
                   {/* over */}
+                  // done
                   <div className={`Loading skill-${index + 1}-loading`}></div>
                 </div>
               ))}
