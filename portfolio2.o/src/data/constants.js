@@ -12,7 +12,7 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/196wlNvIMmowoM3zdlsonKroIGDFlYTSS/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/dinkar-kumar-pri/",
-  twitter: "/",
+  twitter: "https://twitter.com/027Dinkar",
   insta: "/",
   facebook: "/",
 };

@@ -13,7 +13,7 @@ import {
   MobileNavLogo,
   MobileLink,
 } from "./NavbarStyledComponent";
-import { FaSpeakerDeck } from "react-icons/fa6";
+import { TbPlaystationCircle } from "react-icons/tb";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import { Close, CloseRounded } from "@mui/icons-material";
@@ -35,7 +35,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <FaSpeakerDeck size="3rem" /> <Span>Portfolio</Span>
+            <TbPlaystationCircle size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
         <MobileIcon>

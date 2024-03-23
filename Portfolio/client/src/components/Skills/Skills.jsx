@@ -18,6 +18,10 @@ const Skills = () => {
                     </label>
                   </div>
                   {/* over */}
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5e67d825100e4f34222afb5a6ca785f3408b8a0
                   // done
                   <div className={`Loading skill-${index + 1}-loading`}></div>
                 </div>
