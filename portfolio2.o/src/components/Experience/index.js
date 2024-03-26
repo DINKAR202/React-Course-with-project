@@ -36,6 +36,7 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 `;
+//for updation
 
 const Title = styled.div`
   font-size: 42px;
