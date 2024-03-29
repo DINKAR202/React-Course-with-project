@@ -123,7 +123,7 @@ const Skills = () => {
         <Title>Skills</Title>
         <Desc>
           Here are some of my skills on which I have been working on for the
-          past year.
+          past years.
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
