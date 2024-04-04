@@ -81,6 +81,7 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
   },
+  // Soon
   {
     title: "Golden Bells Academy",
     link: "https://goldenbellsacademy.com",
