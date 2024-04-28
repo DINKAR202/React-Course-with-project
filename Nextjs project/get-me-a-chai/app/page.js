@@ -36,6 +36,12 @@ export default function Home() {
 
       <div className="text-white">
         <h1 className="text-2xl font-bold text-center my-4">Your fans can buy a Chai</h1>
+        <div className="flex gap-5 justify-between">
+          <div className="item space-y-3">
+            
+          </div>
+
+        </div>
       </div>
     </>
   );
