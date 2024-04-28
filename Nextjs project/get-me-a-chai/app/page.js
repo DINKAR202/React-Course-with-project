@@ -33,6 +33,10 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-white h-1 opacity-15"></div>
+
+      <div className="text-white">
+        <h1 className="text-2xl font-bold text-center my-4"></h1>
+      </div>
     </>
   );
 }
