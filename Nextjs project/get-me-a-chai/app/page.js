@@ -35,8 +35,16 @@ export default function Home() {
       <div className="bg-white h-1 opacity-15"></div>
 
       <div className="text-white">
-        <h1 className="text-2xl font-bold text-center my-4">Your fans can buy a Chai</h1>
-        <div className="flex gap-5 justify-between">
+        <h1 className="text-2xl font-bold text-center my-14">Your fans can buy a Chai</h1>
+        <div className="flex gap-5 justify-around">
+          <div className="item space-y-3">
+            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
+            <p className="font-bold">Fund your self</p>
+          </div>
+          <div className="item space-y-3">
+            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
+            <p className="font-bold">Fund your self</p>
+          </div>
           <div className="item space-y-3">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
             <p className="font-bold">Fund your self</p>
