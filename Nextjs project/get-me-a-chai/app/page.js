@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center gap-4 flex-col items-center text-white h-[44vh]">
-        <div className="font-bold flex gap-2 text-5xl">
+        <div className="font-bold flex gap-2 text-5xl justify-center items-center">
           {" "}
           Buy Me a Chai{" "}
           <span>  
-            <img src="./tea.gif" width={88} alt="tea gif" />
+            <img src="/tea2.gif" width={88} alt="tea gif" />
           </span>
         </div>
         <p>
