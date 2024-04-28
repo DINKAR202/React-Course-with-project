@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <div className="bg-white h-1 opacity-15"></div>
 
-      <div className="text-white">
+      <div className="text-white container mx-auto">
         <h1 className="text-2xl font-bold text-center my-14">
           Your fans can buy a Chai
         </h1>
