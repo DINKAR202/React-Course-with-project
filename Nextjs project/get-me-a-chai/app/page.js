@@ -32,10 +32,11 @@ export default function Home() {
           </button>
         </div>
       </div>
+
       <div className="bg-white h-1 opacity-15"></div>
 
-      <div className="text-white container mx-auto">
-        <h1 className="text-2xl font-bold text-center my-14">
+      <div className="text-white container mx-auto py-16">
+        <h1 className="text-2xl font-bold text-center my-10">
           Your fans can buy a Chai
         </h1>
         <div className="flex gap-5 justify-around">
@@ -77,6 +78,53 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="bg-white h-1 opacity-15"></div>
+
+      <div className="text-white container mx-auto py-16">
+        <h1 className="text-2xl font-bold text-center my-10">
+          Your fans can buy a Chai
+        </h1>
+        <div className="flex gap-5 justify-around">
+          <div className="item space-y-3 flex flex-col items-center justify-center">
+            <img
+              className="bg-slate-400 rounded-full p-2 text-black"
+              width={88}
+              src="/man.gif"
+              alt=""
+            />
+            <p className="font-bold">Fund your self</p>
+            <p className="text-center">
+              Your fans are available for you to help you
+            </p>
+          </div>
+          <div className="item space-y-3 flex flex-col items-center justify-center">
+            <img
+              className="bg-slate-400 rounded-full p-2 text-black"
+              width={88}
+              src="/coin.gif"
+              alt=""
+            />
+            <p className="font-bold">Fund your self</p>
+            <p className="text-center">
+              Your fans are available for you to help you
+            </p>
+          </div>
+          <div className="item space-y-3 flex flex-col items-center justify-center">
+            <img
+              className="bg-slate-400 rounded-full p-2 text-black"
+              width={88}
+              src="/group.gif"
+              alt=""
+            />
+            <p className="font-bold">Fund your self</p>
+            <p className="text-center">
+              Your fans are available for you to help you
+            </p>
+          </div>
+        </div>
+      </div>
+
     </>
   );
 }
