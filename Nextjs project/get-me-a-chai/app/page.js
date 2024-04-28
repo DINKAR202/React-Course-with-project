@@ -42,12 +42,13 @@ export default function Home() {
             <p className="font-bold">Fund your self</p>
           </div>
           <div className="item space-y-3">
-            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
+            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/coin.gif" alt="" />
             <p className="font-bold">Fund your self</p>
           </div>
           <div className="item space-y-3">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
             <p className="font-bold">Fund your self</p>
+            <p>Your fans are available </p>
           </div>
 
         </div>
