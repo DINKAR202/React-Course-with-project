@@ -7,7 +7,7 @@ export default function Home() {
         <div className="font-bold flex gap-2 text-5xl justify-center items-center">
           {" "}
           Buy Me a Chai{" "}
-          <span>  
+          <span>
             <img src="/tea2.gif" width={88} alt="tea gif" />
           </span>
         </div>
@@ -35,22 +35,46 @@ export default function Home() {
       <div className="bg-white h-1 opacity-15"></div>
 
       <div className="text-white">
-        <h1 className="text-2xl font-bold text-center my-14">Your fans can buy a Chai</h1>
+        <h1 className="text-2xl font-bold text-center my-14">
+          Your fans can buy a Chai
+        </h1>
         <div className="flex gap-5 justify-around">
-          <div className="item space-y-3">
-            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
+          <div className="item space-y-3 flex flex-col items-center justify-center">
+            <img
+              className="bg-slate-400 rounded-full p-2 text-black"
+              width={88}
+              src="/man.gif"
+              alt=""
+            />
             <p className="font-bold">Fund your self</p>
+            <p className="text-center">
+              Your fans are available for you to help you
+            </p>
           </div>
-          <div className="item space-y-3">
-            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/coin.gif" alt="" />
+          <div className="item space-y-3 flex flex-col items-center justify-center">
+            <img
+              className="bg-slate-400 rounded-full p-2 text-black"
+              width={88}
+              src="/coin.gif"
+              alt=""
+            />
             <p className="font-bold">Fund your self</p>
+            <p className="text-center">
+              Your fans are available for you to help you
+            </p>
           </div>
-          <div className="item space-y-3">
-            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
+          <div className="item space-y-3 flex flex-col items-center justify-center">
+            <img
+              className="bg-slate-400 rounded-full p-2 text-black"
+              width={88}
+              src="/group.gif"
+              alt=""
+            />
             <p className="font-bold">Fund your self</p>
-            <p>Your fans are available </p>
+            <p className="text-center">
+              Your fans are available for you to help you
+            </p>
           </div>
-
         </div>
       </div>
     </>
