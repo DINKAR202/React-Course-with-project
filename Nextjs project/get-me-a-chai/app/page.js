@@ -35,7 +35,7 @@ export default function Home() {
       <div className="bg-white h-1 opacity-15"></div>
 
       <div className="text-white">
-        <h1 className="text-2xl font-bold text-center my-4">Your fans can buy a Chahi</h1>
+        <h1 className="text-2xl font-bold text-center my-4">Your fans can buy a Chai</h1>
       </div>
     </>
   );
