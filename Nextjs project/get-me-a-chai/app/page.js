@@ -83,7 +83,7 @@ export default function Home() {
 
       <div className="text-white container mx-auto py-16">
         <h1 className="text-2xl font-bold text-center my-10">
-          Your fans can buy a Chai
+          Learn more about us
         </h1>
         <div className="flex gap-5 justify-around">
           <div className="item space-y-3 flex flex-col items-center justify-center">
