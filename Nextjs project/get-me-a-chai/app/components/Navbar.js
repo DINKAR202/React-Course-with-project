@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className='bg-blue-950 text-white flex justify-between items-center px-4 h-16'>
         <div className='logo font-bold flex justify-center items-center'>
-          <img src="tea.gif" width={36} alt="" />
-          <span>GetMeaChai!</span>
+          <Link href="/"><img src="tea.gif" width={36} alt="" />
+          <span>GetMeaChai!</span></Link>
           </div>
         <ul className='flex justify-between gap-4'>
             <li>Home</li>
