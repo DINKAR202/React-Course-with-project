@@ -38,7 +38,8 @@ export default function Home() {
         <h1 className="text-2xl font-bold text-center my-4">Your fans can buy a Chai</h1>
         <div className="flex gap-5 justify-between">
           <div className="item space-y-3">
-            
+            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
+            <p className="font-bold">Fund your self</p>
           </div>
 
         </div>
