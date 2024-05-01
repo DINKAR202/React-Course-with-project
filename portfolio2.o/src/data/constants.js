@@ -1,10 +1,10 @@
 export const Bio = {
   name: "Dinkar Kumar",
   roles: [
+    "Frontend Developer",
+    "React Developer",
     "MERN Stack Developer",
-    "Reactjs Developer",
     "UI/UX Designer",
-    "Programmer",
   ],
   description:
     "Graduated with a B.E. in Computer Science and Engineering from Anna University, I'm currently on the lookout for exciting job opportunities across India.",
