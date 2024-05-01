@@ -7,10 +7,10 @@ export const Bio = {
     "Programmer",
   ],
   description:
-    "I am a driven and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "Graduated with a B.E. in Computer Science and Engineering from Anna University, I'm currently on the lookout for exciting job opportunities across India.",
   github: "https://github.com/DINKAR202/",
   resume:
-    "https://drive.google.com/file/d/196wlNvIMmowoM3zdlsonKroIGDFlYTSS/view?usp=sharing",
+    "https://drive.google.com/file/d/1jhkVEGlRirqN6DgP3z-SyZhMbT1qASpo/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/dinkar-kumar-pri/",
   twitter: "https://twitter.com/027Dinkar",
   insta: "/",
@@ -100,16 +100,7 @@ export const skills = [
       },
     ],
   },
-  {
-    title: "Android",
-    skills: [
-      {
-        name: "Android Studio",
-        image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
-      },
-    ],
-  },
+
   {
     title: "Others",
     skills: [
@@ -152,6 +143,21 @@ export const skills = [
         name: "Figma",
         image:
           "https://cdn.iconscout.com/icon/free/png-512/free-figma-2296071-1912030.png?f=webp&w=256",
+      },
+      {
+        name: "CloudFlare",
+        image:
+          "https://companieslogo.com/img/orig/NET-6676335b.png?t=1647436387",
+      },
+      {
+        name: "pm2 server",
+        image:
+          "https://plus.unsplash.com/premium_photo-1661761560915-67226d0bede2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNlcnZlcnxlbnwwfHwwfHx8MA==",
+      },
+      {
+        name: "Project Hosting",
+        image:
+          "https://webcentral.au/wp-content/uploads/2023/11/vps-starter.svg",
       },
     ],
   },
