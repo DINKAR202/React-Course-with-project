@@ -43,8 +43,11 @@ function TempratureandDetails() {
             <span className="font-medium ml-1">11 km/h</span>
           </div>
 
-
         </div>
+      </div>
+
+      <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-3">
+    
       </div>
     </>
   );
