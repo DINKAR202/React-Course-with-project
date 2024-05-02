@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  UilArrowUp,
+  UilArrowDown,
+  UilTemperature,
+  UilTear,
+  UilWind,
+  UilSun,
+  UilSunset,
+} from "@iconscout/react-unicons";
 
 function TempratureandDetails() {
   return (
@@ -13,11 +22,11 @@ function TempratureandDetails() {
           alt=""
           className="w-20"
         />
-        <p>34&deg;</p>
+        <p className="text-5xl">34&deg;</p>
         <div className="flex flex-col space-y-2">
-            <div className="flex font-light text-sm items-center">
-
-            </div>
+          <div className="flex font-light text-sm items-center justify-center">
+            <UilTemperature size={18} className="mr-1" />
+          </div>
         </div>
       </div>
     </>
