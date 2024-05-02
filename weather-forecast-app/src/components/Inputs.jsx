@@ -11,6 +11,15 @@ function Inputs() {
             placeholder="Search for city ..."
             className="text-xl font-light p-2 w-full shadow-xl focus:outline-none capitalize placeholder:lowercase"
           />
+
+          <UilSearchAlt
+            size={25}
+            className="text-white cursor-pointer transition ease-out hover:scale-125"
+          />
+          <UilLocationPoint
+            size={25}
+            className="text-white cursor-pointer transition ease-out hover:scale-125"
+          />
         </div>
       </div>
     </>
