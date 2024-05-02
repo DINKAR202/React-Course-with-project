@@ -26,6 +26,8 @@ function TempratureandDetails() {
         <div className="flex flex-col space-y-2">
           <div className="flex font-light text-sm items-center justify-center">
             <UilTemperature size={18} className="mr-1" />
+            Real fell:
+            <span className="font-medium ml-1">32&deg;</span>
           </div>
         </div>
       </div>
