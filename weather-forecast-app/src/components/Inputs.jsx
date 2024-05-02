@@ -1,12 +1,13 @@
 import React from 'react'
-import { UilSearchAlt } from '@iconscout/react-unicons'
-import { UilLocationPoint } from '@iconscout/react-unicons'
+import { UilSearchAlt, UilLocationPoint } from '@iconscout/react-unicons'
 
 function Inputs() {
   return (
-    <div>
-      ksefb
+    <>
+    <div className='flex flex-row justify-center my-6'>
+    sekfj
     </div>
+    </>
   )
 }
 
