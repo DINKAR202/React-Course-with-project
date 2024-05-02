@@ -21,6 +21,16 @@ function Inputs() {
             className="text-white cursor-pointer transition ease-out hover:scale-125"
           />
         </div>
+
+        <div className="flex flex-row w-1/4 items-center justify-center">
+            <button name="metric" className="text-xl text-white font-light">
+            &deg;C
+            </button>
+            <p className="text-xl text-white mx-1">|</p>
+            <button name="metric" className="text-xl text-white font-light">
+            &deg;F
+            </button>
+        </div>
       </div>
     </>
   );
