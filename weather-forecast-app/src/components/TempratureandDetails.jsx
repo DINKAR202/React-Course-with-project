@@ -58,12 +58,12 @@ function TempratureandDetails() {
             Set: <span className="font-medium ml-1">07:35 PM</span>
         </p>
         
-        <UilSun/>
+        <UilArrowUp/>
         <p className="font-light">
             High: <span className="font-medium ml-1">45&deg;</span>
         </p>
         
-        <UilSun/>
+        <UilArrowDown/>
         <p className="font-light">
             Low: <span className="font-medium ml-1">40&deg;</span>
         </p>
