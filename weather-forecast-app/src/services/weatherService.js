@@ -47,7 +47,12 @@ const getFormattedWeatherData = async (searchParams) => {
 
     const {lat, lon} = formattedCurrentWeather;
 
-    const formattedForecastWeather = await getWeatherData("oncall")
+    const formattedForecastWeather = await getWeatherData("oncall", {
+      lat,
+      lon,
+      exclude: "current,minutely,alerts",
+      units: searchParams.units
+    }).then(formatForecastWeather)
 
     return formattedCurrentWeather;
 }
