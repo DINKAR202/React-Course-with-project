@@ -42,6 +42,11 @@ const formatCurrentWeather = (data) => {
   };
 };
 
+const formatForecastWeather = (data) => {
+  let {timezone, daily, hourly} = data;
+  daily = daily.slice(1,6).map()
+}
+
 const getFormattedWeatherData = async (searchParams) => {
     const formattedCurrentWeather = await getWeatherData('weather', searchParams).then(formatCurrentWeather)
 
