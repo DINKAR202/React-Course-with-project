@@ -5,8 +5,14 @@ import TopButtons from './components/TopButtons';
 import TempratureandDetails from './components/TempratureandDetails';
 import Forecast from './components/Forecast';
 import getFormattedWeatherData from './services/weatherService';
+import { useState } from 'react';
 
 function App() {
+
+    const [query, setQuery] = useState([q: "Berlin"])
+    const [query, setQuery] = useState([q: "Berlin"])
+    const [query, setQuery] = useState([q: "Berlin"])
+
 
   const fetchWeather = async () => {
     const data = await getFormattedWeatherData({q: "Tokyo" });
