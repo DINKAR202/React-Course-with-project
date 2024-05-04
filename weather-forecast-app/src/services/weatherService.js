@@ -44,57 +44,57 @@ const formatCurrentWeather = (data) => {
   };
 };
 
-const formatForecastWeather = (data) => {
-  let { timezone, daily, hourly } = data;
-  daily = daily.slice(1, 6).map((d) => {
-    return {
-      title: formatToLocalTime(d.dt, timezone, "ccc"),
-      temp: d.temp.day,
-      icon: d.weather[0].icon,
-    };
-  });
-
-  hourly = hourly.slice(1, 6).map((d) => {
-    return {
-      title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
-      temp: d.temp.day,
-      icon: d.weather[0].icon,
-    };
-  });
-
-  return { timezone, daily, hourly };
-};
-
 // const formatForecastWeather = (data) => {
 //   let { timezone, daily, hourly } = data;
+//   daily = daily.slice(1, 6).map((d) => {
+//     return {
+//       title: formatToLocalTime(d.dt, timezone, "ccc"),
+//       temp: d.temp.day,
+//       icon: d.weather[0].icon,
+//     };
+//   });
 
-//   // Check if daily and hourly arrays are defined and not empty
-//   if (daily && daily.length > 1) {
-//     daily = daily.slice(1, 6).map((d) => {
-//       return {
-//         title: formatToLocalTime(d.dt, timezone, "ccc"),
-//         temp: d.temp.day,
-//         icon: d.weather[0].icon,
-//       };
-//     });
-//   } else {
-//     daily = []; // Set to empty array if not defined or empty
-//   }
-
-//   if (hourly && hourly.length > 1) {
-//     hourly = hourly.slice(1, 6).map((d) => {
-//       return {
-//         title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
-//         temp: d.temp.day,
-//         icon: d.weather[0].icon,
-//       };
-//     });
-//   } else {
-//     hourly = []; // Set to empty array if not defined or empty
-//   }
+//   hourly = hourly.slice(1, 6).map((d) => {
+//     return {
+//       title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
+//       temp: d.temp.day,
+//       icon: d.weather[0].icon,
+//     };
+//   });
 
 //   return { timezone, daily, hourly };
 // };
+
+const formatForecastWeather = (data) => {
+  let { timezone, daily, hourly } = data;
+
+  // Check if daily and hourly arrays are defined and not empty
+  if (daily && daily.length > 1) {
+    daily = daily.slice(1, 6).map((d) => {
+      return {
+        title: formatToLocalTime(d.dt, timezone, "ccc"),
+        temp: d.temp.day,
+        icon: d.weather[0].icon,
+      };
+    });
+  } else {
+    daily = []; // Set to empty array if not defined or empty
+  }
+
+  if (hourly && hourly.length > 1) {
+    hourly = hourly.slice(1, 6).map((d) => {
+      return {
+        title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
+        temp: d.temp.day,
+        icon: d.weather[0].icon,
+      };
+    });
+  } else {
+    hourly = []; // Set to empty array if not defined or empty
+  }
+
+  return { timezone, daily, hourly };
+};
 
 const getFormattedWeatherData = async (searchParams) => {
   const formattedCurrentWeather = await getWeatherData(
