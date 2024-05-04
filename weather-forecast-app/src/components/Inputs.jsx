@@ -55,7 +55,7 @@ function Inputs({ setQuery, units, setUnits }) {
           <button
             name="metric"
             className="text-xl text-white font-light transition ease-out hover:scale-125"
-            onClick="handleUnitsChange"
+            onClick={handleUnitsChange}
           >
             &deg;C
           </button>
@@ -63,7 +63,7 @@ function Inputs({ setQuery, units, setUnits }) {
           <button
             name="imperial"
             className="text-xl text-white font-light  transition ease-out hover:scale-125"
-            onClick="handleUnitsChange"
+            onClick={handleUnitsChange}
           >
             &deg;F
           </button>
