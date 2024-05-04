@@ -14,13 +14,18 @@ function App() {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      const data = await getFormattedWeatherData({ q: "Tokyo" });
-      console.log("weather data", data);
+      await getFormattedWeatherData({ ...query, units }).then(
+        (data) => {
+          setWeather(data);
+        }
+      )
+
+      // console.log("weather data", data);
     };
 
-    
+
     fetchWeather();
-  }, []);
+  }, [query, units]);
 
 
   return (
