@@ -43,6 +43,7 @@ function Inputs({setQuery, units, setUnits}) {
           <UilLocationPoint
             size={25}
             className="text-white cursor-pointer transition ease-out hover:scale-125"
+            onClick={handleLocationClick}
           />
         </div>
 
