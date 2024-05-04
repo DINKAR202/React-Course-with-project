@@ -1,7 +1,10 @@
 import React from "react";
 import { UilSearchAlt, UilLocationPoint } from "@iconscout/react-unicons";
 
-function Inputs() {
+function Inputs({setQuery, units, setUnits}) {
+
+  
+
   return (
     <>
       <div className="flex flex-row justify-center my-6">
