@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { UilSearchAlt, UilLocationPoint } from "@iconscout/react-unicons";
 
 function Inputs({setQuery, units, setUnits}) {
 
-  
+  const [city, setCity] = useState("")
 
   return (
     <>
