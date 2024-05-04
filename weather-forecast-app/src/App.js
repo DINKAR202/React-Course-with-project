@@ -10,8 +10,8 @@ import { useState } from 'react';
 function App() {
 
     const [query, setQuery] = useState([q: "Berlin"])
-    const [query, setQuery] = useState([q: "Berlin"])
-    const [query, setQuery] = useState([q: "Berlin"])
+    const [units, setUnits] = useState("metric")
+    const [weather, setWeather] = useState(null)
 
 
   const fetchWeather = async () => {
