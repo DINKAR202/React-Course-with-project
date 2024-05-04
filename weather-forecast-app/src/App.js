@@ -1,35 +1,37 @@
-import './App.css';
-import Inputs from './components/Inputs';
-import TimeAndLocation from './components/TimeAndLocation';
-import TopButtons from './components/TopButtons';
-import TempratureandDetails from './components/TempratureandDetails';
-import Forecast from './components/Forecast';
-import getFormattedWeatherData from './services/weatherService';
-import { useState } from 'react';
+import "./App.css";
+import Inputs from "./components/Inputs";
+import TimeAndLocation from "./components/TimeAndLocation";
+import TopButtons from "./components/TopButtons";
+import TempratureandDetails from "./components/TempratureandDetails";
+import Forecast from "./components/Forecast";
+import getFormattedWeatherData from "./services/weatherService";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [query, setQuery] = useState({ q: "Berlin" });
+  const [units, setUnits] = useState("metric");
+  const [weather, setWeather] = useState(null);
 
-    const [query, setQuery] = useState({q: "Berlin"})
-    const [units, setUnits] = useState("metric")
-    const [weather, setWeather] = useState(null)
+  useEffect(() => {
+    const fetchWeather = async () => {
+      const data = await getFormattedWeatherData({ q: "Tokyo" });
+      console.log("weather data", data);
+    };
 
+    
+    fetchWeather();
+  }, []);
 
-  const fetchWeather = async () => {
-    const data = await getFormattedWeatherData({q: "Tokyo" });
-    console.log("weather data", data)
-  }
-
-  fetchWeather();
 
   return (
     <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 shadow-xl shadow-gray-700">
-      <TopButtons/>
-      <Inputs/>
-      
-      <TimeAndLocation/>
-      <TempratureandDetails/>
-      <Forecast title="hourly forecast"/>
-      <Forecast title="daily forecast"/>
+      <TopButtons />
+      <Inputs />
+
+      <TimeAndLocation />
+      <TempratureandDetails />
+      <Forecast title="hourly forecast" />
+      <Forecast title="daily forecast" />
     </div>
   );
 }
