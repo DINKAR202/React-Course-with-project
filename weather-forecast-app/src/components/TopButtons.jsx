@@ -5,28 +5,28 @@ const TopButtons = ({setQuery}) => {
     const cities = [
         {
             id:1,
-            title: 'london'
+            title: 'Mumbai'
         },
         {
             id:2,
-            title: 'Sydney'
+            title: 'Surat'
         },
         {
             id:3,
-            title: 'Tokyo'
+            title: 'Delhi'
         },
         {
             id:4,
-            title: 'Toronto'
+            title: 'Jaipur'
         },
         {
             id:5,
-            title: 'Paris'
+            title: 'Pune'
         },
     ]
 
   return (
-    <div className='flex items-center justify-around my-6'>
+    <div className='flex items-center justify-around my-6 flex flex-wrap'>
         {
             cities.map((city)=>(
                 <button key={city.id} className='text-white text-lg font-medium'
