@@ -68,27 +68,24 @@ const formatCurrentWeather = (data) => {
 
 const formatForecastWeather = (data) => {
   let { timezone, daily, hourly } = data;
+  console.log("daily", daily);
 
-  if (daily && daily.length > 1) {
-    daily = daily.slice(1, 6).map((d) => {
-      return {
-        title: formatToLocalTime(d.dt, timezone, "ccc"),
-        temp: d.temp.day,
-        icon: d.weather[0].icon,
-      };
-    });
+  if (daily && daily.length > 0) {
+    daily = daily.slice(1, 6).map((d) => ({
+      title: formatToLocalTime(d.dt, timezone, "ccc"),
+      temp: d.temp.day,
+      icon: d.weather[0].icon,
+    }));
   } else {
     daily = [];
   }
 
-  if (hourly && hourly.length > 1) {
-    hourly = hourly.slice(1, 6).map((d) => {
-      return {
-        title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
-        temp: d.temp,
-        icon: d.weather[0].icon,
-      };
-    });
+  if (hourly && hourly.length > 0) {
+    hourly = hourly.slice(1, 6).map((d) => ({
+      title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
+      temp: d.temp,
+      icon: d.weather[0].icon,
+    }));
   } else {
     hourly = [];
   }
