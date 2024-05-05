@@ -68,10 +68,9 @@ const formatCurrentWeather = (data) => {
 
 const formatForecastWeather = (data) => {
   let { timezone, daily, hourly } = data;
-  console.log("daily", daily);
 
   if (daily && daily.length > 0) {
-    daily = daily.slice(1, 6).map((d) => ({
+    daily = daily.slice(0, 7).map((d) => ({
       title: formatToLocalTime(d.dt, timezone, "ccc"),
       temp: d.temp.day,
       icon: d.weather[0].icon,
@@ -81,7 +80,7 @@ const formatForecastWeather = (data) => {
   }
 
   if (hourly && hourly.length > 0) {
-    hourly = hourly.slice(1, 6).map((d) => ({
+    hourly = hourly.slice(0, 7).map((d) => ({
       title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
       temp: d.temp,
       icon: d.weather[0].icon,
@@ -93,6 +92,7 @@ const formatForecastWeather = (data) => {
   return { timezone, daily, hourly };
 };
 
+
 const getFormattedWeatherData = async (searchParams) => {
   const formattedCurrentWeather = await getWeatherData(
     "weather",
@@ -101,12 +101,13 @@ const getFormattedWeatherData = async (searchParams) => {
 
   const { lat, lon } = formattedCurrentWeather;
 
-  const formattedForecastWeather = await getWeatherData("forecast", {
+  const formattedForecastWeather = await getWeatherData("onecall", {
     lat,
     lon,
-    exclude: "current,minutely,alerts",
+    exclude: "current,minutely,daily,alerts", // Exclude the parts of the response you don't need
     units: searchParams.units,
   }).then(formatForecastWeather);
+  
 
   return { ...formattedCurrentWeather, ...formattedForecastWeather };
 };

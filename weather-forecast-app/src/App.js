@@ -17,9 +17,6 @@ function App() {
       await getFormattedWeatherData({ ...query, units }).then((data) => {
         setWeather(data);
       });
-
-      // const data = await getFormattedWeatherData({q: "Kolkata"});
-      // console.log("weather data", data);
     };
 
     fetchWeather();
