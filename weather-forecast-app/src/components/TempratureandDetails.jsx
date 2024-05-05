@@ -60,7 +60,7 @@ function TempratureandDetails({
       </div>
 
       <div className="flex flex-row  flex-wrap items-center justify-center space-x-2 text-white text-sm py-3">
-        <div>
+        <div className="flex flex-row items-center justify-center space-x-2">
         <UilSun />
         <p className="font-light">
           Rise: <span className="font-medium ml-1">
@@ -69,7 +69,7 @@ function TempratureandDetails({
         </p>
         </div>
 
-        <div>
+        <div className="flex flex-row items-center justify-center space-x-2">
         <UilSunset />
         <p className="font-light">
           Set: <span className="font-medium ml-1">
@@ -78,14 +78,14 @@ function TempratureandDetails({
         </p>
         </div>
 
-        <div>
+        <div className="flex flex-row items-center justify-center space-x-2">
         <UilArrowUp />
         <p className="font-light">
           High: <span className="font-medium ml-1">{`${temp_max.toFixed()}`}&deg;</span>
         </p>
         </div>
 
-        <div>
+        <div className="flex flex-row items-center justify-center space-x-2">
         <UilArrowDown />
         <p className="font-light">
           Low: <span className="font-medium ml-1">{`${temp_min.toFixed()}`}&deg;</span>
