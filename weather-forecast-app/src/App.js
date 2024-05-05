@@ -14,17 +14,16 @@ function App() {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      try {
-        const data = await getFormattedWeatherData({ ...query, units });
-        setWeather(data);
-      } catch (error) {
-        console.error("Error fetching weather data:", error);
-      }
+      // await getFormattedWeatherData({ ...query, units }).then((data) => {
+      //   setWeather(data);
+      // });
+
+      const data = await getFormattedWeatherData({q: "Kolkata"});
+      console.log("weather data", data);
     };
-  
+
     fetchWeather();
   }, [query, units]);
-  
 
 
   const formatBackground = () => {
