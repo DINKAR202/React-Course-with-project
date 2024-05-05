@@ -101,10 +101,10 @@ const getFormattedWeatherData = async (searchParams) => {
 
   const { lat, lon } = formattedCurrentWeather;
 
-  const formattedForecastWeather = await getWeatherData("onecall", {
+  const formattedForecastWeather = await getWeatherData("forecast", {
     lat,
     lon,
-    exclude: "current,minutely,daily,alerts", // Exclude the parts of the response you don't need
+    exclude: "current,minutely,daily,alerts",
     units: searchParams.units,
   }).then(formatForecastWeather);
   
