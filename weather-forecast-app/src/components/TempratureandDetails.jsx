@@ -31,7 +31,7 @@ function TempratureandDetails({
         <p>{details}</p>
       </div>
 
-      <div className="flex flex-row items-center justify-between text-white py-3">
+      <div className="flex flex-row flex-wrap items-center justify-between text-white py-3">
         <img
           src={iconUrlFromCode(icon)}
           alt=""
@@ -59,30 +59,38 @@ function TempratureandDetails({
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-3">
+      <div className="flex flex-row  flex-wrap items-center justify-center space-x-2 text-white text-sm py-3">
+        <div>
         <UilSun />
         <p className="font-light">
           Rise: <span className="font-medium ml-1">
             {formatToLocalTime(sunrise, timezone, "hh:mm a")}
             </span>
         </p>
+        </div>
 
+        <div>
         <UilSunset />
         <p className="font-light">
           Set: <span className="font-medium ml-1">
           {formatToLocalTime(sunset, timezone, "hh:mm a")}
           </span>
         </p>
+        </div>
 
+        <div>
         <UilArrowUp />
         <p className="font-light">
           High: <span className="font-medium ml-1">{`${temp_max.toFixed()}`}&deg;</span>
         </p>
+        </div>
 
+        <div>
         <UilArrowDown />
         <p className="font-light">
           Low: <span className="font-medium ml-1">{`${temp_min.toFixed()}`}&deg;</span>
         </p>
+        </div>
       </div>
     </>
   );

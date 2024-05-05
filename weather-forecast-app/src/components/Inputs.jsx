@@ -10,7 +10,7 @@ function Inputs({ setQuery, units, setUnits }) {
   }
 
   const handleSearchClick = () => {
-    if (city != "") setQuery({ q: city });
+    if (city !== "") setQuery({ q: city });
   };
 
   const handleLocationClick = () => {
@@ -30,7 +30,7 @@ function Inputs({ setQuery, units, setUnits }) {
   return (
     <>
       <div className="flex lg:flex-row md:flex-row flex-col justify-center my-6">
-        <div className="flex flex-row w-3/4 items-center justify-center space-x-4">
+        <div className="flex flex-row lg:w-3/4 w-4/4 items-center justify-center space-x-4">
           <input
             value={city}
             onChange={(e) => setCity(e.currentTarget.value)}

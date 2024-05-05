@@ -23,8 +23,6 @@ function Forecast({title, items}) {
           <p className="font-medium">{`${item.temp.toFixed()}`}&deg;</p>
         </div>
         ))}
-
-        
       </div>
     </>
   );
