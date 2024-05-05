@@ -44,57 +44,57 @@ const formatCurrentWeather = (data) => {
   };
 };
 
-const formatForecastWeather = (data) => {
-  let { timezone, daily, hourly } = data;
-  console.log("daily", data)
-  daily = daily.slice(1, 8).map((d) => {
-    return {
-      title: formatToLocalTime(d.dt, timezone, "ccc"),
-      temp: d.temp.day,
-      icon: d.weather[0].icon,
-    };
-  });
-
-  hourly = hourly.slice(1, 8).map((d) => {
-    return {
-      title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
-      temp: d.temp,
-      icon: d.weather[0].icon,
-    };
-  });
-
-  return { timezone, daily, hourly };
-};
-
 // const formatForecastWeather = (data) => {
 //   let { timezone, daily, hourly } = data;
+//   console.log("daily", data)
+//   daily = daily.slice(1, 8).map((d) => {
+//     return {
+//       title: formatToLocalTime(d.dt, timezone, "ccc"),
+//       temp: d.temp.day,
+//       icon: d.weather[0].icon,
+//     };
+//   });
 
-//   if (daily && daily.length > 1) {
-//     daily = daily.slice(1, 6).map((d) => {
-//       return {
-//         title: formatToLocalTime(d.dt, timezone, "ccc"),
-//         temp: d.temp.day,
-//         icon: d.weather[0].icon,
-//       };
-//     });
-//   } else {
-//     daily = [];
-//   }
-
-//   if (hourly && hourly.length > 1) {
-//     hourly = hourly.slice(1, 6).map((d) => {
-//       return {
-//         title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
-//         temp: d.temp,
-//         icon: d.weather[0].icon,
-//       };
-//     });
-//   } else {
-//     hourly = [];
-//   }
+//   hourly = hourly.slice(1, 8).map((d) => {
+//     return {
+//       title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
+//       temp: d.temp,
+//       icon: d.weather[0].icon,
+//     };
+//   });
 
 //   return { timezone, daily, hourly };
 // };
+
+const formatForecastWeather = (data) => {
+  let { timezone, daily, hourly } = data;
+
+  if (daily && daily.length > 1) {
+    daily = daily.slice(1, 6).map((d) => {
+      return {
+        title: formatToLocalTime(d.dt, timezone, "ccc"),
+        temp: d.temp.day,
+        icon: d.weather[0].icon,
+      };
+    });
+  } else {
+    daily = [];
+  }
+
+  if (hourly && hourly.length > 1) {
+    hourly = hourly.slice(1, 6).map((d) => {
+      return {
+        title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
+        temp: d.temp,
+        icon: d.weather[0].icon,
+      };
+    });
+  } else {
+    hourly = [];
+  }
+
+  return { timezone, daily, hourly };
+};
 
 const getFormattedWeatherData = async (searchParams) => {
   const formattedCurrentWeather = await getWeatherData(
@@ -111,14 +111,7 @@ const getFormattedWeatherData = async (searchParams) => {
     units: searchParams.units,
   }).then(formatForecastWeather);
 
-  const formattedForecastWeatherdata = await getWeatherData("forecast", {
-    lat,
-    lon,
-    exclude: "current,hourly,alerts",
-    units: searchParams.units,
-  }).then(formatForecastWeather);
-
-  return { ...formattedCurrentWeather, ...formattedForecastWeather, ...formattedForecastWeatherdata };
+  return { ...formattedCurrentWeather, ...formattedForecastWeather };
 };
 
 const formatToLocalTime = (
