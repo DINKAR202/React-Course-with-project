@@ -59,18 +59,18 @@ class EditableTable extends React.Component {
     return (
       <table>
         <thead>
-          <tr>
+          <tr className="border">
             <th>ID</th>
-            <th>Months 1</th>
+            <th className="text-center">Months 1</th>
             <th>Age</th>
           </tr>
         </thead>
         <tbody>
           {this.state.data.map(item => (
             <tr key={item.id}>
-              <td className="bg-muted p-1">{item.id}</td>
-              <td className="bg-muted p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'name', e.target.innerText)}>{item.name}</td>
-              <td contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'age', parseInt(e.target.innerText))}>{item.age}</td>
+              <td className="bg-muted border p-1">{item.id}</td>
+              <td className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'name', e.target.innerText)}>{item.name}</td>
+              <td className="bg-muted text-center border p-1" contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'age', parseInt(e.target.innerText))}>{item.age}</td>
             </tr>
           ))}
         </tbody>
