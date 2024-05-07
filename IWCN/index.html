@@ -72,7 +72,7 @@ class EditableTable extends React.Component {
               <td className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'name', e.target.innerText)}>{item.name}</td>
               <td className="bg-muted text-center border p-1" contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'age', parseInt(e.target.innerText))}>{item.age}</td>
 
-              <td className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'roll', e.target.innerText)}>{item.roll}</td>
+              <td className="w-25 bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'roll', e.target.innerText)}>{item.roll}</td>
 
             </tr>
           ))}
