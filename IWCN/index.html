@@ -21,7 +21,7 @@ class EditableTable extends React.Component {
     super(props);
     this.state = {
         data: [
-        { id: 1, name: "Onboarding call", age: '', roll: '', date: '', mobile:'', },
+        { id: 1, name: "Onboarding call", age: '', roll: '', date: '', mobile:'', phone:'' },
         { id: 2, name: "Google Search Console Access", age: '', roll: '' },
         { id: 3, name: "Google Analytics Access", age: '', roll: '' },
         { id: 4, name: "Website Access", age: '', roll: '' },
@@ -72,11 +72,19 @@ class EditableTable extends React.Component {
               <td className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'name', e.target.innerText)}>{item.name}</td>
               <td className="bg-muted text-center border p-1" contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'age', parseInt(e.target.innerText))}>{item.age}</td>
 
-              <td className="w-25 bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'roll', e.target.innerText)}>{item.roll}</td>
+              <td style={{width:"150px"}} className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'roll', e.target.innerText)}>{item.roll}</td>
 
-              <td className="w-25 bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'date', e.target.innerText)}>{item.date}</td>
+              <td style={{width:"150px"}} className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'date', e.target.innerText)}>{item.date}</td>
 
-              <td className="w-25 bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'mobile', e.target.innerText)}>{item.mobile}</td>
+              <td style={{width:"150px"}} className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'mobile', e.target.innerText)}>{item.mobile}</td>
+              
+              <td style={{width:"150px"}} className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'phone', e.target.innerText)}>{item.phone}</td>
+              
+              <td style={{width:"150px"}} className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'address', e.target.innerText)}>{item.address}</td>
+              
+              <td style={{width:"150px"}} className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'tech', e.target.innerText)}>{item.tech}</td>
+              
+              <td style={{width:"150px"}} className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'role', e.target.innerText)}>{item.role}</td>
             </tr>
           ))}
         </tbody>
