@@ -21,7 +21,7 @@ class EditableTable extends React.Component {
     super(props);
     this.state = {
         data: [
-        { id: 1, name: "Onboarding call", age: '', roll: '' },
+        { id: 1, name: "Onboarding call", age: '', roll: '', date: '', mobile:'', },
         { id: 2, name: "Google Search Console Access", age: '', roll: '' },
         { id: 3, name: "Google Analytics Access", age: '', roll: '' },
         { id: 4, name: "Website Access", age: '', roll: '' },
@@ -74,6 +74,9 @@ class EditableTable extends React.Component {
 
               <td className="w-25 bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'roll', e.target.innerText)}>{item.roll}</td>
 
+              <td className="w-25 bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'date', e.target.innerText)}>{item.date}</td>
+
+              <td className="w-25 bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'mobile', e.target.innerText)}>{item.mobile}</td>
             </tr>
           ))}
         </tbody>
