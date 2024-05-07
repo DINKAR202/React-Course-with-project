@@ -21,24 +21,24 @@ class EditableTable extends React.Component {
     super(props);
     this.state = {
         data: [
-        { id: 1, name: "Onboarding call", age: '' },
-        { id: 2, name: "Google Search Console Access", age: '' },
-        { id: 3, name: "Google Analytics Access", age: '' },
-        { id: 4, name: "Website Access", age: '' },
-        { id: 5, name: "Technical Audit", age: '' },
-        { id: 6, name: "Anchor Text and Semantic Analysis", age: '' },
-        { id: 7, name: "Competitor Analysis", age: '' },
-        { id: 8, name: "Anchor Text/URL Mapping", age: '' },
-        { id: 9, name: "Google Data Studio Report + Local Reporting Suite", age: '' },
-        { id: 10, name: "Site Level Optimization", age: '' },
-        { id: 11, name: "On Page Optimization", age: '' },
-        { id: 12, name: "Content Creation", age: '' },
-        { id: 13, name: "Content Publishing", age: '' },
-        { id: 14, name: "Premium Press Release", age: '' },
-        { id: 15, name: "Authority Niche Placements", age: '' },
-        { id: 16, name: "Review Management", age: '' },
-        { id: 17, name: "Index Links", age: '' },
-        { id: 18, name: "Video  Recap", age: '' },
+        { id: 1, name: "Onboarding call", age: '', roll: '' },
+        { id: 2, name: "Google Search Console Access", age: '', roll: '' },
+        { id: 3, name: "Google Analytics Access", age: '', roll: '' },
+        { id: 4, name: "Website Access", age: '', roll: '' },
+        { id: 5, name: "Technical Audit", age: '', roll: '' },
+        { id: 6, name: "Anchor Text and Semantic Analysis", age: '', roll: '' },
+        { id: 7, name: "Competitor Analysis", age: '', roll: '' },
+        { id: 8, name: "Anchor Text/URL Mapping", age: '', roll: '' },
+        { id: 9, name: "Google Data Studio Report + Local Reporting Suite", age: '', roll: '' },
+        { id: 10, name: "Site Level Optimization", age: '', roll: '' },
+        { id: 11, name: "On Page Optimization", age: '', roll: '' },
+        { id: 12, name: "Content Creation", age: '', roll: '' },
+        { id: 13, name: "Content Publishing", age: '', roll: '' },
+        { id: 14, name: "Premium Press Release", age: '' , roll: ''},
+        { id: 15, name: "Authority Niche Placements", age: '', roll: '' },
+        { id: 16, name: "Review Management", age: '', roll: '' },
+        { id: 17, name: "Index Links", age: '', roll: '' },
+        { id: 18, name: "Video  Recap", age: '', roll: '' },
       ]
     };
   }
@@ -71,6 +71,9 @@ class EditableTable extends React.Component {
               <td className="bg-muted border p-1">{item.id}</td>
               <td className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'name', e.target.innerText)}>{item.name}</td>
               <td className="bg-muted text-center border p-1" contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'age', parseInt(e.target.innerText))}>{item.age}</td>
+
+              <td className="bg-muted text-center border p-1"  contentEditable={true} onBlur={(e) => this.handleEdit(item.id, 'roll', e.target.innerText)}>{item.roll}</td>
+
             </tr>
           ))}
         </tbody>
