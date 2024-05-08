@@ -10,7 +10,7 @@ export const Bio = {
     "Graduated with a B.E. in Computer Science and Engineering from Anna University, I'm currently on the lookout for exciting job opportunities across India.",
   github: "https://github.com/DINKAR202/",
   resume:
-    "https://drive.google.com/file/d/1jhkVEGlRirqN6DgP3z-SyZhMbT1qASpo/view?usp=sharing",
+    "https://drive.google.com/file/d/1ZcnyaNyyE4_9BWY4SfxJN2_GYeQ8zNYk/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/dinkar-kumar-pri/",
   twitter: "https://twitter.com/027Dinkar",
   insta: "/",
