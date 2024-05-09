@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+import React from 'react'
+import { useSession, signIn, signOut } from "next-auth/react"
 import Link from "next/link";
 
 const Navbar = () => {
