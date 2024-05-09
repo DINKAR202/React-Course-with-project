@@ -9,6 +9,10 @@ import GithubProvider from 'next-auth/providers/github'
 export const authooptions = NextAuth({
     providers: [
       // OAuth authentication providers...
+      FortyTwoProvider({
+        clientId: process.env.FORTY_TWO_CLIENT_ID,
+        clientSecret: process.env.FORTY_TWO_CLIENT_SECRET
+      }),
       AppleProvider({
         clientId: process.env.APPLE_ID,
         clientSecret: process.env.APPLE_SECRET
@@ -28,3 +32,5 @@ export const authooptions = NextAuth({
       }),
     ]
   })
+
+  export {authoptions as GET, authoptions as POST}
