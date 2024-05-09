@@ -8,7 +8,8 @@ const Login = () => {
       <div className='social-login-buttons'>
 
      <div className="flex flex-col gap-2 min-h-screen items-center p-10">
-  <button className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+      
+  <button className="flex items-center  w-64 bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-0.5 0 48 48" version="1.1">
       <g id="Icons" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
         <g id="Color-" transform="translate(-401.000000, -860.000000)">
@@ -23,7 +24,7 @@ const Login = () => {
     </svg>
     <span>Continue with Google</span>
   </button>
-  <button className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+  <button className="flex items-center w-64  bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 -2 44 44" version="1.1">
       <g id="Icons" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
         <g id="Color-" transform="translate(-702.000000, -265.000000)" fill="#007EBB">
@@ -33,7 +34,7 @@ const Login = () => {
       </g>
     </svg> <span>Continue with LinkedIn</span>
   </button>
-  <button className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+  <button className="flex items-center w-64  bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 -4 48 48" version="1.1">
       <g id="Icons" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
         <g id="Color-" transform="translate(-300.000000, -164.000000)" fill="#00AAEC">
@@ -44,7 +45,7 @@ const Login = () => {
     </svg>
     <span>Continue with Twitter</span>
   </button>
-  <button className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+  <button className="flex items-center w-64  bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
       <g id="Icons" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
         <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
@@ -55,7 +56,7 @@ const Login = () => {
     </svg>
     <span>Continue with Facebook</span>
   </button>
-  <button className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+  <button className="flex items-center w-64  bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 73 73" version="1.1">
       <g id="team-collaboration/version-control/github" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
         <g id="container" transform="translate(2.000000, 2.000000)" fillRule="nonzero">
@@ -68,7 +69,7 @@ const Login = () => {
     </svg>
     <span>Continue with Github</span>
   </button>
-  <button className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+  <button className="flex items-center w-64  bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-1.5 0 20 20" version="1.1">
       <g id="Page-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
         <g id="Dribbble-Light-Preview" transform="translate(-102.000000, -7439.000000)" fill="#000000">
