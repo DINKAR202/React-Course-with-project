@@ -3,12 +3,12 @@ import AppleProvider from "next-auth/providers/apple";
 import FacebookProvider from "next-auth/providers/facebook";
 import GoogleProvider from "next-auth/providers/google";
 import EmailProvider from "next-auth/providers/email";
-import GithubProvider from "next-auth/providers/github";
+import GitHubProvider from "next-auth/providers/github";
 
 export const authooptions = NextAuth({
   providers: [
     // OAuth authentication providers...
-    GithubProvider({
+    GitHubProvider({
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
     }),
@@ -33,3 +33,4 @@ export const authooptions = NextAuth({
 });
 
 export { authoptions as GET, authoptions as POST };
+
