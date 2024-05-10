@@ -1,9 +1,13 @@
 import React from 'react'
 
-const page = () => {
+const Username = ({params}) => {
   return (
-    <div>page</div>
+    <>
+    <div>
+        
+    </div>
+    </>
   )
 }
 
-export default page
+export default Username
