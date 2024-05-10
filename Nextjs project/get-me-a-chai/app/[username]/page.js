@@ -4,7 +4,7 @@ const Username = ({params}) => {
   return (
     <>
     <div>
-        
+        {params.username}
     </div>
     </>
   )
