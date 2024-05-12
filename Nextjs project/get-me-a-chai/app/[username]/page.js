@@ -52,6 +52,12 @@ wejsbfcx
                 <input type="text" className="w-full p-3 rounded-lg bg-slate-800" placeholder="Enter Amount"/>
                 <button className="bg-slate-800 p-3 rounded-lg">Pay</button>
             </div>
+            {/* or choose from these amounts */}
+            <div className="flex gap-2 mt-5">
+            <button className="bg-slate-800 p-3 rounded-lg">Pay $10</button>
+            <button className="bg-slate-800 p-3 rounded-lg">Pay $20</button>
+            <button className="bg-slate-800 p-3 rounded-lg">Pay</button>
+            </div>
           </div>
         </div>
       </div>
