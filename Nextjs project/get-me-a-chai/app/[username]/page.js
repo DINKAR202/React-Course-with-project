@@ -29,17 +29,29 @@ const Username = ({ params }) => {
         <div className="text-slate-400">
 wejsbfcx
         </div>
-        <div className="payment flex gap-3 w-[80%]">
+        <div className="payment flex gap-3 w-[80%] mt-10">
           <div className="supporters w-1/2 bg-slate-900 text-white rounded-lg p-10">
             {/* show list of all the supporters as a leaderboard  */}
+            <h2 className="text-lg font-bold my-5">Heading</h2>
             <ul>
-              <li>Shubham donated $30 with a message ""</li>
-              <li>Shubham donated $30 with a message ""</li>
-              <li>Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
+              <li className="my-2">Shubham donated $30 with a message ""</li>
             </ul>
           </div>
           <div className="makePayments w-1/2 bg-slate-900 text-white rounded-lg p-10">
-
+            <h2 className="text-2xl font-bold my-5">Make a payments</h2>
+            <div className="flex gap-2">
+                <input type="text" className="w-full p-3 rounded-lg bg-slate-800" placeholder="Enter Amount"/>
+                <button className="bg-slate-800 p-3 rounded-lg">Pay</button>
+            </div>
           </div>
         </div>
       </div>
@@ -47,4 +59,4 @@ wejsbfcx
   );
 };
 
-export default Usern
+export default Username;
