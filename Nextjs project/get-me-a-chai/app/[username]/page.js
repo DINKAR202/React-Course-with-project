@@ -9,7 +9,7 @@ const Username = ({ params }) => {
           src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4842667/452146dcfeb04f38853368f554aadde1/eyJ3IjoxNjAwLCJ3ZSI6MX0%3D/16.gif?token-time=1717459200&token-hash=b5fK345liFbxiFSjKhhIL7-xnygYT7EXrRWE65Zgf1Q%3D"
           alt=""
         />
-        <div className="absolute -bottom-5 right-[48%] border-white border-2 rounded-full">
+        <div className="absolute -bottom-5 right-[47%] border-white border-2 rounded-full">
           <img
             className="rounded-full"
             width={85}
@@ -19,7 +19,7 @@ const Username = ({ params }) => {
           />
         </div>
       </div>
-      <div className="text-white info flex justify-center items-center my-24 flex-col">
+      <div className="text-white info flex justify-center items-center my-6 flex-col">
         <div className="font-bold text-lg">
         {params.username}
         </div>
