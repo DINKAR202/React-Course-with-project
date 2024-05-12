@@ -19,14 +19,14 @@ const Username = ({ params }) => {
           />
         </div>
       </div>
-      <div className="text-white info flex justify-center items-center my-6 flex-col">
+      <div className="text-white info flex justify-center items-center my-6 flex-col gap-2">
         <div className="font-bold text-lg">
-        {params.username}
+        @{params.username}
         </div>
-        <div>
+        <div className="text-slate-400">
           erkjdbgnvkdjf,x
         </div>
-        <div>
+        <div className="text-slate-400">
 wejsbfcx
         </div>
       </div>
