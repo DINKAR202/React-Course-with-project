@@ -48,15 +48,22 @@ wejsbfcx
           </div>
           <div className="makePayments w-1/2 bg-slate-900 text-white rounded-lg p-10">
             <h2 className="text-2xl font-bold my-5">Make a payments</h2>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-col">
+              {/* input for name and message */}
+              <div>
+              <input type="text" className="w-full p-3 rounded-lg bg-slate-800" placeholder="Enter Name"/>
+              </div>
+              <input type="text" className="w-full p-3 rounded-lg bg-slate-800" placeholder="Enter Message"/>
+
+
                 <input type="text" className="w-full p-3 rounded-lg bg-slate-800" placeholder="Enter Amount"/>
-                <button className="bg-slate-800 p-3 rounded-lg">Pay</button>
+                <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2">Pay</button>
             </div>
             {/* or choose from these amounts */}
             <div className="flex gap-2 mt-5">
             <button className="bg-slate-800 p-3 rounded-lg">Pay $10</button>
             <button className="bg-slate-800 p-3 rounded-lg">Pay $20</button>
-            <button className="bg-slate-800 p-3 rounded-lg">Pay</button>
+            <button className="bg-slate-800 p-3 rounded-lg">Pay $30</button>
             </div>
           </div>
         </div>
