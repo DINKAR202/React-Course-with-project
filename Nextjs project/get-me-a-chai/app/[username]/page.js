@@ -29,6 +29,14 @@ const Username = ({ params }) => {
         <div className="text-slate-400">
 wejsbfcx
         </div>
+        <div className="payment flex gap-3">
+          <div className="supporters">
+            
+          </div>
+          <div className="makePayments">
+
+          </div>
+        </div>
       </div>
     </>
   );
