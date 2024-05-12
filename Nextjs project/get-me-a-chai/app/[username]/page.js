@@ -19,7 +19,17 @@ const Username = ({ params }) => {
           />
         </div>
       </div>
-      <div className="text-white">{params.username}</div>
+      <div className="text-white info flex justify-center items-center my-24 flex-col">
+        <div className="font-bold text-lg">
+        {params.username}
+        </div>
+        <div>
+          erkjdbgnvkdjf,x
+        </div>
+        <div>
+wejsbfcx
+        </div>
+      </div>
     </>
   );
 };
