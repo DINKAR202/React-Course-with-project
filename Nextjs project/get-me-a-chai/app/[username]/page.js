@@ -29,11 +29,16 @@ const Username = ({ params }) => {
         <div className="text-slate-400">
 wejsbfcx
         </div>
-        <div className="payment flex gap-3">
-          <div className="supporters">
-            
+        <div className="payment flex gap-3 w-[80%]">
+          <div className="supporters w-1/2 bg-slate-900 text-white rounded-lg p-10">
+            {/* show list of all the supporters as a leaderboard  */}
+            <ul>
+              <li>Shubham donated $30 with a message ""</li>
+              <li>Shubham donated $30 with a message ""</li>
+              <li>Shubham donated $30 with a message ""</li>
+            </ul>
           </div>
-          <div className="makePayments">
+          <div className="makePayments w-1/2 bg-slate-900 text-white rounded-lg p-10">
 
           </div>
         </div>
@@ -42,4 +47,4 @@ wejsbfcx
   );
 };
 
-export default Username;
+export default Usern
