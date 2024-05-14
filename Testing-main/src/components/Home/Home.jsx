@@ -12,6 +12,11 @@ const Home = () => {
     <Know/>
     <Products/>
 
+    <h1>Now add NEW PRODUCTS</h1>
+    <h1>NEWS</h1>
+    <h1>https://themewagon.github.io/pharma/</h1>
+    <h1>https://demo.templatemonster.com/demo/332648.html company logo</h1>
+
     <div className='mt-96'>
     </div>
     </>
