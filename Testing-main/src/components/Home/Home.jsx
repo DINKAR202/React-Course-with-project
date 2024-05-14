@@ -16,6 +16,8 @@ const Home = () => {
     <h1>NEWS</h1>
     <h1>https://themewagon.github.io/pharma/</h1>
     <h1>https://demo.templatemonster.com/demo/332648.html company logo</h1>
+    <h1>https://www.themetechmount.com/html/dezily/ company logo</h1>
+    <h1>https://opalaxistechnologies.com/ website reference</h1>
 
     <div className='mt-96'>
     </div>
