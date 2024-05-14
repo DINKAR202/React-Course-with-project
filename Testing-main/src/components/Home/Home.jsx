@@ -1,0 +1,21 @@
+import React from 'react'
+import Navbar from '../NavBar/Navbar';
+import Header from '../Header/Header';
+import Know from '../Pages/Knowing/Know';
+import Products from '../Pages/Products/Products';
+
+const Home = () => {
+  return (
+    <>
+    <Navbar/>
+    <Header/>
+    <Know/>
+    <Products/>
+
+    <div className='mt-96'>
+    </div>
+    </>
+  )
+}
+
+export default Home
