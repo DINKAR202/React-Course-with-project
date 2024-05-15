@@ -13,6 +13,14 @@ const Products = () => {
       rating: 5.0,
       price: 15.99,
     },
+    {
+      id: 1,
+      name: "Mediflexin",
+      imageUrl:
+        "https://images.pexels.com/photos/208512/pexels-photo-208512.jpeg?auto=compress&cs=tinysrgb&w=600",
+      rating: 5.0,
+      price: 15.99,
+    },
 
     {
         id: 2,
