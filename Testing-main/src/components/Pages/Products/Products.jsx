@@ -104,6 +104,14 @@ const Products = () => {
         rating: 5.0,
         price: 15.99,
       },
+      {
+        id: 4,
+        name: "DigestEase Tablets",
+        imageUrl:
+          "https://images.pexels.com/photos/3882517/pexels-photo-3882517.jpeg?auto=compress&cs=tinysrgb&w=600",
+        rating: 5.0,
+        price: 15.99,
+      },
     // Add more product objects here as needed
   ];
 
