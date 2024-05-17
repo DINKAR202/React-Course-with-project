@@ -15,6 +15,7 @@ const Know = () => {
               <h2 className="text-4xl font-bold text-start heading-data">
                 Who we are
               </h2>
+              <h3>update</h3>
 
               <div className="bg-white rounded-xl mt-20 p-6 shadow-md">
                 <div className="flex flex-row gap-4">
