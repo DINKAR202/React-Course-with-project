@@ -145,6 +145,7 @@ const Products = () => {
                   </a>
                   <div className="flex items-center mt-2.5 mb-5">
                     {/* Rating stars here */}
+                    {/* Rating stars here */}
                     {/* <div> */}
                       <svg
                         className="w-4 h-4 text-yellow-300"
