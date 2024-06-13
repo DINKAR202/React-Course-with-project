@@ -5,6 +5,7 @@ const Footer = () => {
         <p>&copy; 2024 DINKAR@TEST. All rights reserved.</p>
       </div>
     </>
+    // soon
   );
 };
 
