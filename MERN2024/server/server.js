@@ -27,7 +27,7 @@ app.use("/api/data", serviceRoute);
 
 // Let's define admin route
 app.use("/api/admin", adminRoute);
-
+// okay done
 app.use(errorMiddleware);
 
 const PORT = 5000;
