@@ -21,5 +21,5 @@ mongoose.connect(MONGOURL).then(()=>{
 
 }).catch(error => console.log(error))
 
-
+// good
 app.use("/api/user", route)
