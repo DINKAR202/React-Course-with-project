@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
   let isLoggedIn = !!token;
   // console.log("isLoggedIn", isLoggedIn);
 
-  // tackling the logout functionality
+  // tackling the logout functionality okgff
   const LogoutUser = () => {
     setToken("");
     return localStorage.removeItem("token");
