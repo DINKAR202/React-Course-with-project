@@ -10,6 +10,7 @@ const Home = () => {
     <>
       <main>
         {/* yes its done */}
+        // hey there
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             <div className="hero-content">
