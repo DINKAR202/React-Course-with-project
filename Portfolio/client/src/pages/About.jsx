@@ -5,6 +5,7 @@ import { SiHackerearth, SiCodechef } from "react-icons/si";
 
 const About = () => {
   // const { user } = useAuth();
+  //wow
 // sson
   return (
     <>
