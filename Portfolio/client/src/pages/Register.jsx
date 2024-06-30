@@ -60,6 +60,7 @@ const Register = () => {
     } catch (error) {
       console.log("register", error);
     }
+    // update
   };
 
   return (
