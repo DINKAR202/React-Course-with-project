@@ -33,5 +33,6 @@ const Skills = () => {
     </>
   );
 };
+                  // arts
 
 export default Skills;
