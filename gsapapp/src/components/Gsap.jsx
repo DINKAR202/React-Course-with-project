@@ -1,31 +1,27 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Flip } from 'gsap/Flip';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
-gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(Flip, ScrollTrigger);
 
 const Gsap = () => {
 
-    useEffect(() => {
-        gsap.fromTo("h1", {
-            x:50,
-            duration:2,
-            delay:1,
-            // rotate:360
-        })
-
-        gsap.from("h1", {
-            y:50,
-            duration:2,
-            delay:1,
-            // rotate:360
-        })
+    gsap.to(".box", {
+        duration: 3,
+        rotation: 360,
+        scale:2,
+        rotate:-1,
+        scrollTrigger:{
+            trigger:".box",
+            markers: true,
+            scrub: true,
+        }
+    
     })
 
   return (
-    <div style={{width: "100%"}}>
-      <h1>Hey hi</h1>
+    <div className='box' style={{backgroundColor: "red", padding:"15px",  width:"45px"}}>
     </div>
   )
 }
