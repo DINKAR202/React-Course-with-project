@@ -1,6 +1,15 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
+import orange2 from "../Assets/orange2.png"
+import fanta from "../Assets/fanta.png"
+import orange from "../Assets/orange.webp"
+import leaf from "../Assets/leaf.webp"
+import leaf2 from "../Assets/leaf2.png"
+import coconoutleaf from "../Assets/coconoutleaf.png"
+import lemon from "../Assets/lemon.webp"
+import cocacola from "../Assets/cocacola.png"
+import pepsi from "../Assets/pepsi.png"
 
 const Gsap = () => {
   useGSAP(() => {
@@ -26,12 +35,12 @@ const Gsap = () => {
         </nav>
         <div className="one">
           <h1>FANTA</h1>
-          <img id="orange-cut" src="../Assets/orange2.png" alt />
-          <img id="fanta" src="../Assets/fanta.png" alt />
-          <img id="orange" src="../Assets/orange.webp" alt />
-          <img id="leaf" src="../Assets/leaf.webp" alt />
-          <img id="leaf2" src="../Assets/leaf2.png" alt />
-          <img id="leaf3" src="../Assets/coconoutleaf.png" alt />
+          <img id="orange-cut" src={orange2} alt />
+          <img id="fanta" src={fanta} alt />
+          <img id="orange" src={orange} alt />
+          <img id="leaf" src={leaf} alt />
+          <img id="leaf2" src={leaf2} alt />
+          <img id="leaf3" src={coconoutleaf} alt />
         </div>
         <div className="two">
           <div className="lft-two">
@@ -63,8 +72,8 @@ const Gsap = () => {
         </div>
         <div className="three">
           <div className="card">
-            <img className="lemon lemon1" src="../Assets/lemon.webp" alt />
-            <img id="cocacola" src="Assets/cocacola.png" alt />
+            <img className="lemon lemon1" src={lemon} alt />
+            <img id="cocacola" src={cocacola} alt />
             <h1>CocaCola</h1>
             <button>Buy Now</button>
           </div>
@@ -73,8 +82,8 @@ const Gsap = () => {
             <button>Buy Now</button>
           </div>
           <div className="card">
-            <img className="lemon lemon2" src="../Assets/lemon.webp" alt />
-            <img id="pepsi" src="../Assets/pepsi.png" alt />
+            <img className="lemon lemon2" src={lemon} alt />
+            <img id="pepsi" src={pepsi} alt />
             <h1>Pepsi</h1>
             <button>Buy Now</button>
           </div>
