@@ -1,27 +1,21 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import React from 'react'
-import { gsap } from "gsap";
-import { Flip } from 'gsap/Flip';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(Flip, ScrollTrigger);
 
 const Gsap = () => {
 
-    gsap.to(".box", {
-        duration: 3,
-        rotation: 360,
-        scale:2,
-        rotate:-1,
-        scrollTrigger:{
-            trigger:".box",
-            markers: true,
-            scrub: true,
-        }
-    
+    useGSAP(()=> {
+        gsap.to(".box", {
+            x:1000,
+            duration:2,
+            delay:1,
+        })
     })
 
   return (
     <div className='box' style={{backgroundColor: "red", padding:"15px",  width:"45px"}}>
+        Dinkar
     </div>
   )
 }
