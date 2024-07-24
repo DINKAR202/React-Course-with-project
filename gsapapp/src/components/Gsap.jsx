@@ -26,12 +26,12 @@ const Gsap = () => {
         </nav>
         <div className="one">
           <h1>FANTA</h1>
-          <img id="orange-cut" src="Assets/orange2.png" alt />
-          <img id="fanta" src="Assets/fanta.png" alt />
-          <img id="orange" src="Assets/orange.webp" alt />
-          <img id="leaf" src="Assets/leaf.webp" alt />
-          <img id="leaf2" src="Assets/leaf2.png" alt />
-          <img id="leaf3" src="Assets/coconoutleaf.png" alt />
+          <img id="orange-cut" src="../Assets/orange2.png" alt />
+          <img id="fanta" src="../Assets/fanta.png" alt />
+          <img id="orange" src="../Assets/orange.webp" alt />
+          <img id="leaf" src="../Assets/leaf.webp" alt />
+          <img id="leaf2" src="../Assets/leaf2.png" alt />
+          <img id="leaf3" src="../Assets/coconoutleaf.png" alt />
         </div>
         <div className="two">
           <div className="lft-two">
@@ -63,7 +63,7 @@ const Gsap = () => {
         </div>
         <div className="three">
           <div className="card">
-            <img className="lemon lemon1" src="Assets/lemon.webp" alt />
+            <img className="lemon lemon1" src="../Assets/lemon.webp" alt />
             <img id="cocacola" src="Assets/cocacola.png" alt />
             <h1>CocaCola</h1>
             <button>Buy Now</button>
@@ -73,8 +73,8 @@ const Gsap = () => {
             <button>Buy Now</button>
           </div>
           <div className="card">
-            <img className="lemon lemon2" src="Assets/lemon.webp" alt />
-            <img id="pepsi" src="Assets/pepsi.png" alt />
+            <img className="lemon lemon2" src="../Assets/lemon.webp" alt />
+            <img id="pepsi" src="../Assets/pepsi.png" alt />
             <h1>Pepsi</h1>
             <button>Buy Now</button>
           </div>
