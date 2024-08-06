@@ -7,8 +7,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Borcelle - Admin Auth",
-  description: "Admin dashboard to manage Borcelle's data",
+  title: "DINKAR   - Admin Auth",
+  description: "Admin dashboard to manage DINKAR'S DATA",
 };
 
 export default function RootLayout({
