@@ -12,6 +12,7 @@ import cocacola from "../Assets/cocacola.png";
 import pepsi from "../Assets/pepsi.png";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+// Under learning
 gsap.registerPlugin(ScrollTrigger);
 
 const Gsap = () => {
