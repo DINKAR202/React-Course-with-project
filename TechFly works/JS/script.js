@@ -1,3 +1,5 @@
+// Special Offer start
+
 function gallery(){
     this.index=0;
     this.load=function(){
@@ -32,6 +34,8 @@ var G = new gallery();
       if(val == 39 && G.index != G.limit.end){G.next();}
       if(val == 37 && G.index != G.limit.start){G.prev();}
   });
+
+// Special Offer End
 
 //   Health Concern start
 
