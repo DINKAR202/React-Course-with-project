@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechFly Medico Store</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Main div -->
+    <div>
+      <header>
+        <!-- NavBar Start -->
+
+        <nav
+          class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-gray-200 dark:border-gray-600"
+        >
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1"
+          >
+            <div class="flex gap-6">
+              <a
+                href="/"
+                class="flex items-center space-x-3 rtl:space-x-reverse"
+              >
+                <img src="/Assests/logo/logo.svg" class="h-8" alt="logo" />
+              </a>
+              <div class="border border-gray-300"></div>
+              <div>
+                <p class="text-[12px] text-gray-500">Express delivery to</p>
+                <p class="text-sm text-gray-500 font-bold">40001 Mumbai</p>
+              </div>
+            </div>
+            <div
+              class="flex md:order-2 space-x-2 md:space-x-0 rtl:space-x-reverse"
+            >
+              <!-- Right side cart -->
+              <div class="flex gap-5">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-user dark:text-white text-gray-600"></i>
+                  <button
+                    type="button"
+                    class="dark:text-white text-gray-600 font-medium rounded-lg text-sm p-1 text-center"
+                  >
+                    Hello Login
+                  </button>
+                </div>
+
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-tag dark:text-white text-gray-600"></i>
+                  <button
+                    type="button"
+                    class="dark:text-white text-gray-600 font-medium rounded-lg text-sm p-1 text-center"
+                  >
+                    Offers
+                  </button>
+                </div>
+
+                <div class="cursor-pointer">
+                  <i
+                    class="fa-solid fa-cart-shopping dark:text-white text-gray-600"
+                  ></i>
+                  <button
+                    type="button"
+                    class="dark:text-white text-gray-600 font-medium rounded-lg text-sm p-1 text-center"
+                  >
+                    Cart
+                  </button>
+                </div>
+              </div>
+
+              <button
+                data-collapse-toggle="navbar-sticky"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-sticky"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+              id="navbar-sticky"
+            >
+              <div class="pt-2 relative mx-auto text-gray-600 w-[400px]">
+                <input
+                  class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-[30px] text-sm focus:outline-none w-full"
+                  type="search"
+                  name="search"
+                  placeholder="Search for Medicine.."
+                />
+                <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+                  <svg
+                    class="text-gray-600 h-4 w-4 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 56.966 56.966"
+                    style="enable-background: new 0 0 56.966 56.966"
+                    xml:space="preserve"
+                    width="512px"
+                    height="512px"
+                  >
+                    <path
+                      d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <!-- <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul> -->
+            </div>
+          </div>
+        </nav>
+
+        <!-- NavBar End -->
+
+        <!-- Sub NavBar Start -->
+        <div class="w-full border-b-2 sm:block hidden">
+          <div class="max-w-screen-xl mx-auto mt-14">
+            <ul class="flex justify-center gap-10 p-1">
+              <li class="cursor-pointer text-gray-600 font-medium text-[14px]">
+                Medicine
+              </li>
+              <li class="cursor-pointer text-gray-600 font-medium text-[14px]">
+                Lab Tests
+              </li>
+              <li class="cursor-pointer text-gray-600 font-medium text-[14px]">
+                Health care
+              </li>
+              <li class="cursor-pointer text-gray-600 font-medium text-[14px]">
+                Health Blogs
+              </li>
+              <li class="cursor-pointer text-gray-600 font-medium text-[14px]">
+                PLUS
+              </li>
+              <li class="cursor-pointer text-gray-600 font-medium text-[14px]">
+                Offers
+              </li>
+              <li class="cursor-pointer text-gray-600 font-medium text-[14px]">
+                Value Store
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Sub NavBar End -->
+      </header>
+      <!-- End header -->
+
+      <!-- Hero section start -->
+      <section>
+        <div class="max-w-screen-xl py-16 mx-auto flex justify-center items-center flex-col border">
+          <!-- Upper side in Searching field -->
+          <div class="w-[70%]">
+            <!-- Text section -->
+            <div class="flex justify-between">
+              <h2 class="text-[22px] font-medium">What are you looking for?</h2>
+              <h2 class="text-[16px] font-medium">
+                <i class="fa-solid fa-receipt me-2 text-lg"></i> Order with
+                prescription. <span class="text-green-400">Upload Now</span>
+              </h2>
+            </div>
+            <!-- Search Field -->
+            <div class="mt-6">
+              <div class="pt-2 relative mx-auto text-gray-600 w-full">
+                <input
+                  class="border-2 border-gray-300 bg-white h-12 px-8 pr-16 rounded-[30px] text-sm focus:outline-none w-full"
+                  type="search"
+                  name="search"
+                  placeholder="Search for Medicine.."
+                />
+                <button type="submit" class="absolute right-0 top-0 mt-6 mr-8">
+                  <svg
+                    class="text-gray-600 h-4 w-4 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 56.966 56.966"
+                    style="enable-background: new 0 0 56.966 56.966"
+                    xml:space="preserve"
+                    width="512px"
+                    height="512px"
+                  >
+                    <path
+                      d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Lower side in Product field -->
+          <div class="flex flex-wrap mt-10 gap-10">
+
+            <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
+              <img
+                class="w-24 h-20 border-b mx-auto"
+                src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+                alt=""
+              />
+              <h2 class="font-bold">Medicine</h2>
+              <h3 class="font-bold text-[12px] text-red-500">FLAT 24% OFF</h3>
+            </div>
+
+            <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
+              <img
+                class="w-24 h-20 border-b mx-auto"
+                src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+                alt=""
+              />
+              <h2 class="font-bold">Lab Test</h2>
+              <h3 class="font-bold text-[12px] text-red-500">FLAT 24% OFF</h3>
+            </div>
+
+            <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
+              <img
+                class="w-24 h-20 border-b mx-auto"
+                src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+                alt=""
+              />
+              <h2 class="font-bold">Medicine</h2>
+              <h3 class="font-bold text-[12px] text-red-500">FLAT 24% OFF</h3>
+            </div>
+
+            <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
+              <img
+                class="w-24 h-20 border-b mx-auto"
+                src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+                alt=""
+              />
+              <h2 class="font-bold">Medicine</h2>
+              <h3 class="font-bold text-[12px] text-red-500">FLAT 24% OFF</h3>
+            </div>
+
+            <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
+              <img
+                class="w-24 h-20 border-b mx-auto"
+                src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+                alt=""
+              />
+              <h2 class="font-bold">Medicine</h2>
+              <h3 class="font-bold text-[12px] text-red-500">FLAT 24% OFF</h3>
+            </div>
+
+            <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
+              <img
+                class="w-24 h-20 border-b mx-auto"
+                src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+                alt=""
+              />
+              <h2 class="font-bold">Medicine</h2>
+              <h3 class="font-bold text-[12px] text-red-500">FLAT 24% OFF</h3>
+            </div>
+
+            <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
+              <img
+                class="w-24 h-20 border-b mx-auto"
+                src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+                alt=""
+              />
+              <h2 class="font-bold">Medicine</h2>
+              <h3 class="font-bold text-[12px] text-red-500">FLAT 24% OFF</h3>
+            </div>
+            
+          </div>
+        </div>
+        
+      </section>
+      <!-- Hero section End -->
+    </div>
+
+    <!-- fontawasome -->
+    <script
+      src="https://kit.fontawesome.com/a5ebab8707.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom js -->
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
