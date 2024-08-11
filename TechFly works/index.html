@@ -38,8 +38,8 @@
               >
                 <img src="/Assests/logo/logo.svg" class="h-8" alt="logo" />
               </a>
-              <div class="border border-gray-300"></div>
-              <div>
+              <div class="border border-gray-300 md:block hidden"></div>
+              <div class="md:block hidden">
                 <p class="text-[12px] text-gray-500">Express delivery to</p>
                 <p class="text-sm text-gray-500 font-bold">40001 Mumbai</p>
               </div>
@@ -49,7 +49,7 @@
             >
               <!-- Right side cart -->
               <div class="flex gap-5">
-                <div class="cursor-pointer">
+                <div class="cursor-pointer md:block hidden">
                   <i class="fa-solid fa-user dark:text-white text-gray-600"></i>
                   <button
                     type="button"
@@ -59,23 +59,23 @@
                   </button>
                 </div>
 
-                <div class="cursor-pointer">
+                <div class="cursor-pointer flex justify-center items-center">
                   <i class="fa-solid fa-tag dark:text-white text-gray-600"></i>
                   <button
                     type="button"
-                    class="dark:text-white text-gray-600 font-medium rounded-lg text-sm p-1 text-center"
+                    class="md:block hidden dark:text-white text-gray-600 font-medium rounded-lg text-sm p-1 text-center"
                   >
                     Offers
                   </button>
                 </div>
 
-                <div class="cursor-pointer">
+                <div class="cursor-pointer flex justify-center items-center">
                   <i
                     class="fa-solid fa-cart-shopping dark:text-white text-gray-600"
                   ></i>
                   <button
                     type="button"
-                    class="dark:text-white text-gray-600 font-medium rounded-lg text-sm p-1 text-center"
+                    class="md:block hidden dark:text-white text-gray-600 font-medium rounded-lg text-sm p-1 text-center"
                   >
                     Cart
                   </button>
@@ -221,7 +221,7 @@
             <!-- Text section -->
             <div class="flex justify-between">
               <h2 class="text-[22px] font-medium">What are you looking for?</h2>
-              <h2 class="text-[16px] font-medium">
+              <h2 class="text-[16px] font-medium md:block hidden">
                 <i class="fa-solid fa-receipt me-2 text-lg"></i> Order with
                 prescription. <span class="text-green-400">Upload Now</span>
               </h2>
@@ -265,7 +265,7 @@
   **************************************************
 -->
 
-          <div class="flex flex-wrap mt-10 gap-10">
+          <div class="flex flex-wrap mt-10 gap-10 justify-center items-center">
             <div class="text-center hover:shadow-md p-2 rounded cursor-pointer">
               <img
                 class="w-24 h-20 border-b mx-auto"
@@ -353,10 +353,12 @@
 
       <section>
         <!-- component -->
-        <div class="text-xl font-bold m-5 text-center">Special Days Offer</div>
+        <div class="text-xl font-bold m-5 text-center md:block hidden">
+          Special Days Offer
+        </div>
 
         <div
-          class="gallery border-t-2 rounded-2 mx-auto m-5 bg-white"
+          class="gallery md:block hidden border-t-2 rounded-2 mx-auto m-5 bg-white sm:w-full"
           style="width: 750px"
         >
           <div class="top flex p-2 border-b border-x-2 select-none">
@@ -531,8 +533,10 @@
 -->
 
       <section>
-        <div class="max-w-screen-xl mx-auto">
-          <h2 class="text-[26px] font-semibold">Lab Tests by Health Concern</h2>
+        <div class="max-w-screen-xl mx-auto px-2">
+          <h2 class="md:text-[26px] text-lg font-semibold">
+            Lab Tests by Health Concern
+          </h2>
           <div class="flex gap-3">
             <h6 class="text-[14px]">Powered by</h6>
             <img
@@ -1004,9 +1008,15 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Pharmeasy Surgical Absorbent Cotton Rol.</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Pharmeasy Surgical Absorbent Cotton Rol.
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1019,8 +1029,12 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Liveasy Wellness Ketoconazole 2%...</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">599.00</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Liveasy Wellness Ketoconazole 2%...
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">599.00</span>
+                </h6>
               </div>
 
               <div>
@@ -1033,11 +1047,16 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Ensure Balanced Nutrition Drink Powd...</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Ensure Balanced Nutrition Drink Powd...
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
-
 
               <div>
                 <div
@@ -1049,9 +1068,15 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Contour Plus Glucometer Test...</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Contour Plus Glucometer Test...
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1065,8 +1090,12 @@
                   />
                 </div>
                 <h6 class="text-start text-sm mt-3 text-gray-500">EFR</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1080,8 +1109,12 @@
                   />
                 </div>
                 <h6 class="text-start mt-3 text-gray-500">Thyroid</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1095,8 +1128,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Women's Care</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1110,8 +1147,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Heart Care</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1125,8 +1166,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Bone Health</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1140,8 +1185,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Bone Health</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1155,8 +1204,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Lifestyle</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
             </div>
           </div>
@@ -1197,9 +1250,15 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Pharmeasy Surgical Absorbent Cotton Rol.</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Pharmeasy Surgical Absorbent Cotton Rol.
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1212,8 +1271,12 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Liveasy Wellness Ketoconazole 2%...</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">599.00</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Liveasy Wellness Ketoconazole 2%...
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">599.00</span>
+                </h6>
               </div>
 
               <div>
@@ -1226,11 +1289,16 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Ensure Balanced Nutrition Drink Powd...</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Ensure Balanced Nutrition Drink Powd...
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
-
 
               <div>
                 <div
@@ -1242,9 +1310,15 @@
                     alt=""
                   />
                 </div>
-                <h6 class="text-start text-sm mt-3 text-gray-500">Contour Plus Glucometer Test...</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  Contour Plus Glucometer Test...
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1258,8 +1332,12 @@
                   />
                 </div>
                 <h6 class="text-start text-sm mt-3 text-gray-500">EFR</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1273,8 +1351,12 @@
                   />
                 </div>
                 <h6 class="text-start mt-3 text-gray-500">Thyroid</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1288,8 +1370,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Women's Care</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1303,8 +1389,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Heart Care</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1318,8 +1408,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Bone Health</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1333,8 +1427,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Bone Health</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
 
               <div>
@@ -1348,8 +1446,12 @@
                   />
                 </div>
                 <h6 class="text-center mt-3 text-gray-500">Lifestyle</h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">MRP &#x20b9; <span class="line-through">399.00</span></h6>
-                <h6 class="text-start text-sm mt-3 text-gray-500">&#x20b9;199.50 <span class="text-red-400">(50%)</span></h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  MRP &#x20b9; <span class="line-through">399.00</span>
+                </h6>
+                <h6 class="text-start text-sm mt-3 text-gray-500">
+                  &#x20b9;199.50 <span class="text-red-400">(50%)</span>
+                </h6>
               </div>
             </div>
           </div>
@@ -1364,12 +1466,29 @@
 **************************************************
 -->
 
-
-<section>
-  <div style="        background-image: radial-gradient(380px 380px at 105% -50%, rgba(227, 128, 183, 0.28) 1%, rgba(188, 104, 150, 0.49) 45%, transparent), radial-gradient(380px 380px at -5% 140%, rgba(227, 128, 183, 0.28) 1%, rgba(188, 104, 150, 0.49) 45%, transparent);">
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quae.</h1>
-  </div>
-</section>
+      <section class="mt-10">
+        <div
+          style="
+            background-image: radial-gradient(
+                380px 380px at 105% -50%,
+                rgba(227, 128, 183, 0.28) 1%,
+                rgba(188, 104, 150, 0.49) 45%,
+                transparent
+              ),
+              radial-gradient(
+                380px 380px at -5% 140%,
+                rgba(227, 128, 183, 0.28) 1%,
+                rgba(188, 104, 150, 0.49) 45%,
+                transparent
+              );
+          "
+        >
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            quae.
+          </h1>
+        </div>
+      </section>
 
       <div class="mt-20"></div>
     </div>
