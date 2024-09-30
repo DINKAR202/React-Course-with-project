@@ -62,8 +62,8 @@ const Header = () => {
           <Link href="/addtocart">
             <ShoppingCart size={20} />
           </Link>
-          <div>
-          <Logs />
+          <div className="md:hidden">
+            <Logs />
           </div>
         </div>
       </div>
