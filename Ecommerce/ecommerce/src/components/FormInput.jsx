@@ -25,5 +25,4 @@ ref
   ),
 },
 );
-
 export default FormInput;
