@@ -16,7 +16,6 @@ import {
 import { components } from "@/utils/data";
 import { Input } from "./ui/input";
 import { Heart, ShoppingCart, Logs } from "lucide-react";
-
 const Header = () => {
   return (
     <div>
