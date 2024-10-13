@@ -6,11 +6,11 @@ function App() {
   const [records, setRecords] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://jsonplaceholder.typicode.com/photos")
       .then((response) => response.json())
       .then((data) => setRecords(data))
       .catch((err) => console.log(err));
-  });
+  }, []);
 
   return (
     <>
@@ -21,12 +21,12 @@ function App() {
       <div>
         <ul>
           {records.map((list, index) => {
-            <li className="text-red-500" key={index}>
-              {list.website} hey hi
-            </li>;
+            return (
+              <li className="text-red-500" key={index}>
+                {list?.title}
+              </li>
+            );
           })}
-
-          <li>Hey, there kaise ho</li>
         </ul>
       </div>
     </>
