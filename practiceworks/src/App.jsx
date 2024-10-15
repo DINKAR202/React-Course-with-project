@@ -22,7 +22,7 @@ function App() {
         <ul>
           {records.map((list, index) => {
             return (
-              <li className="text-red-500" key={index}>
+              <li className="text-white" key={index}>
                 {list?.title}
               </li>
             );
