@@ -16,7 +16,6 @@ export const Bio = {
   insta: "/",
   facebook: "/",
 };
-
 export const skills = [
   {
     title: "Frontend",
