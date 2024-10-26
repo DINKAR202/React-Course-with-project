@@ -289,6 +289,32 @@ export const education = [
 export const projects = [
   {
     id: 9,
+    title: "E-Commerce for medicine US based Project",
+    date: "May 2024 - July 2024",
+    description:
+      "An e-commerce website provides a seamless online shopping experience, enabling customers to browse, select, and purchase products or services from various categories. Key features include a user-friendly product catalog with detailed descriptions and images, a secure checkout process with multiple payment options, and order tracking for customer convenience.",
+    image:
+      "https://github.com/user-attachments/assets/124d2ac2-29b8-4a99-9736-d43bf47eb037",
+    tags: [
+      "AWS",
+      "React Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "Redux",
+      "Netlify",
+      "Material UI",
+      "GSAP",
+      "Payment Integration",
+    ],
+    category: "web app",
+    github:
+      "https://www.bioplentypeps.com/",
+    webapp:
+      "https://www.bioplentypeps.com/",
+  },
+  {
+    id: 9,
     title: "Bike Service Application",
     date: "Jul 2023 - Nov 2023",
     description:
