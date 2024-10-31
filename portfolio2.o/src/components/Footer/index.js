@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { BsTwitterX } from "react-icons/bs";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -106,8 +106,8 @@ function Footer() {
           <SocialMediaIcon href={Bio.twitter} target="display">
             <BsTwitterX />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookIcon />
+          <SocialMediaIcon href={Bio.whatsapp} target="_blank">
+            <WhatsAppIcon />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
             <InstagramIcon />

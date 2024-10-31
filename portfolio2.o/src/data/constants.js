@@ -13,8 +13,8 @@ export const Bio = {
     "https://drive.google.com/file/d/1tZhRb3VWBrfBdIw0ez5DYDGU9QSiDRJ5/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/dinkar-kumar-pri/",
   twitter: "https://twitter.com/027Dinkar",
-  insta: "/",
-  facebook: "/",
+  insta: "https://www.instagram.com/idinkar___02/",
+  whatsapp: "https://wa.me/+917079775849?text=Hello%20there!",
 };
 
 export const skills = [
