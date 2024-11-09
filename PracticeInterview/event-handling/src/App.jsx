@@ -1,4 +1,4 @@
-import {createContext} from 'react'
+import {createContext, useState} from 'react'
 
 import './App.css'
 import ChildA from './components/ChildA'
@@ -7,10 +7,11 @@ import ChildA from './components/ChildA'
 const UserContext = createContext();
 
 function App() {
+  const [user, setUser] = useState({user:"Dinkar"});
 
   return (
     <>
-    <UserContext.Provider>
+    <UserContext.Provider value={user}>
       <ChildA />
     </UserContext.Provider>
     </>
