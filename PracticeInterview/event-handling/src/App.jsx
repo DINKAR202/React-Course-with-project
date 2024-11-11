@@ -7,7 +7,7 @@ import ChildA from './components/ChildA'
 const UserContext = createContext();
 
 function App() {
-  const [user, setUser] = useState({user:"Dinkar"});
+  const [user, setUser] = useState({name:"Dinkar"});
 
   return (
     <>
