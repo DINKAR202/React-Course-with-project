@@ -1,31 +1,41 @@
-import { useForm } from "react-hook-form"
+import React from 'react'
+import { useForm } from 'react-hook-form';
 
-
-export default function App() {
+const App = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
-  } = useForm()
-
-
-  const onSubmit = (data) => console.log(data)
-
-
-  console.log(watch("example")) // watch input value by passing the name of it
+  } = useForm();
 
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input defaultValue="test" {...register("example")} />
+    <div>
+      <h1>Form Submit</h1>
 
 
-      <input {...register("exampleRequired", { required: true })} />
-      {errors.exampleRequired && <span>This field is required</span>}
+      <form onSubmit={handleSubmit((data) => console.log(data))}>
+        <div>
+        <label htmlFor="name">Name</label>
+        <input {...register('name', {required: true})} />
+        </div>
+        <div>
+        <label htmlFor="phone">Phone</label>
+        <input type='number' {...register('Phone', {required: true, min: 10, max: 12})} />
+        </div>
+        <div>
+        <label htmlFor="email">Email</label>
+        <input {...register('email')} />
+        </div>
+        <div>
+        <label htmlFor="requirement">Requirement</label>
+        <input {...register('requirement')} />
+        </div>
 
-
-      <input type="submit" />
-    </form>
+      <button type='submit'>Submit</button>
+      </form>
+    </div>
   )
 }
+
+export default App
