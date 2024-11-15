@@ -1,11 +1,44 @@
-import React from 'react'
+import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 const Home = () => {
+  const [title, setTitle] = useState();
+  const [value, setValue] = useState();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const pasteId = searchParams.get("pasteId");
+
+  function createPaste() {
+    const paste = {
+      title: title,
+      content: value,
+      _id: pasteId || Date.now().toString(36),
+      createdAt: new Date().toString(),
+    };
+  }
+
   return (
     <div>
-      
-    </div>
-  )
-}
+      <input
+        type="text"
+        placeholder="enter title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+      />
 
-export default Home
+      <button onClick={createPaste}>
+        {pasteId ? "Update My Paste" : "Create My Paste"}
+      </button>
+
+      <div>
+        <textarea
+          value={value}
+          placeholder="Enter content here"
+          onChange={(e) => setValue(e.target.value)}
+          rows={20}
+        ></textarea>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

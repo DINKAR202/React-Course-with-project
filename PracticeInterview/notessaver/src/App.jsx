@@ -1,5 +1,5 @@
 import "./App.css";
-import createBrowserRouter from "react-router-dom";
+import  { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Paste from "./components/Paste";
@@ -33,7 +33,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <h1 className="font-bold">HI</h1>
+      <div>
+        <RouterProvider router={router}/>
+      </div>
     </>
   );
 }

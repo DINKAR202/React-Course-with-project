@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react"
+import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div>
-      
+    <div className="container flex flex-row gap-2">
+      <NavLink to='/'>Home</NavLink>
+      <NavLink to="/pastes">Pastes</NavLink>
     </div>
   )
 }
