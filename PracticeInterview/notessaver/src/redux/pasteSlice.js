@@ -1,9 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const pasteSlice = createSlice({
-  name: 'pastes',
+  name: 'paste',
   initialState: {
-    value: 0,
+    pastes: localStorage.getItem("pastes")
+    ? JSON.parse(localStorage.getItem("pastes"))
+    : []
   },
   reducers: {
     increment: (state) => {
