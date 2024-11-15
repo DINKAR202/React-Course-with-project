@@ -9,7 +9,8 @@ export const pasteSlice = createSlice({
   },
   reducers: {
     addToPastes: (state, action) => {
-
+      const paste = action.payload;
+      state.pastes.push(paste);
     },
     updateToPastes: (state, action) => {
     
