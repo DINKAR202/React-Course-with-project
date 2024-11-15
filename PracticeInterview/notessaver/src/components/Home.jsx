@@ -14,6 +14,18 @@ const Home = () => {
       _id: pasteId || Date.now().toString(36),
       createdAt: new Date().toString(),
     };
+
+    if(pasteId) {
+      // update
+      dispatch(updateToPastes(paste));
+    }
+    else{
+      dispatch(addToPastes(paste));
+    }
+
+    setTitle('');
+    setValue('')
+    setSearchParams({})
   }
 
   return (
