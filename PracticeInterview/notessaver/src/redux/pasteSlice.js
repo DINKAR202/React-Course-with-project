@@ -8,19 +8,19 @@ export const pasteSlice = createSlice({
     : []
   },
   reducers: {
-    increment: (state) => {
-      state.value += 1
+    addToPastes: (state, action) => {
+
     },
-    decrement: (state) => {
-      state.value -= 1
+    updateToPastes: (state, action) => {
+    
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
+    resetAllPastes: (state, action) => {
+    
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment, decrement, incrementByAmount } = pasteSlice.actions
 
 export default counterSlice.reducer
