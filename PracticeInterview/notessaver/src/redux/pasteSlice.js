@@ -17,10 +17,13 @@ export const pasteSlice = createSlice({
     resetAllPastes: (state, action) => {
     
     },
+    removeFromPastes: (state, action) => {
+
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = pasteSlice.actions
+export const { addToPastes, updateToPastes, resetAllPastes, removeFromPastes } = pasteSlice.actions
 
-export default counterSlice.reducer
+export default pasteSlice.reducer
