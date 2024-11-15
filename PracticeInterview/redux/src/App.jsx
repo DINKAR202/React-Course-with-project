@@ -2,11 +2,21 @@ import './App.css'
 
 function App() {
 
+  function handleIncrementClick() {
+
+  }
+
+function handleDecrementClick() {
+  
+}
+
   return (
     <>
-      <p>
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='container'>
+        <button onClick={handleIncrementClick}> + </button>
+        <p>Count:</p>
+        <button onClick={handleDecrementClick}> - </button>
+      </div>
     </>
   )
 }
