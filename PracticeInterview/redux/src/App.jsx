@@ -8,11 +8,6 @@ function App() {
 
   return (
     <>
-    {/* Thik hsin */}
-    {/* Thik hsin */}
-    {/* Thik hsin */}
-    {/* Thik hsin */}
-    {/* Thik hsin */}
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
