@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { addToPastes, updateToPastes } from "../redux/pasteSlice";
 
 const Home = () => {
   const [title, setTitle] = useState();
   const [value, setValue] = useState();
   const [searchParams, setSearchParams] = useSearchParams();
   const pasteId = searchParams.get("pasteId");
+  const dispatch = useDispatch();
 
   function createPaste() {
     const paste = {
