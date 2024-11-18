@@ -67,4 +67,4 @@
 
 // sync code block = Execute one by one till complete
 
-// async code block = skip the continue with other code block and execute later
+// async await code block = skip the continue with other code block and execute later
