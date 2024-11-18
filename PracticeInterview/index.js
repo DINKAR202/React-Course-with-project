@@ -21,11 +21,11 @@
 
 // sayName("D");
 
-let obj = {
-    age:12,
-    wt:68,
-    ht:180
-};
+// let obj = {
+//     age:12,
+//     wt:68,
+//     ht:180
+// };
 
 // console.log(obj);
 
@@ -34,7 +34,12 @@ let obj = {
 
 // console.log(obj)
 
-let dest = {...obj};
+// let dest = {...obj};
 
-console.log("obj: ",obj );
-console.log("dest: ",dest );
+// let dest = Object.assign({}, obj);
+
+// console.log("obj: ",obj );
+// console.log("dest: ",dest );
+
+
+console.log(45;
