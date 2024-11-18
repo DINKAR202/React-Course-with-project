@@ -58,8 +58,13 @@
 //     )
 // }
 
-try {
-    console.log(x)
-} catch (error) {
-    throw new Error("Error h bhai")
-}
+// try {
+//     console.log(x)
+// } catch (error) {
+//     throw new Error("Error h bhai")
+// }
+
+
+// sync code block = Execute one by one till complete
+
+// async code block = skip the continue with other code block and execute later
