@@ -13,12 +13,28 @@
 
 // console.log(name)
 
-
 //     var name = "Sab thik hain yrr tm batao";
 
+// function sayName(myName="DINKAR DEV"){
+//     console.log("My name is:", myName)
+// }
 
-function sayName(myName="DINKAR DEV"){
-    console.log("My name is:", myName)
-}
+// sayName("D");
 
-sayName("D");
+let obj = {
+    age:12,
+    wt:68,
+    ht:180
+};
+
+// console.log(obj);
+
+// obj.color="white";
+// obj.name="DINKAR"
+
+// console.log(obj)
+
+let dest = {...obj};
+
+console.log("obj: ",obj );
+console.log("dest: ",dest );
