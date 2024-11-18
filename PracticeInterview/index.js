@@ -42,4 +42,24 @@
 // console.log("dest: ",dest );
 
 
-console.log(45;
+// console.log(45);
+
+// try {
+//     console.log("First execution")
+//     console.log("Faild", x)
+//     console.log("Third execution")
+
+// } catch (error) {
+//     console.log("Error h bhai", error)
+// }
+// finally{
+//     console.log(
+//         "Finally execution"
+//     )
+// }
+
+try {
+    console.log(x)
+} catch (error) {
+    throw new Error("Error h bhai")
+}
