@@ -2,6 +2,10 @@ import { connect } from "@/dbConfig/dbConfig";
 import User from "@/models/userModel";
 import { NextRequest, NextResponse } from "next/server";
 import { bcryptjs } from 'bcryptjs';
+import {jwt} from "jsonwebtoken"
+
+
+await connect()
 
 export async function GET(request: NextRequest) {
   try {
@@ -23,7 +27,15 @@ export async function GET(request: NextRequest) {
         return NextResponse.json({error: error.message},
             { status: 500 })
     }
+    
+    // create a token
+    const tokenData = {
+        id: user._id,
+        username: user.username,
+        email: user.email
+    }
 
+    const token = jwt.sign(tokenData, process.env.SECRET_KEY, {expireIn: "1h"})
 
   } catch (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
