@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Link } from 'next/link';
+import Link from 'next/link';
 
 export default function page() {
   const [user, setUser] = React.useState({
@@ -45,10 +45,10 @@ export default function page() {
       />
 
       <button onClick={onSignup}
-        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+        className="p-2 text-white border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
       >SignUp Here</button>
 
-      <Link href="/loign">Visit login page</Link>
+      <Link href="/login">Visit login page</Link>
     </div>
   );
 }
