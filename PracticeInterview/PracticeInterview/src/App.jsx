@@ -1,79 +1,33 @@
-import { useState } from "react";
-import "./App.css";
-import Card from "./components/Card";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
-function App() {
-  let [count, setCount] = useState(0);
-
-  // function Clickbutton() {
-  //   alert("I'm Clicked")
-  // }
-
-  function handleMouseOver() {
-    toast.success("Wow so easy!");
-  }
+const App = () => {
+  const handleCopyPath = async () => {
+    const currentPath = window.location.href; // Get the current path
+    
+    try {
+      await navigator.clipboard.writeText(currentPath); // Copy path to clipboard
+      alert('Path copied to clipboard: ' + currentPath);
+    } catch (error) {
+      console.error('Failed to copy path:', error);
+    }
+  };
 
   return (
-    <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
-
-      <h1 className="text-red-400 font-bold text-2xl uppercase">
-        {" "}
-        Chal hatttt
-      </h1>
-
-      <h1 className="font-bold ">Counting {count}</h1>
-   
-      <button
-        className="p-3 bg-black text-white"
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        Increment
-      </button>
-
-      <button
-        onClick={() => {
-          setCount(count - 1);
-        }}
-      >
-        Decrement
-      </button>
-
-      <Card>
-        <h2>Dinkar Kumar</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          sit officia nesciunt exercitationem perspiciatis repellendus magnam
-          asperiores, saepe animi at.
-        </p>
-      </Card>
-
-      <button
-        onClick={() => {
-          alert("I'm Clicked");
-        }}
-      >
-        Click here
-      </button>
-
-      <p onMouseOver={handleMouseOver}>Edr mt aao</p>
-    </>
+    <button onClick={handleCopyPath} style={styles.button}>
+      Copy Path
+    </button>
   );
-}
+};
+
+const styles = {
+  button: {
+    padding: '10px 20px',
+    fontSize: '16px',
+    backgroundColor: '#28a745',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+  },
+};
 
 export default App;
