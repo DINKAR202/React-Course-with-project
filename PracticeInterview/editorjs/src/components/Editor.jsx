@@ -33,12 +33,12 @@ const Editor = () => {
         },
       },
       autofocus: true,
+      data: JSON.parse(localStorage.getItem("editorData")) || {}, // Load saved data
     });
 
     editorRef.current = editor;
 
     return () => {
-      // Cleanup the editor instance
       if (editorRef.current) {
         editorRef.current.destroy();
         editorRef.current = null;
@@ -50,6 +50,10 @@ const Editor = () => {
     if (editorRef.current) {
       const outputData = await editorRef.current.save();
       console.log("Saved data:", outputData);
+
+      // Store in local storage
+      localStorage.setItem("editorData", JSON.stringify(outputData));
+      alert("Content saved to local storage!");
     }
   };
 
