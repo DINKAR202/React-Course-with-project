@@ -10,4 +10,9 @@ app.get('/', (req, res) => {
     return res.send("Hi")
 })
 
+// Routes file
+import routes from "./routes/userRoutes.js"
+app.use(routes);
+
+
 app.listen(PORT, ()=> console.log(`Server is running on ${PORT}`))

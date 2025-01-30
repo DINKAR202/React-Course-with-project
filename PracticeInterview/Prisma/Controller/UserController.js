@@ -11,6 +11,17 @@ export const createUser = (req, res) => {
     })
 
     if(findUser) {
-        return res.json({status: 400, })
+        return res.json({status: 400, message: "Email Already Taken pls type another email!"})
     }
+
+
+    const newUser = await prisma.user.create({
+        data:{
+            name:name,
+            email:email,
+            password:password
+        }
+    })
+
+    return res.json({status: 200, data: newUser, msg: "User created"})
 }
