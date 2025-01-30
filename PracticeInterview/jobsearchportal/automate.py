@@ -73,6 +73,6 @@ def automate_job_search(location, job_keywords):
 
 # Example usage
 if __name__ == "__main__":
-    location = "Pune"
+    location = "Mumbai"
     job_keywords = ["React Developer", "Software Developer", "Frontend Developer"]
     automate_job_search(location, job_keywords)
