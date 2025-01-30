@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 // Routes file
-import routes from "./routes/userRoutes.js"
+import routes from "./routes/index.js"
 app.use(routes);
 
 app.listen(PORT, ()=> console.log(`Server is running on ${PORT}`))
