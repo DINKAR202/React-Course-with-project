@@ -19,4 +19,6 @@ model Users {
   email    String  @unique @db.VarChar(191)
   password String
   profile  String?
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
 }
