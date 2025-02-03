@@ -44,8 +44,6 @@ export const createPost = async (req, res) => {
 
 // Delete user
 
-// 
-
 export const deletePost = async (req, res) => {
     const postId = req.params.id;
     await prisma.post.delete({
